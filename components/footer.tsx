@@ -13,7 +13,12 @@ const SustainButton = styled(Button)({
   margin: "0px 0px",
   borderRadius: "32px",
   textTransform: "none",
+  ["@media (max-width:780px)"]: {
+    padding: "13px 19px",
+  },
 });
+
+
 const Footer = () => {
   return (
     <div className="bg-[#0C1227] lg:px-32 px-5 lg:pt-36 pt-24 text-center lg:text-start text-white">
@@ -22,7 +27,7 @@ const Footer = () => {
         <p className="lg:text-4xl text-3xl font-bold mb-11 lg:max-w-2xl">
           Are you ready to start that journey? Join Sustain today!
         </p>
-        <SustainButton className="self-start text-base font-medium">
+        <SustainButton className="self-start text-xs lg:text-base font-medium">
           Request your free consult
         </SustainButton>
       </div>

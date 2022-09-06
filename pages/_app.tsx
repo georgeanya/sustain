@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <nav>nav</nav>
       <Component {...pageProps} />
-      <footer>footer</footer>
       <Footer/>
     </>
   );
