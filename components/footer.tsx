@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import twitter from "../assets/tw.png";
-import sustain from "../assets/sustain.png";
+import sustain from "../assets/sustainw.png";
 import fbook from "../assets/fbook.png";
 import insta from "../assets/insta.png";
 
