@@ -12,9 +12,10 @@ const SustainButton = styled(Button)({
   textTransform: "none",
 });
 
-const [isToggled, setIsToggled] = useState(false)
 
 const Navbar = () => {
+
+  const [isToggled, setIsToggled] = useState(false)
   return (
     <div>
       <nav className="px-5 lg:px-32 pt-5 lg:pt-5">
