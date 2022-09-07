@@ -1,12 +1,14 @@
-import React from 'react'
-import Hero from '../components/hero'
+import React from "react";
+import Hero from "../components/hero";
+import Section from "../components/section";
 
 const HomePage = () => {
   return (
     <div>
-      <Hero/>
+      <Hero />
+      <Section />
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
