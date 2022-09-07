@@ -10,7 +10,7 @@ const SustainButton = styled(Button)({
   borderRadius: "32px",
   textTransform: "none",
   ["@media (max-width:780px)"]: {
-    padding: "10px 15px",
+    padding: "15px 20px"
   },
 });
 

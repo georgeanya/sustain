@@ -10,14 +10,14 @@ const SustainButton = styled(Button)({
   borderRadius: "32px",
   textTransform: "none",
   ["@media (max-width:780px)"]: {
-    padding: "10px 15px",
+    padding: "15px 20px"
   },
 });
 
-const Section = () => {
+const Section1 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-12 md:max-w-md lg:max-w-5xl">
-      <p className="pt-12 lg:pt-16 text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47]">
+      <p className="pt-12 lg:pt-16 text-2xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
         We understand you
       </p>
       <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
@@ -30,11 +30,11 @@ const Section = () => {
       <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
         Don’t give up; Sustain is here to help.
       </p>
-      <SustainButton className="mt-6 mb-12 lg:mb-32 text-xs lg:text-base font-medium">
+      <SustainButton className="mt-14 mb-12 lg:mb-32 text-xs lg:text-base font-medium">
         Schedule your free consult
       </SustainButton>
     </div>
   );
 };
 
-export default Section;
+export default Section1;
