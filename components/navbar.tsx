@@ -1,10 +1,12 @@
 import { useState } from "react";
-import sustain from "../assets/sustain.png";
+import sustain from "../public/assets/sustain.png";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 
+
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
+  fontFamily: 'Circular Std',
   color: "#f8f8f8",
   padding: "10px 15px",
   margin: "0px 0px",

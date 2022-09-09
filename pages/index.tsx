@@ -6,7 +6,7 @@ import HomePage from './home'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className=''>
       {/* <Download/> */}
       {/* <ErrorPage/> */}
       <HomePage/>

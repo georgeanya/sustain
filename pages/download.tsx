@@ -1,7 +1,7 @@
 import React from "react";
-import app from "../assets/app.png";
-import apple from "../assets/apple.png";
-import play from "../assets/play.png";
+import app from "../public/assets/app.png";
+import apple from "../public/assets/apple.png";
+import play from "../public/assets/play.png";
 
 const Download = () => {
   return (

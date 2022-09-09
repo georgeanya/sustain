@@ -1,5 +1,5 @@
 import React from "react";
-import rectangle from "../assets/rectangle.png";
+import rectangle from "../public/assets/rectangle.png";
 const Section3 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-12 pb-20 lg:pb-24">

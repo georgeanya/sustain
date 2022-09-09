@@ -1,23 +1,23 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import twitter from "../assets/tw.png";
-import sustain from "../assets/sustainw.png";
-import fbook from "../assets/fbook.png";
-import insta from "../assets/insta.png";
+import twitter from "../public/assets/tw.png";
+import sustain from "../public/assets/sustainw.png";
+import fbook from "../public/assets/fbook.png";
+import insta from "../public/assets/insta.png";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
+  fontFamily: "Circular Std",
   color: "#f8f8f8",
   padding: "20px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
   textTransform: "none",
   ["@media (max-width:780px)"]: {
-    padding: "15px 20px"
+    padding: "15px 20px",
   },
 });
-
 
 const Footer = () => {
   return (

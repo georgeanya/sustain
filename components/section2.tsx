@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import circle from "../assets/circle.png";
+import circle from "../public/assets/circle.png";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
+  fontFamily: "Circular Std",
   color: "#f8f8f8",
   padding: "20px 30px",
   margin: "0px 0px",
@@ -24,15 +25,21 @@ const Section2 = () => {
         </p>
         <div className="flex mt-8">
           <img src={circle.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base lg:text-xl">Type 2 diabetes</span>
+          <span className="ml-4 flex self-center text-white text-base lg:text-xl">
+            Type 2 diabetes
+          </span>
         </div>
         <div className="flex mt-8">
           <img src={circle.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base lg:text-xl">Prediabetes</span>
+          <span className="ml-4 flex self-center text-white text-base lg:text-xl">
+            Prediabetes
+          </span>
         </div>
         <div className="flex mt-8 mb-8">
           <img src={circle.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base lg:text-xl">Hypertension</span>
+          <span className="ml-4 flex self-center text-white text-base lg:text-xl">
+            Hypertension
+          </span>
         </div>
       </div>
       <div className="lg:max-w-lg lg:pr-8">

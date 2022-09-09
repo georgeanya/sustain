@@ -1,5 +1,5 @@
 import React from "react";
-import iphone from "../assets/iphone.png";
+import iphone from "../public/assets/iphone.png";
 
 const Section4 = () => {
   return (
