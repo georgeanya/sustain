@@ -16,7 +16,7 @@ const SustainButton = styled(Button)({
   },
 });
 
-const Section6 = () => {
+const Section6 = (props: any) => {
   return (
     <div className="px-5 lg:px-32 lg:py-12 pb-20 lg:pb-24 bg-[#EFF2FA] lg:flex justify-between">
       <div className="mt-18">
@@ -35,17 +35,27 @@ const Section6 = () => {
       <div className="flex justify-center flex-col max-w-lg">
         <div className="flex justify-center">
           <div className="flex w-56 rounded-3xl p-1.5 bg-white my-8 lg:my-0 lg:mb-8 justify-self-center">
-            <div className="bg-[#DFEDFB] rounded-3xl w-1/2 p-1 flex justify-center">
+            <div className={props.time ? "bg-[#DFEDFB] rounded-3xl w-1/2 p-1 cursor-pointer flex justify-center" : "w-1/2 p-1 flex cursor-pointer justify-center"} onClick={props.toggleTrue} >
               <p>6-Months</p>
             </div>
-            <div className="w-1/2 p-1 flex justify-center">
+            <div className={props.time ? "w-1/2 p-1 flex cursor-pointer justify-center" : "bg-[#DFEDFB] rounded-3xl w-1/2 p-1 flex cursor-pointer justify-center"} onClick={props.toggleFalse} >
               <p>Annual</p>
             </div>
           </div>
         </div>
         <div className=" rounded-2xl bg-white px-5 py-8 lg:p-12">
-          <p className="text-xs font-medium">6-Month Plan</p>
-          <p className="my-3 text-2xl font-medium">NGN 35,000</p>
+          {props.time ? (
+            <div>
+              <p className="text-xs font-medium">6-Month Plan</p>
+              <p className="my-3 text-2xl font-medium">NGN 35,000</p>
+            </div>
+          ) : (
+            <div>
+              <p className="text-xs font-medium">1-Year Plan</p>
+              <p className="my-3 text-2xl font-medium">NGN 60,000</p>
+            </div>
+          )}
+
           <div className="flex mt-3">
             <img src={icon.src} className="self-center" alt="" />
             <span className="ml-3 flex self-center text-base lg:text-xl">
