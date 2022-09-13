@@ -5,7 +5,7 @@ import right from "../public/assets/right.png";
 
 const Section5 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:py-12 pb-20 lg:pb-24 ">
+    <div className="px-5 lg:px-32 lg:py-12 pb-20 lg:pb-24">
       <p className="pt-12 pr-8 lg:pt-16 text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Don’t just take our word for it
       </p>
