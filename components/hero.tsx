@@ -18,9 +18,9 @@ const SustainButton = styled(Button)({
 
 const Hero = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-12   flex flex-col lg:flex-row lg:justify-between">
+    <div className="px-5 lg:px-32 lg:pt-20 flex flex-col lg:flex-row lg:justify-between">
       <div className="md:max-w-md lg:max-w-xl">
-        <p className="pt-12 lg:pt-16 text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47]">
+        <p className=" leading-tight lg:leading-tight pt-12 lg:pt-16 text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47] ">
           Say goodbye to chronic metabolic diseases and lifelong medication
         </p>
         <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
@@ -32,7 +32,7 @@ const Hero = () => {
           Schedule your free consult
         </SustainButton>
       </div>
-      <div className="mb-16 lg:w-2/5 flex lg:p-10 justify-center">
+      <div className="mb-16 lg:w-2/4 flex lg:p-10 justify-center">
         <img src={hero.src} alt="hero" />
       </div>
     </div>

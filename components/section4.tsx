@@ -7,13 +7,13 @@ const Section4 = () => {
       <p className="pt-12 lg:pt-16 text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Here’s what our treatment can do for you
       </p>
-      <p className="mt-6 text-base  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
+      <p className="mt-6 md:mb-12 text-base  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
         We equip you with the tools you need to reverse your condition and take
         control of your health.
       </p>
-      <div className="lg:mt-6 flex flex-wrap justify-between">
-        <div className="mt-12 p-6 rounded-2xl bg-white lg:max-w-xl">
-          <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">
+      <div className="lg:mt-6 md:grid md:grid-cols-2 md:gap-7 md:grid-rows-2">
+        <div className="mt-12 md:mt-0 lg:pt-16 lg:px-12 rounded-2xl bg-white pt-11 px-6">
+          <p className="text-xl lg:text-2 text-[#002A47] font-medium">
             Personal doctor
           </p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -25,8 +25,8 @@ const Section4 = () => {
             <img src={iphone.src} alt="" />
           </div>
         </div>
-        <div className="mt-12 p-6 rounded-2xl bg-white lg:max-w-xl">
-          <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">
+        <div className="mt-12 md:mt-0 lg:pt-16 lg:px-12 rounded-2xl bg-white pt-11 px-6">
+          <p className="text-xl lg:text-2 text-[#002A47] font-medium">
             Personal health coach
           </p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -38,8 +38,8 @@ const Section4 = () => {
             <img src={iphone.src} alt="" />
           </div>
         </div>
-        <div className="mt-12 p-6 rounded-2xl bg-white lg:max-w-xl">
-          <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">
+        <div className="mt-12 md:mt-0 lg:pt-16 lg:px-12 rounded-2xl bg-white pt-11 px-6">
+          <p className="text-xl lg:text-2 text-[#002A47] font-medium">
             Exclusive resources
           </p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -51,8 +51,8 @@ const Section4 = () => {
             <img src={iphone.src} alt="" />
           </div>
         </div>
-        <div className="mt-12 p-6 rounded-2xl bg-white lg:max-w-xl">
-          <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">
+        <div className="mt-12 md:mt-0 lg:pt-16 lg:px-12 rounded-2xl bg-white pt-11 px-6">
+          <p className="text-xl lg:text-2 text-[#002A47] font-medium">
             Online community
           </p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">

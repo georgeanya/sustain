@@ -12,8 +12,8 @@ const Section5 = () => {
       <p className="mt-6 text-lg  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
         See what some of our patients say about us
       </p>
-      <div className="flex justify-between">
-        <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA] lg:max-w-xl">
+      <div className="md:grid md:grid-cols-2 md:gap-7">
+        <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA]">
           <p className="text-xl lg:text-lg text-[#002A47] ">
             “Sustain has changed my life. I feel better, weigh less, and have
             control my blood sugar well. I am excited about continuing to make
@@ -30,7 +30,7 @@ const Section5 = () => {
           </div>
         </div>
         <div className="hidden lg:flex">
-          <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA] lg:max-w-xl">
+          <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA]">
             <p className="text-xl lg:text-lg text-[#002A47] ">
               “I’ve found a new side to me that I didn’t realize was buried
               under all the weight and the bad health. Before Sustain, I didn’t
