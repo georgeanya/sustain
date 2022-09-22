@@ -22,7 +22,7 @@ const ErrorPage = () => {
         Whoops... This page is not available
       </p>
       <p className="mt-6 text-base lg:text-start lg:text-xl text-[#476D85]">
-        Unfortunaltely, we couldn't find the page you are looking for. We
+        Unfortunaltely, we couldn&apos;t find the page you are looking for. We
         suggest you go back to our homepage
       </p>
       <SustainButton className="mt-6 mb-20 lg:mb-32 text-xs lg:text-base font-medium">
