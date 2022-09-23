@@ -108,33 +108,32 @@ const Navbar = () => {
         </div>
       </nav>
       <div>
-      {isToggled ? (
-              <div className="hidden"></div>
-            ) : (
-              <ul className="pt-5">
-          <li>
-            <a href="#" className="block text-sm py-4">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="block text-sm py-4">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="block text-sm py-4">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="block text-sm py-4">
-              Contact Us
-            </a>
-          </li>
-        </ul>
-            )}
-        
+        {isToggled ? (
+          <div className="hidden"></div>
+        ) : (
+          <ul className="pt-5">
+            <li>
+              <a href="#" className="block text-sm py-4">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#services" className="block text-sm py-4">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="block text-sm py-4">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="block text-sm py-4">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        )}
       </div>
     </div>
   );
