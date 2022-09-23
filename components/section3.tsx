@@ -7,7 +7,7 @@ const Section3 = () => {
         Here’s what our treatment can do for you
       </p>
       <div className="lg:mt-6 flex flex-wrap justify-between">
-        <div className="mt-12 md:max-w-xs">
+        <div className="mt-12 sm:max-w-xs">
           <img src={rectangle.src} alt="" />
           <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">Medication elimination</p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -15,7 +15,7 @@ const Section3 = () => {
             medication, saving you money
           </p>
         </div>
-        <div className="mt-12 md:max-w-xs">
+        <div className="mt-12 sm:max-w-xs">
           <img src={rectangle.src} alt="" />
           <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">Reduce blood sugar</p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -23,7 +23,7 @@ const Section3 = () => {
             complications like kidney disease.
           </p>
         </div>
-        <div className="mt-12 md:max-w-xs">
+        <div className="mt-12 sm:max-w-xs">
           <img src={rectangle.src} alt="" />
           <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">Reduce blood pressure</p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -31,7 +31,7 @@ const Section3 = () => {
             stroke and heart disease
           </p>
         </div>
-        <div className="mt-12 md:max-w-xs">
+        <div className="mt-12 sm:max-w-xs">
           <img src={rectangle.src} alt="" />
           <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">Weight loss</p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -39,7 +39,7 @@ const Section3 = () => {
             you love.
           </p>
         </div>
-        <div className="mt-12 md:max-w-xs">
+        <div className="mt-12 sm:max-w-xs">
           <img src={rectangle.src} alt="" />
           <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">HbA1c reduction</p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
@@ -47,7 +47,7 @@ const Section3 = () => {
             sugar has been over a period of about 3 months
           </p>
         </div>
-        <div className="mt-12 md:max-w-xs">
+        <div className="mt-12 sm:max-w-xs">
           <img src={rectangle.src} alt="" />
           <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">Improve ASCVD risk score</p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">

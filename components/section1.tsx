@@ -17,7 +17,7 @@ const SustainButton = styled(Button)({
 
 const Section1 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-12 md:max-w-md lg:max-w-5xl">
+    <div className="px-5 sm:px-8 md:px-16 lg:px-32 lg:pt-12 md:max-w-2xl lg:max-w-5xl">
       <p className="pt-12 lg:pt-16 text-2xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
         We understand you
       </p>
@@ -31,7 +31,7 @@ const Section1 = () => {
       <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
         Don’t give up; Sustain is here to help.
       </p>
-      <SustainButton className="mt-14 mb-12 lg:mb-32 text-xs lg:text-base font-medium">
+      <SustainButton className="mt-8 lg:mt-14 mb-12 lg:mb-32 text-xs lg:text-base font-medium">
         Schedule your free consult
       </SustainButton>
     </div>
