@@ -36,7 +36,7 @@ const Section6 = (props: any) => {
       </div>
       <div className="flex justify-center flex-col max-w-lg">
         <div className="flex justify-center">
-          <div className="flex w-56 rounded-3xl p-1.5 bg-white my-8 lg:my-0 lg:mb-8 justify-self-center">
+          <div className="flex w-56 rounded-3xl p-1.5 bg-white mt-18 mb-10 lg:my-0 justify-self-center">
             <div
               className={
                 props.time
