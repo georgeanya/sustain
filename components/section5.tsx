@@ -13,14 +13,14 @@ const Section5 = () => {
         See what some of our patients say about us
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-7">
-        <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA]">
+        <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
           <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
             “Sustain has changed my life. I feel better, weigh less, and have
             control my blood sugar well. I am excited about continuing to make
             better choices about my health so I can be there for my family.”
           </p>
-          <div className="pt-8 flex ">
-            <img src={image.src} alt="" />
+          <div className="pt-10 flex ">
+            <img src={image.src} alt="" width='60px'/>
             <div className="self-center pl-3">
               <p className="font-medium text-base text-[#002A47]">
                 Ezeogo Mang
@@ -30,15 +30,15 @@ const Section5 = () => {
           </div>
         </div>
         <div className="hidden lg:flex">
-          <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA]">
+          <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
             <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
               “I’ve found a new side to me that I didn’t realize was buried
               under all the weight and the bad health. Before Sustain, I didn’t
               think my diabetes was reversible. Sustain has given me my life
               back.”
             </p>
-            <div className="pt-8 flex ">
-              <img src={image.src} alt="" />
+            <div className="pt-10 flex ">
+              <img src={image.src} alt="" width='60px'/>
               <div className="self-center pl-3">
                 <p className="font-medium text-base text-[#002A47]">Uwa Uye</p>
                 <p className="text-sm text-[#476D85]">

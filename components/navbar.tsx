@@ -77,7 +77,7 @@ const Navbar = () => {
               <li className="mt-2.5 mx-8">
                 <a
                   href="#"
-                  className="text-sm pt-5 mt-5 text-[#002A47] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   // aria-current="page"
                 >
                   Benefits
@@ -86,7 +86,7 @@ const Navbar = () => {
               <li className="mt-2.5 mx-8">
                 <a
                   href="#"
-                  className="text-sm pt-5 mt-5 text-[#002A47] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                 >
                   Pricing
                 </a>
@@ -94,7 +94,7 @@ const Navbar = () => {
               <li className="mt-2.5 mx-8">
                 <a
                   href="#"
-                  className="text-sm pt-5 mt-5 text-[#002A47] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="text-sm pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                 >
                   Blog
                 </a>
