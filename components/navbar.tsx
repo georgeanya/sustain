@@ -99,8 +99,8 @@ const Navbar = () => {
                   Blog
                 </a>
               </li>
-              <li>
-                <SustainButton className="text-sm ml-8">
+              <li className="ml-8">
+              <SustainButton className="text-sm">
                   Get started
                 </SustainButton>
               </li>
