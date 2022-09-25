@@ -14,7 +14,7 @@ const Section5 = () => {
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-7">
         <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA]">
-          <p className="text-lg lg:text-xl text-[#002A47] ">
+          <p className="text-lg lg:text-2xl text-[#002A47] ">
             “Sustain has changed my life. I feel better, weigh less, and have
             control my blood sugar well. I am excited about continuing to make
             better choices about my health so I can be there for my family.”
@@ -31,7 +31,7 @@ const Section5 = () => {
         </div>
         <div className="hidden lg:flex">
           <div className="mt-12 p-6 lg:px-10 lg:py-14 rounded-2xl bg-[#EFF2FA]">
-            <p className="text-lg lg:text-xl text-[#002A47] ">
+            <p className="text-lg lg:text-2xl text-[#002A47] ">
               “I’ve found a new side to me that I didn’t realize was buried
               under all the weight and the bad health. Before Sustain, I didn’t
               think my diabetes was reversible. Sustain has given me my life
