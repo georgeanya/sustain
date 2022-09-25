@@ -31,9 +31,11 @@ const Section1 = () => {
       <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
         Don’t give up; Sustain is here to help.
       </p>
-      <SustainButton className="mt-8 lg:mt-14 mb-12 lg:mb-32 text-xs lg:text-base font-medium">
-        Schedule your free consult
-      </SustainButton>
+      <div className="mt-8 lg:mt-14 mb-12 lg:mb-32">
+        <SustainButton className="text-xs lg:text-base font-medium">
+          Schedule your free consult
+        </SustainButton>
+      </div>
     </div>
   );
 };

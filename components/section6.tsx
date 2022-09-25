@@ -28,9 +28,11 @@ const Section6 = (props: any) => {
           health insurers cover the cost of Sustain for their members. Request
           for a free consultation to learn more.
         </p>
-        <SustainButton className="mt-6 mb-12 lg:mb-32 text-xs lg:text-base font-medium">
-          Request your free consult
+        <div className="mt-8 lg:mt-14 mb-12 lg:mb-32">
+        <SustainButton className="text-xs lg:text-base font-medium">
+          Schedule your free consult
         </SustainButton>
+      </div>
       </div>
       <div className="flex justify-center flex-col max-w-lg">
         <div className="flex justify-center">

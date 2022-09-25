@@ -28,11 +28,11 @@ const Hero = () => {
           dependence on medications by identifying the root causes of disease
           and treating them
         </p>
-        <div className="mt-6 mb-12 lg:mb-32">
-          <SustainButton className="text-xs lg:text-base font-medium">
-            Schedule your free consult
-          </SustainButton>
-        </div>
+        <div className="mt-8 lg:mt-14 mb-12 lg:mb-32">
+        <SustainButton className="text-xs lg:text-base font-medium">
+          Schedule your free consult
+        </SustainButton>
+      </div>
       </div>
       <div className="mb-16 lg:w-2/4 flex lg:p-10 justify-center">
         <img src={hero.src} alt="hero" />

@@ -54,9 +54,11 @@ const Section2 = () => {
           remotely monitor you to help you go off medications safely and sustain
           your success.
         </p>
-        <SustainButton className="mt-8 lg:mt-14 mb-12 lg:mb-32 text-xs lg:text-base font-medium">
+        <div className="mt-8 lg:mt-14 mb-12 lg:mb-32">
+        <SustainButton className="text-xs lg:text-base font-medium">
           Schedule your free consult
         </SustainButton>
+      </div>
       </div>
     </div>
   );
