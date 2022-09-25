@@ -31,8 +31,8 @@ const Faq = () => {
   }
 
   return (
-    <div className="px-5 lg:px-32 lg:py-12 pb-20 lg:pb-24">
-      <p className="pt-12 lg:pt-16 text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] mb-14 pr-8">
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24">
+      <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] mb-14 pr-8">
         Frequently asked questions
       </p>
       <div className="max-w-3xl">

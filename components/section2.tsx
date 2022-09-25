@@ -18,9 +18,9 @@ const SustainButton = styled(Button)({
 
 const Section2 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:py-12 py-8 bg-[#236DAD] flex flex-col lg:flex-row lg:justify-between">
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#236DAD] flex flex-col lg:flex-row lg:justify-between">
       <div className="lg:max-w-xl">
-        <p className="pt-12 lg:pt-16 pb-6 text-2xl lg:text-start lg:text-4xl font-bold text-white">
+        <p className=" pb-6 text-2xl lg:text-start lg:text-4xl font-bold text-white">
           We reverse multiple chronic metabolic diseases
         </p>
         <div className="flex mt-8">
@@ -43,7 +43,7 @@ const Section2 = () => {
         </div>
       </div>
       <div className="lg:max-w-lg lg:pr-8">
-        <p className="mt-6 lg:mt-16 text-base  lg:text-start lg:text-xl text-white">
+        <p className="mt-6 lg:mt-0 text-base  lg:text-start lg:text-xl text-white">
           Most treatments use things like medications or surgery to manage the
           symptoms of chronic metabolic diseases without dealing with the
           underlying cause.
@@ -54,11 +54,11 @@ const Section2 = () => {
           remotely monitor you to help you go off medications safely and sustain
           your success.
         </p>
-        <div className="mt-8 lg:mt-14 mb-12 lg:mb-32">
-        <SustainButton className="text-xs lg:text-base font-medium">
-          Schedule your free consult
-        </SustainButton>
-      </div>
+        <div className="mt-8 lg:mt-14 ">
+          <SustainButton className="text-xs lg:text-base font-medium">
+            Schedule your free consult
+          </SustainButton>
+        </div>
       </div>
     </div>
   );

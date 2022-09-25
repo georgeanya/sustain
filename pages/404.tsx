@@ -25,7 +25,7 @@ const ErrorPage = () => {
         Unfortunaltely, we couldn&apos;t find the page you are looking for. We
         suggest you go back to our homepage
       </p>
-      <div className="mt-8 lg:mt-14 mb-12 lg:mb-32">
+      <div className="mt-8 lg:mt-14 ">
         <SustainButton className="text-xs lg:text-base font-medium">
           Go back home
         </SustainButton>

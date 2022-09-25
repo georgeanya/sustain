@@ -17,11 +17,11 @@ const SustainButton = styled(Button)({
 
 const Section1 = () => {
   return (
-    <div className="px-5 sm:px-8 md:px-16 lg:px-32 lg:pt-12 md:max-w-2xl lg:max-w-5xl">
-      <p className="pt-12 lg:pt-16 text-2xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
+    <div className="px-5 sm:px-8 md:px-16 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 ">
+      <p className=" text-2xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
         We understand you
       </p>
-      <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
+      <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85] md:max-w-2xl lg:max-w-3xl">
         If you have been living with a chronic metabolic disease, there’s a high
         chance you’re probably feeling frustrated and scared. No matter what you
         do, your blood sugar or blood pressure continues to go up and you don’t
@@ -31,7 +31,7 @@ const Section1 = () => {
       <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
         Don’t give up; Sustain is here to help.
       </p>
-      <div className="mt-8 lg:mt-14 mb-12 lg:mb-32">
+      <div className="mt-8 lg:mt-14 ">
         <SustainButton className="text-xs lg:text-base font-medium">
           Schedule your free consult
         </SustainButton>
