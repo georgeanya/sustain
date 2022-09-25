@@ -6,7 +6,7 @@ const Section3 = () => {
       <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Here’s what our treatment can do for you
       </p>
-      <div className="lg:mt-6 flex flex-wrap justify-between">
+      <div className="lg:mt-5 md:mt-6 flex flex-wrap justify-between">
         <div className="mt-12 sm:max-w-xs">
           <img src={rectangle.src} alt="" />
           <p className="text-xl lg:text-2 text-[#002A47] font-medium mt-5">

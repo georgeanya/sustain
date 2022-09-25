@@ -43,12 +43,12 @@ const Section2 = () => {
         </div>
       </div>
       <div className="lg:max-w-lg lg:pr-8">
-        <p className="mt-6 lg:mt-0 text-base  lg:text-start lg:text-xl text-white">
+        <p className="mt-5 md:mt-6 lg:mt-0 text-base  lg:text-start lg:text-xl text-white">
           Most treatments use things like medications or surgery to manage the
           symptoms of chronic metabolic diseases without dealing with the
           underlying cause.
         </p>
-        <p className="mt-6 text-base  lg:text-start lg:text-xl text-white">
+        <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-white">
           We focus on treating the root cause of the health condition by
           changing what you eat. Our doctors and health coaches support you and
           remotely monitor you to help you go off medications safely and sustain

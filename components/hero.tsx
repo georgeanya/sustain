@@ -18,12 +18,12 @@ const SustainButton = styled(Button)({
 
 const Hero = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-20 flex flex-col lg:flex-row lg:justify-between">
-      <div className="md:max-w-md lg:max-w-xl">
+    <div className="px-5 lg:px-32 lg:pt-22 pb-6 lg:pb-40 flex flex-col lg:flex-row lg:justify-between">
+      <div className="md:max-w-md lg:max-w-xl pt-15 pb-17 lg:pb-0 lg:pt-18">
         <p className=" leading-tight lg:leading-tight  text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47] ">
           Say goodbye to chronic metabolic diseases and lifelong medication
         </p>
-        <p className="mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
+        <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
           We help people reverse chronic metabolic diseases and reduce their
           dependence on medications by identifying the root causes of disease
           and treating them
@@ -34,7 +34,7 @@ const Hero = () => {
           </SustainButton>
         </div>
       </div>
-      <div className="mb-16 lg:w-2/4 flex lg:p-10 justify-center">
+      <div className=" lg:w-2/4 flex lg:p-10 justify-center">
         <img src={hero.src} alt="hero" />
       </div>
     </div>

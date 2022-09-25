@@ -9,7 +9,7 @@ const Section5 = () => {
       <p className="pr-8 text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Don’t just take our word for it
       </p>
-      <p className="mt-6 text-lg  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
+      <p className="mt-5 md:mt-6 text-lg  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
         See what some of our patients say about us
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-7">
@@ -20,7 +20,7 @@ const Section5 = () => {
             better choices about my health so I can be there for my family.”
           </p>
           <div className="pt-10 flex ">
-            <img src={image.src} alt="" width='60px'/>
+            <img src={image.src} alt="" width="60px" />
             <div className="self-center pl-3">
               <p className="font-medium text-base text-[#002A47]">
                 Ezeogo Mang
@@ -38,7 +38,7 @@ const Section5 = () => {
               back.”
             </p>
             <div className="pt-10 flex ">
-              <img src={image.src} alt="" width='60px'/>
+              <img src={image.src} alt="" width="60px" />
               <div className="self-center pl-3">
                 <p className="font-medium text-base text-[#002A47]">Uwa Uye</p>
                 <p className="text-sm text-[#476D85]">
