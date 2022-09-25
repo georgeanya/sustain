@@ -19,7 +19,7 @@ const SustainButton = styled(Button)({
 const Section6 = (props: any) => {
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] lg:flex justify-between">
-      <div className="mt-18">
+      <div className="">
         <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
           How much does it cost?
         </p>
