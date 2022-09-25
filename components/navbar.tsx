@@ -11,6 +11,7 @@ const SustainButton = styled(Button)({
   margin: "0px 0px",
   borderRadius: "32px",
   textTransform: "none",
+  
 });
 
 const Navbar = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
           <button
             data-collapse-toggle="navbar-solid-bg"
             type="button"
-            className="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+            className="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden"
             aria-controls="navbar-solid-bg"
             onClick={() => {
               setIsToggled(!isToggled);
@@ -114,24 +115,24 @@ const Navbar = () => {
           <ul className="pt-5">
             <li>
               <a href="#" className="block text-sm py-4">
-                Home
+                Benefits
               </a>
             </li>
             <li>
               <a href="#services" className="block text-sm py-4">
-                Services
+                Pricing
               </a>
             </li>
             <li>
               <a href="#about" className="block text-sm py-4">
-                About
+                Blog
               </a>
             </li>
-            <li>
-              <a href="#contact" className="block text-sm py-4">
-                Contact Us
-              </a>
-            </li>
+            {/* <li>
+              <SustainButton className="text-sm mt-5">
+                Get started
+              </SustainButton>
+            </li> */}
           </ul>
         )}
       </div>
