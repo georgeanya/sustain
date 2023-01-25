@@ -25,11 +25,11 @@ const Home: NextPage = () => {
   return (
     <div>
       <Hero />
-      {/* <Section1 /> */}
       <Section2 />
       <Section3 />
+      <Section1 />
       <Section4 />
-      <Section5 />
+      {/* <Section5 /> */}
       <Section6 time={time} toggleTrue={toggleTimeTrue} toggleFalse={toggleTimeFalse} />
       <Faq />
     </div>

@@ -17,24 +17,47 @@ const SustainButton = styled(Button)({
 
 const Section1 = () => {
   return (
-    <div className="px-5 sm:px-8 md:px-16 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 ">
-      <p className=" text-2xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
-        We understand you
+    <div className="px-5 lg:px-32 lg:pt-2.5 pt-2.5 lg:pb-36 pb-24">
+      <p className="pr-8 lg:max-w-xl text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+        Patient’s outcomes
       </p>
-      <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#476D85] md:max-w-2xl lg:max-w-3xl">
-        If you have been living with a chronic metabolic disease, there’s a high
-        chance you’re probably feeling frustrated and scared. No matter what you
-        do, your blood sugar or blood pressure continues to go up and you don’t
-        feel well. The medications you have to take keep increasing, costing a
-        lot of money. Nothing seems to work, and you don’t feel well.
+      <p className="mt-5 text-base  lg:text-start lg:text-lg text-[#476D85]">
+        Our patients are eliminating thier medications and improving their
+        health
       </p>
-      <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
-        Don’t give up; Sustain is here to help.
-      </p>
-      <div className="mt-8 lg:mt-14 ">
-        <SustainButton className="text-xs lg:text-base font-medium">
-          Schedule your free consult
-        </SustainButton>
+      <div className="flex justify-between mt-12">
+        <div className="border rounded-lg w-68 text-center py-9 px-4">
+          <p className="lg:max-w-xl text-2xl  lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+            95%
+          </p>
+          <p className="mt-3 text-base  text-[#476D85]">
+            Patients reduced or eliminated their medications
+          </p>
+        </div>
+        <div className="border rounded-lg w-68 text-center py-9 px-4">
+          <p className="lg:max-w-xl text-2xl  lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+            70%
+          </p>
+          <p className="mt-3 text-base  text-[#476D85]">
+            Patients reversed their type 2 diabetes
+          </p>
+        </div>
+        <div className="border rounded-lg w-68 text-center py-9 px-4">
+          <p className="lg:max-w-xl text-2xl  lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+            60%
+          </p>
+          <p className="mt-3 text-base  text-[#476D85]">
+            Patients reversed their hypertension
+          </p>
+        </div>
+        <div className="border rounded-lg w-68 text-center py-9 px-4">
+          <p className="lg:max-w-xl text-2xl  lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+            12 kg
+          </p>
+          <p className="mt-3 text-base  text-[#476D85]">
+            Average weight loss after 6 months
+          </p>
+        </div>
       </div>
     </div>
   );

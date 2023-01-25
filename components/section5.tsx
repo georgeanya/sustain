@@ -1,64 +1,103 @@
 import React from "react";
-import image from "../public/assets/image.png";
-import left from "../public/assets/left.png";
-import right from "../public/assets/right.png";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
+import icon from "../public/assets/icon.png";
 
-const   Section5 = () => {
+const SustainButton = styled(Button)({
+  background: "#4F9EEA !important",
+  fontFamily: "Circular Std",
+  color: "#f8f8f8",
+  padding: "20px 30px",
+  margin: "0px 0px",
+  borderRadius: "32px",
+  textTransform: "none",
+  ["@media (max-width:780px)"]: {
+    padding: "15px 20px",
+  },
+});
+
+const Section6 = (props: any) => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24">
-      <p className="pr-8 text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
-        Don’t just take our word for it
-      </p>
-      <p className="mt-5 md:mt-6 text-lg  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
-        See what some of our patients say about us
-      </p>
-      <div className="md:grid md:grid-cols-2 md:gap-7">
-        <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
-          <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
-            “Sustain has changed my life. I feel better, weigh less, and have
-            control my blood sugar well. I am excited about continuing to make
-            better choices about my health so I can be there for my family.”
-          </p>
-          <div className="pt-10 flex ">
-            <img src={image.src} alt="" width="60px" />
-            <div className="self-center pl-3">
-              <p className="font-medium text-base text-[#002A47]">
-                Ezeogo Mang
-              </p>
-              <p className="text-sm text-[#476D85]">Lagos, Nigeria</p>
-            </div>
-          </div>
-        </div>
-        <div className="hidden lg:flex">
-          <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
-            <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
-              “I’ve found a new side to me that I didn’t realize was buried
-              under all the weight and the bad health. Before Sustain, I didn’t
-              think my diabetes was reversible. Sustain has given me my life
-              back.”
-            </p>
-            <div className="pt-10 flex ">
-              <img src={image.src} alt="" width="60px" />
-              <div className="self-center pl-3">
-                <p className="font-medium text-base text-[#002A47]">Uwa Uye</p>
-                <p className="text-sm text-[#476D85]">
-                  Johannesburg, South Africa
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex justify-end mt-8">
-        <p className="self-center text-sm text-[#002A47] lg:hidden">1 OF 6</p>
-        <p className="self-center text-[#002A47] text-sm hidden lg:flex">
-          2 0F 6
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA]  ">
+      <div className="lg:flex lg:flex-col lg:justify-center">
+        <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+          How much does it cost?
         </p>
-        <img src={left.src} className="ml-8" alt="" />
-        <img src={right.src} className="ml-4" alt="" />
+        <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
+          This price covers the cost of treatment excluding lab tests. Some
+          health insurers cover the cost of Sustain for their members. Request
+          for a free consultation to learn more.
+        </p>
+      </div>
+      <div className="flex justify-center flex-col max-w-lg">
+        <div className="flex justify-center">
+          <div className="flex w-56 rounded-3xl p-1.5 bg-white mt-18 mb-10 lg:my-10 justify-self-center">
+            <div
+              className={
+                props.time
+                  ? "bg-[#DFEDFB] rounded-3xl w-1/2 p-1 cursor-pointer flex justify-center"
+                  : "w-1/2 p-1 flex cursor-pointer justify-center"
+              }
+              onClick={props.toggleTrue}
+            >
+              <p>6-Months</p>
+            </div>
+            <div
+              className={
+                props.time
+                  ? "w-1/2 p-1 flex cursor-pointer justify-center"
+                  : "bg-[#DFEDFB] rounded-3xl w-1/2 p-1 flex cursor-pointer justify-center"
+              }
+              onClick={props.toggleFalse}
+            >
+              <p>Annual</p>
+            </div>
+          </div>
+        </div>
+        <div className=" rounded-2xl bg-white px-5 py-8 lg:p-12">
+          {props.time ? (
+            <div>
+              <p className="text-xs font-medium">6-Month Plan</p>
+              <p className="my-3 text-2xl font-medium">NGN 35,000</p>
+            </div>
+          ) : (
+            <div>
+              <p className="text-xs font-medium">1-Year Plan</p>
+              <p className="my-3 text-2xl font-medium">NGN 60,000</p>
+            </div>
+          )}
+
+          <div className="flex mt-3">
+            <img src={icon.src} className="self-center" alt="" />
+            <span className="ml-3 flex self-center text-base lg:text-xl">
+              Unlimited consultations
+            </span>
+          </div>
+          <div className="flex mt-3">
+            <img src={icon.src} className="self-center" alt="" />
+            <span className="ml-3 flex self-center text-base lg:text-xl">
+              Personalized treatment plan
+            </span>
+          </div>
+          <div className="flex mt-3">
+            <img src={icon.src} className="self-center" alt="" />
+            <span className="ml-3 flex self-center text-base lg:text-xl">
+              Discounted lab tests
+            </span>
+          </div>
+          <div className="flex mt-3">
+            <img src={icon.src} className="self-center" alt="" />
+            <span className="ml-3 flex self-center text-base lg:text-xl">
+              Resources, meal plan, and food guides
+            </span>
+          </div>
+        </div>
+        <p className="mt-5 md:mt-6 text-base md:px-12 text-center lg:text-xl">
+          Concerned about the cost? You can get care now and pay later
+        </p>
       </div>
     </div>
   );
 };
 
-export default Section5;
+export default Section6;
