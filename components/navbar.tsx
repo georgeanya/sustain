@@ -7,10 +7,11 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
-  padding: "16px 30px",
+  padding: "10px 15px",
   margin: "0px 0px",
-  borderRadius: "10px",
+  borderRadius: "32px",
   textTransform: "none",
+  
 });
 
 const Navbar = () => {
@@ -72,7 +73,7 @@ const Navbar = () => {
             className="hidden w-full md:block md:w-auto"
             id="navbar-solid-bg"
           >
-            {/* <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+            <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
               <li className="mt-2.5 mx-8">
                 <a
                   href="#"
@@ -103,11 +104,7 @@ const Navbar = () => {
                   Get started
                 </SustainButton>
               </li>
-            </ul> */}
-
-            <SustainButton className="text-sm ml-8 font-semibold">
-              Request access
-            </SustainButton>
+            </ul>
           </div>
         </div>
       </nav>

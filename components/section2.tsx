@@ -18,58 +18,46 @@ const SustainButton = styled(Button)({
 
 const Section2 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-2.5 pt-2.5 lg:pb-36 pb-24">
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#236DAD] flex flex-col lg:flex-row lg:justify-between">
       <div className="lg:max-w-xl">
-        <p className="pr-8 text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
-          Our treatment is different
+        <p className=" pb-6 text-2xl lg:text-start lg:text-4xl font-bold text-white">
+          We reverse multiple chronic metabolic diseases
         </p>
-      </div>
-      <div className="flex flex-col lg:flex-row lg:justify-between">
-        <div className="lg:max-w-lg">
-          <p className="mt-5 text-base  lg:text-start lg:text-lg text-[#476D85]">
-            At Sustain, we focus on treating the root cause of cardiometabolic
-            diseases to help you repair your metabolic health.
-          </p>
-          <div className="flex mt-8">
-            <img src={circle.src} className='w-8' alt="" />
-            <span className="ml-4 flex self-center text-[#476D85] text-base lg:text-xl">
-              Type 2 diabetes
-            </span>
-          </div>
-          <hr className="my-4 lg:my-5 lg:max-w-lg" />
-          <div className="flex mt-8">
-            <img src={circle.src} className='w-8' alt="" />
-            <span className="ml-4 flex self-center text-[#476D85] text-base lg:text-xl">
-              Prediabetes
-            </span>
-          </div>
-          <hr className="my-4 lg:my-5 lg:max-w-lg" />
-          <div className="flex mt-8 mb-8">
-            <img src={circle.src} className='w-8' alt="" />
-            <span className="ml-4 flex self-center text-[#476D85] text-base lg:text-xl">
-              Hypertension
-            </span>
-          </div>
+        <div className="flex mt-8">
+          <img src={circle.src} alt="" />
+          <span className="ml-4 flex self-center text-white text-base lg:text-xl">
+            Type 2 diabetes
+          </span>
         </div>
-        <div className="lg:max-w-lg lg:pr-8">
-          <p className="mt-5 md:mt-6 lg:mt-5 text-base  lg:text-start lg:text-lg text-[#476D85]">
-            We use therapeutic carbohydrate restriction (TCR), continuous remote
-            monitoring, and behavioral science to help you adopt a low
-            carbohydrate diet sustainably and go off medications safely
-          </p>
-          <p className="mt-5 mb-5 md:mt-6 text-base  lg:text-start lg:text-lg text-[#476D85]">
-            Multiple studies show that therapeutic carbohydrate restriction is
-            an effective, evidence-based approach to reversing cardiometabolic
-            diseases
-          </p>
-          <a className="mt-5 md:mt-8 text-base  lg:text-start lg:text-lg  text-[#1DA1F2] underline underline-offset-1">
-            Learn more about therapeutic carbohydrate restriction
-          </a>
-          {/* <div className="mt-8 lg:mt-14 ">
-            <SustainButton className="text-xs lg:text-base font-medium">
-              Schedule your free consult
-            </SustainButton>
-          </div> */}
+        <div className="flex mt-8">
+          <img src={circle.src} alt="" />
+          <span className="ml-4 flex self-center text-white text-base lg:text-xl">
+            Prediabetes
+          </span>
+        </div>
+        <div className="flex mt-8 mb-8">
+          <img src={circle.src} alt="" />
+          <span className="ml-4 flex self-center text-white text-base lg:text-xl">
+            Hypertension
+          </span>
+        </div>
+      </div>
+      <div className="lg:max-w-lg lg:pr-8">
+        <p className="mt-5 md:mt-6 lg:mt-0 text-base  lg:text-start lg:text-xl text-white">
+          Most treatments use things like medications or surgery to manage the
+          symptoms of chronic metabolic diseases without dealing with the
+          underlying cause.
+        </p>
+        <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-white">
+          We focus on treating the root cause of the health condition by
+          changing what you eat. Our doctors and health coaches support you and
+          remotely monitor you to help you go off medications safely and sustain
+          your success.
+        </p>
+        <div className="mt-8 lg:mt-14 ">
+          <SustainButton className="text-xs lg:text-base font-medium">
+            Schedule your free consult
+          </SustainButton>
         </div>
       </div>
     </div>

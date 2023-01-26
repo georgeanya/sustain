@@ -2,12 +2,9 @@ import React from "react";
 import rectangle from "../public/assets/rectangle.png";
 const Section3 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-2.5 pt-2.5 lg:pb-36 pb-24 ">
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 ">
       <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
-        Here’s what our treatment can do
-      </p>
-      <p className="mt-5 text-base  lg:text-start lg:text-lg text-[#476D85]">
-        Our treatment addresses a wide variety of health issues
+        Here’s what our treatment can do for you
       </p>
       <div className="lg:mt-5 md:mt-6 flex flex-wrap justify-between">
         <div className="mt-12 sm:max-w-xs">
