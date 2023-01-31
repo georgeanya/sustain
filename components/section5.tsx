@@ -2,6 +2,8 @@ import React from "react";
 import image from "../public/assets/image.png";
 import left from "../public/assets/left.png";
 import right from "../public/assets/right.png";
+import video from "../public/assets/video.png";
+import playicon from "../public/assets/playicon.png";
 
 const Section5 = () => {
   return (
@@ -9,9 +11,13 @@ const Section5 = () => {
       <p className="pr-8 text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Don’t just take our word for it
       </p>
-      <p className="mt-5 md:mt-6 text-lg  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
-        See what some of our patients say about us
+      <p className="mt-5 md:mt-6 text-lg  lg:text-start mb-12 lg:text-xl md:max-w-xl text-[#002A47]">
+        See what some of our patients say about us.
       </p>
+      <div className="relative">
+        <img src={video.src} className="relative" alt="" />
+        {/* <img src={playicon.src} className="absolute" alt="" /> */}
+      </div>
       <div className="md:grid md:grid-cols-2 md:gap-7">
         <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
           <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
@@ -57,8 +63,34 @@ const Section5 = () => {
         <img src={left.src} className="ml-8" alt="" />
         <img src={right.src} className="ml-4" alt="" />
       </div>
+      <div className="flex flex-wrap justify-between mt-24">
+        <div className="w-60">
+          <p className="font-medium text-4xl text-[#4F9EEA]">95%</p>
+          <p className="text-base font-normal text-[#002A47] mt-3">
+            of patients reduced or eliminated their medications
+          </p>
+        </div>
+        <div className="w-60">
+          <p className="font-medium text-4xl text-[#4F9EEA]">2.3%</p>
+          <p className="text-base font-normal text-[#002A47] mt-3">
+            Average HbA1c reduction among 90% patients
+          </p>
+        </div>
+        <div className="w-60">
+          <p className="font-medium text-4xl text-[#4F9EEA]">65%</p>
+          <p className="text-base font-normal text-[#002A47] mt-3">
+            of patients acheive normal blood pressure after 6 months
+          </p>
+        </div>
+        <div className="w-60">
+          <p className="font-medium text-4xl text-[#4F9EEA]">15%</p>
+          <p className="text-base font-normal text-[#002A47] mt-3">
+            Average weight loss after 6 months
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Section5;  
+export default Section5;
