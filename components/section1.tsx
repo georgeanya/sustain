@@ -21,14 +21,19 @@ const Section1 = () => {
       <p className=" text-2xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
         We understand you
       </p>
-      <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#476D85] md:max-w-2xl lg:max-w-3xl">
+      <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#002A47] md:max-w-2xl lg:max-w-3xl">
         If you have been living with a chronic metabolic disease, there’s a high
         chance you’re probably feeling frustrated and scared. No matter what you
         do, your blood sugar or blood pressure continues to go up and you don’t
         feel well. The medications you have to take keep increasing, costing a
         lot of money. Nothing seems to work, and you don’t feel well.
       </p>
-      <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#476D85]">
+      <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#002A47] md:max-w-2xl lg:max-w-3xl">
+        The medications you have to take keep increasing and these medications
+        cost a lot of money. and your condition steals your time by limiting
+        your ability to do the things you love.
+      </p>
+      <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#002A47]">
         Don’t give up; Sustain is here to help.
       </p>
       <div className="mt-8 lg:mt-14 ">
