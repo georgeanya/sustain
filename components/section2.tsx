@@ -23,7 +23,7 @@ const Section2 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#236DAD] flex flex-col lg:flex-row lg:justify-between">
       <div className="lg:max-w-xl">
-        <p className=" pb-6 text-2xl lg:text-start lg:text-4xl font-bold text-white">
+        <p className=" pb-6 text-3xl lg:text-start lg:text-4xl font-bold text-white">
           We treat multiple chronic metabolic diseases
         </p>
         <div className="flex mt-8">

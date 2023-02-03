@@ -1,8 +1,23 @@
 import React from "react";
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
 import minus from "../public/assets/minus.png";
 import plus from "../public/assets/plus.png";
 
 import { useState } from "react";
+
+const SustainButton = styled(Button)({
+  background: "#4F9EEA !important",
+  fontFamily: "Circular Std",
+  color: "#f8f8f8",
+  padding: "20px 30px",
+  margin: "0px 0px",
+  borderRadius: "32px",
+  textTransform: "none",
+  ["@media (max-width:780px)"]: {
+    padding: "15px 20px",
+  },
+});
 
 const Faq = () => {
   const [expand, setExpand] = useState(false);
@@ -32,7 +47,7 @@ const Faq = () => {
 
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24">
-      <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] mb-14 pr-8">
+      <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] mb-14 pr-8">
         Frequently asked questions
       </p>
       <div className="max-w-3xl">
@@ -157,6 +172,12 @@ const Faq = () => {
               Is exercise required?
             </p>
           </div>
+        </div>
+        <hr className="my-6 lg:my-8" />
+        <div className="mt-2 lg:mt-16 ">
+          <SustainButton className="text-xs lg:text-base font-medium">
+            See all FAQs
+          </SustainButton>
         </div>
       </div>
     </div>

@@ -47,12 +47,12 @@ const Section4 = () => {
   }
 
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] flex justify-between">
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] lg:flex justify-between">
       <div className="max-w-l">
-        <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+        <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
           Get all the support you need
         </p>
-        <p className="mt-5 md:mt-6 md:mb-12 text-base  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
+        <p className="mt-5 md:mt-6 mb-16 md:mb-12 text-base  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
           We give you the tools and support you need to reverse your condition
           and take control of your health.
         </p>
@@ -199,7 +199,7 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center max-w-lg">
+      <div className="flex justify-center items-center max-w-lg mt-17">
         <img src={support.src} alt="" className="w-11/12" />
       </div>
     </div>

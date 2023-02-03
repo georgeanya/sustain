@@ -20,7 +20,7 @@ const Section7 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] lg:flex justify-between">
       <div className="">
-        <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-sm font-bold text-[#002A47]">
+        <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-sm font-bold text-[#002A47]">
           Not sure if you have diabetes/prediabetes? Get diagnosed.
         </p>
         <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl md:max-w-lg text-[#002A47]">

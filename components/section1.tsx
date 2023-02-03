@@ -18,7 +18,7 @@ const SustainButton = styled(Button)({
 const Section1 = () => {
   return (
     <div className="px-5 sm:px-8 md:px-16 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 ">
-      <p className=" text-2xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
+      <p className=" text-3xl lg:text-start lg:text-4xl font-bold text-[#002A47]">
         We understand you
       </p>
       <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#002A47] md:max-w-2xl lg:max-w-3xl">

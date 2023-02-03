@@ -9,11 +9,11 @@ import pill from "../public/assets/pill.png";
 const Section3 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 ">
-      <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] md:pr-6">
+      <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] md:pr-6">
         Here’s what our treatment can do for you
       </p>
       <div className="lg:mt-5 md:mt-6 flex flex-wrap justify-between">
-        <div className="mt-12 sm:max-w-s">
+        <div className="mt-17 sm:max-w-s">
           <img src={pill.src} alt="" />
           <p className="text-xl lg:text-2xlxl text-[#002A47] font-medium mt-5">
             Medication elimination
@@ -23,7 +23,7 @@ const Section3 = () => {
             medication, saving you money
           </p>
         </div>
-        <div className="mt-12 sm:max-w-s">
+        <div className="mt-17 sm:max-w-s">
           <img src={blood.src} alt="" />
           <p className="text-xl lg:text-2xl text-[#002A47] font-medium mt-5">
             Blood sugar reduction
@@ -33,7 +33,7 @@ const Section3 = () => {
             complications like kidney disease.
           </p>
         </div>
-        <div className="mt-12 sm:max-w-s">
+        <div className="mt-17 sm:max-w-s">
           <img src={hypert.src} alt="" />
           <p className="text-xl lg:text-2xl text-[#002A47] font-medium mt-5">
             Blood pressure reduction
@@ -43,7 +43,7 @@ const Section3 = () => {
             stroke and heart disease
           </p>
         </div>
-        <div className="mt-12 sm:max-w-s">
+        <div className="mt-17 sm:max-w-s">
           <img src={weight.src} alt="" />
           <p className="text-xl lg:text-2xl text-[#002A47] font-medium mt-5">
             Weight loss
@@ -53,7 +53,7 @@ const Section3 = () => {
             doing the things you love.
           </p>
         </div>
-        <div className="mt-12 sm:max-w-s">
+        <div className="mt-17 sm:max-w-s">
           <img src={hda1d.src} alt="" />
           <p className="text-xl lg:text-2xl text-[#002A47] font-medium mt-5">
             HbA1c reduction
@@ -63,7 +63,7 @@ const Section3 = () => {
             sugar has been over a period of 3 months
           </p>
         </div>
-        <div className="mt-12 sm:max-w-s">
+        <div className="mt-17 sm:max-w-s">
           <img src={lipids.src} alt="" />
           <p className="text-xl lg:text-2xl text-[#002A47] font-medium mt-5">
             Improved lipid profile
