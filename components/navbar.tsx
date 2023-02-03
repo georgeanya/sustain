@@ -30,7 +30,7 @@ const Navbar = () => {
             <img
               src={sustain.src}
               className="mr-3  self-center"
-              alt="Sustain Logo"
+              alt="Custodia Logo"
             />
 
             <button

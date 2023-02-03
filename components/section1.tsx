@@ -34,11 +34,11 @@ const Section1 = () => {
         your ability to do the things you love.
       </p>
       <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl text-[#002A47]">
-        Don’t give up; Sustain is here to help.
+        Don’t give up; Custodia is here to help.
       </p>
       <div className="mt-8 lg:mt-14 ">
         <SustainButton className="text-xs lg:text-base font-medium">
-          Schedule your free consult
+          Book a consultation now
         </SustainButton>
       </div>
     </div>
