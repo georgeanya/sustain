@@ -1,8 +1,23 @@
 import React from "react";
 import { useState } from "react";
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
 import minus from "../public/assets/minus.png";
 import plus from "../public/assets/plus.png";
-import labs from "../public/assets/labs.png";
+import support from "../public/assets/support.png";
+
+const SustainButton = styled(Button)({
+  background: "#4F9EEA !important",
+  fontFamily: "Circular Std",
+  color: "#f8f8f8",
+  padding: "20px 30px",
+  margin: "0px 0px",
+  borderRadius: "32px",
+  textTransform: "none",
+  ["@media (max-width:780px)"]: {
+    padding: "15px 20px",
+  },
+});
 
 const Section4 = () => {
   const [expand, setExpand] = useState(false);
@@ -33,7 +48,7 @@ const Section4 = () => {
 
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] flex justify-between">
-      <div>
+      <div className="max-w-l">
         <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
           Get all the support you need
         </p>
@@ -41,136 +56,151 @@ const Section4 = () => {
           We give you the tools and support you need to reverse your condition
           and take control of your health.
         </p>
-        <div className="flex justify-between">
-          <div className="max-w-3xl">
-            <div className="flex" id="0">
-              <div className="self-start min-w-fit" onClick={toggle}>
-                {expand ? (
-                  <img
-                    className="mr-6 flex self-center w-4 lg:w-5 lg:mr-10 mt-3.5"
-                    src={minus.src}
-                    alt=""
-                  />
-                ) : (
-                  <img
-                    className="mr-6 self-center w-4 lg:w-5 lg:mr-10 mt-1"
-                    src={plus.src}
-                    alt=""
-                  />
-                )}
-              </div>
-              <div className="self-center">
-                <p className="self-center text-lg lg:text-2xl text-[#002A47] font-medium">
-                  What is Sustain?
+        <div className="max-w-xl min-w-full">
+          <div>
+            <div className="">
+              <div className="flex justify-between">
+                <p className="text-lg lg:text-2xl text-[#002A47] font-medium">
+                  A lifestyle medicine doctor
                 </p>
-                {expand ? (
-                  <p className="text-base lg:text-xl text-[#476D85] mt-2 lg:my-6">
-                    Exercise is not required for success on Sustain. We
-                    encourage you to choose whatever level of physical activity
-                    you desire.
-                  </p>
-                ) : (
-                  ""
-                )}
+                <div className="flex" onClick={toggle}>
+                  {expand ? (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-3.5"
+                      src={minus.src}
+                      alt=""
+                    />
+                  ) : (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-1"
+                      src={plus.src}
+                      alt=""
+                    />
+                  )}
+                </div>
+              </div>
+              {expand ? (
+                <p className="text-base lg:text-xl text-[#476D85] mt-2 lg:my-6">
+                  You’ll get paired with a doctor who will consult with you,
+                  monitor your biomarkers, and manages your medications,
+                  including safely reducing or eliminating any medications you
+                  no longer need
+                </p>
+              ) : (
+                ""
+              )}
+            </div>
+          </div>
+          <hr className="my-6 lg:my-8" />
+          <div>
+            <div className="">
+              <div className="flex justify-between">
+                <p className="text-lg lg:text-2xl text-[#002A47] font-medium">
+                  A personal health coach
+                </p>
+                <div className="flex" onClick={toggle1}>
+                  {expand1 ? (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-3.5"
+                      src={minus.src}
+                      alt=""
+                    />
+                  ) : (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-1"
+                      src={plus.src}
+                      alt=""
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-6 lg:my-8" />
+          <div>
+            <div className="">
+              <div className="flex justify-between">
+                <p className="text-lg lg:text-2xl text-[#002A47] font-medium">
+                  A personalized treatment plan
+                </p>
+                <div className="flex" onClick={toggle2}>
+                  {expand2 ? (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-3.5"
+                      src={minus.src}
+                      alt=""
+                    />
+                  ) : (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-1"
+                      src={plus.src}
+                      alt=""
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-6 lg:my-8" />
+          <div>
+            <div className="">
+              <div className="flex justify-between">
+                <p className="text-lg lg:text-2xl text-[#002A47] font-medium">
+                  Exclusive resources
+                </p>
+                <div className="flex" onClick={toggle3}>
+                  {expand3 ? (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-3.5"
+                      src={minus.src}
+                      alt=""
+                    />
+                  ) : (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-1"
+                      src={plus.src}
+                      alt=""
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-6 lg:my-8" />
+          <div>
+            <div className="">
+              <div className="flex justify-between">
+                <p className="text-lg lg:text-2xl text-[#002A47] font-medium">
+                  A private patient community
+                </p>
+                <div className="flex" onClick={toggle4}>
+                  {expand4 ? (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-3.5"
+                      src={minus.src}
+                      alt=""
+                    />
+                  ) : (
+                    <img
+                      className="flex self-center w-4 lg:w-5 mt-1"
+                      src={plus.src}
+                      alt=""
+                    />
+                  )}
+                </div>
               </div>
             </div>
             <hr className="my-6 lg:my-8" />
-            <div className=" flex" id="1">
-              <div className="self-start min-w-fit" onClick={toggle1}>
-                {expand1 ? (
-                  <img
-                    className="mr-6 flex self-center w-4 lg:w-5 lg:mr-10 mt-3.5"
-                    src={minus.src}
-                    alt=""
-                  />
-                ) : (
-                  <img
-                    className="mr-6 self-center w-4 lg:w-5 lg:mr-10 mt-1"
-                    src={plus.src}
-                    alt=""
-                  />
-                )}
-              </div>
-              <div className="self-center">
-                <p className="self-center text-lg lg:text-2xl text-[#002A47] font-medium">
-                  Who is Sustain for?
-                </p>
-              </div>
-            </div>
-            <hr className="my-6 lg:my-8" />
-            <div className="flex" id="2">
-              <div className="self-start min-w-fit" onClick={toggle2}>
-                {expand2 ? (
-                  <img
-                    className="mr-6 flex self-center w-4 lg:w-5 lg:mr-10 mt-3.5"
-                    src={minus.src}
-                    alt=""
-                  />
-                ) : (
-                  <img
-                    className="mr-6 self-center w-4 lg:w-5 lg:mr-10 mt-1"
-                    src={plus.src}
-                    alt=""
-                  />
-                )}
-              </div>
-              <div className="self-center">
-                <p className="self-center text-lg lg:text-2xl text-[#002A47] font-medium">
-                  Are medications included in the treatment?
-                </p>
-              </div>
-            </div>
-            <hr className="my-6 lg:my-8" />
-            <div className=" flex" id="3">
-              <div className="self-start min-w-fit" onClick={toggle3}>
-                {expand3 ? (
-                  <img
-                    className="mr-6 flex self-center w-4 lg:w-5 lg:mr-10 mt-3.5"
-                    src={minus.src}
-                    alt=""
-                  />
-                ) : (
-                  <img
-                    className="mr-6 self-center w-4 lg:w-5 lg:mr-10 mt-1"
-                    src={plus.src}
-                    alt=""
-                  />
-                )}
-              </div>
-              <div className="self-center">
-                <p className="self-center text-lg lg:text-2xl text-[#002A47] font-medium">
-                  Is Sustain free?
-                </p>
-              </div>
-            </div>
-            <hr className="my-6 lg:my-8" />
-            <div className=" flex" id="4">
-              <div className="self-start min-w-fit" onClick={toggle4}>
-                {expand4 ? (
-                  <img
-                    className="mr-6 flex self-center w-4 lg:w-5 lg:mr-10 mt-3.5"
-                    src={minus.src}
-                    alt=""
-                  />
-                ) : (
-                  <img
-                    className="mr-6 self-center w-4 lg:w-5 lg:mr-10 mt-1"
-                    src={plus.src}
-                    alt=""
-                  />
-                )}
-              </div>
-              <div className="self-center">
-                <p className="self-center text-lg lg:text-2xl text-[#002A47] font-medium">
-                  Is exercise required?
-                </p>
-              </div>
+            <div className="mt-2 lg:mt-16 ">
+              <SustainButton className="text-xs lg:text-base font-medium">
+                Book a consultation now
+              </SustainButton>
             </div>
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center max-w-lg">
-        <img src={labs.src} alt="" />
+        <img src={support.src} alt="" className="w-11/12" />
       </div>
     </div>
   );
