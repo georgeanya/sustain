@@ -64,27 +64,27 @@ const Section5 = () => {
         <img src={right.src} className="ml-4" alt="" />
       </div>
       <div className="flex flex-wrap justify-between mt-24">
-        <div className="w-60">
-          <p className="font-medium text-4xl text-[#4F9EEA]">95%</p>
-          <p className="text-base font-normal text-[#002A47] mt-3">
+        <div className="md:w-60 w-40 mb-10">
+          <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">95%</p>
+          <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
             of patients reduced or eliminated their medications
           </p>
         </div>
-        <div className="w-60">
-          <p className="font-medium text-4xl text-[#4F9EEA]">2.3%</p>
-          <p className="text-base font-normal text-[#002A47] mt-3">
+        <div className="md:w-60 w-40 mb-10">
+          <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">2.3%</p>
+          <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
             Average HbA1c reduction among 90% patients
           </p>
         </div>
-        <div className="w-60">
-          <p className="font-medium text-4xl text-[#4F9EEA]">65%</p>
-          <p className="text-base font-normal text-[#002A47] mt-3">
+        <div className="md:w-60 w-40 mb-10">
+          <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">65%</p>
+          <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
             of patients acheive normal blood pressure after 6 months
           </p>
         </div>
-        <div className="w-60">
-          <p className="font-medium text-4xl text-[#4F9EEA]">15%</p>
-          <p className="text-base font-normal text-[#002A47] mt-3">
+        <div className="md:w-60 w-40 mb-10">
+          <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">15%</p>
+          <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
             Average weight loss after 6 months
           </p>
         </div>

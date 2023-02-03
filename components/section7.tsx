@@ -35,7 +35,7 @@ const Section7 = () => {
           </SustainButton>
         </div>
       </div>
-      <div className="flex justify-center flex-col max-w-lg">
+      <div className="flex justify-center flex-col max-w-lg mt-17 md:mt-0">
         <img src={labs.src} alt=""  />
       </div>
     </div>
