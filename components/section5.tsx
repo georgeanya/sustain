@@ -1,8 +1,8 @@
 import React from "react";
-import image from "../public/assets/image.png";
+import image from "../public/assets/image.svg";
 import left from "../public/assets/left.png";
 import right from "../public/assets/right.png";
-import video from "../public/assets/video.png";
+import video from "../public/assets/video.svg";
 import playicon from "../public/assets/playicon.png";
 
 const Section5 = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import labs from "../public/assets/labs.png";
+import labs from "../public/assets/labs.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",

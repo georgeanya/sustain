@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sustain from "../public/assets/sustain.png";
+import custodia from "../public/assets/custodia.svg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 
@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="bg-[#324967] ">
-        <p className="text-center text-lg text-white py-4">
+        <p className="text-center text-sm lg:text-lg text-white py-4 px-7">
           ✨ Take this 30-second assessment to know if you are at risk of type 2
           diabetes
         </p>
@@ -28,7 +28,7 @@ const Navbar = () => {
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <img
-              src={sustain.src}
+              src={custodia.src}
               className="mr-3  self-center"
               alt="Custodia Logo"
             />

@@ -1,10 +1,10 @@
 import React from "react";
-import hypert from "../public/assets/hypert.png";
-import blood from "../public/assets/blood.png";
-import lipids from "../public/assets/lipids.png";
-import weight from "../public/assets/weight.png";
-import hda1d from "../public/assets/hba1c.png";
-import pill from "../public/assets/pill.png";
+import hypert from "../public/assets/hypert.svg";
+import blood from "../public/assets/blood.svg";
+import lipids from "../public/assets/lipids.svg";
+import weight from "../public/assets/weight.svg";
+import hda1d from "../public/assets/hba1c.svg";
+import pill from "../public/assets/pill.svg";
 
 const Section3 = () => {
   return (

@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import minus from "../public/assets/minus.png";
 import plus from "../public/assets/plus.png";
-import support from "../public/assets/support.png";
+import support from "../public/assets/support.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",

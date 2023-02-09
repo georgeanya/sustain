@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import type2 from "../public/assets/type2.png";
-import hyper from "../public/assets/hyper.png";
-import pret2 from "../public/assets/pret2.png";
-import dysli from "../public/assets/dysli.png";
+import type2 from "../public/assets/type2.svg";
+import hyper from "../public/assets/hyper.svg";
+import pret2 from "../public/assets/pret2.svg";
+import dysli from "../public/assets/dysli.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",

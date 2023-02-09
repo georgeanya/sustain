@@ -1,10 +1,10 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import twitter from "../public/assets/tw.png";
-import sustain from "../public/assets/sustainw.png";
-import fbook from "../public/assets/fbook.png";
-import insta from "../public/assets/insta.png";
+import twitter from "../public/assets/tw.svg";
+import sustain from "../public/assets/custodiaw.svg";
+import fbook from "../public/assets/fbook.svg";
+import insta from "../public/assets/insta.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
