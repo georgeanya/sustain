@@ -19,7 +19,7 @@ const Terms = () => {
       </p>
       <p className="mt-3 md:mt-3 text-base md:text-center lg:text-start lg:text-xl text-[#476D85]">
         Permission is granted to temporarily download one copy of the materials
-        (information or software) on Sustain's website for personal,
+        (information or software) on Sustain&apos;s website for personal,
         non-commercial transitory viewing only. This license shall automatically
         terminate if you violate any of these restrictions and may be terminated
         by Custodia at any time. Upon terminating your viewing of these
@@ -31,7 +31,7 @@ const Terms = () => {
         3. Disclaimer
       </p>
       <p className="mt-3 md:mt-3 text-base md:text-center lg:text-start lg:text-xl text-[#476D85]">
-        The materials on Sustain's website are provided on an 'as is' basis.
+        The materials on Sustain&apos;s website are provided on an &apos;as is&apos; basis.
         Sustain makes no warranties, expressed or implied, and hereby disclaims
         and negates all other warranties including, without limitation, implied
         warranties or conditions of merchantability, fitness for a particular
@@ -48,7 +48,7 @@ const Terms = () => {
         In no event shall Sustain or its suppliers be liable for any damages
         (including, without limitation, damages for loss of data or profit, or
         due to business interruption) arising out of the use or inability to use
-        the materials on Sustain's website, even if Sustain or a Sustain
+        the materials on Sustain&apos;s website, even if Sustain or a Sustain
         authorized representative has been notified orally or in writing of the
         possibility of such damage. Because some jurisdictions do not allow
         limitations on implied warranties, or limitations of liability for
@@ -59,7 +59,7 @@ const Terms = () => {
         5. Accuracy of materials
       </p>
       <p className="mt-3 md:mt-3 text-base md:text-center lg:text-start lg:text-xl text-[#476D85]">
-        The materials appearing on Sustain's website could include technical,
+        The materials appearing on Sustain&apos;s website could include technical,
         typographical, or photographic errors. Sustain does not warrant that any
         of the materials on its website are accurate, complete or current.
         Sustain may make changes to the materials contained on its website at
@@ -73,7 +73,7 @@ const Terms = () => {
         Sustain has not reviewed all of the sites linked to its website and is
         not responsible for the contents of any such linked site. The inclusion
         of any link does not imply endorsement by Sustain of the site. Use of
-        any such linked website is at the user's own risk.
+        any such linked website is at the user&apos;s own risk.
       </p>
       <p className="self-center mt-8 text-lg lg:text-2xl text-[#002A47] font-medium">
         7. Modifications
