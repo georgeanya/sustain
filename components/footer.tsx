@@ -5,6 +5,7 @@ import twitter from "../public/assets/tw.svg";
 import sustain from "../public/assets/custodiaw.svg";
 import fbook from "../public/assets/fbook.svg";
 import insta from "../public/assets/insta.svg";
+import Link from 'next/link'
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -40,19 +41,19 @@ const Footer = () => {
               PRODUCT
             </h3>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Pricing</a>
+              <Link href="/">Pricing</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Health plan</a>
+              <Link href="/">Health plan</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Research</a>
+              <Link href="/research">Research</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Patient stories</a>
+              <Link href="/">Patient stories</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Download our app</a>
+              <Link href="/download">Download our app</Link>
             </p>
           </div>
           <div className="w-32 lg:w-48">
@@ -60,16 +61,16 @@ const Footer = () => {
               RESOURCES
             </h3>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Help center</a>
+              <Link href="/404">Help center</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Privacy policy</a>
+              <Link href="/policy">Privacy policy</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Terms of use</a>
+              <Link href="/terms">Terms of use</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Cookie policy</a>
+              <Link href="/cookie">Cookie policy</Link>
             </p>
           </div>
           <div className="w-32 lg:w-48">
@@ -77,16 +78,16 @@ const Footer = () => {
               COMPANY
             </h3>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">About</a>
+              <Link href="/">About</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Blog</a>
+              <Link href="/">Blog</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Careers</a>
+              <Link href="/404">Careers</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">Press</a>
+              <Link href="/404">Press</Link>
             </p>
           </div>
           <div className="w-32 lg:w-48">
@@ -94,10 +95,10 @@ const Footer = () => {
               CONTACT
             </h3>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">+2349040559724</a>
+              <Link href="">+2349040559724</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <a href="">hello@getsustain.app</a>
+              <Link href="">hello@getsustain.app</Link>
             </p>
             <div className="flex">
               <img src={fbook.src} className="mr-5" alt="facebook logo" />

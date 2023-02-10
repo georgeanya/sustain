@@ -2,6 +2,7 @@ import { useState } from "react";
 import custodia from "../public/assets/custodia.svg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -81,46 +82,46 @@ const Navbar = () => {
             >
               <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                 <li className="mt-2.5 mx-5 ">
-                  <a
+                  <Link
                     href="#"
                     className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
                     For health plans
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
-                  <a
+                  <Link
                     href="#"
                     className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
                     For doctors
-                  </a>
+                  </Link>
                 </li>
-                
+
                 <li className="mt-2.5 mx-5 ">
-                  <a
+                  <Link
                     href="#"
                     className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
-                  <a
+                  <Link
                     href="#"
                     className="text-sm pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
-                  <a
-                    href="#"
+                  <Link
+                    href="research"
                     className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
                     Research
-                  </a>
+                  </Link>
                 </li>
                 <li className="ml-5">
                   <SustainButton className="text-sm">Get started</SustainButton>
@@ -135,19 +136,19 @@ const Navbar = () => {
           ) : (
             <ul className="pt-5">
               <li>
-                <a href="#" className="block text-sm py-4">
+                <Link href="#" className="block text-sm py-4">
                   Benefits
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="block text-sm py-4">
+                <Link href="#services" className="block text-sm py-4">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="block text-sm py-4">
+                <Link href="#about" className="block text-sm py-4">
                   Blog
-                </a>
+                </Link>
               </li>
               {/* <li>
               <SustainButton className="text-sm mt-5">

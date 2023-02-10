@@ -17,8 +17,8 @@ const SustainButton = styled(Button)({
 
 const ErrorPage = () => {
   return (
-    <div className="px-5 lg:px-32 md:max-w-md lg:max-w-3xl">
-      <p className="pt-12 lg:pt-32 text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47]">
+    <div className="px-5 lg:px-32 md:max-w-md lg:max-w-3xl py-12 lg:py-32">
+      <p className="text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47]">
         Whoops... This page is not available
       </p>
       <p className="mt-5 md:mt-6 text-base lg:text-start lg:text-xl text-[#476D85]">

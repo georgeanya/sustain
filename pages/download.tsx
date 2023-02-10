@@ -8,7 +8,7 @@ const Download = () => {
     <div className="px-5 lg:px-32 lg:flex lg:justify-between">
       <div className="lg:max-w-lg lg:mt-32">
         <h2 className="pt-12 text-3xl md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
-          Download Sustain for iOS and Android{" "}
+        Download Custodia for iOS and Android
         </h2>
         <p className="mt-5 md:mt-6 text-base md:text-center lg:text-start lg:text-xl text-[#476D85]">
           Download our app to begin your journey towards lasting health
