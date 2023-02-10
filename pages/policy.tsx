@@ -7,7 +7,7 @@ const Policy = () => {
         Privacy policy
       </h2>
       <p className="mt-5 md:mt-5 text-base md:text-center lg:text-start lg:text-xl text-[#476D85]">
-        Your privacy is important to us. It is Sustain's policy to respect your
+        Your privacy is important to us. It is Sustain&apos;s policy to respect your
         privacy regarding any information we may collect from you across our
         website, https://getsustain.app, and other sites we own and operate.
       </p>
