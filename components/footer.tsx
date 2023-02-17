@@ -5,7 +5,7 @@ import twitter from "../public/assets/tw.svg";
 import sustain from "../public/assets/custodiaw.svg";
 import fbook from "../public/assets/fbook.svg";
 import insta from "../public/assets/insta.svg";
-import Link from 'next/link'
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -41,7 +41,7 @@ const Footer = () => {
               PRODUCT
             </h3>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <Link href="/">Pricing</Link>
+              <Link href="/pricing">Pricing</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
               <Link href="/">Health plan</Link>

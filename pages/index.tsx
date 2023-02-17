@@ -12,6 +12,7 @@ import Section6 from "../components/section6";
 import Section5 from "../components/section5";
 import Faq from "../components/faq";
 import Section7 from "../components/section7";
+import Navbar from "../components/navbar";
 
 const Home: NextPage = () => {
   const [time, setTime] = useState(false);
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
 
   return (
     <div>
+      <Navbar/>
       <Hero />
       <Section1 />
       <Section2 />

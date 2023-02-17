@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import Navbar1 from "../components/navbar1";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -17,18 +18,21 @@ const SustainButton = styled(Button)({
 
 const ErrorPage = () => {
   return (
-    <div className="px-5 lg:px-32 md:max-w-md lg:max-w-3xl py-12 lg:py-32">
-      <p className="text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47]">
-        Whoops... This page is not available
-      </p>
-      <p className="mt-5 md:mt-6 text-base lg:text-start lg:text-xl text-[#476D85]">
-        Unfortunaltely, we couldn&apos;t find the page you are looking for. We
-        suggest you go back to our homepage
-      </p>
-      <div className="mt-8 lg:mt-14 ">
-        <SustainButton className="text-xs lg:text-base font-medium">
-          Go back home
-        </SustainButton>
+    <div>
+      <Navbar1 />
+      <div className="px-5 lg:px-32 md:max-w-md lg:max-w-3xl py-12 lg:py-32">
+        <p className="text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47]">
+          Whoops... This page is not available
+        </p>
+        <p className="mt-5 md:mt-6 text-base lg:text-start lg:text-xl text-[#476D85]">
+          Unfortunaltely, we couldn&apos;t find the page you are looking for. We
+          suggest you go back to our homepage
+        </p>
+        <div className="mt-8 lg:mt-14 ">
+          <SustainButton className="text-xs lg:text-base font-medium" href="/">
+            Go back home
+          </SustainButton>
+        </div>
       </div>
     </div>
   );

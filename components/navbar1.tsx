@@ -14,18 +14,13 @@ const SustainButton = styled(Button)({
   textTransform: "none",
 });
 
-const Navbar = () => {
+const Navbar1 = () => {
   const [isToggled, setIsToggled] = useState(true);
 
   return (
     <div>
-      <div className="bg-[#324967] ">
-        <p className="text-center text-sm lg:text-lg text-white py-4 px-7">
-          ✨ Take this 30-second assessment to know if you are at risk of type 2
-          diabetes
-        </p>
-      </div>
-      <div className="px-5 lg:px-32 pt-5 lg:pt-5 bg-[#F0F7FF]">
+      
+      <div className="px-5 lg:px-32 pt-5 lg:pt-5 ">
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <img
@@ -141,7 +136,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="block text-sm py-4">
+                <Link href="/pricing" className="block text-sm py-4">
                   Pricing
                 </Link>
               </li>
@@ -163,4 +158,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar1;
