@@ -640,6 +640,7 @@ module.exports = {
       lg: '32rem',
       l: '34.375rem',
       xl: '36rem',
+      '1xl': '37rem',
       '2xl': '42rem',
       '3xl': '48rem',
       '4xl': '56rem',
