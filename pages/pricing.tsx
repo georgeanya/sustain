@@ -30,7 +30,7 @@ const Pricing = (props: any) => {
           Choose a membership plan that’s right for you
         </h2>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-wrap">
           <div className="flex justify-between flex-col md:max-w-md rounded-2xl bg-white py-10 lg:py-15 ">
             <div>
               {props.time ? (

@@ -174,7 +174,7 @@ const Faq = () => {
           </div>
         </div>
         <hr className="my-6 lg:my-8" />
-        <div className="mt-2 lg:mt-16 ">
+        <div className="mt-6 lg:mt-16 ">
           <SustainButton className="text-xs lg:text-base font-medium">
             See all FAQs
           </SustainButton>
