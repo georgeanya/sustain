@@ -10,13 +10,13 @@ const SustainButton = styled(Button)({
   fontFamily: "Circular Std",
   color: "#f8f8f8",
   padding: "20px 30px",
-  margin: "0px 50px",
-  width: "80%",
-  display: "inline-block",
+  margin: "0px 0px",
+  width: "calc(100% - 100px)",
   borderRadius: "32px",
   textTransform: "none",
   ["@media (max-width:780px)"]: {
     padding: "15px 20px",
+    width: "calc(100% - 40px)",
   },
 });
 
@@ -74,7 +74,7 @@ const Pricing = (props: any) => {
                   </div>
                 </div>
               </div>
-              <div className="px-12 py-10">
+              <div className="lg:px-12 py-10 px-5">
                 <div className="flex">
                   <img src={icon.src} className="self-center" alt="" />
                   <span className="ml-3 flex self-center text-base lg:text-lg">
@@ -108,7 +108,7 @@ const Pricing = (props: any) => {
               </div>
             </div>
             <div className="justify-end">
-              <div className="mt-8 lg:mt-16 ">
+              <div className="mt-8 lg:mt-16 flex justify-center">
                 <SustainButton className="text-xs lg:text-base font-medium">
                   Get started
                 </SustainButton>
@@ -120,7 +120,7 @@ const Pricing = (props: any) => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center flex-col md:max-w-md rounded-2xl bg-white py-10 lg:py-15 ">
+          <div className="flex justify-center flex-col md:max-w-md rounded-2xl bg-white py-10 lg:py-15 mt-8">
             <div>
               {props.time ? (
                 <div>
@@ -163,7 +163,7 @@ const Pricing = (props: any) => {
                   </div>
                 </div>
               </div>
-              <div className="px-12 py-10">
+              <div className="lg:px-12 py-10 px-5">
                 <div className="flex">
                   <img src={icon.src} className="self-center" alt="" />
                   <span className="ml-3 flex self-center text-base lg:text-lg">
@@ -208,7 +208,7 @@ const Pricing = (props: any) => {
                 </div>
               </div>
             </div>
-            <div className="mt-8 lg:mt-12 ">
+            <div className="mt-8 lg:mt-12 flex justify-center">
               <SustainButton className="text-xs lg:text-base font-medium">
                 Get started
               </SustainButton>

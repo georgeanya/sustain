@@ -190,7 +190,7 @@ const Section4 = () => {
                 </div>
               </div>
             </div>
-            <hr className="my-6 lg:my-8" />
+            <hr className="my-6 lg:my-8 mb-6 lg:mb-12" />
             <div className="mt-6 lg:mt-16 ">
               <SustainButton className="text-xs lg:text-base font-medium">
                 Book a consultation now

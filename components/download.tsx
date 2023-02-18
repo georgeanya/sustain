@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar1 from "../components/navbar1";
+import Navbar1 from "./navbar1";
 import app from "../public/assets/app.png";
 import apple from "../public/assets/apple.png";
 import play from "../public/assets/play.png";
