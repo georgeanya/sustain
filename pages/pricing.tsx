@@ -120,7 +120,7 @@ const Pricing = (props: any) => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center flex-col md:max-w-md rounded-2xl bg-white py-10 lg:py-15 mt-8">
+          <div className="flex justify-center flex-col md:max-w-md rounded-2xl bg-white py-10 lg:py-15 mt-8 sm:mt-0">
             <div>
               {props.time ? (
                 <div>

@@ -15,7 +15,7 @@ const Section3 = () => {
       <div className="lg:mt-5 md:mt-6 flex flex-wrap justify-between">
         <div className="mt-17 sm:max-w-s">
           <img src={pill.src} alt="" />
-          <p className="text-xl lg:text-2xlxl text-[#002A47] font-medium mt-5">
+          <p className="text-xl lg:text-2xl text-[#002A47] font-medium mt-5">
             Medication elimination
           </p>
           <p className="text-base lg:text-lg text-[#476D85] mt-2">
