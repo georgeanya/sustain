@@ -19,6 +19,7 @@ const ArrowIcon = styled(ArrowForwardIcon)({
   color: "#f8f8f8",
   padding: "1.5px",
   marginTop: "-3px",
+  width: "21px"
   });
 
 const Navbar = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="bg-[#324967] ">
-        <p className="text-center text-sm lg:text-lg text-white py-4 px-7">
+        <p className="text-center text-sm text-white py-4 px-7">
           ✨ Take this 30-second assessment to know if you are at risk of type 2
           diabetes
           <ArrowIcon/>

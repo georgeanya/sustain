@@ -1,6 +1,4 @@
 import type { NextPage } from "next";
-import ErrorPage from "./404";
-import Download from "./download";
 import { useState } from "react";
 
 import Hero from "../components/hero";
