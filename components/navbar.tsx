@@ -9,7 +9,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
-  padding: "10px 15px",
+  padding: "14px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
   textTransform: "none",
@@ -133,7 +133,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <SustainButton className="text-xs leading-5">Get started</SustainButton>
+                  <SustainButton className="text-xs">Get started</SustainButton>
                 </li>
               </ul>
             </div>

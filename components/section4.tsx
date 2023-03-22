@@ -5,7 +5,7 @@ import { styled } from "@mui/material/styles";
 import minus from "../public/assets/minus.png";
 import plus from "../public/assets/plus.png";
 import support from "../public/assets/support.svg";
-import FAQ from "./faq1";
+import FAQ2 from "./faq2";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -69,7 +69,7 @@ const Section4 = () => {
 
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] lg:flex justify-between">
-      <div className="max-w-l">
+      <div className="max-w-3xl">
         <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
           Get all the support you need
         </p>
@@ -80,7 +80,7 @@ const Section4 = () => {
         <div className="max-w-xl min-w-full">
           <div>
             {faqs.map((faq, index) => (
-              <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+              <FAQ2 faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
             ))}
             <div className="mt-6 lg:mt-16 ">
               <SustainButton className="text-xs lg:text-base font-medium">
@@ -90,7 +90,7 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-start lg:mt-40 max-w-lg mt-17">
+      <div className="flex justify-center items-start lg:mt-40 max-w-xl mt-17">
         <img src={support.src} alt="" className="w-11/12" />
       </div>
     </div>
