@@ -3,7 +3,7 @@ import custodia from "../public/assets/custodia.svg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Link from "next/link";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -19,8 +19,8 @@ const ArrowIcon = styled(ArrowForwardIcon)({
   color: "#f8f8f8",
   padding: "1.5px",
   marginTop: "-3px",
-  width: "21px"
-  });
+  width: "21px",
+});
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(true);
@@ -31,7 +31,7 @@ const Navbar = () => {
         <p className="text-center text-sm text-white py-4 px-7">
           ✨ Take this 30-second assessment to know if you are at risk of type 2
           diabetes
-          <ArrowIcon/>
+          <ArrowIcon />
         </p>
       </div>
       <div className="px-5 lg:px-32 pt-5 lg:pt-5 bg-[#F0F7FF]">
@@ -133,7 +133,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <SustainButton className="text-sm">Get started</SustainButton>
+                  <SustainButton className="text-xs leading-5">Get started</SustainButton>
                 </li>
               </ul>
             </div>
@@ -159,11 +159,11 @@ const Navbar = () => {
                   Blog
                 </Link>
               </li>
-              {/* <li>
-              <SustainButton className="text-sm mt-5">
-                Get started
-              </SustainButton>
-            </li> */}
+              <li>
+                <SustainButton className="text-sm mt-5">
+                  Get started
+                </SustainButton>
+              </li>
             </ul>
           )}
         </div>

@@ -26,7 +26,7 @@ const Footer = () => {
       <p className="mb-5 lg:text-xl">Schedule your consultation now</p>
       <div className="lg:flex lg:justify-between">
         <p className="lg:text-4xl text-3xl font-bold mb-11 lg:max-w-2xl">
-          Are you ready to start that journey? Join Sustain today!
+          Are you ready to start that journey? Join Custodia today!
         </p>
         <SustainButton className="self-start text-xs lg:text-base font-medium">
           Request your free consult
@@ -98,7 +98,7 @@ const Footer = () => {
               <Link href="">+2349040559724</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <Link href="">hello@getsustain.app</Link>
+              <Link href="mailto:hi@custodiahealth.com">hi@custodiahealth.com</Link>
             </p>
             <div className="flex">
               <img src={fbook.src} className="mr-5" alt="facebook logo" />
@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="lg:mt-32 mt-16 text-sm pb-16 ">
-        Sustain © 2021 All Rights Reserved
+      Custodia Health © 2023 All Rights Reserved
       </p>
     </div>
   );

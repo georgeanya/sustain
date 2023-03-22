@@ -7,6 +7,7 @@ import Link from "next/link";
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
+  fontSize: "12px",
   color: "#f8f8f8",
   padding: "10px 15px",
   margin: "0px 0px",
@@ -119,7 +120,7 @@ const Navbar1 = () => {
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <SustainButton className="text-sm">Get started</SustainButton>
+                  <SustainButton className="text-xs font-medium leading-5">Get started</SustainButton>
                 </li>
               </ul>
             </div>
@@ -145,11 +146,11 @@ const Navbar1 = () => {
                   Blog
                 </Link>
               </li>
-              {/* <li>
-              <SustainButton className="text-sm mt-5">
+              <li>
+              <SustainButton className="text-xs mt-5">
                 Get started
               </SustainButton>
-            </li> */}
+            </li>
             </ul>
           )}
         </div>

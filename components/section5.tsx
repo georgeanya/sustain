@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../public/assets/image.svg";
+import image1 from "../public/assets/image1.svg";
 import left from "../public/assets/left.png";
 import right from "../public/assets/right.png";
 import video from "../public/assets/video.svg";
@@ -7,17 +8,20 @@ import playicon from "../public/assets/playicon.png";
 
 const Section5 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24" id="patient_stories">
+    <div
+      className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24"
+      id="patient_stories"
+    >
       <p className="pr-8 text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Don’t just take our word for it
       </p>
-      <p className="mt-5 md:mt-6 text-lg  lg:text-start mb-12 lg:text-xl md:max-w-xl text-[#002A47]">
+      <p className="mt-5 md:mt-6 text-lg  lg:text-start mb-7 lg:text-xl md:max-w-xl text-[#002A47]">
         See what some of our patients say about us.
       </p>
-      <div className="relative">
+      {/* <div className="relative">
         <img src={video.src} className="relative" alt="" />
-        {/* <img src={playicon.src} className="absolute" alt="" /> */}
-      </div>
+        <img src={playicon.src} className="absolute" alt="" />
+      </div> */}
       <div className="md:grid md:grid-cols-2 md:gap-7">
         <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
           <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
@@ -35,7 +39,7 @@ const Section5 = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex">
+        <div className="lg:flex">
           <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
             <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
               “I’ve found a new side to me that I didn’t realize was buried
@@ -44,25 +48,23 @@ const Section5 = () => {
               back.”
             </p>
             <div className="pt-10 flex ">
-              <img src={image.src} alt="" width="60px" />
+              <img src={image1.src} alt="" width="60px" />
               <div className="self-center pl-3">
                 <p className="font-medium text-base text-[#002A47]">Uwa Uye</p>
-                <p className="text-sm text-[#476D85]">
-                  Johannesburg, South Africa
-                </p>
+                <p className="text-sm text-[#476D85]">Abuja, Nigeria</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-end mt-8">
+      {/* <div className="flex justify-end mt-8">
         <p className="self-center text-sm text-[#002A47] lg:hidden">1 OF 6</p>
         <p className="self-center text-[#002A47] text-sm hidden lg:flex">
           2 0F 6
         </p>
         <img src={left.src} className="ml-8" alt="" />
         <img src={right.src} className="ml-4" alt="" />
-      </div>
+      </div> */}
       <div className="flex flex-wrap justify-between mt-24">
         <div className="md:w-60 w-40 mb-10">
           <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">95%</p>
@@ -71,7 +73,9 @@ const Section5 = () => {
           </p>
         </div>
         <div className="md:w-60 w-40 mb-10">
-          <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">2.3%</p>
+          <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">
+            2.3%
+          </p>
           <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
             Average HbA1c reduction among 90% patients
           </p>
