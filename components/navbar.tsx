@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="bg-[#324967] ">
-        <p className="text-center text-sm text-white py-4 px-7">
+        <p className="text-center text-base text-white py-4 px-7">
           ✨ Take this 30-second assessment to know if you are at risk of type 2
           diabetes
           <ArrowIcon />
@@ -90,50 +90,50 @@ const Navbar = () => {
               id="navbar-solid-bg"
             >
               <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="#"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
                     For health plans
                   </Link>
                 </li>
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="#"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
                     For doctors
                   </Link>
                 </li>
 
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="/pricing"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
                     Pricing
                   </Link>
                 </li>
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="#"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
                     Blog
                   </Link>
                 </li>
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="/research"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
                     Research
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <SustainButton className="text-xs">Get started</SustainButton>
+                  <SustainButton className="text-sm">Get started</SustainButton>
                 </li>
               </ul>
             </div>
@@ -144,18 +144,18 @@ const Navbar = () => {
             <div className="hidden"></div>
           ) : (
             <ul className="pt-5">
-              <li>
-                <Link href="#" className="block text-sm py-4">
+              <li className="my-4">
+                <Link href="#" className="block text-sm font-medium">
                   Benefits
                 </Link>
               </li>
-              <li>
-                <Link href="#services" className="block text-sm py-4">
+              <li className="my-4">
+                <Link href="#services" className="block text-sm font-medium">
                   Pricing
                 </Link>
               </li>
-              <li>
-                <Link href="#about" className="block text-sm py-4">
+              <li className="my-4">
+                <Link href="#about" className="block text-sm font-medium">
                   Blog
                 </Link>
               </li>

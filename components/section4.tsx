@@ -23,31 +23,31 @@ const SustainButton = styled(Button)({
 const Section4 = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "Who is Priv for?",
+      question: "A lifestyle medicine doctor",
       answer:
-        "Priv is for adults experiencing health issues or wanting to improve or support their health and prefer to do so from the comfort of their homes.",
+        "You’ll get paired with a doctor who will monitor your biomarkers and manages your medications, including safely reducing or eliminating any medications you no longer need",
       open: true,
     },
     {
-      question: "How does Priv work?",
+      question: "A personal health coach",
       answer:
-        "First, book a consultation and with one of our doctors. The doctor will review your information and recommend a personalised treatment. Priv will ship your treatment for free in discreet packaging if prescribed.",
+        "You’ll get paired with a highly trained and compassionate health coach to keep you on track on your best days and your worst.",
       open: false,
     },
     {
-      question: "How much does it cost to consult a doctor on Priv?",
-      answer: "It cost 4,000 naira to consult a doctor on Priv",
+      question: "A personalized treatment plan",
+      answer: "You’ll get a treatment plan personalized to your food preferences and metabolic condition which will continuously adjusted to meet your needs",
       open: false,
     },
     {
-      question: "Are your doctors licensed?",
-      answer: "Our doctors are experts licensed to practice in Nigeria",
+      question: "Exclusive resources",
+      answer: "You’ll get engaging lessons on better eating, fitness, sleep, and stress management to educate you and inspire you to make better choices.",
       open: false,
     },
     {
-      question: "Are my consultations private?",
+      question: "Starter kit and supplies",
       answer:
-        "All consultations on Priv are carried out in the strictest respect of medical secrecy.",
+        "You’ll get all the health devices and testing supplies you need shipped directly to you",
       open: false,
     },
   ]);
@@ -64,12 +64,11 @@ const Section4 = () => {
         return faq;
       })
     );
-    console.log("click " + index);
   };
 
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] lg:flex justify-between">
-      <div className="max-w-3xl">
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-28 pb-20 bg-[#EFF2FA] grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 md:gap-16 gap-4">
+      <div className="max-w-xl">
         <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
           Get all the support you need
         </p>
@@ -90,7 +89,7 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-start lg:mt-40 max-w-xl mt-17">
+      <div className="flex justify-center items-start lg:mt-48 max-w-xl mt-18 ">
         <img src={support.src} alt="" className="w-11/12" />
       </div>
     </div>

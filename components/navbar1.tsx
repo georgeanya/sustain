@@ -131,18 +131,18 @@ const Navbar1 = () => {
             <div className="hidden"></div>
           ) : (
             <ul className="pt-5">
-              <li>
-                <Link href="#" className="block text-sm py-4">
+              <li className="my-4">
+                <Link href="#" className="block text-sm font-medium">
                   Benefits
                 </Link>
               </li>
-              <li>
-                <Link href="/pricing" className="block text-sm py-4">
+              <li className="my-4">
+                <Link href="/pricing" className="block text-sm font-medium">
                   Pricing
                 </Link>
               </li>
-              <li>
-                <Link href="#about" className="block text-sm py-4">
+              <li className="my-4">
+                <Link href="#about" className="block text-sm font-medium">
                   Blog
                 </Link>
               </li>

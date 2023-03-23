@@ -15,15 +15,11 @@ const Section5 = () => {
       <p className="pr-8 text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Don’t just take our word for it
       </p>
-      <p className="mt-5 md:mt-6 text-lg  lg:text-start mb-7 lg:text-xl md:max-w-xl text-[#002A47]">
+      <p className="mt-5 md:mt-6 text-lg  lg:text-start mb-7 md:mb-14 lg:text-xl md:max-w-xl text-[#002A47]">
         See what some of our patients say about us.
       </p>
-      {/* <div className="relative">
-        <img src={video.src} className="relative" alt="" />
-        <img src={playicon.src} className="absolute" alt="" />
-      </div> */}
       <div className="md:grid md:grid-cols-2 md:gap-7">
-        <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
+        <div className="p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
           <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
             “Custodia has changed my life. I feel better, weigh less, and have
             control my blood sugar well. I am excited about continuing to make
@@ -40,7 +36,7 @@ const Section5 = () => {
           </div>
         </div>
         <div className="lg:flex">
-          <div className="mt-12 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
+          <div className="mt-8 md:mt-0 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA]">
             <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
               “I’ve found a new side to me that I didn’t realize was buried
               under all the weight and the bad health. Before Custodia, I didn’t
@@ -65,7 +61,7 @@ const Section5 = () => {
         <img src={left.src} className="ml-8" alt="" />
         <img src={right.src} className="ml-4" alt="" />
       </div> */}
-      <div className="flex flex-wrap justify-between mt-24">
+      <div className="flex flex-wrap justify-between mt-16">
         <div className="md:w-60 w-40 mb-10">
           <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">95%</p>
           <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
@@ -80,13 +76,13 @@ const Section5 = () => {
             Average HbA1c reduction among 90% patients
           </p>
         </div>
-        <div className="md:w-60 w-40 mb-10">
+        <div className="md:w-60 w-40">
           <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">65%</p>
           <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
             of patients acheive normal blood pressure after 6 months
           </p>
         </div>
-        <div className="md:w-60 w-40 mb-10">
+        <div className="md:w-60 w-40">
           <p className="font-medium text-2xl lg:text-4xl text-[#4F9EEA]">15%</p>
           <p className="lg:text-base text-sm font-normal text-[#002A47] lg:mt-3 mt-1">
             Average weight loss after 6 months

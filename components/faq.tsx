@@ -20,31 +20,31 @@ const SustainButton = styled(Button)({
 const Faq = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "Who is Priv for?",
+      question: "What is Custodia?",
       answer:
-        "Priv is for adults experiencing health issues or wanting to improve or support their health and prefer to do so from the comfort of their homes.",
+        "Custodia is a digital care program that empowers people to reverse chronic metabolic diseases through sustainable lifestyle change.",
       open: true,
     },
     {
-      question: "How does Priv work?",
+      question: "Who is Custodia for?",
       answer:
-        "First, book a consultation and with one of our doctors. The doctor will review your information and recommend a personalised treatment. Priv will ship your treatment for free in discreet packaging if prescribed.",
+        "Custodia is for people who want to reverse metabolic diseases like type 2 diabetes, prediabetes, and hypertension.",
       open: false,
     },
     {
-      question: "How much does it cost to consult a doctor on Priv?",
-      answer: "It cost 4,000 naira to consult a doctor on Priv",
+      question: "Are medications included in the treatment?",
+      answer: "No, there are no medications included in the treatment.",
       open: false,
     },
     {
-      question: "Are your doctors licensed?",
-      answer: "Our doctors are experts licensed to practice in Nigeria",
+      question: "Is exercise required?",
+      answer: "Exercise is not required for success. We encourage you to choose whatever level of physical activity you desire.",
       open: false,
     },
     {
-      question: "Are my consultations private?",
+      question: "Is Custodia free?",
       answer:
-        "All consultations on Priv are carried out in the strictest respect of medical secrecy.",
+        "No, Visit our pricing page to see the costs.",
       open: false,
     },
   ]);
@@ -61,7 +61,6 @@ const Faq = () => {
         return faq;
       })
     );
-    console.log("click " + index);
   };
 
   return (

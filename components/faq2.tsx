@@ -25,13 +25,13 @@ const FAQ2 = ({ faq, index, toggleFAQ }: any) => {
         <div className="self-start min-w-fit">
           {faq.open ? (
             <img
-              className="mr-6 flex self-center w-4 md:w-5 md:mr-10 mt-3.5"
+              className="ml-6 flex self-center w-4 md:w-5 md:ml-10 mt-3.5"
               src={minus.src}
               alt=""
             />
           ) : (
             <img
-              className="mr-6 self-center w-4 md:w-5 md:mr-10 mt-1"
+              className="ml-6 self-center w-4 md:w-5 md:ml-10 mt-1"
               src={plus.src}
               alt=""
             />
