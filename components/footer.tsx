@@ -103,9 +103,9 @@ const Footer = () => {
               </Link>
             </p>
             <div className="flex">
-              <img src={fbook.src} className="mr-5" alt="facebook logo" />
-              <img src={insta.src} className="mr-5" alt="instagram logo" />
-              <img src={twitter.src} className="mr-5" alt="twitter logo" />
+              <Link href="https://facebook.com/custodiahealth"><img src={fbook.src} className="mr-5" alt="facebook logo" /></Link>
+              <Link href="https://instagram.com/custodiahealth"><img src={insta.src} className="mr-5" alt="instagram logo" /></Link>
+              <Link href="https://twitter.com/custodiahealth"><img src={twitter.src} className="mr-5" alt="twitter logo" /></Link>
             </div>
           </div>
         </div>

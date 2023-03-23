@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { useState } from "react";
-import FAQ from "./faq1";
+import FAQ3 from "./faq3";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -70,7 +70,7 @@ const Faq = () => {
       </p>
       <div className="max-w-3xl">
         {faqs.map((faq, index) => (
-          <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+          <FAQ3 faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}
         {/* <hr className="my-6 md:my-8 mb-6 md:mb-12 " /> */}
       </div>
