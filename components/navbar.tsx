@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="bg-[#324967] ">
-        <p className="text-center text-base text-white py-4 px-7">
+        <p className="text-center text-sm md:text-base text-white py-4 px-7">
           ✨ Take this 30-second assessment to know if you are at risk of type 2
           diabetes
           <ArrowIcon />
