@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-18 pb-20 lg:pb-36 flex flex-col lg:flex-row lg:justify-between bg-[#F0F7FF]">
       <div className="md:max-w-md lg:max-w-lg pt-15 pb-17 lg:pb-0 lg:pt-18">
-        <p className=" leading-tight lg:leading-tight lg:pr-14  text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47] ">
+        <p className=" leading-tight lg:leading-tight lg:pr-14  text-4lg lg:text-start lg:text-5xl font-bold text-[#002A47] ">
           Say goodbye to <span className="text-[#4F9EEA]">{newName}</span> and
           lifelong medication
         </p>
