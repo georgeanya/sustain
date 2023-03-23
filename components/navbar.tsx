@@ -18,7 +18,7 @@ const SustainButton = styled(Button)({
 const ArrowIcon = styled(ArrowForwardIcon)({
   color: "#f8f8f8",
   padding: "1.5px",
-  marginTop: "-3px",
+  marginTop: "-2px",
   width: "21px",
 });
 
