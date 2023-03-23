@@ -25,7 +25,7 @@ const Footer = () => {
     <div className="bg-[#0C1227] lg:px-32 px-5 lg:pt-36 pt-24 text-center lg:text-start text-white">
       <p className="mb-5 lg:text-xl">Schedule your consultation now</p>
       <div className="lg:flex lg:justify-between">
-        <p className="lg:text-4.5xl text-3xl font-bold mb-11 lg:max-w-2xl">
+        <p className="lg:text-5lg text-3xl font-bold mb-11 lg:max-w-2xl">
           Are you ready to start that journey? Join Custodia today!
         </p>
         <SustainButton className="self-start text-xs lg:text-base font-medium">

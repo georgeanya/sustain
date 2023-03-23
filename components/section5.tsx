@@ -19,8 +19,8 @@ const Section5 = () => {
         See what some of our patients say about us.
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-7">
-        <div className="p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA] flex flex-col justify-between">
-          <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
+        <div className="p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#F0F3F4] flex flex-col justify-between">
+          <p className="text-lg lg:text-1xl lg:leading-9 text-[#002A47] ">
             “Custodia has changed my life. I feel better, weigh less, and have
             control my blood sugar well. I am excited about continuing to make
             better choices about my health so I can be there for my family.”
@@ -36,8 +36,8 @@ const Section5 = () => {
           </div>
         </div>
         <div className="lg:flex">
-          <div className="mt-8 md:mt-0 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#EFF2FA] flex flex-col justify-between">
-            <p className="text-lg lg:text-2xl lg:leading-9 text-[#002A47] ">
+          <div className="mt-8 md:mt-0 p-6 lg:px-12 lg:py-14 rounded-2xl bg-[#F0F3F4] flex flex-col justify-between">
+            <p className="text-lg lg:text-1xl lg:leading-9 text-[#002A47] ">
               “I’ve found a new side to me that I didn’t realize was buried
               under all the weight and the bad health. Before Custodia, I didn’t
               think my diabetes was reversible. Custodia has given me my life
