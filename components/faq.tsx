@@ -38,13 +38,13 @@ const Faq = () => {
     },
     {
       question: "Is exercise required?",
-      answer: "Exercise is not required for success. We encourage you to choose whatever level of physical activity you desire.",
+      answer:
+        "Exercise is not required for success. We encourage you to choose whatever level of physical activity you desire.",
       open: false,
     },
     {
       question: "Is Custodia free?",
-      answer:
-        "No, Visit our pricing page to see the costs.",
+      answer: "No, Visit our pricing page to see the costs.",
       open: false,
     },
   ]);

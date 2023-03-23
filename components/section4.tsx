@@ -36,12 +36,14 @@ const Section4 = () => {
     },
     {
       question: "A personalized treatment plan",
-      answer: "You’ll get a treatment plan personalized to your food preferences and metabolic condition which will continuously adjusted to meet your needs",
+      answer:
+        "You’ll get a treatment plan personalized to your food preferences and metabolic condition which will continuously adjusted to meet your needs",
       open: false,
     },
     {
       question: "Exclusive resources",
-      answer: "You’ll get engaging lessons on better eating, fitness, sleep, and stress management to educate you and inspire you to make better choices.",
+      answer:
+        "You’ll get engaging lessons on better eating, fitness, sleep, and stress management to educate you and inspire you to make better choices.",
       open: false,
     },
     {

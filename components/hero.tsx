@@ -17,31 +17,32 @@ const SustainButton = styled(Button)({
   },
 });
 
-
 const Hero = () => {
   const names = [
-    'Hypertension', 'Dyslipidemia', 'Prediabetes', 'Type 2 Diabeties'
-  ]
-  
-  
-    const [newName, setnewName] = useState("Type 2 Diabeties");
-  
-    const shuffle = useCallback(() => {
-        const index = Math.floor(Math.random() * names.length);
-        setnewName(names[index]);
-    }, []);
-  
-    useEffect(() => {
-        const intervalID = setInterval(shuffle, 5000);
-        return () => clearInterval(intervalID);
-    }, [shuffle])
-  
+    "Hypertension",
+    "Dyslipidemia",
+    "Prediabetes",
+    "Type 2 Diabeties",
+  ];
+
+  const [newName, setnewName] = useState("Type 2 Diabeties");
+
+  const shuffle = useCallback(() => {
+    const index = Math.floor(Math.random() * names.length);
+    setnewName(names[index]);
+  }, []);
+
+  useEffect(() => {
+    const intervalID = setInterval(shuffle, 5000);
+    return () => clearInterval(intervalID);
+  }, [shuffle]);
+
   return (
     <div className="px-5 lg:px-32 lg:pt-18 pb-20 lg:pb-36 flex flex-col lg:flex-row lg:justify-between bg-[#F0F7FF]">
       <div className="md:max-w-md lg:max-w-lg pt-15 pb-17 lg:pb-0 lg:pt-18">
         <p className=" leading-tight lg:leading-tight lg:pr-14  text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47] ">
-          Say goodbye to <span className="text-[#4F9EEA]">{newName}</span>{" "}
-          and lifelong medication
+          Say goodbye to <span className="text-[#4F9EEA]">{newName}</span> and
+          lifelong medication
         </p>
         <p className="mt-5 md:mt-6 text-base font-normal lg:pr-8 lg:text-start lg:text-xl text-[#476D85]">
           Custodia helps people reverse chronic metabolic diseases like

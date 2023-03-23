@@ -20,7 +20,6 @@ const Navbar1 = () => {
 
   return (
     <div>
-      
       <div className="px-5 lg:px-32 pt-5 lg:pt-5 ">
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -120,7 +119,9 @@ const Navbar1 = () => {
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <SustainButton className="text-xs font-medium leading-5">Get started</SustainButton>
+                  <SustainButton className="text-xs font-medium leading-5">
+                    Get started
+                  </SustainButton>
                 </li>
               </ul>
             </div>
@@ -147,10 +148,10 @@ const Navbar1 = () => {
                 </Link>
               </li>
               <li>
-              <SustainButton className="text-xs mt-5">
-                Get started
-              </SustainButton>
-            </li>
+                <SustainButton className="text-xs mt-5">
+                  Get started
+                </SustainButton>
+              </li>
             </ul>
           )}
         </div>

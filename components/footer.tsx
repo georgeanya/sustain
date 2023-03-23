@@ -98,7 +98,9 @@ const Footer = () => {
               <Link href="">+2349040559724</Link>
             </p>
             <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
-              <Link href="mailto:hi@custodiahealth.com">hi@custodiahealth.com</Link>
+              <Link href="mailto:hi@custodiahealth.com">
+                hi@custodiahealth.com
+              </Link>
             </p>
             <div className="flex">
               <img src={fbook.src} className="mr-5" alt="facebook logo" />
@@ -109,7 +111,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="lg:mt-32 mt-16 text-sm pb-16 ">
-      Custodia Health © 2023 All Rights Reserved
+        Custodia Health © 2023 All Rights Reserved
       </p>
     </div>
   );
