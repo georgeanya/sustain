@@ -19,13 +19,13 @@ const SustainButton = styled(Button)({
 
 const Hero = () => {
   const names = [
-    "Hypertension",
-    "Dyslipidemia",
-    "Prediabetes",
-    "Type 2 Diabeties",
+    "hypertension",
+    "dyslipidemia",
+    "prediabetes",
+    "type 2 diabetes",
   ];
 
-  const [newName, setnewName] = useState("Type 2 Diabeties");
+  const [newName, setnewName] = useState("type 2 diabetes");
 
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * names.length);
@@ -33,7 +33,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 5000);
+    const intervalID = setInterval(shuffle, 3000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
 

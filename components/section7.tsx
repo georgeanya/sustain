@@ -18,8 +18,8 @@ const SustainButton = styled(Button)({
 
 const Section7 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 bg-[#EFF2FA] lg:flex justify-between">
-      <div className="">
+    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-28 pb-20 bg-[#EFF2FA] lg:flex justify-between">
+      <div className="flex flex-col justify-center">
         <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-sm font-bold text-[#002A47]">
           Not sure if you have diabetes/prediabetes? Get diagnosed.
         </p>
