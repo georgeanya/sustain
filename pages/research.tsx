@@ -21,7 +21,7 @@ const Research = () => {
                 Recommendations Reduces Hemoglobin A1c Level, Medication Use,
                 and Weight in Type 2 Diabetes
               </p>
-              <p className="mt-4 md:mt-5 text-base md:text-center lg:text-start lg:text-llg text-[#476D85]">
+              <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg text-[#476D85]">
                 McKenzie AL, Hallberg SJ, Creighton BC, et al.
               </p>
             </div>
@@ -35,7 +35,7 @@ const Research = () => {
                 The Effect of Low-Carbohydrate Diet on Glycemic Control in
                 Patients with Type 2 Diabetes Mellitus
               </p>
-              <p className="mt-4 md:mt-5 text-base md:text-center lg:text-start lg:text-llg text-[#476D85]">
+              <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg text-[#476D85]">
                 McKenzie AL, Hallberg SJ, Creighton BC, et al.
               </p>
             </div>
@@ -51,7 +51,7 @@ const Research = () => {
                 Observational Study of Insulin Resistant Patients in Primary
                 Care
               </p>
-              <p className="mt-4 md:mt-5 text-base md:text-center lg:text-start lg:text-llg text-[#476D85]">
+              <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg text-[#476D85]">
                 McKenzie AL, Hallberg SJ, Creighton BC, et al.
               </p>
             </div>
@@ -66,7 +66,7 @@ const Research = () => {
                 Recommendations Reduces Hemoglobin A1c Level, Medication Use,
                 and Weight in Type 2 Diabetes
               </p>
-              <p className="mt-4 md:mt-5 text-base md:text-center lg:text-start lg:text-llg text-[#476D85]">
+              <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg text-[#476D85]">
                 McKenzie AL, Hallberg SJ, Creighton BC, et al.
               </p>
             </div>
@@ -80,7 +80,7 @@ const Research = () => {
                 The Effect of Low-Carbohydrate Diet on Glycemic Control in
                 Patients with Type 2 Diabetes Mellitus
               </p>
-              <p className="mt-4 md:mt-5 text-base md:text-center lg:text-start lg:text-llg text-[#476D85]">
+              <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg text-[#476D85]">
                 McKenzie AL, Hallberg SJ, Creighton BC, et al.
               </p>
             </div>
@@ -96,7 +96,7 @@ const Research = () => {
                 Observational Study of Insulin Resistant Patients in Primary
                 Care
               </p>
-              <p className="mt-4 md:mt-5 text-base md:text-center lg:text-start lg:text-llg text-[#476D85]">
+              <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg text-[#476D85]">
                 McKenzie AL, Hallberg SJ, Creighton BC, et al.
               </p>
             </div>
