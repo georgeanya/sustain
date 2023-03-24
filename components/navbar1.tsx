@@ -79,10 +79,9 @@ const Navbar1 = () => {
                 <li className="mt-2.5 mx-5 ">
                   <Link
                     href="#"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
-                    For health plans
+                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">For health plans</p>
                   </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
@@ -90,32 +89,30 @@ const Navbar1 = () => {
                     href="#"
                     className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    For doctors
+                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">For doctors</p>
                   </Link>
                 </li>
 
                 <li className="mt-2.5 mx-5 ">
                   <Link
                     href="/pricing"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    Pricing
+                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">Pricing</p>
                   </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
                   <Link
                     href="#"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
-                  >
-                    Blog
+                    >
+                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">Blog</p>
                   </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
                   <Link
                     href="/research"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
+                    
                   >
-                    Research
+                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">Research</p>
                   </Link>
                 </li>
                 <li className="ml-5">
