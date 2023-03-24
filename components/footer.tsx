@@ -16,7 +16,7 @@ const SustainButton = styled(Button)({
   borderRadius: "32px",
   textTransform: "none",
   ["@media (max-width:780px)"]: {
-    padding: "15px 20px",
+    padding: "16px 36px",
   },
 });
 
@@ -40,19 +40,19 @@ const Footer = () => {
             <h3 className="lg:mb-8 mb-6 mt-14 lg:mt-0 text-sm lg:text-base font-medium">
               PRODUCT
             </h3>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/pricing">Pricing</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/">Health plan</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/research">Research</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/">Patient stories</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/download">Download our app</Link>
             </p>
           </div>
@@ -60,16 +60,16 @@ const Footer = () => {
             <h3 className="lg:mb-8 mb-6 mt-14 lg:mt-0 text-sm lg:text-base font-medium">
               RESOURCES
             </h3>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/404">Help center</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/policy">Privacy policy</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/terms">Terms of use</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/cookie">Cookie policy</Link>
             </p>
           </div>
@@ -77,16 +77,16 @@ const Footer = () => {
             <h3 className="lg:mb-8 mb-6 mt-14 lg:mt-0 text-sm lg:text-base font-medium">
               COMPANY
             </h3>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/">About</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/">Blog</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/404">Careers</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/404">Press</Link>
             </p>
           </div>
@@ -94,10 +94,10 @@ const Footer = () => {
             <h3 className="lg:mb-8 mb-6 mt-14 lg:mt-0 text-sm lg:text-base font-medium">
               CONTACT
             </h3>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="">+2349040559724</Link>
             </p>
-            <p className="lg:mb-6 lg:text-sm text-xs mb-5 text-[#C4CED4]">
+            <p className="lg:mb-6 lg:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="mailto:hi@custodiahealth.com">
                 hi@custodiahealth.com
               </Link>
@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="lg:mt-32 mt-16 text-sm pb-16 ">
+      <p className="md:mt-26 mt-16 text-sm pb-14 ">
         Custodia Health © 2023 All Rights Reserved
       </p>
     </div>

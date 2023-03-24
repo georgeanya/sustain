@@ -13,7 +13,7 @@ const SustainButton = styled(Button)({
   borderRadius: "32px",
   textTransform: "none",
   ["@media (max-width:780px)"]: {
-    padding: "15px 20px",
+    padding: "16px 30px",
   },
 });
 
@@ -73,6 +73,9 @@ const Faq = () => {
           <FAQ3 faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}
         {/* <hr className="my-6 md:my-8 mb-6 md:mb-12 " /> */}
+      </div>
+      <div>
+        <SustainButton>See all FAQs</SustainButton>
       </div>
     </div>
   );
