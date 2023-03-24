@@ -16,14 +16,7 @@ import favicon from "../public/assets/favicon.png";
 import metaCard from "../public/assets/custodia-metacard.png";
 
 const Home: NextPage = () => {
-  const [time, setTime] = useState(false);
-
-  function toggleTimeTrue() {
-    setTime((time) => (time = true));
-  }
-  function toggleTimeFalse() {
-    setTime((time) => (time = false));
-  }
+  
 
   return (
     <div>
