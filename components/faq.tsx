@@ -72,10 +72,11 @@ const Faq = () => {
         {faqs.map((faq, index) => (
           <FAQ3 faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}
-        {/* <hr className="my-6 md:my-8 mb-6 md:mb-12 " /> */}
       </div>
-      <div>
-        <SustainButton>See all FAQs</SustainButton>
+      <div className="mt-10 md:mt-15">
+        <div>
+          <SustainButton>See all FAQs</SustainButton>
+        </div>
       </div>
     </div>
   );

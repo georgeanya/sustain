@@ -69,12 +69,12 @@ const Section4 = () => {
   };
 
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-28 pb-20 bg-[#EFF2FA] grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 md:gap-16 gap-4">
+    <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-28 pb-20 bg-[#EFF2FA] grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 md:gap-16 gap-4">
       <div className="max-w-xl">
-        <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
+        <p className=" text-3xl md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47]">
           Get all the support you need
         </p>
-        <p className="mt-5 md:mt-6 mb-16 md:mb-24 text-base  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
+        <p className="mt-5 md:mt-6 mb-16 md:mb-24 text-base  md:text-start md:text-xl md:max-w-xl text-[#002A47]">
           We give you the tools and support you need to reverse your condition
           and take control of your health.
         </p>
@@ -83,15 +83,15 @@ const Section4 = () => {
             {faqs.map((faq, index) => (
               <FAQ2 faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
             ))}
-            <div className="mt-6 lg:mt-16 ">
-              <SustainButton className="text-xs lg:text-base font-medium">
+            <div className="mt-10 md:mt-15 ">
+              <SustainButton className="text-xs md:text-base font-medium">
                 Book a consultation now
               </SustainButton>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-start lg:mt-48 max-w-xl mt-18 ">
+      <div className="flex justify-center items-start md:mt-48 max-w-xl mt-18 ">
         <img src={support.src} alt="" className="w-11/12" />
       </div>
     </div>

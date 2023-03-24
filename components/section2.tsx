@@ -65,7 +65,7 @@ const Section2 = () => {
           Our doctors and health coaches support you and remotely monitor you to
           help you go off medications safely and sustain your success.
         </p>
-        <div className="mt-8 md:mt-14 ">
+        <div className="mt-10 md:mt-15 ">
           <SustainButton className="text-xs md:text-base font-medium">
             Research behind our treatment
           </SustainButton>

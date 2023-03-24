@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="md:flex md:justify-between">
         <img src={sustain.src} className="self-start" alt="sustain logo" />
         <div className="flex flex-wrap text-start justify-between">
-          <div className="w-32 md:w-56">
+          <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
               PRODUCT
             </h3>
@@ -56,7 +56,7 @@ const Footer = () => {
               <Link href="/download">Download our app</Link>
             </p>
           </div>
-          <div className="w-32 md:w-56">
+          <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
               RESOURCES
             </h3>
@@ -73,7 +73,7 @@ const Footer = () => {
               <Link href="/cookie">Cookie policy</Link>
             </p>
           </div>
-          <div className="w-32 md:w-56">
+          <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
               COMPANY
             </h3>
@@ -90,7 +90,7 @@ const Footer = () => {
               <Link href="/404">Press</Link>
             </p>
           </div>
-          <div className="w-32 md:w-56">
+          <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
               CONTACT
             </h3>
