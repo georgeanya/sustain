@@ -64,10 +64,10 @@ const Footer = () => {
               <Link href="/404">Help center</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
-              <Link href="/policy">Privacy policy</Link>
+              <Link href="/privacy-policy">Privacy policy</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
-              <Link href="/terms">Terms of use</Link>
+              <Link href="/terms-of-use">Terms of use</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/cookie">Cookie policy</Link>

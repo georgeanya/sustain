@@ -6,7 +6,7 @@ const Cookie = () => {
     <div>
       <Navbar1 />
       <div className="px-5 lg:px-72 lg:px pt-18 lg:pt-20 pb-32">
-        <h2 className="text-3xl md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
+        <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
           Cookie policy
         </h2>
         <p className="mt-5 md:mt-5 text-base md:text-center lg:text-start lg:text-xl text-[#476D85]">

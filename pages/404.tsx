@@ -21,7 +21,7 @@ const ErrorPage = () => {
     <div>
       <Navbar1 />
       <div className="px-5 lg:px-32 md:max-w-md lg:max-w-3xl py-12 lg:py-32">
-        <p className="text-3xl lg:text-start lg:text-5xl font-bold text-[#002A47]">
+        <p className="text-4lg lg:text-start lg:text-5xl font-bold text-[#002A47]">
           Whoops... This page is not available
         </p>
         <p className="mt-5 md:mt-6 text-base lg:text-start lg:text-xl text-[#476D85]">

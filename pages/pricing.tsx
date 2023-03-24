@@ -26,7 +26,7 @@ const Pricing = (props: any) => {
       <Navbar />
       <div className="px-5 lg:px-66 pt-18 lg:pt-20 pb-32 bg-[#F0F7FF]">
         <div className="flex justify-center">
-          <h2 className="text-3xl text-center lg:text-5xl font-bold text-[#002A47] mb-17 max-w-2xl">
+          <h2 className="text-4lg text-center lg:text-5xl font-bold text-[#002A47] mb-17 max-w-2xl">
             Choose a membership plan that’s right for you
           </h2>
         </div>
