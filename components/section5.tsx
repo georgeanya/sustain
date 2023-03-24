@@ -19,7 +19,7 @@ const Section5 = () => {
         See what some of our patients say about us.
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-7">
-        <div className="p-6 md:px-12 md:py-14 rounded-2xl bg-[#F0F3F4] flex flex-col justify-between">
+        <div className="mt-8 md:mt-0 px-5 py-10 md:px-12 md:py-14 rounded-2xl bg-[#F0F3F4] flex flex-col justify-between" >
           <p className="text-xl md:text-1xl md:leading-9 text-[#002A47] ">
             “Custodia has changed my life. I feel better, weigh less, and have
             control my blood sugar well. I am excited about continuing to make
