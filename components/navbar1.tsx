@@ -81,15 +81,14 @@ const Navbar1 = () => {
                     href="#"
                     // aria-current="page"
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">For health plans</p>
+                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">For health plans</p>
                   </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
                   <Link
                     href="#"
-                    className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">For doctors</p>
+                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">For doctors</p>
                   </Link>
                 </li>
 
@@ -97,14 +96,14 @@ const Navbar1 = () => {
                   <Link
                     href="/pricing"
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">Pricing</p>
+                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">Pricing</p>
                   </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
                   <Link
                     href="#"
                     >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">Blog</p>
+                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">Blog</p>
                   </Link>
                 </li>
                 <li className="mt-2.5 mx-5 ">
@@ -112,7 +111,7 @@ const Navbar1 = () => {
                     href="/research"
                     
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 ">Research</p>
+                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">Research</p>
                   </Link>
                 </li>
                 <li className="ml-5">
