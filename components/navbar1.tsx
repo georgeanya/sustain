@@ -76,48 +76,50 @@ const Navbar1 = () => {
               id="navbar-solid-bg"
             >
               <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="#"
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">For health plans</p>
+                    For health plans
                   </Link>
                 </li>
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="#"
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">For doctors</p>
+                    For doctors
                   </Link>
                 </li>
 
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="/pricing"
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">Pricing</p>
+                    Pricing
                   </Link>
                 </li>
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="#"
-                    >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">Blog</p>
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
+                  >
+                    Blog
                   </Link>
                 </li>
-                <li className="mt-2.5 mx-5 ">
+                <li className="mt-3.5 mx-5 ">
                   <Link
                     href="/research"
-                    
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-sm pt-5 mt-5 text-[#002A47]! rounded  hover:text-blue-700 ">Research</p>
+                    Research
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <SustainButton className="text-xs font-medium leading-5">
-                    Get started
-                  </SustainButton>
+                  <SustainButton className="text-sm">Get started</SustainButton>
                 </li>
               </ul>
             </div>
