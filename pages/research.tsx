@@ -16,7 +16,7 @@ const Research = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-14">
           <div className="border px-6 py-9 flex flex-col justify-between">
             <div>
-              <p className="text-base md:text-center lg:text-start lg:text-xxl text-[#002A47]">
+              <p className="text-base md:text-center lg:text-start lg:text-xl text-[#002A47]">
                 A Novel Intervention Including Individualized Nutritional
                 Recommendations Reduces Hemoglobin A1c Level, Medication Use,
                 and Weight in Type 2 Diabetes
@@ -31,7 +31,7 @@ const Research = () => {
           </div>
           <div className="border px-6 py-9 flex flex-col justify-between">
             <div>
-              <p className="text-base md:text-center lg:text-start lg:text-xxl text-[#002A47]">
+              <p className="text-base md:text-center lg:text-start lg:text-xl text-[#002A47]">
                 The Effect of Low-Carbohydrate Diet on Glycemic Control in
                 Patients with Type 2 Diabetes Mellitus
               </p>
@@ -45,7 +45,7 @@ const Research = () => {
           </div>
           <div className="border px-6 py-9 flex flex-col justify-between">
             <div>
-              <p className="text-base md:text-center lg:text-start lg:text-xxl text-[#002A47]">
+              <p className="text-base md:text-center lg:text-start lg:text-xl text-[#002A47]">
                 Substantial and Sustained Improvements in Blood Pressure, Weight
                 and Lipid Profiles from a Carbohydrate Restricted Diet: An
                 Observational Study of Insulin Resistant Patients in Primary
@@ -61,7 +61,7 @@ const Research = () => {
           </div>
           <div className="border px-6 py-9 flex flex-col justify-between">
             <div>
-              <p className="text-base md:text-center lg:text-start lg:text-xxl text-[#002A47]">
+              <p className="text-base md:text-center lg:text-start lg:text-xl text-[#002A47]">
                 A Novel Intervention Including Individualized Nutritional
                 Recommendations Reduces Hemoglobin A1c Level, Medication Use,
                 and Weight in Type 2 Diabetes
@@ -76,7 +76,7 @@ const Research = () => {
           </div>
           <div className="border px-6 py-9 flex flex-col justify-between">
             <div>
-              <p className="text-base md:text-center lg:text-start lg:text-xxl text-[#002A47]">
+              <p className="text-base md:text-center lg:text-start lg:text-xl text-[#002A47]">
                 The Effect of Low-Carbohydrate Diet on Glycemic Control in
                 Patients with Type 2 Diabetes Mellitus
               </p>
@@ -90,7 +90,7 @@ const Research = () => {
           </div>
           <div className="border px-6 py-9 flex flex-col justify-between">
             <div>
-              <p className="text-base md:text-center lg:text-start lg:text-xxl text-[#002A47]">
+              <p className="text-base md:text-center lg:text-start lg:text-xl text-[#002A47]">
                 Substantial and Sustained Improvements in Blood Pressure, Weight
                 and Lipid Profiles from a Carbohydrate Restricted Diet: An
                 Observational Study of Insulin Resistant Patients in Primary
