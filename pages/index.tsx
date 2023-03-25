@@ -14,6 +14,7 @@ import Section7 from "../components/section7";
 import Navbar from "../components/navbar";
 import favicon from "../public/assets/favicon.png";
 import metaCard from "../public/assets/custodia-metacard.png";
+import Footer from "../components/footer";
 
 const Home: NextPage = () => {
   
@@ -121,6 +122,7 @@ const Home: NextPage = () => {
       /> */}
       <Section7 />
       <Faq />
+      <Footer />
     </div>
   );
 };

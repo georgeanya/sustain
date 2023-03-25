@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Navbar1 from "../components/navbar1";
 
 const Policy = () => {
@@ -60,6 +61,7 @@ const Policy = () => {
           This policy is effective as of 28 January 2021.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

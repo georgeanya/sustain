@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Navbar1 from "../components/navbar1";
 import app from "../public/assets/app.png";
 import apple from "../public/assets/apple.png";
@@ -25,6 +26,7 @@ const Download = () => {
           <img src={app.src} alt="" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

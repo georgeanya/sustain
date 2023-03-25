@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Navbar1 from "../components/navbar1";
 
 const Research = () => {
@@ -106,6 +107,7 @@ const Research = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Navbar1 from "../components/navbar1";
+import Footer from "../components/footer";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -34,6 +35,7 @@ const ErrorPage = () => {
           </SustainButton>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

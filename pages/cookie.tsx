@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Navbar1 from "../components/navbar1";
 
 const Cookie = () => {
@@ -61,6 +62,7 @@ const Cookie = () => {
           </li>
         </ul>
       </div>
+      <Footer />
     </div>
   );
 };

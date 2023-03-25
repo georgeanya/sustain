@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Faq from "../components/faq";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -249,6 +250,7 @@ const Pricing = (props: any) => {
         </div>
       </div>
       <Faq />
+      <Footer />
     </div>
   );
 };

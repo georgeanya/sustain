@@ -407,6 +407,8 @@ module.exports = {
       xl: ["1.25rem", { lineHeight: "1.75rem" }],
       xlg: ["1.125rem", { lineHeight: "2rem" }],
       "1lg": ["1.375rem", { lineHeight: "2.063rem" }],
+      "2lg": ["1.25rem", { lineHeight: "1.875rem" }],
+      "3lg": ["1.25rem", { lineHeight: "2.063rem" }],
       "1xl": ["1.5rem", { lineHeight: "2.125rem" }],
       "1xxl": ["1.625rem", { lineHeight: "2rem" }],
       "2xl": ["1.75rem", { lineHeight: "2rem" }],

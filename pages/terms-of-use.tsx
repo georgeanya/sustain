@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Navbar1 from "../components/navbar1";
 
 const Terms = () => {
@@ -97,6 +98,7 @@ const Terms = () => {
           exclusive jurisdiction of the courts in that State or location.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };
