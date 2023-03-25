@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import labs from "../public/assets/labs.svg";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -30,9 +31,9 @@ const Section7 = () => {
           results.
         </p>
         <div className="mt-8 lg:mt-14 ">
-          <SustainButton className="text-xs lg:text-base font-medium">
+          <Link href="/start"><SustainButton className="text-xs lg:text-base font-medium">
             Book a lab test
-          </SustainButton>
+          </SustainButton></Link>
         </div>
       </div>
       <div className="flex justify-center flex-col max-w-lg mt-17 md:mt-0">

@@ -5,6 +5,7 @@ import type2 from "../public/assets/type2.svg";
 import hyper from "../public/assets/hyper.svg";
 import pret2 from "../public/assets/pret2.svg";
 import dysli from "../public/assets/dysli.svg";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -66,9 +67,9 @@ const Section2 = () => {
           help you go off medications safely and sustain your success.
         </p>
         <div className="mt-10 md:mt-15 ">
-          <SustainButton className="text-xs md:text-base font-medium">
+         <Link href="/start"> <SustainButton className="text-xs md:text-base font-medium">
             Research behind our treatment
-          </SustainButton>
+          </SustainButton></Link>
         </div>
       </div>
     </div>

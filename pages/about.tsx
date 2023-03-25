@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import teamImage from "../public/assets/teamImage.svg";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -144,9 +145,9 @@ const About = () => {
             chronic metabolic disease care. If this is you, please join us.
           </p>
           <div className="mt-8 lg:mt-12">
-            <SustainButton className="text-sm lg:text-base font-medium">
+           <Link href="/404"> <SustainButton className="text-sm lg:text-base font-medium">
               See current openings
-            </SustainButton>
+            </SustainButton></Link>
           </div>
         </div>
           </div>

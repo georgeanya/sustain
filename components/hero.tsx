@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect } from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import hero from "../public/assets/hero.svg";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -49,9 +50,9 @@ const Hero = () => {
           diabetes, hypertension, and prediabetes using simple lifestyle changes
         </p>
         <div className="mt-8 lg:mt-14 ">
-          <SustainButton className="text-xs lg:text-base font-medium">
+          <Link href="/start"><SustainButton className="text-xs lg:text-base font-medium">
             Book a consultation now
-          </SustainButton>
+          </SustainButton></Link>
         </div>
       </div>
       <div className=" lg:w-2/4 flex lg:p-10 justify-center">

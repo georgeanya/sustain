@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Faq from "../components/faq";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -143,9 +144,9 @@ const Pricing = (props: any) => {
             </div>
             <div className="justify-end">
               <div className="mt-10 lg:mt-12 flex justify-center">
-                <SustainButton className="text-sm lg:text-base font-medium">
+                <Link href="/start"><SustainButton className="text-sm  lg:text-base font-medium">
                   Get started
-                </SustainButton>
+                </SustainButton></Link>
               </div>
               <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center">
                 You can pay in 3 installments.
@@ -236,9 +237,9 @@ const Pricing = (props: any) => {
             </div>
             <div>
               <div className="mt-10 lg:mt-12 flex justify-center">
-                <SustainButton className="text-sm  lg:text-base font-medium">
+                <Link href="/start"><SustainButton className="text-sm  lg:text-base font-medium">
                   Get started
-                </SustainButton>
+                </SustainButton></Link>
               </div>
               <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center">
                 You can pay in 3 installments.

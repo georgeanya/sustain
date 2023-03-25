@@ -28,9 +28,11 @@ const Footer = () => {
         <p className="md:text-5lg text-3xl font-bold mb-11 md:max-w-2xl">
           Are you ready to start that journey? Join Custodia today!
         </p>
-        <SustainButton className="self-start text-xs md:text-base font-medium">
-          Request your free consult
-        </SustainButton>
+        <Link href="/start">
+          <SustainButton className="self-start text-xs md:text-base font-medium">
+            Request your consult
+          </SustainButton>
+        </Link>
       </div>
       <hr className="md:mt-36 mt-28 md:mb-24 mb-20" />
       <div className="md:flex md:justify-between">
@@ -44,13 +46,13 @@ const Footer = () => {
               <Link href="/pricing">Pricing</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
-              <Link href="/">Health plan</Link>
+              <Link href="/404">Health plan</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/research">Research</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
-              <Link href="/">Patient stories</Link>
+              <Link href="/404">Patient stories</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/download">Download our app</Link>
@@ -78,10 +80,10 @@ const Footer = () => {
               COMPANY
             </h3>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
-              <Link href="/">Blog</Link>
+              <Link href="/404">Blog</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="/404">Careers</Link>
@@ -95,7 +97,7 @@ const Footer = () => {
               CONTACT
             </h3>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
-              <Link href="">+2349040559724</Link>
+              <Link href="tel:+2349040559724">+2349040559724</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
               <Link href="mailto:hi@custodiahealth.com">
@@ -103,9 +105,15 @@ const Footer = () => {
               </Link>
             </p>
             <div className="flex">
-              <Link href="https://facebook.com/custodiahealth"><img src={fbook.src} className="mr-5" alt="facebook logo" /></Link>
-              <Link href="https://instagram.com/custodiahealth"><img src={insta.src} className="mr-5" alt="instagram logo" /></Link>
-              <Link href="https://twitter.com/custodiahealth"><img src={twitter.src} className="mr-5" alt="twitter logo" /></Link>
+              <Link href="https://facebook.com/custodiahealth">
+                <img src={fbook.src} className="mr-5" alt="facebook logo" />
+              </Link>
+              <Link href="https://instagram.com/custodiahealth">
+                <img src={insta.src} className="mr-5" alt="instagram logo" />
+              </Link>
+              <Link href="https://twitter.com/custodiahealth">
+                <img src={twitter.src} className="mr-5" alt="twitter logo" />
+              </Link>
             </div>
           </div>
         </div>

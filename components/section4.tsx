@@ -6,6 +6,7 @@ import minus from "../public/assets/minus.png";
 import plus from "../public/assets/plus.png";
 import support from "../public/assets/support.svg";
 import FAQ2 from "./faq2";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -84,9 +85,9 @@ const Section4 = () => {
               <FAQ2 faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
             ))}
             <div className="mt-10 md:mt-15 ">
-              <SustainButton className="text-xs md:text-base font-medium">
+              <Link href="/start"><SustainButton className="text-xs md:text-base font-medium">
                 Book a consultation now
-              </SustainButton>
+              </SustainButton></Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -36,9 +37,9 @@ const Section1 = () => {
         Don’t give up, Custodia takes these burdens away!
       </p>
       <div className="mt-10 md:mt-12 ">
-        <SustainButton className="text-xs md:text-base font-medium">
+        <Link href="/start"><SustainButton className="text-xs md:text-base font-medium">
           Book a consultation now
-        </SustainButton>
+        </SustainButton></Link>
       </div>
     </div>
   );

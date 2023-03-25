@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import icon from "../public/assets/icon.png";
+import Link from "next/link";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -29,9 +30,9 @@ const Section6 = (props: any) => {
           for a free consultation to learn more.
         </p>
         <div className="mt-8 lg:mt-14 ">
-          <SustainButton className="text-xs lg:text-base font-medium">
+          <Link href="/start"><SustainButton className="text-xs lg:text-base font-medium">
             Schedule your free consult
-          </SustainButton>
+          </SustainButton></Link>
         </div>
       </div>
       <div className="flex justify-center flex-col max-w-lg">

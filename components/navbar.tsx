@@ -82,7 +82,7 @@ const Navbar = () => {
               <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                 <li className="mt-3.5 mx-5 ">
                   <Link
-                    href="#"
+                    href="/404"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
@@ -91,7 +91,7 @@ const Navbar = () => {
                 </li>
                 <li className="mt-3.5 mx-5 ">
                   <Link
-                    href="#"
+                    href="/404"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
                     For doctors
@@ -108,7 +108,7 @@ const Navbar = () => {
                 </li>
                 <li className="mt-3.5 mx-5 ">
                   <Link
-                    href="#"
+                    href="/404"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
                     Blog
@@ -122,9 +122,9 @@ const Navbar = () => {
                     Research
                   </Link>
                 </li>
-                <li className="ml-5">
+                <Link href="/start"><li className="ml-5">
                   <SustainButton className="text-sm">Get started</SustainButton>
-                </li>
+                </li></Link>
               </ul>
             </div>
           </div>
