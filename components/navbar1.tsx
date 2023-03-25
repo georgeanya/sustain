@@ -106,9 +106,9 @@ const Navbar1 = () => {
                     Research
                   </Link>
                 </li>
-                <Link href="/start"><li className="ml-5">
-                  <SustainButton className="text-sm">Get started</SustainButton>
-                </li></Link>
+                <li className="ml-5">
+                  <Link href="/start"><SustainButton className="text-sm">Get started</SustainButton></Link>
+                </li>
               </ul>
             </div>
           </div>

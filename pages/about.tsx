@@ -145,13 +145,15 @@ const About = () => {
             chronic metabolic disease care. If this is you, please join us.
           </p>
           <div className="mt-8 lg:mt-12">
-           <Link href="/404"> <SustainButton className="text-sm lg:text-base font-medium">
-              See current openings
-            </SustainButton></Link>
+            <Link href="/404">
+              <SustainButton className="text-sm lg:text-base font-medium">
+                See current openings
+              </SustainButton>
+            </Link>
           </div>
         </div>
-          </div>
-          <Footer />
+      </div>
+      <Footer />
     </div>
   );
 };

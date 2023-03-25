@@ -30,9 +30,11 @@ const Section6 = (props: any) => {
           for a free consultation to learn more.
         </p>
         <div className="mt-8 lg:mt-14 ">
-          <Link href="/start"><SustainButton className="text-xs lg:text-base font-medium">
-            Schedule your free consult
-          </SustainButton></Link>
+          <Link href="/start">
+            <SustainButton className="text-xs lg:text-base font-medium">
+              Schedule your free consult
+            </SustainButton>
+          </Link>
         </div>
       </div>
       <div className="flex justify-center flex-col max-w-lg">

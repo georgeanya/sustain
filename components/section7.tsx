@@ -31,9 +31,11 @@ const Section7 = () => {
           results.
         </p>
         <div className="mt-8 lg:mt-14 ">
-          <Link href="/start"><SustainButton className="text-xs lg:text-base font-medium">
-            Book a lab test
-          </SustainButton></Link>
+          <Link href="/start">
+            <SustainButton className="text-xs lg:text-base font-medium">
+              Book a lab test
+            </SustainButton>
+          </Link>
         </div>
       </div>
       <div className="flex justify-center flex-col max-w-lg mt-17 md:mt-0">
