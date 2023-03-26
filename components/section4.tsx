@@ -72,10 +72,10 @@ const Section4 = () => {
   return (
     <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-28 pb-20 bg-[#EFF2FA] grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 md:gap-16 gap-4">
       <div className="max-w-xl">
-        <p className=" text-3xl md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47]">
+        <p className="text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47]">
           Get all the support you need
         </p>
-        <p className="mt-5 md:mt-6 mb-16 md:mb-24 text-base  md:text-start md:text-xl md:max-w-xl text-[#002A47]">
+        <p className="mt-5 md:mt-6 mb-16 md:mb-24 text-base leading-6  md:text-start md:text-2lg md:max-w-xl text-[#002A47]">
           We give you the tools and support you need to reverse your condition
           and take control of your health.
         </p>

@@ -22,18 +22,18 @@ const Section1 = () => {
       <p className=" text-3xl md:text-start md:text-4xl font-bold text-[#002A47]">
         We understand you
       </p>
-      <p className="mt-7 md:mt-9 text-base  md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
+      <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
         If you have been living with a chronic metabolic disease, there’s a high
         chance you’re probably feeling frustrated and scared. No matter what you
         do, your blood sugar and blood pressure continues to go up and you don’t
         feel well.
       </p>
-      <p className="mt-7 md:mt-9 text-base  md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
+      <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
         The medications you have to take keep increasing and these medications
         cost a lot of money. and your condition steals your time by limiting
         your ability to do the things you love.
       </p>
-      <p className="mt-7 md:mt-9 text-base  md:text-start md:text-1lg text-[#002A47]">
+      <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-[#002A47]">
         Don’t give up, Custodia takes these burdens away!
       </p>
       <div className="mt-10 md:mt-12 ">

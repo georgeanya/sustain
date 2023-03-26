@@ -24,45 +24,45 @@ const Section2 = () => {
   return (
     <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24 bg-[#236DAD] flex flex-col md:flex-row md:justify-between">
       <div className="md:max-w-xl">
-        <p className=" pb-6 text-3xl md:text-start md:text-4xl font-bold text-white">
+        <p className=" pb-6 text-2xl leading-9 md:text-start md:text-4xl font-bold text-white">
           We treat multiple chronic metabolic diseases
         </p>
         <div className="flex mt-8 md:mt-11">
           <img src={type2.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base md:text-xl">
+          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
             Type 2 diabetes
           </span>
         </div>
         <div className="flex mt-6 md:mt-8">
           <img src={pret2.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base md:text-xl">
+          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
             Prediabetes
           </span>
         </div>
         <div className="flex mt-6 md:mt-8">
           <img src={dysli.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base md:text-xl">
+          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
             Dyslipidemia
           </span>
         </div>
         <div className="flex mt-8 md:mt-8 mb-6">
           <img src={hyper.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base md:text-xl">
+          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
             Hypertension
           </span>
         </div>
       </div>
       <div className="md:max-w-lg md:pr-8">
-        <p className="mt-7 md:mt-0 text-base  md:text-start md:text-xl text-white">
+        <p className="mt-7 md:mt-0 text-base leading-6 md:text-start md:text-1lg text-white">
           Most treatments use things like medications or surgery to manage the
           symptoms of chronic metabolic diseases without dealing with the
           underlying cause.
         </p>
-        <p className="mt-7 md:mt-9 text-base  md:text-start md:text-xl text-white">
+        <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-white">
           We focus on treating the root cause of the disease by changing what
           you eat and helping you make sustainable lifestyle changes.
         </p>
-        <p className="mt-7 md:mt-9 text-base  md:text-start md:text-xl text-white">
+        <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-white">
           Our doctors and health coaches support you and remotely monitor you to
           help you go off medications safely and sustain your success.
         </p>

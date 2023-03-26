@@ -23,7 +23,7 @@ const SustainButton = styled(Button)({
 const Footer = () => {
   return (
     <div className="bg-[#0C1227] md:px-32 px-5 md:pt-36 pt-24 text-center md:text-start text-white">
-      <p className="mb-5 md:text-xl">Schedule your consultation now</p>
+      <p className="mb-6 md:mb-5 text-base leading-5 md:text-xl md:leading-6">Schedule your consultation now</p>
       <div className="md:flex md:justify-between">
         <p className="md:text-5lg text-3xl font-bold mb-11 md:max-w-2xl">
           Are you ready to start that journey? Join Custodia today!
@@ -39,67 +39,67 @@ const Footer = () => {
         <img src={sustain.src} className="self-start" alt="sustain logo" />
         <div className="flex flex-wrap text-start justify-between">
           <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
+            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               PRODUCT
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/pricing">Pricing</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Health plan</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/research">Research</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Patient stories</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/download">Download our app</Link>
             </p>
           </div>
           <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
+            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               RESOURCES
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Help center</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/privacy-policy">Privacy policy</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/terms-of-use">Terms of use</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/cookie">Cookie policy</Link>
             </p>
           </div>
           <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
+            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               COMPANY
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/about">About</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Blog</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Careers</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Press</Link>
             </p>
           </div>
           <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base font-medium">
+            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               CONTACT
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="tel:+2349040559724">+2349040559724</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="mailto:hi@custodiahealth.com">
                 hi@custodiahealth.com
               </Link>

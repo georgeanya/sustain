@@ -65,7 +65,7 @@ const Faq = () => {
 
   return (
     <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24">
-      <p className=" text-3xl md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47] mb-14 pr-8">
+      <p className="text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47] mb-14 pr-8">
         Frequently asked questions
       </p>
       <div className="max-w-3xl">

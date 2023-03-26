@@ -21,10 +21,10 @@ const Section7 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-28 pb-20 bg-[#EFF2FA] lg:flex justify-between">
       <div className="flex flex-col justify-center">
-        <p className=" text-3xl lg:text-start lg:text-4xl md:max-w-sm font-bold text-[#002A47]">
+        <p className="text-2xl leading-9 md:text-start md:text-4xl md:max-w-sm font-bold text-[#002A47]">
           Not sure if you have diabetes/prediabetes? Get diagnosed.
         </p>
-        <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl md:max-w-lg text-[#002A47]">
+        <p className="mt-5 md:mt-6 text-base leading-6  md:text-start md:text-3lg md:max-w-lg text-[#002A47]">
           We partnered with Healthtracka to make it easy for you to get
           diagnosed from the comfort of your home. Your result will be emailed
           to you within 48-72 hours, and our doctor will call you to explain the

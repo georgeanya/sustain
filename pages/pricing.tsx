@@ -160,7 +160,7 @@ const Pricing = (props: any) => {
               {time ? (
                 <div>
                   <p className="text-xs font-medium text-center">
-                    6-Month Plan
+                    
                   </p>
                   <p className="mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center">
                     NGN 35,000

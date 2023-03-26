@@ -24,7 +24,7 @@ const Section6 = (props: any) => {
         <p className=" text-2xl lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47]">
           How much does it cost?
         </p>
-        <p className="mt-5 md:mt-6 text-base  lg:text-start lg:text-xl md:max-w-xl text-[#002A47]">
+        <p className="mt-5 md:mt-6 text-base leading-6 lg:text-start lg:text-3lg md:max-w-xl text-[#002A47]">
           This price covers the cost of treatment excluding lab tests. Some
           health insurers cover the cost of Sustain for their members. Request
           for a free consultation to learn more.

@@ -28,7 +28,7 @@ const About = () => {
           <h2 className="text-4lg lg:text-center lg:text-5xl font-bold text-[#002A47] md:max-w-2xl flex md:self-center max-w-lg">
             Reversing chronic metabolic disease at scale
           </h2>
-          <p className="mt-6 md:mt-6 text-base md:text-center lg:text-xlg text-[#476D85] max-w-l flex md:self-center">
+          <p className="mt-6 md:mt-6 text-base md:text-center lg:text-2lg text-[#476D85] max-w-l flex md:self-center">
             We are on a simply, yet ambitious mission to to treat and reverse
             chronic metabolic diseases in 5 million Africans by 2030 using
             simple lifestyle changes.
