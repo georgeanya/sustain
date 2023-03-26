@@ -54,27 +54,27 @@ const NavbarMenu = ({ handleToggle }: any) => {
       <ul className="pt-11">
         <li className="mb-7">
           <Link href="/404" className="block text-sm font-medium">
-            For health plans
+            <p className="text-[#002A47]">For health plans</p>
           </Link>
         </li>
         <li className="mb-7">
           <Link href="/404" className="block text-sm font-medium">
-            For doctors
+            <p className="text-[#002A47]">For doctors</p>
           </Link>
         </li>
         <li className="mb-7">
           <Link href="/pricing" className="block text-sm font-medium">
-            Pricing
+            <p className="text-[#002A47]">Pricing</p>
           </Link>
         </li>
         <li className="mb-7">
           <Link href="/404" className="block text-sm font-medium">
-            Blog
+            <p className="text-[#002A47]">Blog</p>
           </Link>
         </li>
         <li className="mb-9">
           <Link href="/research" className="block text-sm font-medium">
-            Research
+            <p className="text-[#002A47]">Research</p>
           </Link>
         </li>
         <li>

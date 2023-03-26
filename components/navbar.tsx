@@ -28,7 +28,6 @@ const Navbar = () => {
 
   const handleToggleFunc = () => {
     setIsToggled(!isToggled);
-    // console.log("isToggle Clicked and is ", isToggled);
   };
 
   return (
@@ -83,10 +82,10 @@ const Navbar = () => {
                 <li className="mt-3.5 mx-5 ">
                   <Link
                     href="/404"
-                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
+                    className="text-base pt-5 mt-5 rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
-                    For health plans
+                    <p className="text-[#002A47]">For health plans</p>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 ">
@@ -94,7 +93,7 @@ const Navbar = () => {
                     href="/404"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    For doctors
+                    <p className="text-[#002A47]">For doctors</p>
                   </Link>
                 </li>
 
@@ -103,7 +102,7 @@ const Navbar = () => {
                     href="/pricing"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    Pricing
+                    <p className="text-[#002A47]">Pricing</p>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 ">
@@ -111,7 +110,7 @@ const Navbar = () => {
                     href="/404"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
-                    Blog
+                    <p className="text-[#002A47]">Blog</p>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 ">
@@ -119,7 +118,7 @@ const Navbar = () => {
                     href="/research"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    Research
+                    <p className="text-[#002A47]">Research</p>
                   </Link>
                 </li>
                 <li className="ml-5">
