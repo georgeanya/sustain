@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import icon from "../public/assets/icon.png";
+import icon from "../public/assets/icon.svg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Faq from "../components/faq";
@@ -117,7 +117,7 @@ const Pricing = (props: any) => {
                 <div className="flex mt-5">
                   <img
                     src={icon.src}
-                    className="md:self-center self-start mt-1.5 md:mt-0"
+                    className="md:self-center self-start mt-1 md:mt-0"
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
@@ -152,7 +152,7 @@ const Pricing = (props: any) => {
                   </SustainButton>
                 </Link>
               </div>
-              <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center">
+              <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center text-[#002A47]">
                 You can pay in 3 installments.
                 <br />
                 Powered by Arteri
@@ -226,7 +226,7 @@ const Pricing = (props: any) => {
                 <div className="flex mt-5">
                   <img
                     src={icon.src}
-                    className="md:self-center self-start mt-1.5 md:mt-0"
+                    className="md:self-center self-start mt-1 md:mt-0"
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
@@ -249,7 +249,7 @@ const Pricing = (props: any) => {
                   </SustainButton>
                 </Link>
               </div>
-              <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center">
+              <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center text-[#002A47]">
                 You can pay in 3 installments.
                 <br />
                 Powered by Arteri
