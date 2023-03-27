@@ -14,7 +14,7 @@ const Download = () => {
           <h2 className="pt-12 text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
             Download Custodia for iOS and Android
           </h2>
-          <p className="mt-5 md:mt-6 text-base md:text-center lg:text-start lg:text-xl text-[#476D85]">
+          <p className="mt-5 md:mt-6 text-base md:text-center lg:text-start lg:text-2lg text-[#476D85]">
             Download our app to begin your journey towards lasting health
           </p>
           <div className="flex md:justify-center lg:justify-start mt-7">

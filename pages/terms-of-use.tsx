@@ -6,7 +6,7 @@ const Terms = () => {
   return (
     <div>
       <Navbar1 />
-      <div className="px-5 lg:px-72 pt-18 lg:pt-20 pb-32">
+      <div className="px-5 lg:px-72 md:mt-24 mt-16 pb-32">
         <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
           Terms of use
         </h2>
@@ -19,7 +19,7 @@ const Terms = () => {
           materials contained in this website are protected by applicable
           copyright and trademark law.
         </p>
-        <p className="self-center mt-6 text-xl lg:text-1xl text-[#002A47] font-medium">
+        <p className="self-center mt-6 text-xl lg:text-1xl lg:leading-7 text-[#002A47] font-medium">
           2. Use License
         </p>
         <p className="mt-3 md:mt-3 text-xlg md:text-center lg:text-start lg:text-xlg text-[#476D85]">
@@ -32,7 +32,7 @@ const Terms = () => {
           you must destroy any downloaded materials in your possession whether
           in electronic or printed format.
         </p>
-        <p className="self-center mt-6 text-xl lg:text-1xl text-[#002A47] font-medium">
+        <p className="self-center mt-6 text-xl lg:text-1xl lg:leading-7 text-[#002A47] font-medium">
           3. Disclaimer
         </p>
         <p className="mt-3 md:mt-3 text-xlg md:text-center lg:text-start lg:text-xlg text-[#476D85]">
@@ -47,7 +47,7 @@ const Terms = () => {
           otherwise relating to such materials or on any sites linked to this
           site.
         </p>
-        <p className="self-center mt-6 text-xl lg:text-1xl text-[#002A47] font-medium">
+        <p className="self-center mt-6 text-xl lg:text-1xl lg:leading-7 text-[#002A47] font-medium">
           4. Limitations
         </p>
         <p className="mt-3 md:mt-3 text-xlg md:text-center lg:text-start lg:text-xlg text-[#476D85]">
@@ -61,7 +61,7 @@ const Terms = () => {
           liability for consequential or incidental damages, these limitations
           may not apply to you.
         </p>
-        <p className="self-center mt-6 text-xl lg:text-1xl  text-[#002A47] font-medium">
+        <p className="self-center mt-6 text-xl lg:text-1xl  lg:leading-7 text-[#002A47] font-medium">
           5. Accuracy of materials
         </p>
         <p className="mt-3 md:mt-3 text-xlg md:text-center lg:text-start lg:text-xlg text-[#476D85]">
@@ -72,7 +72,7 @@ const Terms = () => {
           contained on its website at any time without notice. However Sustain
           does not make any commitment to update the materials.
         </p>
-        <p className="self-center mt-6 text-xl lg:text-1xl text-[#002A47] font-medium">
+        <p className="self-center mt-6 text-xl lg:text-1xl lg:leading-7 text-[#002A47] font-medium">
           6. Links
         </p>
         <p className="mt-3 md:mt-3 text-xlg md:text-center lg:text-start lg:text-xlg text-[#476D85]">
@@ -81,7 +81,7 @@ const Terms = () => {
           inclusion of any link does not imply endorsement by Sustain of the
           site. Use of any such linked website is at the user&apos;s own risk.
         </p>
-        <p className="self-center mt-6 text-xl lg:text-1xl text-[#002A47] font-medium">
+        <p className="self-center mt-6 text-xl lg:text-1xl lg:leading-7 text-[#002A47] font-medium">
           7. Modifications
         </p>
         <p className="mt-3 md:mt-3 text-xlg md:text-center lg:text-start lg:text-xlg text-[#476D85]">
@@ -89,7 +89,7 @@ const Terms = () => {
           without notice. By using this website you are agreeing to be bound by
           the then current version of these terms of service.
         </p>
-        <p className="self-center mt-6 text-xl lg:text-1xl text-[#002A47] font-medium">
+        <p className="self-center mt-6 text-xl lg:text-1xl lg:leading-7 text-[#002A47] font-medium">
           8. Governing Law
         </p>
         <p className="mt-3 md:mt-3 text-xlg md:text-center lg:text-start lg:text-xlg text-[#476D85]">

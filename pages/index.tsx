@@ -9,7 +9,7 @@ import Section3 from "../components/section3";
 import Section4 from "../components/section4";
 import Section6 from "../components/section6";
 import Section5 from "../components/section5";
-import Faq from "../components/faq";
+import Faq from "./faq";
 import Section7 from "../components/section7";
 import Navbar from "../components/navbar";
 import favicon from "../public/assets/favicon.png";
@@ -17,8 +17,6 @@ import metaCard from "../public/assets/custodia-metacard.png";
 import Footer from "../components/footer";
 
 const Home: NextPage = () => {
-  
-
   return (
     <div>
       <Head>

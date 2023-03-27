@@ -6,7 +6,7 @@ const Policy = () => {
   return (
     <div>
       <Navbar1 />
-      <div className="px-5 lg:px-72 pt-18 lg:pt-20 pb-32">
+      <div className="px-5 lg:px-72 md:mt-24 mt-16 pb-32">
         <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
           Privacy policy
         </h2>
@@ -61,7 +61,7 @@ const Policy = () => {
           This policy is effective as of 28 January 2021.
         </p>
       </div>
-      <Footer />
+      <Footer />    
     </div>
   );
 };

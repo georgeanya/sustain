@@ -2,8 +2,9 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { useState } from "react";
-import FAQ3 from "../components/faq3";
-import Link from "next/link";
+import FAQ from "../components/faq1";
+import Footer from "../components/footer";
+import Navbar1 from "../components/navbar1";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -65,22 +66,23 @@ const Faq = () => {
   };
 
   return (
-    <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24">
-      <p className="text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47] mb-14 pr-8">
-        Frequently asked questions
-      </p>
-      <div className="max-w-3xl">
-        {faqs.map((faq, index) => (
-          <FAQ3 faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
-        ))}
-      </div>
-      <div className="mt-10 md:mt-15">
-        <div>
-          <Link href="/faq">
-            <SustainButton>See all FAQs</SustainButton>
-          </Link>
+    <div>
+      <Navbar1/>
+      <div className="px-5 md:pl-72 md:pr-96 md:mt-24 mt-16 md:pb-36 pb-24">
+        <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
+          FAQs
+        </h2>
+        <p className="mt-5 md:mt-6 text-base md:text-start mb-7 md:mb-14 md:text-2lg leading-6 text-[#002A47]">
+          Find answers to commonly asked questions about our treatment,
+          enrollment process, cost, and privacy
+        </p>
+        <div className="max-w-3xl mt-17 md:mt-18">
+          {faqs.map((faq, index) => (
+            <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+          ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -24,7 +24,7 @@ const About = () => {
     <div>
       <Navbar1 />
       <div className="">
-        <div className="px-5 lg:px-66 pt-18 lg:pt-20 flex flex-col justify-center pb-24 lg:pb-36">
+        <div className="px-5 lg:px-66 md:mt-24 mt-16 flex flex-col justify-center pb-24 lg:pb-36">
           <h2 className="text-4lg lg:text-center lg:text-5xl font-bold text-[#002A47] md:max-w-2xl flex md:self-center max-w-lg">
             Reversing chronic metabolic disease at scale
           </h2>
