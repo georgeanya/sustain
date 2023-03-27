@@ -113,7 +113,7 @@ const Form = () => {
         <p className=" leading-7 md:pr-14 md:text-2xl md:leading-9 text-1lg md:text-start font-bold text-[#002A47]">
           Book a consultation with a lifestyle-medicine doctor
         </p>
-        <p className="mt-4 text-base md:text-lg leading-6 font-normal md:pr-8 md:text-start text-[#002A47]">
+        <p className="mt-4 text-base md:text-lg leading-6 font-normal md:pr-8 md:text-start text-[#476D85]">
           Meet a doctor that can help you gets started on your journey to
           disease reversal
         </p>
@@ -198,7 +198,7 @@ const Form = () => {
           </div>
           <div className="bg-[#EEF3F6] p-4 mt-10 md:mt-11 mb-5 md:mb-6 rounded-lg">
             <p className="text-[#476D85] text-xs md:text-sm">
-              By filling out this form, you agree to Custodia’s{" "}
+              By filling out this form, you agree to Custodia Health’s{" "}
               <a
                 className="text-[#4F9EEA] underline font-medium"
                 href="https://priv-health.notion.site/Terms-of-use-254e525466a3493687d94fd671d93ad8"
