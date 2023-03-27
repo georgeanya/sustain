@@ -54,7 +54,7 @@ const NavbarMenu = ({ handleToggle }: any) => {
         </button>
       </div>
       <ul className="pt-11">
-        <li className="mb-7">
+        {/* <li className="mb-7">
           <Link href="/404" className="block text-sm font-medium">
             <p className="text-[#002A47]">For health plans</p>
           </Link>
@@ -63,7 +63,7 @@ const NavbarMenu = ({ handleToggle }: any) => {
           <Link href="/404" className="block text-sm font-medium">
             <p className="text-[#002A47]">For doctors</p>
           </Link>
-        </li>
+        </li> */}
         <li className="mb-7">
           <Link href="/pricing" className="block text-sm font-medium">
             <p className="text-[#002A47]">Pricing</p>

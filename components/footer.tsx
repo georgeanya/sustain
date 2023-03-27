@@ -45,15 +45,15 @@ const Footer = () => {
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/pricing">Pricing</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/404">Health plan</Link>
-            </p>
+            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/pricing">Health plan</Link>
+            </p> */}
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/research">Research</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Patient stories</Link>
-            </p>
+            </p> */}
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/download">Download our app</Link>
             </p>
@@ -71,9 +71,9 @@ const Footer = () => {
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/terms-of-use">Terms of use</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/cookie">Cookie policy</Link>
-            </p>
+            </p> */}
           </div>
           <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
@@ -88,9 +88,9 @@ const Footer = () => {
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Careers</Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Press</Link>
-            </p>
+            </p> */}
           </div>
           <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">

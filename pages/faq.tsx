@@ -72,7 +72,7 @@ const Faq = () => {
         <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
           FAQs
         </h2>
-        <p className="mt-5 md:mt-6 text-base md:text-start mb-7 md:mb-14 md:text-2lg leading-6 text-[#002A47]">
+        <p className="mt-5 md:mt-6 text-base md:text-start mb-7 md:mb-14 md:text-2lg leading-6 text-[#476D85]">
           Find answers to commonly asked questions about our treatment,
           enrollment process, cost, and privacy
         </p>

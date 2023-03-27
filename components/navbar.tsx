@@ -98,7 +98,7 @@ const Navbar = () => {
               id="navbar-solid-bg"
             >
               <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                <li className="mt-3.5 mx-5 ">
+                {/* <li className="mt-3.5 mx-5 ">
                   <Link
                     href="/404"
                     className="text-base pt-5 mt-5 rounded  hover:text-blue-700 "
@@ -114,7 +114,7 @@ const Navbar = () => {
                   >
                     <p className="text-[#002A47]">For doctors</p>
                   </Link>
-                </li>
+                </li> */}
 
                 <li className="mt-3.5 mx-5 ">
                   <Link
