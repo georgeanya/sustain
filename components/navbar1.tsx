@@ -44,19 +44,36 @@ const Navbar1 = () => {
               onClick={handleToggleFunc}
             >
               <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-6 h-6"
-                aria-hidden="false"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
+              {isToggled ? (
+                <svg
+                  className="w-6 h-6"
+                  aria-hidden="false"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
             </button>
 
             <div
@@ -107,7 +124,11 @@ const Navbar1 = () => {
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <Link href="/start"><SustainButton className="text-sm">Get started</SustainButton></Link>
+                  <Link href="/start">
+                    <SustainButton className="text-sm">
+                      Get started
+                    </SustainButton>
+                  </Link>
                 </li>
               </ul>
             </div>

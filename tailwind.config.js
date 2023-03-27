@@ -666,6 +666,7 @@ module.exports = {
       "1xl": "37rem",
       "2xl": "42rem",
       "3xl": "48rem",
+      "3lg": "47.375rem",
       "4xl": "56rem",
       "5xl": "64rem",
       "6xl": "72rem",
