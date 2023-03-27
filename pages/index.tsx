@@ -7,7 +7,6 @@ import Section1 from "../components/section1";
 import Section2 from "../components/section2";
 import Section3 from "../components/section3";
 import Section4 from "../components/section4";
-import Section6 from "../components/section6";
 import Section5 from "../components/section5";
 import Faq from "../components/faq";
 import Section7 from "../components/section7";
@@ -113,11 +112,6 @@ const Home: NextPage = () => {
       <Section3 />
       <Section4 />
       <Section5 />
-      {/* <Section6
-        time={time}
-        toggleTrue={toggleTimeTrue}
-        toggleFalse={toggleTimeFalse}
-      /> */}
       <Section7 />
       <Faq />
       <Footer />
