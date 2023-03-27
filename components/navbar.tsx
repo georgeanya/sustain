@@ -45,11 +45,13 @@ const Navbar = () => {
       <div className="px-5 lg:px-32 pt-5 lg:pt-5 bg-[#F0F7FF]">
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
+          <Link href="/">
             <img
               src={custodia.src}
               className="mr-3  self-center"
               alt="Custodia Logo"
-            />
+              
+            /></Link>
 
             <button
               data-collapse-toggle="navbar-solid-bg"

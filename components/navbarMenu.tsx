@@ -21,11 +21,13 @@ const NavbarMenu = ({ handleToggle }: any) => {
   return (
     <div className="px-5 pt-5 h-screen">
       <div className="flex justify-between">
-        <img
-          src={custodia.src}
-          className="mr-3  self-center"
-          alt="Custodia Logo"
-        />
+        <Link href="/">
+          <img
+            src={custodia.src}
+            className="mr-3  self-center"
+            alt="Custodia Logo"
+          />
+        </Link>
 
         <button
           data-collapse-toggle="navbar-solid-bg"
