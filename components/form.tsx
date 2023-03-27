@@ -214,7 +214,7 @@ const Form = () => {
               </a>
             </p>
           </div>
-          <div className="mb-16 lg:mb-48">
+          <div className="mb-16 lg:mb-36">
             {isLoading ? (
               <SustainButton
                 className="self-center text-sm md:text-base font-medium"
