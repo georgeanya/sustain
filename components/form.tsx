@@ -108,7 +108,7 @@ const Form = () => {
   };
 
   return (
-    <div className="max-w-m mx-5 sm:mx-auto mt-17">
+    <div className="max-w-m mx-5 md:mx-auto mt-17">
       <div className={isSuccess || isError ? "hidden" : "block"}>
         <p className=" leading-tight md:pr-14 md:text-3xl text-2xl md:text-start font-bold text-[#4F9EEA] ">
           Book your consultation

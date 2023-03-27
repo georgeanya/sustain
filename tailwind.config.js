@@ -660,6 +660,7 @@ module.exports = {
       s: "21.4rem",
       sm: "24rem",
       md: "28rem",
+      m: "25rem",
       lg: "32rem",
       l: "34.375rem",
       xl: "36rem",
