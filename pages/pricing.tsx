@@ -97,19 +97,19 @@ const Pricing = (props: any) => {
               </div>
               <div className="pt-11 lg:pt-14 px-5 lg:px-12">
                 <div className="flex">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Doctor and health coach supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited consultations
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Personalized treatment plan
                   </span>
@@ -117,7 +117,7 @@ const Pricing = (props: any) => {
                 <div className="flex mt-5">
                   <img
                     src={icon.src}
-                    className="md:self-center self-start mt-1 md:mt-0"
+                    className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
@@ -125,19 +125,19 @@ const Pricing = (props: any) => {
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Access to our mobile app
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Routine lab tests
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited health supplies
                   </span>
@@ -206,19 +206,19 @@ const Pricing = (props: any) => {
               </div>
               <div className="lg:px-12 px-5 pt-11 lg:pt-14">
                 <div className="flex">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Doctor and health coach supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited consultations
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Personalized treatment plan
                   </span>
@@ -226,7 +226,7 @@ const Pricing = (props: any) => {
                 <div className="flex mt-5">
                   <img
                     src={icon.src}
-                    className="md:self-center self-start mt-1 md:mt-0"
+                    className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
@@ -234,7 +234,7 @@ const Pricing = (props: any) => {
                   </span>
                 </div>
                 <div className="flex mt-5">
-                  <img src={icon.src} className="self-center" alt="" />
+                  <img src={icon.src} className="self-center w-2.5 md:w-3" alt="" />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Access to our mobile app
                   </span>
