@@ -54,19 +54,19 @@ const Pricing = (props: any) => {
             <div>
               {time1 ? (
                 <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4">
+                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     COMPREHENSIVE
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
                     NGN 120,000
                   </p>
                 </div>
               ) : (
                 <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4">
+                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     COMPREHENSIVE
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
                     NGN 60,000
                   </p>
                 </div>
@@ -81,7 +81,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTime1True}
                   >
-                    <p className="text-sm leading-4">6-Months</p>
+                    <p className="text-sm leading-4 text-[#002A47]">6-Months</p>
                   </div>
                   <div
                     className={
@@ -91,7 +91,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTime1False}
                   >
-                    <p className="text-sm leading-4">Annual</p>
+                    <p className="text-sm leading-4 text-[#002A47]">Annual</p>
                   </div>
                 </div>
               </div>
@@ -163,19 +163,19 @@ const Pricing = (props: any) => {
             <div>
               {time ? (
                 <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4">
+                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     BASIC
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
                     NGN 35,000
                   </p>
                 </div>
               ) : (
                 <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4">
+                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     BASIC
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
                     NGN 60,000
                   </p>
                 </div>
@@ -190,7 +190,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTimeTrue}
                   >
-                    <p className="text-sm leading-4">6-Months</p>
+                    <p className="text-sm leading-4 text-[#002A47]">6-Months</p>
                   </div>
                   <div
                     className={
@@ -200,7 +200,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTimeFalse}
                   >
-                    <p className="text-sm leading-4">Annual</p>
+                    <p className="text-sm leading-4 text-[#002A47]">Annual</p>
                   </div>
                 </div>
               </div>
