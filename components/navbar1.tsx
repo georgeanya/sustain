@@ -10,7 +10,7 @@ const SustainButton = styled(Button)({
   fontFamily: "Circular Std",
   fontSize: "12px",
   color: "#f8f8f8",
-  padding: "10px 15px",
+  padding: "14px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
   textTransform: "none",
