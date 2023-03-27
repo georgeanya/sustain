@@ -36,11 +36,11 @@ const Navbar = () => {
         <NavbarMenu handleToggle={handleToggleFunc} />
       </div>
       <div className="bg-[#324967] ">
-        <p className="text-center text-sm md:text-base text-white py-4 px-7">
+        <Link href="https://getsustain.app/risk-test"><p className="text-center text-sm md:text-base text-white py-4 px-7">
           ✨ Take this 30-second assessment to know if you are at risk of type 2
           diabetes
           <ArrowIcon />
-        </p>
+        </p></Link>
       </div>
       <div className="px-5 lg:px-32 pt-5 lg:pt-5 bg-[#F0F7FF]">
         <nav>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 </li>
                 <li className="mt-3.5 mx-5 ">
                   <Link
-                    href="/404"
+                    href="https://medium.com/@custodiahealth"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
                     <p className="text-[#002A47]">Blog</p>

@@ -80,13 +80,13 @@ const Footer = () => {
               COMPANY
             </h3>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/about">About</Link>
+              <Link href="https://lifebox.ng/">About</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/404">Blog</Link>
+              <Link href="https://medium.com/@custodiahealth">Blog</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/404">Careers</Link>
+              <Link href="https://lifebox-labs.notion.site/Join-Lifebox-Labs-caed82beacb448cf9be9b380907caa19">Careers</Link>
             </p>
             {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Press</Link>

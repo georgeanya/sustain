@@ -111,7 +111,7 @@ const Navbar1 = () => {
                 </li>
                 <li className="mt-3.5 mx-5 ">
                   <Link
-                    href="/404"
+                    href="https://medium.com/@custodiahealth"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
                     <p className="text-[#002A47]">Blog</p>

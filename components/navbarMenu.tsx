@@ -70,7 +70,7 @@ const NavbarMenu = ({ handleToggle }: any) => {
           </Link>
         </li>
         <li className="mb-7">
-          <Link href="/404" className="block text-sm font-medium">
+          <Link href="https://medium.com/@custodiahealth" className="block text-sm font-medium">
             <p className="text-[#002A47]">Blog</p>
           </Link>
         </li>

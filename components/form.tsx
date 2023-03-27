@@ -31,7 +31,7 @@ interface IState {
   };
 }
 
-const url = "https://priv-health.herokuapp.com/v1/consult";
+const url = "https://getsustainapp.herokuapp.com/consult";
 
 const Form = () => {
   const [state, setState] = useState<IState>({
