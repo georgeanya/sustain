@@ -220,7 +220,7 @@ const Form = () => {
                 className="self-center text-sm md:text-base font-medium"
                 type="submit"
               >
-                <p>Request consultation</p>
+                <p>Book consultation</p>
               </SustainButton>
             ) : (
               <SustainButton
