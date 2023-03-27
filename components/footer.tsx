@@ -30,7 +30,7 @@ const Footer = () => {
         </p>
         <Link href="/start">
           <SustainButton className="self-start text-xs md:text-base font-medium">
-            Request your consult
+            Book a consultation
           </SustainButton>
         </Link>
       </div>

@@ -67,7 +67,7 @@ const Section2 = () => {
           help you go off medications safely and sustain your success.
         </p>
         <div className="mt-10 md:mt-15 ">
-          <Link href="/start">
+          <Link href="/research">
             <SustainButton className="text-xs md:text-base font-medium">
               Research behind our treatment
             </SustainButton>

@@ -39,7 +39,7 @@ const Section1 = () => {
       <div className="mt-10 md:mt-12 ">
         <Link href="/start">
           <SustainButton className="text-xs md:text-base font-medium">
-            Book a consultation now
+            Book a consultation
           </SustainButton>
         </Link>
       </div>

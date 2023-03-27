@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import Link from "next/link";
 
 const SustainButton = styled(Button)({
-  background: "#5355AC !important",
+  background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
   padding: "20px 30px",
@@ -21,10 +21,10 @@ const SustainButton = styled(Button)({
 const StartSuccess = () => {
   return (
     <div>
-      <p className=" leading-tight md:pr-14 md:text-3xl text-1xl md:text-start font-bold text-[#5355AC] ">
+      <p className=" leading-tight md:pr-14 md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
         Payment link sent
       </p>
-      <p className="mt-4 text-base md:text-lg font-normal md:pr-8 md:text-start text-[#111111] mb-7">
+      <p className="mt-4 text-base md:text-lg font-normal md:pr-8 md:text-start text-[#476D85] mb-7">
         A payment link has been sent to your phone number. Check your WhatsApp
         to complete your consultation booking!
       </p>

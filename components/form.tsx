@@ -110,19 +110,19 @@ const Form = () => {
   return (
     <div className="max-w-m mx-5 md:mx-auto mt-17">
       <div className={isSuccess || isError ? "hidden" : "block"}>
-        <p className=" leading-tight md:pr-14 md:text-3xl text-2xl md:text-start font-bold text-[#4F9EEA] ">
-          Book your consultation
+        <p className=" leading-7 md:pr-14 md:text-2xl md:leading-9 text-1lg md:text-start font-bold text-[#002A47]">
+          Book a consultation with a lifestyle-medicine doctor
         </p>
-        <p className="mt-4 text-base md:text-lg font-normal md:pr-8 md:text-start text-[#002A47]">
-          Meet a doctor that can help you get started on your journey to better
-          health
+        <p className="mt-4 text-base md:text-lg leading-6 font-normal md:pr-8 md:text-start text-[#002A47]">
+          Meet a doctor that can help you gets started on your journey to
+          disease reversal
         </p>
-        <div className="bg-[#F0F7FF] md:p-5 p-4 flex justify-between rounded-lg mt-8 mb-9">
-          <p className="text-[#476D85] text-xs md:text-sm mt-0.5">
+        <div className="bg-[#324967] md:p-5 p-4 flex justify-between rounded-lg mt-8 mb-9">
+          <p className="text-[#CCD7E6] text-xs md:text-sm mt-0.5">
             Consultation fee
           </p>
-          <p className="text-[#476D85] text-sm md:text-base font-medium">
-            NGN 2,000
+          <p className="text-[#FFFFFF] text-sm md:text-base font-medium">
+            NGN 3,000
           </p>
         </div>
         <form onSubmit={handleSubmit}>
@@ -196,31 +196,31 @@ const Form = () => {
               required
             />
           </div>
-          <div className="bg-[#EEF3F6] p-4 mt-12 mb-9 rounded-lg">
+          <div className="bg-[#EEF3F6] p-4 mt-10 md:mt-11 mb-5 md:mb-6 rounded-lg">
             <p className="text-[#476D85] text-xs md:text-sm">
               By filling out this form, you agree to Custodia’s{" "}
               <a
-                className="text-[#4F9EEA] underline"
+                className="text-[#4F9EEA] underline font-medium"
                 href="https://priv-health.notion.site/Terms-of-use-254e525466a3493687d94fd671d93ad8"
               >
                 Terms of Use
               </a>{" "}
               and{" "}
               <a
-                className="text-[#4F9EEA] underline"
+                className="text-[#4F9EEA] underline font-medium"
                 href="https://priv-health.notion.site/Privacy-policy-2f70cbb81ab843ca920e87d2b32caa37"
               >
                 Privacy Policy
               </a>
             </p>
           </div>
-          <div className="mb-15 lg:mb-28">
+          <div className="mb-24 lg:mb-48">
             {isLoading ? (
               <SustainButton
                 className="self-center text-sm md:text-base font-medium"
                 type="submit"
               >
-                <p>Book consultation</p>
+                <p>Request consultation</p>
               </SustainButton>
             ) : (
               <SustainButton
