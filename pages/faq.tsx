@@ -92,8 +92,8 @@ const Faq = () => {
         <meta content="598084287257839" property="fb:profile_id" />
         <meta content="en_US" property="og:locale" />
         <meta content="website" property="og:type" />
-        <meta content="https://custodiahealth.com/research" property="og:url" />
-        <meta content="Research - Custodia Health" property="og:title" />
+        <meta content="https://custodiahealth.com/faq" property="og:url" />
+        <meta content="FAQs - Custodia Health" property="og:title" />
         <meta
           content="Custodia Health's frequenty asked questions"
           property="og:description"
@@ -124,7 +124,7 @@ const Faq = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@custodiahealth" />
         <meta name="twitter:creator" content="@custodiahealth" />
-        <meta name="twitter:title" content="Research - Custodia Health" />
+        <meta name="twitter:title" content="FAQs - Custodia Health" />
         <meta
           name="twitter:description"
           content="Custodia Health's frequenty asked questions"
@@ -137,7 +137,7 @@ const Faq = () => {
           content="An image of the Custodia Health logo"
         />
         <link rel="me" href="https://twitter.com/custodiahealth" />
-        <link href="https://custodiahealth.com/research" rel="canonical" />
+        <link href="https://custodiahealth.com/faq" rel="canonical" />
         <link href="https://custodiahealth.com/" rel="home" />
         <link href="/humans.txt" rel="author" type="text/plain" />
         <link

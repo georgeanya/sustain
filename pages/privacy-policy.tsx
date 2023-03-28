@@ -30,8 +30,8 @@ const Policy = () => {
         <meta content="598084287257839" property="fb:profile_id" />
         <meta content="en_US" property="og:locale" />
         <meta content="website" property="og:type" />
-        <meta content="https://custodiahealth.com/research" property="og:url" />
-        <meta content="Research - Custodia Health" property="og:title" />
+        <meta content="https://custodiahealth.com/privacy-policy" property="og:url" />
+        <meta content="Privacy policy - Custodia Health" property="og:title" />
         <meta
           content="Custodia Health's privacy policy"
           property="og:description"
@@ -62,7 +62,7 @@ const Policy = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@custodiahealth" />
         <meta name="twitter:creator" content="@custodiahealth" />
-        <meta name="twitter:title" content="Research - Custodia Health" />
+        <meta name="twitter:title" content="Privacy policy - Custodia Health" />
         <meta
           name="twitter:description"
           content="Custodia Health's privacy policy"
@@ -75,7 +75,7 @@ const Policy = () => {
           content="An image of the Custodia Health logo"
         />
         <link rel="me" href="https://twitter.com/custodiahealth" />
-        <link href="https://custodiahealth.com/research" rel="canonical" />
+        <link href="https://custodiahealth.com/privacy-policy" rel="canonical" />
         <link href="https://custodiahealth.com/" rel="home" />
         <link href="/humans.txt" rel="author" type="text/plain" />
         <link

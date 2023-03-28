@@ -45,8 +45,8 @@ const ErrorPage = () => {
         <meta content="598084287257839" property="fb:profile_id" />
         <meta content="en_US" property="og:locale" />
         <meta content="website" property="og:type" />
-        <meta content="https://custodiahealth.com/research" property="og:url" />
-        <meta content="Research - Custodia Health" property="og:title" />
+        <meta content="https://custodiahealth.com/404" property="og:url" />
+        <meta content="404 - Custodia Health" property="og:title" />
         <meta
           content="Custodia Health's 404"
           property="og:description"
@@ -77,7 +77,7 @@ const ErrorPage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@custodiahealth" />
         <meta name="twitter:creator" content="@custodiahealth" />
-        <meta name="twitter:title" content="Research - Custodia Health" />
+        <meta name="twitter:title" content="404 - Custodia Health" />
         <meta
           name="twitter:description"
           content="Custodia Health's 404"
@@ -90,7 +90,7 @@ const ErrorPage = () => {
           content="An image of the Custodia Health logo"
         />
         <link rel="me" href="https://twitter.com/custodiahealth" />
-        <link href="https://custodiahealth.com/research" rel="canonical" />
+        <link href="https://custodiahealth.com/404" rel="canonical" />
         <link href="https://custodiahealth.com/" rel="home" />
         <link href="/humans.txt" rel="author" type="text/plain" />
         <link
