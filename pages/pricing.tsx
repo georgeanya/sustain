@@ -27,7 +27,7 @@ const SustainButton = styled(Button)({
 });
 
 const Pricing = (props: any) => {
-  const [time, setTime] = useState(false);
+  const [time, setTime] = useState(true);
 
   function toggleTimeTrue() {
     setTime((time) => (time = true));
@@ -35,7 +35,7 @@ const Pricing = (props: any) => {
   function toggleTimeFalse() {
     setTime((time) => (time = false));
   }
-  const [time1, setTime1] = useState(false);
+  const [time1, setTime1] = useState(true);
 
   function toggleTime1True() {
     setTime1((time1) => (time1 = true));
