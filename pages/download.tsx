@@ -108,7 +108,7 @@ const Download = () => {
             <img src={apple.src} alt="" />
           </div>
         </div>
-        <div className="my-20 lg:w-1/2 lg:mt-20 lg:mb-36 flex justify-center">
+        <div className="my-20 lg:w-1/2 lg:mt-20 lg:mb-36 px-2 flex justify-center">
           <img src={app.src} alt="" />
         </div>
       </div>
