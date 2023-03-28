@@ -12,11 +12,7 @@ const Research = () => {
         <meta charSet="UTF-8" />
         <title>Research - Custodia Health</title>
         <meta name="generator" content="SEOmatic" />
-        <link
-          href={favicon.src}
-          rel="shortcut icon"
-          type="image/png"
-        />
+        <link href={favicon.src} rel="shortcut icon" type="image/png" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
@@ -40,10 +36,7 @@ const Research = () => {
           content="The research behind Custodia Health's approach"
           property="og:description"
         />
-        <meta
-          content={metaCard.src}
-          property="og:image"
-        />
+        <meta content={metaCard.src} property="og:image" />
         <meta content="1024" property="og:image:width" />
         <meta content="512" property="og:image:height" />
         <meta
@@ -74,10 +67,7 @@ const Research = () => {
           name="twitter:description"
           content="The research behind Custodia Health's approach"
         />
-        <meta
-          name="twitter:image"
-          content={metaCard.src}
-        />
+        <meta name="twitter:image" content={metaCard.src} />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
         <meta
@@ -115,9 +105,12 @@ const Research = () => {
                 McKenzie AL, Hallberg SJ, Creighton BC, et al.
               </p>
             </div>
-            <p className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]">
+            <a
+              href="https://diabetes.jmir.org/2017/1/e5/"
+              className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]"
+            >
               Read more
-            </p>
+            </a>
           </div>
           <div className="border px-5 py-7 md:px-6 md:py-9 flex flex-col justify-between">
             <div>
@@ -126,12 +119,15 @@ const Research = () => {
                 Patients with Type 2 Diabetes Mellitus
               </p>
               <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg leading-relaxed text-[#476D85]">
-                McKenzie AL, Hallberg SJ, Creighton BC, et al.
+                Wang L-L, Wang Q, Hong Y, Ojo O, et al.
               </p>
             </div>
-            <p className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]">
+            <a
+              href="https://www.mdpi.com/2072-6643/10/6/661"
+              className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]"
+            >
               Read more
-            </p>
+            </a>
           </div>
           <div className="border px-5 py-7 md:px-6 md:py-9 flex flex-col justify-between">
             <div>
@@ -142,57 +138,68 @@ const Research = () => {
                 Care
               </p>
               <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg leading-relaxed text-[#476D85]">
-                McKenzie AL, Hallberg SJ, Creighton BC, et al.
+                Unwin DJ, Tobin SD, Murray SW, et al.
               </p>
             </div>
-            <p className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]">
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6695889/"
+              className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]"
+            >
               Read more
-            </p>
+            </a>
           </div>
           <div className="border px-5 py-7 md:px-6 md:py-9 flex flex-col justify-between">
             <div>
               <p className="text-lg  font-medium md:text-center lg:text-start lg:text-xl text-[#002A47]">
-                A Novel Intervention Including Individualized Nutritional
-                Recommendations Reduces Hemoglobin A1c Level, Medication Use,
-                and Weight in Type 2 Diabetes
+                Carbohydrate restriction improves the features of Metabolic
+                Syndrome. Metabolic Syndrome may be defined by the response to
+                carbohydrate restriction
               </p>
               <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg leading-relaxed text-[#476D85]">
-                McKenzie AL, Hallberg SJ, Creighton BC, et al.
+                Volek JS, Feinman RD, et al.
               </p>
             </div>
-            <p className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]">
+            <a
+              href="https://nutritionandmetabolism.biomedcentral.com/articles/10.1186/1743-7075-2-31"
+              className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]"
+            >
               Read more
-            </p>
+            </a>
           </div>
           <div className="border px-5 py-7 md:px-6 md:py-9 flex flex-col justify-between">
             <div>
               <p className="text-lg  font-medium md:text-center lg:text-start lg:text-xl text-[#002A47]">
-                The Effect of Low-Carbohydrate Diet on Glycemic Control in
-                Patients with Type 2 Diabetes Mellitus
+                Dietary carbohydrate restriction improves insulin sensitivity,
+                blood pressure, microvascular function, and cellular adhesion
+                markers in individuals taking statins
               </p>
               <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg leading-relaxed text-[#476D85]">
-                McKenzie AL, Hallberg SJ, Creighton BC, et al.
+                Ballard KD, Quann EE, Kupchak BR, et al.
               </p>
             </div>
-            <p className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]">
+            <a
+              href="https://www.sciencedirect.com/science/article/pii/S0271531713001863?via%3Dihub"
+              className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]"
+            >
               Read more
-            </p>
+            </a>
           </div>
           <div className="border px-5 py-7 md:px-6 md:py-9 flex flex-col justify-between">
             <div>
               <p className="text-lg  font-medium md:text-center lg:text-start lg:text-xl text-[#002A47]">
-                Substantial and Sustained Improvements in Blood Pressure, Weight
-                and Lipid Profiles from a Carbohydrate Restricted Diet: An
-                Observational Study of Insulin Resistant Patients in Primary
-                Care
+                Impact of a 2-year trial of nutritional ketosis on indices of
+                cardiovascular disease risk in patients with type 2 diabetes
               </p>
               <p className="mt-4 md:mt-5 text-basex md:text-center lg:text-start lg:text-llg leading-relaxed text-[#476D85]">
-                McKenzie AL, Hallberg SJ, Creighton BC, et al.
+                Athinarayanan SJ, Hallberg SJ, McKenzie AL, et al.
               </p>
             </div>
-            <p className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]">
+            <a
+              href="https://cardiab.biomedcentral.com/articles/10.1186/s12933-020-01178-2"
+              className="mt-4 md:mt-5 font-medium text-base md:text-center lg:text-start lg:text-llg leading-relaxed text-[#4F9EEA]"
+            >
               Read more
-            </p>
+            </a>
           </div>
         </div>
       </div>
