@@ -95,7 +95,7 @@ const Download = () => {
       </Head>
       <Navbar1 />
       <div className="px-5 lg:px-32 lg:flex lg:justify-between">
-        <div className="lg:max-w-lg lg:mt-32">
+        <div className="lg:max-w-lg mt-16 lg:mt-32">
           <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
             Download Custodia Health on iOS and Android
           </h2>
@@ -108,7 +108,7 @@ const Download = () => {
             <img src={apple.src} alt="" />
           </div>
         </div>
-        <div className="my-20 lg:w-1/2 lg:mt-20 lg:mb-36 px-2 flex justify-center">
+        <div className="my-20 lg:w-1/2 lg:mt-20 lg:mb-36 flex justify-center">
           <img src={app.src} alt="" />
         </div>
       </div>
