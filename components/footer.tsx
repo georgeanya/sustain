@@ -23,7 +23,9 @@ const SustainButton = styled(Button)({
 const Footer = () => {
   return (
     <div className="bg-[#0C1227] md:px-32 px-5 md:pt-36 pt-24 text-center md:text-start text-white">
-      <p className="mb-6 md:mb-5 text-base leading-5 md:text-xl md:leading-6">Schedule your consultation now</p>
+      <p className="mb-6 md:mb-5 text-base leading-5 md:text-xl md:leading-6">
+        Schedule your consultation now
+      </p>
       <div className="md:flex md:justify-between">
         <p className="md:text-5lg text-3xl font-bold mb-11 md:max-w-2xl">
           Are you ready to start that journey? Join Custodia today!
@@ -66,10 +68,14 @@ const Footer = () => {
               <Link href="/404">Help center</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/privacy-policy">Privacy policy</Link>
+              <Link href="https://lifebox-labs.notion.site/Privacy-policy-9c564d4280694f34805e974ee3084c35">
+                Privacy policy
+              </Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/terms-of-use">Terms of use</Link>
+              <Link href="https://lifebox-labs.notion.site/lifebox-labs/Terms-of-use-1dc563d01e574d108fdc23f4c51d2ee1">
+                Terms of use
+              </Link>
             </p>
             {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/cookie">Cookie policy</Link>
@@ -86,7 +92,9 @@ const Footer = () => {
               <Link href="https://medium.com/@custodiahealth">Blog</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="https://lifebox-labs.notion.site/Join-Lifebox-Labs-caed82beacb448cf9be9b380907caa19">Careers</Link>
+              <Link href="https://lifebox-labs.notion.site/Join-Lifebox-Labs-caed82beacb448cf9be9b380907caa19">
+                Careers
+              </Link>
             </p>
             {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Press</Link>
