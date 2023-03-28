@@ -52,7 +52,7 @@ const Footer = () => {
               <Link href="/research">Research</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/faq">fAQs</Link>
+              <Link href="/faq">FAQs</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/download">Download our app</Link>
