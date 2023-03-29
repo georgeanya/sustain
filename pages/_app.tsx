@@ -6,11 +6,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-81RCEPC1Q1"
+        ></script>
         <script>
-          {`window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-137994035-2');`}
+          {`  window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-81RCEPC1Q1');`}
         </script>
       </Head>
       <Component {...pageProps} />
