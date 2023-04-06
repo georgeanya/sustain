@@ -104,8 +104,8 @@ const Download = () => {
             tracking, resources, messaging, and more
           </p>
           <div className="flex md:justify-center lg:justify-start mt-7 md:mt-10">
-            <img src={play.src} className="mr-3 lg:mr-4 w-32 md:w-40" alt="" />
-            <img src={apple.src} alt="" className=" w-32 md:w-40" />
+            <img src={play.src} className="mr-3 lg:mr-4 w-38 md:w-40" alt="" />
+            <img src={apple.src} alt="" className=" w-34 md:w-40" />
           </div>
         </div>
         <div className="my-20 lg:w-1/2 lg:mt-20 lg:mb-36 flex justify-center">
