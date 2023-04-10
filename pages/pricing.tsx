@@ -4,7 +4,7 @@ import icon from "../public/assets/icon.svg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Faq from "../components/faq";
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar4";
 import Footer from "../components/footer";
 import Link from "next/link";
 import favicon from "../public/assets/favicon.png";
