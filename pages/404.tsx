@@ -98,6 +98,7 @@ const ErrorPage = () => {
           hrefLang="x-default"
           rel="alternate"
         />
+        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
       </Head>
       <Navbar1 />
       <div className="px-5 md:px-32 md:max-w-3xl pt-12 md:pt-32 pb-24 md:pb-36">

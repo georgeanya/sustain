@@ -104,6 +104,7 @@ const Home: NextPage = () => {
           content="width=device-width, initial-scale=1,
       shrink-to-fit=no, maximum-scale=1"
         />
+        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
       </Head>
       <Navbar />
       <Hero />

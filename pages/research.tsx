@@ -83,6 +83,7 @@ const Research = () => {
           hrefLang="x-default"
           rel="alternate"
         />
+        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
       </Head>
       <Navbar1 />
       <div className="px-5 lg:px-32 lg:px md:mt-24 mt-16 pb-32">

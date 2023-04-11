@@ -145,6 +145,7 @@ const Faq = () => {
           hrefLang="x-default"
           rel="alternate"
         />
+        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
       </Head>
       <Navbar1/>
       <div className="px-5 md:pl-72 md:pr-96 md:mt-24 mt-16 md:pb-36 pb-24">
