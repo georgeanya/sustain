@@ -27,7 +27,7 @@ const Navbar1 = () => {
       <div className={isToggled ? "hidden" : "block lg:hidden"}>
         <NavbarMenu handleToggle={handleToggleFunc} />
       </div>
-      <div className="px-5 lg:px-32 pt-5 lg:pt-5 ">
+      <div className="px-5 lg:px-32 py-5 ">
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/">

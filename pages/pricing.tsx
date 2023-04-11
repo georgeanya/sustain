@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import icon from "../public/assets/icon.svg";
-import { styled } from "@mui/material/styles";
-import Button from "@mui/material/Button";
 import Faq from "../components/faq";
 import Navbar from "../components/navbar4";
 import Footer from "../components/footer";
@@ -10,6 +8,8 @@ import Link from "next/link";
 import favicon from "../public/assets/favicon.png";
 import metaCard from "../public/assets/custodia-metacard.png";
 import Head from "next/head";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
