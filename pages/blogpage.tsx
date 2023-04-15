@@ -8,6 +8,7 @@ import twitter from "../public/assets/twitter.svg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import Link from "next/link";
 
 const ArrowIcon = styled(ArrowBackIcon)({
   color: "#476D85",
@@ -36,10 +37,11 @@ const BlogContentPage = () => {
     <div>
       <Navbar1 />
       <div className="md:px-[245px] md:pt-[55px]">
-        <div className="flex items-center">
+        <Link href="/blog">
+        <div className="flex items-center" >
           <ArrowIcon />
           <p>Return to blog homepage</p>
-        </div>
+        </div></Link>
         <img src={virus1.src} alt="" className="w-full mt-9" />
         <div className="flex md:mt-[55px]">
           <p>Research</p>
