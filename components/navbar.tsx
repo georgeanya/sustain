@@ -21,6 +21,10 @@ const ArrowIcon = styled(ArrowForwardIcon)({
   padding: "1.5px",
   marginTop: "-2px",
   width: "21px",
+  ["@media (max-width:780px)"]: {
+    width: "16px",
+    marginTop: "0px",
+  },
 });
 
 const Navbar = () => {

@@ -9,6 +9,8 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Link from "next/link";
+import useFetch from "../hooks/useFetch";
+import { useRouter } from "next/router";
 
 const ArrowIcon = styled(ArrowBackIcon)({
   color: "#476D85",
@@ -33,15 +35,33 @@ const SustainButton = styled(Button)({
 });
 
 const BlogContentPage = () => {
+  let { loading, data, error } = useFetch(
+    "https://custodia-health-blog.herokuapp.com/api/articles"
+  );
+  const blogs = data;
+  const router = useRouter();
+  const slug = router.query.slug;
+
+  blogs?.map((blog: any) => {
+    return {
+      if(blog: any) {
+        let arr = blogs?.filter((blog) => blog.slug == slug);
+        blog = arr[0];
+      },
+    };
+  });
+
   return (
     <div>
       <Navbar1 />
+
       <div className="md:px-[245px] md:pt-[55px]">
         <Link href="/blog">
-        <div className="flex items-center" >
-          <ArrowIcon />
-          <p>Return to blog homepage</p>
-        </div></Link>
+          <div className="flex items-center">
+            <ArrowIcon />
+            <p>Return to blog homepage</p>
+          </div>
+        </Link>
         <img src={virus1.src} alt="" className="w-full mt-9" />
         <div className="flex md:mt-[55px]">
           <p>Research</p>
@@ -49,8 +69,7 @@ const BlogContentPage = () => {
           <p>Jun 16, 2021</p>
         </div>
         <p className="mt-4 text-[36px] leading-[45px] text-[#002A47] font-bold">
-          The emerging science connecting glycemic control to improved COVID-19
-          outcomes
+          {blog.attributes.title}
         </p>
         <div className="flex mt-7 md:mt-10">
           <img src={image.src} alt="" className="w-12" />
@@ -81,46 +100,7 @@ const BlogContentPage = () => {
               parturient sit commodo amet amet, nibh. In vitae purus sagittis,
               dolor, ut neque. Id sit molestie amet, massa, justo, nullam nibh.
             </p>
-            <p className="md:text-lg md:leading-[30px] text-[#476D85] md:mt-10">
-              Nunc nibh massa felis ut nulla nunc. Faucibus tortor neque,
-              placerat egestas ipsum massa aliquam fringilla. Pulvinar mauris
-              sit purus lectus suspendisse at metus in. Donec lectus nulla
-              gravida nunc mus lacus, non vel. Feugiat ipsum non, malesuada
-              egestas sit amet. Vitae hendrerit amet aenean sodales cras pretium
-              massa volutpat, egestas. Sed turpis mollis odio fermentum
-              malesuada urna, vulputate. In amet senectus sit dolor eget
-              pharetra nam nunc tortor. Tellus vel sollicitudin nisl vitae,
-              tellus enim. Odio aliquam egestas feugiat iaculis sit enim commodo
-              pharetra urna. Scelerisque egestas sed eu vitae commodo. Iaculis
-              lorem vitae hendrerit amet enim vel pellentesque tellus. A sed eu
-              enim cras elit, sed at. Commodo iaculis purus nisi nullam
-              consectetur nunc. Cursus at amet, sit vestibulum blandit. Ante
-              turpis egestas laoreet sed tellus quis adipiscing lectus. Odio
-              lacus, accumsan, scelerisque volutpat vestibulum tortor ultricies.
-              Malesuada vel, pulvinar penatibus molestie tempor sed. Arcu nisl
-              sed pharetra id consectetur. Risus, egestas proin lorem ultricies
-              pellentesque aliquet.
-            </p>
-            <p className="md:text-lg md:leading-[30px] text-[#476D85] md:mt-10">
-              Amet semper faucibus nisi, proin. Porta nec et purus justo eu nibh
-              nam eget mauris. Adipiscing viverra nunc, pharetra, elementum
-              amet. Volutpat venenatis, imperdiet risus eu. In turpis commodo
-              nunc quis sed. Sit aliquam eu mi at risus neque. A sed eu enim
-              cras elit, sed at. Commodo iaculis purus nisi nullam consectetur
-              nunc. Cursus at amet, sit vestibulum blandit. Ante turpis egestas
-              laoreet sed tellus quis adipiscing lectus. Odio lacus, accumsan,
-              scelerisque volutpat vestibulum tortor ultricies. Malesuada vel,
-              pulvinar penatibus molestie tempor sed. Arcu nisl sed pharetra id
-              consectetur. Risus, egestas proin lorem ultricies pellentesque
-              aliquet. Amet semper faucibus nisi, proin. A sed eu enim cras
-              elit, sed at. Commodo iaculis purus nisi nullam consectetur nunc.
-              Cursus at amet, sit vestibulum blandit. Ante turpis egestas
-              laoreet sed tellus quis adipiscing lectus. Odio lacus, accumsan,
-              scelerisque volutpat vestibulum tortor ultricies. Malesuada vel,
-              pulvinar penatibus molestie tempor sed. Arcu nisl sed pharetra id
-              consectetur. Risus, egestas proin lorem ultricies pellentesque
-              aliquet. Amet semper faucibus nisi, proin.
-            </p>
+            
             <div className="bg-[#F0F7FF] md:p-12 flex justify-between md:mt-14 md:mb-36 rounded-[20px]">
               <div className="max-w-[385px]">
                 <p className="text-[#002A47] md:text-2xl md:leading-[35px] mb-4 font-bold">
