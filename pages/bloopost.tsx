@@ -1,32 +1,16 @@
 import React from "react";
-import image from "../../public/assets/image.svg";
-import virus1 from "../../public/assets/virus1.svg";
-import facebook from "../../public/assets/facebook.svg";
-import twitter from "../../public/assets/twitter.svg";
+import Footer from "../components/footer";
+import Navbar1 from "../components/navbar1";
+import image from "../public/assets/image.svg";
+import virus1 from "../public/assets/virus1.svg";
+import facebook from "../public/assets/facebook.svg";
+import twitter from "../public/assets/twitter.svg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Link from "next/link";
+import useFetch from "../hooks/useFetch";
 import { useRouter } from "next/router";
-import axios from "axios";
-import { GetStaticProps, GetStaticPaths } from "next";
-import { ParsedUrlQuery } from "querystring";
-import Footer from "../../components/footer";
-import Navbar1 from "../../components/navbar1";
-
-interface Params extends ParsedUrlQuery {
-  slug: string;
-}
-
-interface Blog {
-  id: number;
-  attributes: {
-    title: string;
-    description: string;
-    content: string;
-    slug: any;
-  };
-}
 
 const ArrowIcon = styled(ArrowBackIcon)({
   color: "#476D85",
@@ -40,7 +24,6 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
-  cursor: "pointer",
   padding: "20px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -51,7 +34,23 @@ const SustainButton = styled(Button)({
   },
 });
 
-const BlogPage = ({ blog }: any) => {
+const BlogContentPage = () => {
+  let { loading, data, error } = useFetch(
+    "https://custodia-health-blog.herokuapp.com/api/articles"
+  );
+  const blogs = data;
+  const router = useRouter();
+  const slug = router.query.slug;
+
+  blogs?.map((blog: any) => {
+    return {
+      if(blog: any) {
+        let arr = blogs?.filter((blog) => blog.slug == slug);
+        blog = arr[0];
+      },
+    };
+  });
+
   return (
     <div>
       <Navbar1 />
@@ -83,11 +82,25 @@ const BlogPage = ({ blog }: any) => {
         </div>
         <div className="md:mt-[55px] flex flex-row justify-between">
           <div>
-            <p
-              dangerouslySetInnerHTML={{ __html: blog.attributes.content }}
-              className="md:text-lg md:leading-[30px] text-[#476D85]"
-            />
-
+            <p className="md:text-lg md:leading-[30px] text-[#476D85]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
+              interdum consequat nullam proin. Congue sit euismod suspendisse
+              dignissim morbi vel eget ultrices. Vivamus laoreet hac at risus
+              in. Leo facilisi nam a aliquet nunc diam turpis. Mattis at egestas
+              posuere facilisis pretium risus. Nulla pulvinar sit vel cras. A,
+              neque accumsan facilisi tempor ipsum viverra eget dolor. Mattis
+              diam magna turpis arcu et fermentum feugiat vulputate. Quam amet
+              orci cursus nunc viverra. Magnis eu, sit in et egestas volutpat.
+              Eu ridiculus vulputate lectus ullamcorper. Eleifend in lectus urna
+              sit diam. Vulputate eu eu bibendum pellentesque pellentesque.
+              Risus, suspendisse felis vel tempus blandit. Convallis tempor sed
+              donec in eget est. Egestas fusce senectus morbi condimentum. Vitae
+              in arcu feugiat vel velit. Vestibulum, ullamcorper mi, adipiscing
+              porta. Auctor accumsan sit turpis fermentum. Imperdiet pulvinar
+              parturient sit commodo amet amet, nibh. In vitae purus sagittis,
+              dolor, ut neque. Id sit molestie amet, massa, justo, nullam nibh.
+            </p>
+            
             <div className="bg-[#F0F7FF] md:p-12 flex justify-between md:mt-14 md:mb-36 rounded-[20px]">
               <div className="max-w-[385px]">
                 <p className="text-[#002A47] md:text-2xl md:leading-[35px] mb-4 font-bold">
@@ -131,29 +144,4 @@ const BlogPage = ({ blog }: any) => {
   );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const { data } = await axios.get(
-    "https://custodia-health-blog.herokuapp.com/api/articles"
-  );
-  const paths = data.data.map(({ id, attributes }: any) => ({
-    params: { slug: attributes.slug },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { slug } = params as Params;
-  const { data } = await axios.get(
-    `https://custodia-health-blog.herokuapp.com/api/articles?slug=${slug}`
-  );
-  return {
-    props: {
-      blog: data.data[0],
-    },
-  };
-};
-
-export default BlogPage;
+export default BlogContentPage;

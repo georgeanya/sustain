@@ -11,6 +11,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "20px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -114,13 +115,13 @@ const Footer = () => {
             </p>
             <div className="flex">
               <Link href="https://facebook.com/custodiahealth">
-                <img src={fbook.src} className="mr-5" alt="facebook logo" />
+                <img src={fbook.src} className="mr-5 cursor-pointer" alt="facebook logo" />
               </Link>
               <Link href="https://instagram.com/custodiahealth">
-                <img src={insta.src} className="mr-5" alt="instagram logo" />
+                <img src={insta.src} className="mr-5 cursor-pointer" alt="instagram logo" />
               </Link>
               <Link href="https://twitter.com/custodiahealth">
-                <img src={twitter.src} className="mr-5" alt="twitter logo" />
+                <img src={twitter.src} className="mr-5 cursor-pointer" alt="twitter logo" />
               </Link>
             </div>
           </div>

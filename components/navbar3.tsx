@@ -14,7 +14,7 @@ const Navbar3 = () => {
             <Link href="/">
               <img
                 src={custodia.src}
-                className="mr-3  self-center"
+                className="mr-3 cursor-pointer self-center"
                 alt="Priv Logo"
               />
             </Link>

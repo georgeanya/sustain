@@ -22,7 +22,7 @@ const FAQ2 = ({ faq, index, toggleFAQ }: any) => {
             ""
           )}
         </div>
-        <div className="self-start min-w-fit">
+        <div className="self-start min-w-fit cursor-pointer h-4 md:h-5">
           {faq.open ? (
             <img
               className="ml-6 flex self-center w-4 md:w-5 md:ml-10 mt-3.5"

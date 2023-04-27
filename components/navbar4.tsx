@@ -10,6 +10,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "14px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -38,13 +39,13 @@ const Navbar = () => {
       <div className="px-5 lg:px-32 pt-5 lg:pt-5 bg-[#F0F7FF]">
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <Link href="/">
-            <img
-              src={custodia.src}
-              className="mr-3  self-center"
-              alt="Custodia Logo"
-              
-            /></Link>
+            <Link href="/">
+              <img
+                src={custodia.src}
+                className="mr-3 cursor-pointer self-center"
+                alt="Custodia Logo"
+              />
+            </Link>
 
             <button
               data-collapse-toggle="navbar-solid-bg"
@@ -109,7 +110,7 @@ const Navbar = () => {
                   </Link>
                 </li> */}
 
-                <li className="mt-3.5 mx-5 ">
+                <li className="mt-3.5 mx-5 cursor-pointer">
                   <Link
                     href="/pricing"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
@@ -117,7 +118,7 @@ const Navbar = () => {
                     <p className="text-[#002A47]">Pricing</p>
                   </Link>
                 </li>
-                <li className="mt-3.5 mx-5 ">
+                <li className="mt-3.5 mx-5 cursor-pointer">
                   <Link
                     href="https://medium.com/@custodiahealth"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
@@ -125,7 +126,7 @@ const Navbar = () => {
                     <p className="text-[#002A47]">Blog</p>
                   </Link>
                 </li>
-                <li className="mt-3.5 mx-5 ">
+                <li className="mt-3.5 mx-5 cursor-pointer">
                   <Link
                     href="/research"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "

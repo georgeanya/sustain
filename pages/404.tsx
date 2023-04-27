@@ -11,6 +11,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "20px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -36,10 +37,7 @@ const ErrorPage = () => {
           name="keywords"
           content="diabetes, custodia health, prediabetes, diabetes reversal, reverse diabetes, high cholesterol, lifebox labs, hypertension"
         />
-        <meta
-          name="description"
-          content="Custodia Health's 404"
-        />
+        <meta name="description" content="Custodia Health's 404" />
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <meta name="robots" content="all" />
         <meta content="598084287257839" property="fb:profile_id" />
@@ -47,10 +45,7 @@ const ErrorPage = () => {
         <meta content="website" property="og:type" />
         <meta content="https://custodiahealth.com/404" property="og:url" />
         <meta content="404 - Custodia Health" property="og:title" />
-        <meta
-          content="Custodia Health's 404"
-          property="og:description"
-        />
+        <meta content="Custodia Health's 404" property="og:description" />
         <meta content={metaCard.src} property="og:image" />
         <meta content="1024" property="og:image:width" />
         <meta content="512" property="og:image:height" />
@@ -78,10 +73,7 @@ const ErrorPage = () => {
         <meta name="twitter:site" content="@custodiahealth" />
         <meta name="twitter:creator" content="@custodiahealth" />
         <meta name="twitter:title" content="404 - Custodia Health" />
-        <meta
-          name="twitter:description"
-          content="Custodia Health's 404"
-        />
+        <meta name="twitter:description" content="Custodia Health's 404" />
         <meta name="twitter:image" content={metaCard.src} />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
@@ -98,7 +90,10 @@ const ErrorPage = () => {
           hrefLang="x-default"
           rel="alternate"
         />
-        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
+        <meta
+          name="facebook-domain-verification"
+          content="nkzhwppp6o24gs2ndw0p0pjyfvijts"
+        />
       </Head>
       <Navbar1 />
       <div className="px-5 md:px-32 md:max-w-3xl pt-12 md:pt-32 pb-24 md:pb-36">

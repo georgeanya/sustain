@@ -10,6 +10,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "20px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -67,14 +68,18 @@ const About = () => {
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Dr. Olusina Ajidahun
               </p>
-              <p className="text-xs md:text-sm md:leading-5 text-[#476D85] mt-1.5">CEO</p>
+              <p className="text-xs md:text-sm md:leading-5 text-[#476D85] mt-1.5">
+                CEO
+              </p>
             </div>
             <div>
               <img src={teamImage.src} alt="" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Joseph Anya
               </p>
-              <p className="text-xs md:text-sm md:leading-5 text-[#476D85] mt-1.5">Product</p>
+              <p className="text-xs md:text-sm md:leading-5 text-[#476D85] mt-1.5">
+                Product
+              </p>
             </div>
             <div>
               <img src={teamImage.src} alt="" className="" />
@@ -123,7 +128,9 @@ const About = () => {
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 David Unwin, MD
               </p>
-              <p className="text-xs md:text-sm md:leading-5 text-[#476D85] mt-1.5">NHS</p>
+              <p className="text-xs md:text-sm md:leading-5 text-[#476D85] mt-1.5">
+                NHS
+              </p>
             </div>
             <div>
               <img src={teamImage.src} alt="" className="" />

@@ -8,6 +8,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "13px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -70,7 +71,10 @@ const NavbarMenu = ({ handleToggle }: any) => {
           </Link>
         </li>
         <li className="mb-7">
-          <Link href="https://medium.com/@custodiahealth" className="block text-sm font-medium">
+          <Link
+            href="https://medium.com/@custodiahealth"
+            className="block text-sm font-medium"
+          >
             <p className="text-[#002A47]">Blog</p>
           </Link>
         </li>

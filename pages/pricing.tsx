@@ -15,6 +15,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "20px 30px",
   margin: "0px 0px",
   width: "calc(100% - 100px)",
@@ -123,7 +124,10 @@ const Pricing = (props: any) => {
           hrefLang="x-default"
           rel="alternate"
         />
-        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
+        <meta
+          name="facebook-domain-verification"
+          content="nkzhwppp6o24gs2ndw0p0pjyfvijts"
+        />
       </Head>
       <Navbar />
       <div className="px-5 lg:px-66 md:pt-24 pt-16 pb-24 lg:pb-36 bg-[#F0F7FF]">

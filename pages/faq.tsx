@@ -13,6 +13,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "20px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -145,9 +146,12 @@ const Faq = () => {
           hrefLang="x-default"
           rel="alternate"
         />
-        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
+        <meta
+          name="facebook-domain-verification"
+          content="nkzhwppp6o24gs2ndw0p0pjyfvijts"
+        />
       </Head>
-      <Navbar1/>
+      <Navbar1 />
       <div className="px-5 md:pl-72 md:pr-96 md:mt-24 mt-16 md:pb-36 pb-24">
         <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
           FAQs

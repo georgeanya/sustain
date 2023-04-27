@@ -9,6 +9,7 @@ const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
   fontFamily: "Circular Std",
   color: "#f8f8f8",
+  cursor: "pointer",
   padding: "20px 30px",
   margin: "0px 0px",
   borderRadius: "32px",
@@ -50,9 +51,11 @@ const Hero = () => {
           diabetes, hypertension, and prediabetes using simple lifestyle changes
         </p>
         <div className="mt-8 lg:mt-14 ">
-          <Link href="/start"><SustainButton className="text-xs lg:text-base font-medium">
-            Book a consultation
-          </SustainButton></Link>
+          <Link href="/start">
+            <SustainButton className="text-xs lg:text-base font-medium">
+              Book a consultation
+            </SustainButton>
+          </Link>
         </div>
       </div>
       <div className=" lg:w-2/4 flex lg:p-10 justify-center">
