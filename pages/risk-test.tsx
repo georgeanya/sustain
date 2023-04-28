@@ -139,14 +139,14 @@ const RiskTest = () => {
           ) : (
             <div className="px-5 mt-[65px] md:mt-[70px]  flex flex-col items-center justify-center">
               <div>
-                <h1 className="md:text-3xl text-2xl font-bold max-w-[400px] text-[#5355AC] mb-9">
+                <h1 className="md:text-3xl text-2xl font-bold max-w-[400px] text-[#002A47] mb-9">
                   {currentQuestion?.text}
                 </h1>
                 <ul>
                   {currentQuestion?.options.map((option) => (
                     <li key={option?.text}>
                       <div
-                        className="py-[16px] max-w-[400px] border border-[#D7D7DB] my-2 text-center rounded-2xl text-sm md:text-base md:leading-5 leading-4"
+                        className="py-[16px] text-[#002A47] max-w-[400px] border border-[#D7D7DB] hover:border-[#4F9EEA] my-2 text-center rounded-2xl text-sm md:text-base md:leading-5 leading-4"
                         onClick={() => handleOptionClick(option?.count)}
                       >
                         {option?.text}
@@ -157,7 +157,7 @@ const RiskTest = () => {
               </div>
               <p
                 onClick={() => restartTest()}
-                className="text-[#5355AC] text-[14px] leading-[17px] text-center font-medium pt-7"
+                className="text-[#4F9EEA] text-[14px] leading-[17px] text-center font-medium pt-7"
               >
                 Click here to start again
               </p>
