@@ -4,7 +4,6 @@ import Link from "next/link";
 import image from "../public/assets/image.svg";
 import a1ctest from "../public/assets/aictest.svg";
 
-
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 const SustainButton = styled(Button)({
@@ -28,7 +27,7 @@ interface Blog {
     title: string;
     description: string;
     content: string;
-    slug: any; 
+    slug: any;
   };
 }
 
@@ -37,7 +36,6 @@ interface Props {
 }
 
 const BlogList = ({ blogs }: Props) => {
-  
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index: number) => {
@@ -48,7 +46,7 @@ const BlogList = ({ blogs }: Props) => {
   };
   return (
     <div className="px-5 md:px-32 mb-24">
-            <div className="hidden md:block">
+      <div className="hidden md:block">
         <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
           <li className="mr-2">
             <p
@@ -142,18 +140,19 @@ const BlogList = ({ blogs }: Props) => {
         </select>
       </div>
       <div className="mt-10 grid md:grid-cols-3 md:gap-y-26 gap-15 md:mb-18 mb-15">
-        {blogs?.map(({ id, attributes }: any) => {
+        {blogs?.map((blogpost: any) => {
+          const blog = blogpost.slice(1)
           return (
-            <Link href={`/blog/${attributes.slug}`} key={id}>
+            <Link href={`/blog/${blog.attributes.slug}`} key={blog.id}>
               <div className="max-w-[357px]">
                 <img src={a1ctest.src} alt="" />
                 <div className="mt-7">
                   <p className=" text-sm text-[#476D85]">Research</p>
                   <p className="text-[#002A47] font-bold text-llg md:text-1xl md:leading-8 mt-2.5 md:mt-3">
-                    {attributes.title}
+                    {blog.attributes.title}
                   </p>
                   <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
-                  {attributes.description}
+                    {blog.attributes.description}
                   </p>
                   <div className="flex mt-7 md:mt-10">
                     <img src={image.src} alt="" className="w-12" />

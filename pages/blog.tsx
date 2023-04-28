@@ -50,6 +50,8 @@ const BlogHome = ({ blogs }: any) => {
     setToggleState(Number(event.target.value));
   };
 
+  const blog = blogs.data?.slice(0, 1)[0] || [];
+
   return (
     <div>
       <Navbar1 />
@@ -59,17 +61,18 @@ const BlogHome = ({ blogs }: any) => {
           Health team
         </p>
         <div className="md:flex justify-between mt-9 md:mt-10">
-          <img src={virus.src} alt="" className="cursor-pointer" />
+          <Link href={`/blog/${blog.attributes.slug}`}>
+            <img src={virus.src} alt="" className="cursor-pointer" />
+          </Link>
           <div className=" md:ml-17 mt-7 md:mt-0 self-center">
             <p className=" text-sm text-[#476D85]">Research</p>
-            <p className="cursor-pointer text-[#002A47] font-bold text-llg md:text-4lg mt-2.5 md:mt-3">
-              What’s an A1C Test and Why Might You Need one?
-            </p>
+            <Link href={`/blog/${blog.attributes.slug}`}>
+              <p className="cursor-pointer text-[#002A47] font-bold text-llg md:text-4lg mt-2.5 md:mt-3">
+                {blog.attributes.title}
+              </p>
+            </Link>
             <p className="text-[#476D85] mt-4 md:mt-5 text-base md:text-lg">
-              There are many reasons that understanding your blood glucose
-              levels is beneficial — they are a key indicator of health, and
-              they are especially useful in understanding your risk for
-              prediabetes or type 2 diabetes.
+              {blog.attributes.description}
             </p>
             <div className="flex mt-7 md:mt-10">
               <img src={image.src} alt="" className="w-12" />
@@ -179,7 +182,9 @@ const BlogHome = ({ blogs }: any) => {
             </select>
           </div>
           <div className="mt-10 grid md:grid-cols-3 md:grid-rows-1 md:gap-y-26 gap-15 md:mb-18 mb-15">
-            {blogs.data?.map(({ id, attributes }: any) => {
+            {blogs.data?.slice(1).map((blogpost: any) => {
+              const blog = blogpost;
+              const { id, attributes } = blog;
               return (
                 <Link href={`/blog/${attributes.slug}`} key={id}>
                   <div className="max-w-[357px]">
