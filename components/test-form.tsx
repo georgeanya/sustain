@@ -30,7 +30,7 @@ interface IState {
   };
 }
 
-const url = "https://priv-health.herokuapp.com/v1/ed-assessment";
+const url = "https://getsustainapp.herokuapp.com/v1/risk-test";
 
 const TestForm = ({ tScore, start }: any) => {
   const [state, setState] = useState<IState>({

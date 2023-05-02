@@ -118,13 +118,23 @@ const Form = () => {
           Meet a doctor that can help you gets started on your journey to
           disease reversal
         </p>
-        <div className="bg-[#324967] md:p-5 p-4 flex justify-between rounded-lg mt-8 mb-9">
-          <p className="text-[#CCD7E6] text-xs md:text-sm mt-0.5">
-            Consultation fee
-          </p>
-          <p className="text-[#FFFFFF] text-sm md:text-base font-medium">
-            NGN 3,000
-          </p>
+        <div className="bg-[#324967] md:p-5 p-4 rounded-lg mt-8 mb-9">
+          <div className="flex justify-between">
+            <p className="text-white text-sm md:text-base md:leading-5">
+              Consultation fee
+            </p>
+            <p className="text-white text-sm md:text-base md:leading-5 font-medium">
+              NGN 3,000
+            </p>
+          </div>
+          <div className="flex justify-between md:mt-1.5">
+            <p className="text-[#CCD7E6] md:text-[13px] text-xs md:leading-4">
+              70% OFF
+            </p>
+            <p className="text-[#CCD7E6] md:text-[13px] text-xs md:leading-4  line-through">
+              NGN 10,000
+            </p>
+          </div>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-2 gap-5">
