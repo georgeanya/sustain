@@ -13,6 +13,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { ParsedUrlQuery } from "querystring";
 import Footer from "../../components/footer";
 import Navbar1 from "../../components/navbar1";
+import ReactMarkdown from "react-markdown";
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -65,9 +66,9 @@ const BlogPage = ({ blog }: any) => {
         </Link>
         <img src={virus1.src} alt="" className="w-full mt-9" />
         <div className="flex md:mt-[55px]">
-          <p>Research</p>
-          <p> · </p>
-          <p>Jun 16, 2021</p>
+          <p>{blog.attributes.category.data.attributes.name}</p>
+          <p> {"  "} · {"  "} </p>
+          <p>{blog.attributes.publishedAt}</p>
         </div>
         <p className="mt-4 text-[36px] leading-[45px] text-[#002A47] font-bold">
           {blog.attributes.title}
@@ -76,7 +77,7 @@ const BlogPage = ({ blog }: any) => {
           <img src={image.src} alt="" className="w-12" />
           <div className="ml-4 self-center">
             <p className="text-[#002A47] text-sm md:text-base font-medium">
-              Dr. Yetunde Wonda
+            {blog.attributes.author.data.attributes.name}
             </p>
             <p className="text-[#476D85] text-xs">Clinical Ops</p>
           </div>
@@ -87,6 +88,7 @@ const BlogPage = ({ blog }: any) => {
               dangerouslySetInnerHTML={{ __html: blog.attributes.content }}
               className="md:text-lg md:leading-[30px] text-[#476D85]"
             />
+            <ReactMarkdown children={blog.attributes.content} className="md:text-lg md:leading-[30px] text-[#476D85]"/>
 
             <div className="bg-[#F0F7FF] md:p-12 flex justify-between md:mt-14 md:mb-36 rounded-[20px]">
               <div className="max-w-[385px]">
@@ -147,7 +149,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { slug } = params as Params;
   const { data } = await axios.get(
-    `https://custodia-health-blog.herokuapp.com/api/articles?slug=${slug}`
+    `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&?slug=${slug}`
   );
   return {
     props: {
