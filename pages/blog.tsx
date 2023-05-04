@@ -1,10 +1,9 @@
 import React, { useState, useMemo } from "react";
 import Footer from "../components/footer";
 import Navbar1 from "../components/navbar1";
-import image from "../public/assets/image.svg";
+import image from "../public/assets/user.svg";
 import a1ctest from "../public/assets/aictest.svg";
 import virus from "../public/assets/virus.svg";
-import BlogList from "../components/blogList";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import axios from "axios";
@@ -25,6 +24,23 @@ const SustainButton = styled(Button)({
     padding: "16px 30px",
   },
 });
+
+const SustainOutlineButton = styled(Button)({
+  background: "white !important",
+  fontFamily: "Circular Std",
+  color: "#4F9EEA",
+  cursor: "pointer",
+  padding: "20px 30px",
+  margin: "0px 0px",
+  border: "1px solid #4F9EEA",
+  borderRadius: "32px",
+  textTransform: "none",
+  lineHeight: "20px",
+  ["@media (max-width:780px)"]: {
+    padding: "16px 30px",
+  },
+});
+
 interface Blog {
   id: number;
   attributes: {
@@ -49,7 +65,13 @@ interface Blog {
   };
 }
 
-type BlogCategory = "All" | "Patient stories" | "Engineering" | "Company" | "Research" | "Nutrition"
+type BlogCategory =
+  | "All"
+  | "Patient stories"
+  | "Engineering"
+  | "Company"
+  | "Research"
+  | "Nutrition";
 
 const BlogHome = ({ blogs }: any) => {
   console.log(blogs);
@@ -66,13 +88,13 @@ const BlogHome = ({ blogs }: any) => {
 
   const blogsToDisplay = useMemo(() => {
     console.log(blogs.data);
-    
+
     if (toggleState === "All") {
-      return blogs.data.slice(1)
+      return blogs.data.slice(1);
     }
     return blogs.data?.slice(1).filter((blog: any) => {
-      return blog.attributes.category.data.attributes.name === toggleState
-    })
+      return blog.attributes.category.data.attributes.name === toggleState;
+    });
   }, [blogs, toggleState]);
 
   return (
@@ -100,12 +122,14 @@ const BlogHome = ({ blogs }: any) => {
               {blog.attributes.description}
             </p>
             <div className="flex mt-7 md:mt-10">
-              <img src={image.src} alt="" className="w-12" />
+              <img src={image.src} alt="" className="w-12 rounded-[25px]" />
               <div className="ml-4 self-center">
-                <p className="text-[#002A47] text-sm md:text-base font-medium">
+                <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
                   {blog.attributes.author.data.attributes.name}
                 </p>
-                <p className="text-[#476D85] text-xs">Clinical Ops</p>
+                <p className="text-[#476D85] text-xs">
+                  {blog.attributes.author.data.attributes.team}
+                </p>
               </div>
             </div>
           </div>
@@ -208,11 +232,10 @@ const BlogHome = ({ blogs }: any) => {
           </div>
           <div className="mt-10 grid md:grid-cols-3 md:grid-rows-1 md:gap-y-26 gap-15 md:mb-18 mb-15">
             {blogsToDisplay.map((blogpost: any) => {
-              
               const blog = blogpost;
               const { id, attributes } = blog;
               console.log(attributes.category);
-              
+
               return (
                 <Link href={`/blog/${attributes.slug}`} key={id}>
                   <div className="max-w-[357px]">
@@ -229,13 +252,13 @@ const BlogHome = ({ blogs }: any) => {
                           {attributes.description}
                         </p>
                         <div className="flex mt-7 md:mt-10">
-                          <img src={image.src} alt="" className="w-12" />
+                          <img src={image.src} alt="" className="w-12 rounded-[25px]" />
                           <div className="ml-4 self-center">
-                            <p className="text-[#002A47] text-sm md:text-base md:leading-5 font-medium">
-                              {attributes.author.data.attributes.name}
+                            <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
+                              {blog.attributes.author.data.attributes.name}
                             </p>
                             <p className="text-[#476D85] text-xs">
-                              Clinical Ops
+                              {blog.attributes.author.data.attributes.team}
                             </p>
                           </div>
                         </div>
@@ -246,7 +269,7 @@ const BlogHome = ({ blogs }: any) => {
               );
             })}
           </div>
-          <SustainButton>Show more posts</SustainButton>
+          <SustainOutlineButton>Show more posts</SustainOutlineButton>
         </div>
       </div>
       <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-28 pb-20 bg-[#EFF2FA]">
@@ -275,6 +298,10 @@ export const getStaticProps: GetStaticProps = async () => {
   const { data } = await axios.get(
     "https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author"
   );
+
+  // Lazyload data by returning a promise that resolves after 1 second
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
   return {
     props: {
       blogs: data,

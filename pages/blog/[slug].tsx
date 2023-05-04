@@ -1,13 +1,11 @@
 import React from "react";
-import image from "../../public/assets/image.svg";
+import image from "../../public/assets/user.svg";
 import virus1 from "../../public/assets/virus1.svg";
 import facebook from "../../public/assets/facebook.svg";
 import twitter from "../../public/assets/twitter.svg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import axios from "axios";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { ParsedUrlQuery } from "querystring";
@@ -79,41 +77,41 @@ const BlogPage = ({ blog }: any) => {
     <div>
       <Navbar1 />
 
-      <div className="md:px-[245px] md:pt-[50px]">
+      <div className="md:px-[245px] md:pt-[50px] pt-[45px] px-5">
         <img src={virus1.src} alt="" className="w-full " />
-        <div className="flex md:mt-[55px]">
+        <div className="flex md:mt-[55px] mt-[30px] text-[#476D85] md:text-[16px] md:leading-[19px] text-[14px] leading-[16.5px]">
           <p>{blog.attributes.category.data.attributes.name}</p>
-          <p className="px-1">{" . "}</p>
+          <p className="px-1">•</p>
           <p>
             <Moment format="MMM DD YYYY">{blog.attributes.published_at}</Moment>
           </p>
         </div>
-        <p className="mt-4 text-[36px] leading-[45px] text-[#002A47] font-bold">
+        <p className="mt-4 md:text-[36px] md:leading-[45px] text-[20px] leading-[27px] text-[#002A47] font-bold">
           {blog.attributes.title}
         </p>
         <div className="flex mt-7 md:mt-10">
-          <img src={image.src} alt="" className="w-12" />
+          <img src={image.src} alt="" className="w-12 rounded-[25px]" />
           <div className="ml-4 self-center">
             <p className="text-[#002A47] text-sm md:text-base font-medium">
               {blog.attributes.author.data.attributes.name}
             </p>
-            <p className="text-[#476D85] text-xs">Clinical Ops</p>
+            <p className="text-[#476D85] text-xs">{blog.attributes.author.data.attributes.team}</p>
           </div>
         </div>
-        <div className="md:mt-[55px] flex flex-row justify-between">
+        <div className="md:mt-[55px] mt-[45px] md:flex flex-row justify-between">
           <div>
             <ReactMarkdown
               children={blog.attributes.content}
               remarkPlugins={[remarkGfm]}
-              className="md:text-lg md:leading-[30px] text-[#476D85]"
+              className="md:text-lg md:leading-[30px] text-[16px] leading-[26px] text-[#476D85]"
             />
 
-            <div className="bg-[#F0F7FF] md:p-12 flex justify-between md:mt-14 md:mb-36 rounded-[20px]">
+            <div className="bg-[#F0F7FF] px-5 py-10 md:p-12 md:flex justify-between md:mt-14 md:mb-36 mb-9 mt-9 rounded-[20px]">
               <div className="max-w-[385px]">
-                <p className="text-[#002A47] md:text-2xl md:leading-[35px] mb-4 font-bold">
+                <p className="text-[#002A47] md:text-2xl text-[22px] leading-[28px] md:leading-[35px] mb-4 font-bold">
                   Why manage diabetes when it can be reversed
                 </p>
-                <p className="text-[#4F9EEA] md:text-xl">
+                <p className="text-[#4F9EEA] md:text-xl mb-6 md:mb-0 md:text-[18px] leading-6">
                   Get personalized treatment for reversing type 2 diabetes
                   without leaving home
                 </p>
@@ -123,9 +121,9 @@ const BlogPage = ({ blog }: any) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:ml-12 md:min-w-[40px]">
+          <div className="flex md:flex-col md:ml-12 md:min-w-[40px] mb-20">
             <img src={facebook.src} alt="" />
-            <img src={twitter.src} className="mt-5" alt="" />
+            <img src={twitter.src} className="md:mt-5 ml-5 md:ml-0" alt="" />
           </div>
         </div>
       </div>
