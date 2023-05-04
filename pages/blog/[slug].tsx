@@ -13,7 +13,8 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { ParsedUrlQuery } from "querystring";
 import Footer from "../../components/footer";
 import Navbar1 from "../../components/navbar1";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -25,7 +26,21 @@ interface Blog {
     title: string;
     description: string;
     content: string;
-    slug: any;
+    slug: string;
+    category: {
+      data: {
+        attributes: {
+          name: string;
+        };
+      };
+    };
+    author: {
+      data: {
+        attributes: {
+          name: string;
+        };
+      };
+    };
   };
 }
 
@@ -52,7 +67,13 @@ const SustainButton = styled(Button)({
   },
 });
 
+interface ArticlesResponse {
+  data: Blog[];
+}
+
 const BlogPage = ({ blog }: any) => {
+  console.log(blog);
+
   return (
     <div>
       <Navbar1 />
@@ -67,7 +88,7 @@ const BlogPage = ({ blog }: any) => {
         <img src={virus1.src} alt="" className="w-full mt-9" />
         <div className="flex md:mt-[55px]">
           <p>{blog.attributes.category.data.attributes.name}</p>
-          <p> {"  "} · {"  "} </p>
+          <p>{" . "}</p>
           <p>{blog.attributes.publishedAt}</p>
         </div>
         <p className="mt-4 text-[36px] leading-[45px] text-[#002A47] font-bold">
@@ -77,18 +98,18 @@ const BlogPage = ({ blog }: any) => {
           <img src={image.src} alt="" className="w-12" />
           <div className="ml-4 self-center">
             <p className="text-[#002A47] text-sm md:text-base font-medium">
-            {blog.attributes.author.data.attributes.name}
+              {blog.attributes.author.data.attributes.name}
             </p>
             <p className="text-[#476D85] text-xs">Clinical Ops</p>
           </div>
         </div>
         <div className="md:mt-[55px] flex flex-row justify-between">
           <div>
-            <p
-              dangerouslySetInnerHTML={{ __html: blog.attributes.content }}
+            <ReactMarkdown
+              children={blog.attributes.content}
+              remarkPlugins={[remarkGfm]}
               className="md:text-lg md:leading-[30px] text-[#476D85]"
             />
-            <ReactMarkdown children={blog.attributes.content} className="md:text-lg md:leading-[30px] text-[#476D85]"/>
 
             <div className="bg-[#F0F7FF] md:p-12 flex justify-between md:mt-14 md:mb-36 rounded-[20px]">
               <div className="max-w-[385px]">
@@ -133,11 +154,11 @@ const BlogPage = ({ blog }: any) => {
   );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const { data } = await axios.get(
+export const getStaticPaths: GetStaticPaths<Params> = async () => {
+  const { data } = await axios.get<ArticlesResponse>(
     "https://custodia-health-blog.herokuapp.com/api/articles"
   );
-  const paths = data.data.map(({ id, attributes }: any) => ({
+  const paths = data.data.map(({ attributes }) => ({
     params: { slug: attributes.slug },
   }));
   return {
@@ -146,14 +167,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps<{ blog: Blog }, Params> = async ({
+  params,
+}) => {
   const { slug } = params as Params;
-  const { data } = await axios.get(
-    `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&?slug=${slug}`
+  const { data } = await axios.get<ArticlesResponse>(
+    `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=seo&${slug}`
   );
+  const blog = data.data.find((blog) => blog.attributes.slug === slug);
   return {
     props: {
-      blog: data.data[0],
+      blog,
     },
   };
 };

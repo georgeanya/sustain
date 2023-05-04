@@ -79,7 +79,7 @@ const BlogHome = ({ blogs }: any) => {
     <div>
       <Navbar1 />
       <div className="px-5 md:px-32 md:mb-24 mb-15">
-        <p className=" text-sm md:text-llg font-normal mt-10 md:mt-14 text-[#002A47]">
+        <p className=" text-sm md:text-llg font-normal mt-10 md:mt-12 text-[#002A47]">
           <span className=" font-bold">Blog</span> | Updates from the Custodia
           Health team
         </p>
@@ -88,7 +88,7 @@ const BlogHome = ({ blogs }: any) => {
             <img src={virus.src} alt="" className="cursor-pointer" />
           </Link>
           <div className=" md:ml-17 mt-7 md:mt-0 self-center">
-            <p className=" text-sm text-[#476D85]">
+            <p className=" text-sm text-[#476D85] leading-[17px]">
               {blog.attributes.category.data.attributes.name}
             </p>
             <Link href={`/blog/${blog.attributes.slug}`}>
@@ -195,7 +195,7 @@ const BlogHome = ({ blogs }: any) => {
               onChange={handleSelect}
               className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 bg-white h-11 md:h-12"
             >
-              <option hidden selected>
+              <option hidden defaultValue={"Browse by category"}>
                 Browse by category
               </option>
               <option value="All">All</option>
