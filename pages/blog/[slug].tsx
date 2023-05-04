@@ -177,7 +177,7 @@ export const getStaticProps: GetStaticProps<{ blog: Blog }, Params> = async ({
   const blog = data.data.find((blog) => blog.attributes.slug === slug);
   return {
     props: {
-      blog,
+      blog: blog || {} as Blog,
     },
   };
 };
