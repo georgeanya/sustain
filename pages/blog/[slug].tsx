@@ -13,8 +13,9 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { ParsedUrlQuery } from "querystring";
 import Footer from "../../components/footer";
 import Navbar1 from "../../components/navbar1";
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import Moment from "react-moment";
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -78,18 +79,14 @@ const BlogPage = ({ blog }: any) => {
     <div>
       <Navbar1 />
 
-      <div className="md:px-[245px] md:pt-[55px]">
-        <Link href="/blog">
-          <div className="flex items-center">
-            <ArrowIcon />
-            <p>Return to blog homepage</p>
-          </div>
-        </Link>
-        <img src={virus1.src} alt="" className="w-full mt-9" />
+      <div className="md:px-[245px] md:pt-[50px]">
+        <img src={virus1.src} alt="" className="w-full " />
         <div className="flex md:mt-[55px]">
           <p>{blog.attributes.category.data.attributes.name}</p>
-          <p>{" . "}</p>
-          <p>{blog.attributes.publishedAt}</p>
+          <p className="px-1">{" . "}</p>
+          <p>
+            <Moment format="MMM DD YYYY">{blog.attributes.published_at}</Moment>
+          </p>
         </div>
         <p className="mt-4 text-[36px] leading-[45px] text-[#002A47] font-bold">
           {blog.attributes.title}
@@ -177,7 +174,7 @@ export const getStaticProps: GetStaticProps<{ blog: Blog }, Params> = async ({
   const blog = data.data.find((blog) => blog.attributes.slug === slug);
   return {
     props: {
-      blog: blog || {} as Blog,
+      blog: blog || ({} as Blog),
     },
   };
 };
