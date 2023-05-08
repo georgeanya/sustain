@@ -95,7 +95,9 @@ const BlogPage = ({ blog }: any) => {
             <p className="text-[#002A47] text-sm md:text-base font-medium">
               {blog.attributes.author.data.attributes.name}
             </p>
-            <p className="text-[#476D85] text-xs">{blog.attributes.author.data.attributes.team}</p>
+            <p className="text-[#476D85] text-xs">
+              {blog.attributes.author.data.attributes.team}
+            </p>
           </div>
         </div>
         <div className="md:mt-[55px] mt-[45px] md:flex flex-row justify-between">
