@@ -252,7 +252,11 @@ const BlogHome = ({ blogs }: any) => {
                           {attributes.description}
                         </p>
                         <div className="flex mt-7 md:mt-10">
-                          <img src={image.src} alt="" className="w-12 rounded-[25px]" />
+                          <img
+                            src={image.src}
+                            alt=""
+                            className="w-12 rounded-[25px]"
+                          />
                           <div className="ml-4 self-center">
                             <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
                               {blog.attributes.author.data.attributes.name}
