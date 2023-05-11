@@ -300,7 +300,7 @@ const BlogHome = ({ blogs }: any) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await axios.get(
-    "https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author"
+    "https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&sort=createdAt:asc"
   );
 
   // Lazyload data by returning a promise that resolves after 1 second
