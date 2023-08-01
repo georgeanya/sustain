@@ -74,7 +74,10 @@ const ErrorPage = () => {
         <meta name="twitter:creator" content="@custodiahealth" />
         <meta name="twitter:title" content="404 - Custodia Health" />
         <meta name="twitter:description" content="Custodia Health's 404" />
-        <meta name="twitter:image" content={metaCard.src} />
+        <meta
+          name="twitter:image"
+          content="https://custodiahealth.com/_next/static/media/custodia-metacard.9e18efee.png"
+        />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
         <meta

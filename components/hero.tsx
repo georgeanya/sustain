@@ -47,13 +47,13 @@ const Hero = () => {
           lifelong medication
         </p>
         <p className="mt-5 md:mt-6 text-base font-normal lg:pr-8 lg:text-start lg:text-2lg text-[#476D85]">
-          Custodia helps people reverse chronic metabolic diseases like
-          diabetes, hypertension, and prediabetes using simple lifestyle changes
+          Custodia helps people reverse chronic metabolic diseases like diabetes
+          and prediabetes using simple lifestyle changes
         </p>
         <div className="mt-8 lg:mt-14 ">
           <Link href="/start">
             <SustainButton className="text-xs lg:text-base font-medium">
-              Book a consultation
+              Get started now
             </SustainButton>
           </Link>
         </div>

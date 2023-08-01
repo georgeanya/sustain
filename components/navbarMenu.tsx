@@ -60,21 +60,22 @@ const NavbarMenu = ({ handleToggle }: any) => {
             <p className="text-[#002A47]">For health plans</p>
           </Link>
         </li>
+         */}
         <li className="mb-7">
-          <Link href="/404" className="block text-sm font-medium">
-            <p className="text-[#002A47]">For doctors</p>
+          <Link
+            href="/healthcare-providers"
+            className="block text-sm font-medium"
+          >
+            <p className="text-[#002A47]">For healthcare providers</p>
           </Link>
-        </li> */}
+        </li>
         <li className="mb-7">
           <Link href="/pricing" className="block text-sm font-medium">
             <p className="text-[#002A47]">Pricing</p>
           </Link>
         </li>
         <li className="mb-7">
-          <Link
-            href="https://medium.com/@custodiahealth"
-            className="block text-sm font-medium"
-          >
+          <Link href="/blog" className="block text-sm font-medium">
             <p className="text-[#002A47]">Blog</p>
           </Link>
         </li>

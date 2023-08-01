@@ -19,7 +19,7 @@ const Section5 = () => {
         See what some of our patients say about us.
       </p>
       <div className="md:grid md:grid-cols-2 md:gap-7">
-        <div className="mt-8 md:mt-0 px-5 py-10 md:px-12 md:py-14 rounded-2xl bg-[#F0F3F4] flex flex-col justify-between" >
+        <div className="mt-8 md:mt-0 px-5 py-10 md:px-12 md:py-14 rounded-2xl bg-[#F0F3F4] flex flex-col justify-between">
           <p className="text-xl md:text-1xl md:leading-9 text-[#002A47] ">
             “Custodia has changed my life. I feel better, weigh less, and have
             control my blood sugar well. I am excited about continuing to make
@@ -67,27 +67,33 @@ const Section5 = () => {
 
       <div className="flex flex-wrap justify-between mt-16">
         <div className="md:w-60 w-40 mb-10 md:mb-0">
-          <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">95%</p>
+          <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">
+            95%
+          </p>
           <p className="md:text-base md:leading-6 text-sm font-normal text-[#002A47] md:mt-3 mt-1">
             of patients reduced or eliminated their medications
           </p>
         </div>
         <div className="md:w-60 w-40 mb-10 md:mb-0">
           <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">
-            2.3%
+            1.5%
           </p>
           <p className="md:text-base md:leading-6 text-sm font-normal text-[#002A47] md:mt-3 mt-1">
             Average HbA1c reduction among 90% patients
           </p>
         </div>
         <div className="md:w-60 w-40">
-          <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">65%</p>
+          <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">
+          ₦200,000
+          </p>
           <p className="md:text-base md:leading-6 text-sm font-normal text-[#002A47] md:mt-3 mt-1">
-            of patients acheive normal blood pressure after 6 months
+            Average yearly cost savings on medications
           </p>
         </div>
         <div className="md:w-60 w-40">
-          <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">15%</p>
+          <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">
+            15%
+          </p>
           <p className="md:text-base md:leading-6 text-sm font-normal text-[#002A47] md:mt-3 mt-1">
             Average weight loss after 6 months
           </p>

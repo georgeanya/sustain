@@ -113,8 +113,8 @@ const TestForm = ({ tScore, start }: any) => {
         <p className=" leading-tight md:pr-14 md:text-3xl text-2xl md:text-start font-bold text-[#002A47] ">
           Send my test results
         </p>
-        <p className="mt-4 text-base md:text-lg font-normal md:text-start text-[#476D85] mb-9">
-        Please enter your details to get your risk test results sent to you
+        <p className="mt-4 text-base md:text-lg md:leading-6 font-normal md:text-start text-[#476D85] mb-9">
+          Please enter your details to get your risk test results sent to you
         </p>
         <form onSubmit={handleSubmit}>
           <div className="md:grid md:grid-cols-2 md:gap-5">
@@ -171,7 +171,7 @@ const TestForm = ({ tScore, start }: any) => {
               required
             />
           </div>
-          <div className="mb-7">
+          <div className="mb-[50px]">
             <label
               htmlFor="number"
               className="block mb-2 text-sm font-medium text-[#002A47]"
@@ -187,6 +187,9 @@ const TestForm = ({ tScore, start }: any) => {
               placeholder=""
               required
             />
+            <p className="text-[#476D85] text-[12px] md:text-[13px] leading-4 mt-[10px]">
+              Enter your Nigerian WhatsApp phone number eg. 08012345678
+            </p>
           </div>
 
           <div className="mb-15 lg:mb-28">
@@ -205,7 +208,7 @@ const TestForm = ({ tScore, start }: any) => {
                 <div role="status">
                   <svg
                     aria-hidden="true"
-                    className="w-5 h-5 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-[#5355AC]"
+                    className="w-5 h-5 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-[#4F9EEA]"
                     viewBox="0 0 100 101"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -221,8 +224,11 @@ const TestForm = ({ tScore, start }: any) => {
               </SustainButton>
             )}
             <p
-              onClick={ () => {start()}}
-              className="mt-7 text-[#4F9EEA] text-center text-sm">
+              onClick={() => {
+                start();
+              }}
+              className="mt-7 text-[#4F9EEA] text-center text-sm"
+            >
               Click here to start again
             </p>
           </div>

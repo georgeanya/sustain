@@ -49,6 +49,18 @@ const Faq = () => {
       answer: "No, Visit our pricing page to see the costs.",
       open: false,
     },
+    {
+      question: "Can type 2 diabetes be reversed without medication?",
+      answer:
+        "A lot of scientific studies have confirmed that through diet changes and weight loss, the process underlying type 2 diabetes can be put into remission without the help of medication.",
+      open: false,
+    },
+    {
+      question: "How is diabetes reversal measured?",
+      answer:
+        "Type 2 diabetes reversal is officially in remission when HbA1c levels drop to below 6.5% (48mmol/mol) and stay there for 3 months without the help of medication.",
+      open: false,
+    },
   ]);
 
   const toggleFAQ = (index: number) => {

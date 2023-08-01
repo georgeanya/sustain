@@ -12,7 +12,7 @@ import Faq from "../components/faq";
 import Section7 from "../components/section7";
 import Navbar from "../components/navbar";
 import favicon from "../public/assets/favicon.png";
-import metaCard from "../public/assets/custodia-metacard.png";
+import metaCard from "../public/assets/home-metacard.jpg";
 import Footer from "../components/footer";
 
 const Home: NextPage = () => {
@@ -84,7 +84,10 @@ const Home: NextPage = () => {
           name="twitter:description"
           content="Custodia Health is an online specialty clinic for safely reversing chronic metabolic disease like type 2 diabetes and prediabetes"
         />
-        <meta name="twitter:image" content={metaCard.src} />
+        <meta
+          name="twitter:image"
+          content="https://custodiahealth.com/_next/static/media/home-metacard.8b4f9939.jpg"
+        />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
         <meta
@@ -104,7 +107,17 @@ const Home: NextPage = () => {
           content="width=device-width, initial-scale=1,
       shrink-to-fit=no, maximum-scale=1"
         />
-        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
+        <meta
+          name="facebook-domain-verification"
+          content="nkzhwppp6o24gs2ndw0p0pjyfvijts"
+        />
+        <script type="text/javascript">
+          {`(function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "h4rdrt80ge");`}
+        </script>
       </Head>
       <Navbar />
       <Hero />

@@ -22,19 +22,18 @@ const SustainButton = styled(Button)({
 const StartSuccess = () => {
   return (
     <div>
-      <p className=" leading-tight md:pr-14 md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
-        Payment link sent
+      <p className=" leading-tight  md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
+      You have submitted your details successfully
       </p>
-      <p className="mt-4 text-base md:text-lg font-normal md:pr-8 md:text-start text-[#476D85] mb-7">
-        A payment link has been sent to your phone number. Check your WhatsApp
-        to complete your consultation booking!
+      <p className="mt-5 text-base leading-[23px] md:leading-[27px] md:text-lg font-normal md:text-start text-[#476D85] mb-[30px]">
+      A WhatsApp message will be sent to you to complete your enrollment into Custodia Health.
       </p>
-      <Link href="/">
+      <Link href="https://t.me/+RCQ20EcSxeBmMDI0">
         <SustainButton
           className="self-center text-sm md:text-base font-medium"
           type="submit"
         >
-          Back to homepage
+          Join our Telegram community
         </SustainButton>
       </Link>
     </div>

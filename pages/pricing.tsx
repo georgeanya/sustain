@@ -68,7 +68,7 @@ const Pricing = (props: any) => {
         <meta content="598084287257839" property="fb:profile_id" />
         <meta content="en_US" property="og:locale" />
         <meta content="website" property="og:type" />
-        <meta content="https://custodiahealth.com/start" property="og:url" />
+        <meta content="https://custodiahealth.com/pricing" property="og:url" />
         <meta content="Plans & pricing - Custodia Health" property="og:title" />
         <meta
           content="Choose a membership plan that’s right for you"
@@ -108,7 +108,10 @@ const Pricing = (props: any) => {
           name="twitter:description"
           content="Choose a membership plan that’s right for you"
         />
-        <meta name="twitter:image" content={metaCard.src} />
+        <meta
+          name="twitter:image"
+          content="https://custodiahealth.com/_next/static/media/custodia-metacard.9e18efee.png"
+        />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
         <meta
@@ -145,7 +148,7 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 120,000
+                    NGN 140,000
                   </p>
                 </div>
               ) : (
@@ -154,7 +157,7 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 200,000
+                    NGN 250,000
                   </p>
                 </div>
               )}
@@ -263,11 +266,7 @@ const Pricing = (props: any) => {
                   </SustainButton>
                 </Link>
               </div>
-              <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center text-[#002A47]">
-                You can pay in 3 installments.
-                <br />
-                Powered by Arteri
-              </p>
+  
             </div>
           </div>
           <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 lg:py-15">
@@ -278,7 +277,7 @@ const Pricing = (props: any) => {
                     BASIC
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 30,000
+                    NGN 20,000
                   </p>
                 </div>
               ) : (
@@ -287,7 +286,7 @@ const Pricing = (props: any) => {
                     BASIC
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 50,000
+                    NGN 40,000
                   </p>
                 </div>
               )}
@@ -301,7 +300,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTimeTrue}
                   >
-                    <p className="text-sm leading-4 text-[#002A47]">6-Months</p>
+                    <p className="text-sm leading-4 text-[#002A47]">3-Months</p>
                   </div>
                   <div
                     className={
@@ -311,7 +310,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTimeFalse}
                   >
-                    <p className="text-sm leading-4 text-[#002A47]">Annual</p>
+                    <p className="text-sm leading-4 text-[#002A47]">6-Months</p>
                   </div>
                 </div>
               </div>
@@ -376,11 +375,7 @@ const Pricing = (props: any) => {
                   </SustainButton>
                 </Link>
               </div>
-              <p className="mt-5 md:mt-6 text-sm lg:text-bases md:px-12 text-center text-[#002A47]">
-                You can pay in 3 installments.
-                <br />
-                Powered by Arteri
-              </p>
+              
             </div>
           </div>
         </div>

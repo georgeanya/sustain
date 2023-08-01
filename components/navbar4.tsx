@@ -109,7 +109,14 @@ const Navbar = () => {
                     <p className="text-[#002A47]">For doctors</p>
                   </Link>
                 </li> */}
-
+                <li className="mt-3.5 mx-5 cursor-pointer">
+                  <Link
+                    href="/healthcare-providers"
+                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
+                  >
+                    <p className="text-[#002A47]">For healthcare providers</p>
+                  </Link>
+                </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
                   <Link
                     href="/pricing"
@@ -120,7 +127,7 @@ const Navbar = () => {
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
                   <Link
-                    href="https://medium.com/@custodiahealth"
+                    href="/blog"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
                     <p className="text-[#002A47]">Blog</p>

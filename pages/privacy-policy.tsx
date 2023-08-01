@@ -21,16 +21,16 @@ const Policy = () => {
           name="keywords"
           content="diabetes, custodia health, prediabetes, diabetes reversal, reverse diabetes, high cholesterol, lifebox labs, hypertension"
         />
-        <meta
-          name="description"
-          content="Custodia Health's privacy policy"
-        />
+        <meta name="description" content="Custodia Health's privacy policy" />
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <meta name="robots" content="all" />
         <meta content="598084287257839" property="fb:profile_id" />
         <meta content="en_US" property="og:locale" />
         <meta content="website" property="og:type" />
-        <meta content="https://custodiahealth.com/privacy-policy" property="og:url" />
+        <meta
+          content="https://custodiahealth.com/privacy-policy"
+          property="og:url"
+        />
         <meta content="Privacy policy - Custodia Health" property="og:title" />
         <meta
           content="Custodia Health's privacy policy"
@@ -67,7 +67,10 @@ const Policy = () => {
           name="twitter:description"
           content="Custodia Health's privacy policy"
         />
-        <meta name="twitter:image" content={metaCard.src} />
+        <meta
+          name="twitter:image"
+          content="https://custodiahealth.com/_next/static/media/custodia-metacard.9e18efee.png"
+        />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
         <meta
@@ -75,7 +78,10 @@ const Policy = () => {
           content="An image of the Custodia Health logo"
         />
         <link rel="me" href="https://twitter.com/custodiahealth" />
-        <link href="https://custodiahealth.com/privacy-policy" rel="canonical" />
+        <link
+          href="https://custodiahealth.com/privacy-policy"
+          rel="canonical"
+        />
         <link href="https://custodiahealth.com/" rel="home" />
         <link href="/humans.txt" rel="author" type="text/plain" />
         <link
@@ -83,7 +89,10 @@ const Policy = () => {
           hrefLang="x-default"
           rel="alternate"
         />
-        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
+        <meta
+          name="facebook-domain-verification"
+          content="nkzhwppp6o24gs2ndw0p0pjyfvijts"
+        />
       </Head>
       <Navbar1 />
       <div className="px-5 lg:px-72 md:mt-24 mt-16 pb-32">
@@ -141,7 +150,7 @@ const Policy = () => {
           This policy is effective as of 28 January 2021.
         </p>
       </div>
-      <Footer />    
+      <Footer />
     </div>
   );
 };

@@ -21,10 +21,10 @@ const SustainButton = styled(Button)({
 const StartTestSuccess = () => {
   return (
     <div>
-      <p className=" leading-tight md:pr-14 md:text-3xl text-1xl md:text-start font-bold text-[#5355AC] ">
+      <p className=" leading-tight  md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
         Your result has been sent
       </p>
-      <p className="mt-4 text-base md:text-lg font-normal md:pr-8 md:text-start text-[#111111] mb-7">
+      <p className="mt-4 text-base leading-[23px] md:leading-[27px] md:text-lg font-normal md:text-start text-[#476D85] mb-7">
         Your result has been sent to your phone number. Please check your
         WhatsApp
       </p>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useTheme, Theme } from "@emotion/react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import axios from "axios";
 import StartError from "./startError";
 import StartSuccess from "./startSuccess";
+import lock from "../public/assets/lock.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -111,14 +111,13 @@ const Form = () => {
   return (
     <div className="max-w-m mx-5 md:mx-auto mt-17">
       <div className={isSuccess || isError ? "hidden" : "block"}>
-        <p className=" leading-7 md:pr-14 md:text-2xl md:leading-9 text-1lg md:text-start font-bold text-[#002A47]">
-          Book a consultation with a lifestyle-medicine doctor
+        <p className=" leading-7  md:text-2xl md:leading-9 text-1lg md:text-start font-bold text-[#002A47]">
+          Hi there, We are so happy to have you!
         </p>
-        <p className="mt-4 text-base md:text-lg leading-6 font-normal md:pr-8 md:text-start text-[#476D85]">
-          Meet a doctor that can help you gets started on your journey to
-          disease reversal
+        <p className="mt-4 text-base md:text-lg leading-6 font-normal md:text-start text-[#476D85]">
+          We just need a bit of information to get you started.
         </p>
-        <div className="bg-[#324967] md:p-5 p-4 rounded-lg mt-8 mb-9">
+        {/* <div className="bg-[#324967] md:p-5 p-4 rounded-lg mt-8 mb-9">
           <div className="flex justify-between">
             <p className="text-white text-sm md:text-base md:leading-5">
               Consultation fee
@@ -135,10 +134,10 @@ const Form = () => {
               NGN 10,000
             </p>
           </div>
-        </div>
+        </div> */}
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-2 gap-5">
-            <div className="mb-7">
+          <div className="grid grid-cols-2 gap-5 mt-10">
+            <div className="mb-2.5">
               <label
                 htmlFor="first_name"
                 className="block mb-2 text-sm font-medium text-[#002A47]"
@@ -155,7 +154,7 @@ const Form = () => {
                 required
               />
             </div>
-            <div className="mb-7">
+            <div className="mb-2.5">
               <label
                 htmlFor="last_name"
                 className="block mb-2 text-sm font-medium text-[#002A47]"
@@ -172,6 +171,12 @@ const Form = () => {
                 required
               />
             </div>
+          </div>
+          <div className="flex mb-7">
+            <img src={lock.src} alt="" />
+            <p className="md:text-[13px] leading-4 text-xs text-[#476D85] ml-1">
+              Your information will never be shared with anyone
+            </p>
           </div>
           <div className="mb-7">
             <label
@@ -198,7 +203,7 @@ const Form = () => {
               Nigerian WhatsApp phone number
             </label>
             <input
-              type="text"
+              type="tel"
               name="phone_number"
               value={state.user.phone_number}
               onChange={handleChange}
@@ -206,6 +211,7 @@ const Form = () => {
               placeholder=""
               required
             />
+            <p className="text-[#476D85] text-[12px] md:text-[13px] leading-4 mt-[10px]">Enter your Nigerian WhatsApp phone number eg. 08012345678</p>
           </div>
           <div className="bg-[#EEF3F6] p-4 mt-10 md:mt-11 mb-5 md:mb-6 rounded-lg">
             <p className="text-[#476D85] text-xs md:text-sm">
@@ -231,7 +237,7 @@ const Form = () => {
                 className="self-center text-sm md:text-base font-medium"
                 type="submit"
               >
-                <p>Book consultation</p>
+                <p>Get started</p>
               </SustainButton>
             ) : (
               <SustainButton

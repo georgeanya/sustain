@@ -67,7 +67,10 @@ const Research = () => {
           name="twitter:description"
           content="The research behind Custodia Health's approach"
         />
-        <meta name="twitter:image" content={metaCard.src} />
+        <meta
+          name="twitter:image"
+          content="https://custodiahealth.com/_next/static/media/custodia-metacard.9e18efee.png"
+        />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
         <meta
@@ -83,7 +86,10 @@ const Research = () => {
           hrefLang="x-default"
           rel="alternate"
         />
-        <meta name="facebook-domain-verification" content="nkzhwppp6o24gs2ndw0p0pjyfvijts" />
+        <meta
+          name="facebook-domain-verification"
+          content="nkzhwppp6o24gs2ndw0p0pjyfvijts"
+        />
       </Head>
       <Navbar1 />
       <div className="px-5 lg:px-32 lg:px md:mt-24 mt-16 pb-32">

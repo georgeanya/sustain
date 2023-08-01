@@ -15,7 +15,7 @@ const Navbar3 = () => {
               <img
                 src={custodia.src}
                 className="mr-3 cursor-pointer self-center"
-                alt="Priv Logo"
+                alt="Custodia Logo"
               />
             </Link>
           </div>

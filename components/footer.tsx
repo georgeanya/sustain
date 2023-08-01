@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <div className="bg-[#0C1227] md:px-32 px-5 md:pt-36 pt-24 text-center md:text-start text-white">
       <p className="mb-6 md:mb-5 text-base leading-5 md:text-xl md:leading-6">
-        Schedule your consultation now
+        Start your enrollment now
       </p>
       <div className="md:flex md:justify-between">
         <p className="md:text-5lg text-3xl font-bold mb-11 md:max-w-2xl">
@@ -33,7 +33,7 @@ const Footer = () => {
         </p>
         <Link href="/start">
           <SustainButton className="self-start text-xs md:text-base font-medium">
-            Book a consultation
+            Get started now
           </SustainButton>
         </Link>
       </div>
@@ -48,9 +48,11 @@ const Footer = () => {
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/pricing">Pricing</Link>
             </p>
-            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/pricing">Health plan</Link>
-            </p> */}
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/healthcare-providers">
+                For healthcare providers
+              </Link>
+            </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/research">Research</Link>
             </p>
@@ -90,7 +92,7 @@ const Footer = () => {
               <Link href="https://lifebox.ng/">About</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="https://medium.com/@custodiahealth">Blog</Link>
+              <Link href="/blog">Blog</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/Join-Lifebox-Labs-caed82beacb448cf9be9b380907caa19">
@@ -106,7 +108,7 @@ const Footer = () => {
               CONTACT
             </h3>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="tel:+2349040559724">+2349040559724</Link>
+              <Link href="tel:+2347040559724">+2347040559724</Link>
             </p>
             <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="mailto:hi@custodiahealth.com">
@@ -115,13 +117,25 @@ const Footer = () => {
             </p>
             <div className="flex">
               <Link href="https://facebook.com/custodiahealth">
-                <img src={fbook.src} className="mr-5 cursor-pointer" alt="facebook logo" />
+                <img
+                  src={fbook.src}
+                  className="mr-5 cursor-pointer"
+                  alt="facebook logo"
+                />
               </Link>
               <Link href="https://instagram.com/custodiahealth">
-                <img src={insta.src} className="mr-5 cursor-pointer" alt="instagram logo" />
+                <img
+                  src={insta.src}
+                  className="mr-5 cursor-pointer"
+                  alt="instagram logo"
+                />
               </Link>
               <Link href="https://twitter.com/custodiahealth">
-                <img src={twitter.src} className="mr-5 cursor-pointer" alt="twitter logo" />
+                <img
+                  src={twitter.src}
+                  className="mr-5 cursor-pointer"
+                  alt="twitter logo"
+                />
               </Link>
             </div>
           </div>
