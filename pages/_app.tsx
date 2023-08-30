@@ -64,7 +64,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             height="0" width="0" style="display:none;visibility:hidden" />`,
           }}
         />
-        {isLoading && <Spinner />}
         <Component {...pageProps} />
       </body>
     </>
