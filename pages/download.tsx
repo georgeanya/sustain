@@ -7,6 +7,7 @@ import apple from "../public/assets/apple.svg";
 import play from "../public/assets/play.svg";
 import favicon from "../public/assets/favicon.png";
 import metaCard from "../public/assets/custodia-metacard.png";
+import Link from "next/link";
 
 const Download = () => {
   return (
@@ -111,7 +112,7 @@ const Download = () => {
             tracking, resources, messaging, and more
           </p>
           <div className="flex md:justify-center lg:justify-start mt-7 md:mt-10">
-            <img src={play.src} className="mr-3 lg:mr-4 w-38 md:w-40" alt="" />
+            <Link href="https://play.google.com/store/apps/details?id=ng.lifebox.custodia"><img src={play.src} className="mr-3 lg:mr-4 w-38 md:w-40" alt="" /></Link>
             <img src={apple.src} alt="" className=" w-34 md:w-40" />
           </div>
         </div>
