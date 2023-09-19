@@ -3,6 +3,7 @@ import Navbar from "./navbar1";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Link from "next/link";
+import icon from "../public/assets/custodia-icon.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -21,12 +22,16 @@ const SustainButton = styled(Button)({
 
 const StartSuccess = () => {
   return (
-    <div>
-      <p className=" leading-tight  md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
-      You have submitted your details successfully
+    <div className="mt-[130px] md:mt-[165px]">
+      <div className="flex justify-center">
+        <img src={icon.src} alt="" className="w-[60px] md:w-[70px]" />
+      </div>
+      <p className="mt-5 leading-tight  md:text-3xl text-1xl text-center font-bold text-[#002A47] ">
+        You have submitted your details successfully
       </p>
-      <p className="mt-5 text-base leading-[23px] md:leading-[27px] md:text-lg font-normal md:text-start text-[#476D85] mb-[30px]">
-      A WhatsApp message will be sent to you to complete your enrollment into Custodia Health.
+      <p className="mt-[15px] text-base leading-[23px] md:leading-[27px] md:text-lg font-normal text-center text-[#476D85] mb-[30px]">
+        A WhatsApp message will be sent to you to complete your enrollment into
+        Custodia Health.
       </p>
       <Link href="https://t.me/+RCQ20EcSxeBmMDI0">
         <SustainButton

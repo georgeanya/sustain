@@ -97,7 +97,6 @@ const Start = () => {
           content="nkzhwppp6o24gs2ndw0p0pjyfvijts"
         />
       </Head>
-      <Navbar3 />
       <Form />
     </div>
   );

@@ -3,6 +3,7 @@ import Navbar from "./navbar1";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Link from "next/link";
+import icon from "../public/assets/custodia-icon.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -25,11 +26,14 @@ interface props {
 
 const StartError = ({ toggle, toggleFav }: props) => {
   return (
-    <div>
-      <p className=" leading-tight  md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
+    <div className="mt-[130px] md:mt-[165px]">
+      <div className="flex justify-center">
+        <img src={icon.src} alt="" className="w-[60px] md:w-[70px]" />
+      </div>
+      <p className="mt-5 leading-tight  md:text-3xl text-1xl text-center font-bold text-[#002A47] ">
         An error occurred
       </p>
-      <p className="mt-4 text-base leading-[23px] md:leading-[27px] md:text-lg font-normal md:text-start text-[#476D85] mb-7">
+      <p className="mt-[15px] text-base leading-[23px] md:leading-[27px] md:text-lg font-normal text-center text-[#476D85] mb-7">
         Please make sure we’ve got your details right and try again.
       </p>
       <Link href="/start">

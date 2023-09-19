@@ -6,6 +6,7 @@ import axios from "axios";
 import StartError from "./startError";
 import StartSuccess from "./startSuccess";
 import lock from "../public/assets/lock.svg";
+import icon from "../public/assets/custodia-icon.svg";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -109,12 +110,15 @@ const Form = () => {
   };
 
   return (
-    <div className="max-w-m mx-5 md:mx-auto mt-17">
+    <div className="max-w-m mx-5 md:mx-auto mt-10 md:mt-[75px]">
       <div className={isSuccess || isError ? "hidden" : "block"}>
-        <p className=" leading-7  md:text-2xl md:leading-9 text-1lg md:text-start font-bold text-[#002A47]">
-          Hi there, We are so happy to have you!
+        <div className="flex justify-center">
+          <img src={icon.src} alt="" className="w-[60px] md:w-[70px]"/>
+        </div>
+        <p className="mt-[15px] leading-7  md:text-2xl md:leading-9 text-1lg text-center font-bold text-[#002A47]">
+          Join Custodia Health
         </p>
-        <p className="mt-4 text-base md:text-lg leading-6 font-normal md:text-start text-[#476D85]">
+        <p className="mt-2.5 md:px-6 text-base md:text-lg leading-6 font-normal text-center text-[#476D85]">
           We just need a bit of information to get you started.
         </p>
         {/* <div className="bg-[#324967] md:p-5 p-4 rounded-lg mt-8 mb-9">
@@ -149,7 +153,7 @@ const Form = () => {
                 name="first_name"
                 value={state.user.first_name}
                 onChange={handleChange}
-                className="border h-11 md:h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
+                className="border h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
                 placeholder=""
                 required
               />
@@ -166,7 +170,7 @@ const Form = () => {
                 name="last_name"
                 value={state.user.last_name}
                 onChange={handleChange}
-                className="border h-11 md:h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
+                className="border h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
                 placeholder=""
                 required
               />
@@ -190,7 +194,7 @@ const Form = () => {
               name="email"
               value={state.user.email}
               onChange={handleChange}
-              className="border h-11 md:h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
+              className="border h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
               placeholder=""
               required
             />
@@ -207,11 +211,13 @@ const Form = () => {
               name="phone_number"
               value={state.user.phone_number}
               onChange={handleChange}
-              className="border h-11 md:h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
+              className="border h-12 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
               placeholder=""
               required
             />
-            <p className="text-[#476D85] text-[12px] md:text-[13px] leading-4 mt-[10px]">Enter your Nigerian WhatsApp phone number eg. 08012345678</p>
+            <p className="text-[#476D85] text-[12px] md:text-[13px] leading-4 mt-[10px]">
+              Enter your Nigerian WhatsApp phone number eg. 08012345678
+            </p>
           </div>
           <div className="bg-[#EEF3F6] p-4 mt-10 md:mt-11 mb-5 md:mb-6 rounded-lg">
             <p className="text-[#476D85] text-xs md:text-sm">
