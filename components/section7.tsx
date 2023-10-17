@@ -76,7 +76,7 @@ const Section7 = () => {
           </p>
         </div>
       </div>
-      <div className="mt-8 lg:mt-14 ">
+      <div className="mt-10 lg:mt-[60px] ">
         <Link href="/start">
           <SustainButton className="text-xs lg:text-base font-medium">
             Get started now
