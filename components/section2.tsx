@@ -1,10 +1,8 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import type2 from "../public/assets/type2.svg";
-import hyper from "../public/assets/hyper.svg";
-import pret2 from "../public/assets/pret2.svg";
-import dysli from "../public/assets/dysli.svg";
+import nuts from "../public/assets/nuts.png";
+
 import Link from "next/link";
 
 const SustainButton = styled(Button)({
@@ -24,57 +22,25 @@ const SustainButton = styled(Button)({
 const Section2 = () => {
   return (
     <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24 bg-[#236DAD] flex flex-col md:flex-row md:justify-between">
-      <div className="md:max-w-xl">
-        <p className=" pb-6 text-2xl leading-9 md:text-start md:text-4xl font-bold text-white">
-          We treat multiple chronic metabolic diseases
-        </p>
-        <div className="flex mt-8 md:mt-11">
-          <img src={type2.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
-            Type 2 diabetes
-          </span>
-        </div>
-        <div className="flex mt-6 md:mt-8">
-          <img src={pret2.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
-            Prediabetes
-          </span>
-        </div>
-        <div className="flex mt-6 md:mt-8">
-          <img src={dysli.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
-            Dyslipidemia
-          </span>
-        </div>
-        <div className="flex mt-8 md:mt-8 mb-6">
-          <img src={hyper.src} alt="" />
-          <span className="ml-4 flex self-center text-white text-base leading-5 md:text-3lg">
-            Hypertension
-          </span>
-        </div>
-      </div>
-      <div className="md:max-w-lg md:pr-8">
-        <p className="mt-7 md:mt-0 text-base leading-6 md:text-start md:text-1lg text-white">
-          Most treatments use things like medications or surgery to manage the
-          symptoms of chronic metabolic diseases without dealing with the
-          underlying cause.
-        </p>
-        <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-white">
-          We focus on treating the root cause of the disease by changing what
-          you eat and helping you make sustainable lifestyle changes.
-        </p>
-        <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-white">
-          Our doctors and health coaches support you and remotely monitor you to
-          help you go off medications safely and sustain your success.
-        </p>
+      
+      <div className="md:max-w-[550px]">
+      <p className=" pb-[35px] md:pb-[50px] text-2xl leading-9 md:text-start md:text-4xl font-bold text-white pr-3 md:max-w-[535px]">
+        A holistic approach designed to treat the root cause
+      </p>
+        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">Medications only manage the symptoms of chronic metabolic diseases without dealing with the underlying cause</p>
+        <hr className="my-6 md:my-8 mb-6 md:mb-8" />
+        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">We focus on treating the root cause of the disease by changing what you eat and helping you make sustainable lifestyle changes</p>
+        <hr className="my-6 md:my-8 mb-6 md:mb-8" />
+        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">Our doctors and health coaches support you and remotely monitor you to help you go off medications safely and sustain your success</p>
         <div className="mt-10 md:mt-15 ">
-          <Link href="/research">
-            <SustainButton className="text-xs md:text-base font-medium">
-              Research behind our treatment
-            </SustainButton>
-          </Link>
-        </div>
+              <Link href="/start">
+                <SustainButton className="text-xs md:text-base font-medium">
+                Research behind our treatment
+                </SustainButton>
+              </Link>
+            </div>        
       </div>
+      <div className="md:max-w-lg  "><img src={nuts.src} alt="" className="flex align-center md:pt-[146px] pt-[70px]"/></div>
     </div>
   );
 };

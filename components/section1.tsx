@@ -1,4 +1,8 @@
 import React from "react";
+import type2 from "../public/assets/type2.svg";
+import hyper from "../public/assets/hyper.svg";
+import pret2 from "../public/assets/pret2.svg";
+import dysli from "../public/assets/dysli.svg";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Link from "next/link";
@@ -19,31 +23,32 @@ const SustainButton = styled(Button)({
 
 const Section1 = () => {
   return (
-    <div className="px-5 sm:px-8 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24 ">
-      <p className=" text-3xl md:text-start md:text-4xl font-bold text-[#002A47]">
-        We understand you
+    <div className="px-5 sm:px-8 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24  flex justify-between flex-col md:flex-row">
+      <div className="md:max-w-[535px]">
+      <p className=" text-[28px] leading-[35px] md:text-start md:text-4xl font-bold text-[#002A47]">
+        We treat multiple chronic metabolic diseases
       </p>
-      <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
-        If you have been living with a chronic metabolic disease, you may be
-        frustrated and scared. No matter what you do, your blood sugar and blood
-        pressure continue to rise and you don't feel well. The number of
-        medications you have to take keeps increasing and they cost a lot of
-        money, which doesn't make it any easier to manage.
+      <p className="mt-5 md:mt-6 text-base leading-6 md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
+        Whatever your journey is, we have a personalized program for you.
       </p>
-      <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
-        The disease steals your time by limiting your ability to do the things
-        you love. It can be hard to enjoy life when you're constantly worrying
-        about your health and we get it.
-      </p>
-      <p className="mt-7 md:mt-9 text-base leading-6 md:text-start md:text-1lg text-[#002A47]">
-        Don't give up! Custodia can take these burdens away! 
-      </p>
-      <div className="mt-10 md:mt-12 ">
-        <Link href="/start">
-          <SustainButton className="text-xs md:text-base font-medium">
-            Get started now
-          </SustainButton>
-        </Link>
+      </div>
+      <div className="grid md:grid-cols-2 md:grid-rows-2 md:gap-y-6 gap-x-5 grid-rows-4 grid-cols-1 gap-y-[15px] mt-[42px] md:mt-0" >
+        <div className="flex md:w-[275px] bg-[#4A4875] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
+          <img src={type2.src} alt="" className="md:w-[50px] w-11"/>
+          <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">Type 2 diabetes</p>
+        </div>
+        <div className="flex md:w-[275px] bg-[#236DAD] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
+          <img src={type2.src} alt="" className="md:w-[50px] w-11"/>
+          <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">Prediabetes</p>
+        </div>
+        <div className="flex md:w-[275px] bg-[#112D50] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
+          <img src={type2.src} alt="" className="md:w-[50px] w-11"/>
+          <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">Type 2 diabetes</p>
+        </div>
+        <div className="flex md:w-[275px] bg-[#005A61] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
+          <img src={type2.src} alt="" className="md:w-[50px] w-11"/>
+          <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">Dyslipidemia</p>
+        </div>
       </div>
     </div>
   );
