@@ -22,25 +22,39 @@ const SustainButton = styled(Button)({
 const Section2 = () => {
   return (
     <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24 bg-[#236DAD] flex flex-col md:flex-row md:justify-between">
-      
       <div className="md:max-w-[550px]">
-      <p className=" pb-[35px] md:pb-[50px] text-2xl leading-9 md:text-start md:text-4xl font-bold text-white pr-3 md:max-w-[535px]">
-        A holistic approach designed to treat the root cause
-      </p>
-        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">Medications only manage the symptoms of chronic metabolic diseases without dealing with the underlying cause</p>
+        <p className=" pb-[35px] md:pb-[50px] text-2xl leading-9 md:text-start md:text-4xl font-bold text-white pr-3 md:max-w-[535px]">
+          A holistic approach designed to treat the root cause
+        </p>
+        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">
+          Medications only manage the symptoms of chronic metabolic diseases
+          without dealing with the underlying cause
+        </p>
         <hr className="my-6 md:my-8 mb-6 md:mb-8" />
-        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">We focus on treating the root cause of the disease by changing what you eat and helping you make sustainable lifestyle changes</p>
+        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">
+          We focus on treating the root cause of the disease by changing what
+          you eat and helping you make sustainable lifestyle changes
+        </p>
         <hr className="my-6 md:my-8 mb-6 md:mb-8" />
-        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">Our doctors and health coaches support you and remotely monitor you to help you go off medications safely and sustain your success</p>
+        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">
+          Our doctors and health coaches support you and remotely monitor you to
+          help you go off medications safely and sustain your success
+        </p>
         <div className="mt-10 md:mt-15 ">
-              <Link href="/start">
-                <SustainButton className="text-xs md:text-base font-medium">
-                Research behind our treatment
-                </SustainButton>
-              </Link>
-            </div>        
+          <Link href="/start">
+            <SustainButton className="text-xs md:text-base font-medium">
+              Research behind our treatment
+            </SustainButton>
+          </Link>
+        </div>
       </div>
-      <div className="md:max-w-lg  "><img src={nuts.src} alt="" className="flex align-center md:pt-[146px] pt-[70px]"/></div>
+      <div className="md:max-w-lg  ">
+        <img
+          src={nuts.src}
+          alt=""
+          className="flex align-center md:pt-[146px] pt-[70px]"
+        />
+      </div>
     </div>
   );
 };
