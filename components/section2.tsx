@@ -26,17 +26,17 @@ const Section2 = () => {
         <p className=" pb-[35px] md:pb-[50px] text-2xl leading-9 md:text-start md:text-4xl font-bold text-white pr-3 md:max-w-[535px]">
           A holistic approach designed to treat the root cause
         </p>
-        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">
+        <p className="text-basex md:text-1lg md:leading-8 text-white font-normal md:pr-10">
           Medications only manage the symptoms of chronic metabolic diseases
           without dealing with the underlying cause
         </p>
         <hr className="my-6 md:my-8 mb-6 md:mb-8" />
-        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">
+        <p className="text-basex md:text-1lg md:leading-8 text-white font-normal md:pr-10">
           We focus on treating the root cause of the disease by changing what
           you eat and helping you make sustainable lifestyle changes
         </p>
         <hr className="my-6 md:my-8 mb-6 md:mb-8" />
-        <p className="text-basex md:text-1xl text-white font-normal md:pr-10">
+        <p className="text-basex md:text-1lg md:leading-8 text-white font-normal md:pr-10">
           Our doctors and health coaches support you and remotely monitor you to
           help you go off medications safely and sustain your success
         </p>
