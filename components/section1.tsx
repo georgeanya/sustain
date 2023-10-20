@@ -48,7 +48,7 @@ const Section1 = () => {
         <div className="flex md:w-[275px] bg-[#112D50] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
           <img src={type2.src} alt="" className="md:w-[50px] w-11" />
           <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">
-            Type 2 diabetes
+          Fatty liver
           </p>
         </div>
         <div className="flex md:w-[275px] bg-[#005A61] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
