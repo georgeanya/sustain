@@ -10,6 +10,7 @@ import Section7 from "../components/section7-for-doctors";
 import favicon from "../public/assets/favicon.png";
 import metaCard from "../public/assets/provider-metacard.jpg";
 import Head from "next/head";
+import Section1 from "../components/section1-for-doctors";
 
 const ForDoctors = () => {
   return (
@@ -93,7 +94,10 @@ const ForDoctors = () => {
           content="An image of the Custodia Health logo"
         />
         <link rel="me" href="https://twitter.com/custodiahealth" />
-        <link href="https://custodiahealth.com/healthcare-providers" rel="canonical" />
+        <link
+          href="https://custodiahealth.com/healthcare-providers"
+          rel="canonical"
+        />
         <link href="https://custodiahealth.com/" rel="home" />
         <link href="/humans.txt" rel="author" type="text/plain" />
         <link
@@ -108,6 +112,7 @@ const ForDoctors = () => {
       </Head>
       <Navbar />
       <Hero />
+      <Section1 />
       <Section2 />
       <Section3 />
       <Section4 />
