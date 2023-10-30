@@ -148,7 +148,7 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 140,000
+                    NGN 160,000
                   </p>
                 </div>
               ) : (
@@ -157,7 +157,7 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 250,000
+                    NGN 260,000
                   </p>
                 </div>
               )}
