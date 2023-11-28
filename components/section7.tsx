@@ -40,7 +40,7 @@ const Section7 = () => {
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium md:mt-[13px] mt-[12px]">
             Complete your enrollment
           </p>
-          <p className="text-base leading-6 md:text-lg md:leading-relaxed text-[#002A47] mt-2">
+          <p className="text-base leading-6 md:text-lg md:leading-[26px] text-[#002A47] mt-2">
             Fill out the enrollment form, share your medical history via
             WhatsApp, and make payment.
           </p>
@@ -55,7 +55,7 @@ const Section7 = () => {
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium md:mt-[13px] mt-[12px]">
             Meet your care team
           </p>
-          <p className="text-base leading-6 md:text-lg md:leading-relaxed text-[#002A47] mt-2">
+          <p className="text-base leading-6 md:text-lg md:leading-[26px] text-[#002A47] mt-2">
             Your doctor and coach will discuss your personalized treatment plan
             and goals with you.
           </p>
@@ -70,7 +70,7 @@ const Section7 = () => {
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium md:mt-[13px] mt-[12px]">
             Begin nutrition changes
           </p>
-          <p className="text-base leading-6 md:text-lg md:leading-relaxed text-[#002A47] mt-2">
+          <p className="text-base leading-6 md:text-lg md:leading-[26px] text-[#002A47] mt-2">
             Through the Custodia Health app, your care team will provide support
             you as you advance toward your goals.
           </p>
