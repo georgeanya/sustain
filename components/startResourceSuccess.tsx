@@ -27,12 +27,12 @@ const StartTestSuccess = () => {
       <p className="mt-4 text-base leading-[23px] md:leading-[27px] md:text-lg font-normal md:text-start text-[#476D85] mb-7">
         You're all set, a copy has been sent to your WhatsApp number!
       </p>
-      <Link href="https://t.me/+RCQ20EcSxeBmMDI0">
+      <Link href="https://chat.whatsapp.com/FRbf5Bs3IgE77YDfbZUV1U">
         <SustainButton
           className="self-center text-sm md:text-base font-medium"
           type="submit"
         >
-          Join our Telegram community
+          Join our WhatsApp community
         </SustainButton>
       </Link>
     </div>

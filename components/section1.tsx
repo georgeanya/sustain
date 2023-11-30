@@ -29,7 +29,7 @@ const Section1 = () => {
           We treat multiple chronic metabolic diseases
         </p>
         <p className="mt-5 md:mt-6 text-base leading-6 md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
-          Whatever your journey is, we have a personalized program for you.
+          Whatever your condition is, we have a personalized program for you.
         </p>
       </div>
       <div className="grid md:grid-cols-2 md:grid-rows-2 md:gap-y-6 gap-x-5 grid-rows-4 grid-cols-1 gap-y-[15px] mt-[42px] md:mt-0">
@@ -48,7 +48,7 @@ const Section1 = () => {
         <div className="flex md:w-[275px] bg-[#112D50] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
           <img src={type2.src} alt="" className="md:w-[50px] w-11" />
           <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">
-          Fatty liver
+            Fatty liver
           </p>
         </div>
         <div className="flex md:w-[275px] bg-[#005A61] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">

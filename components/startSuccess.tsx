@@ -33,12 +33,12 @@ const StartSuccess = () => {
         A WhatsApp message will be sent to you to complete your enrollment into
         Custodia Health.
       </p>
-      <Link href="https://t.me/+RCQ20EcSxeBmMDI0">
+      <Link href="https://chat.whatsapp.com/FRbf5Bs3IgE77YDfbZUV1U">
         <SustainButton
           className="self-center text-sm md:text-base font-medium"
           type="submit"
         >
-          Join our Telegram community
+          Join our WhatsApp community
         </SustainButton>
       </Link>
     </div>

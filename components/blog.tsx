@@ -269,7 +269,7 @@ const Blog = ({ initialBlogs }: any) => {
 
               return (
                 <Link href={`/blog/${attributes.slug}`} key={id}>
-                  <div className="max-w-[357px] md:h-[540px] flex flex-col justify-between">
+                  <div className="max-w-[357px] flex flex-col justify-between">
                     <div>
                       <img
                         src={attributes.image.data.attributes.url}
@@ -277,17 +277,17 @@ const Blog = ({ initialBlogs }: any) => {
                         className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                       />
 
-                      <p className=" text-sm text-[#4F9EEA] mt-7">
+                      <p className=" text-sm text-[#4F9EEA] mt-[25px]">
                         {attributes.category.data.attributes.name}
                       </p>
-                      <p className="text-[#002A47] font-bold text-[26px] leading-[32px] md:text-1xl md:leading-8 mt-2.5 md:mt-3 cursor-pointer">
+                      <p className="text-[#002A47] font-bold text-[26px] leading-[32px] md:text-1xl md:leading-8 mt-2.5 md:mt-[13px] cursor-pointer">
                         {attributes.title}
                       </p>
-                      <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
+                      {/* <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
                         {attributes.description}
-                      </p>
+                      </p> */}
                     </div>
-                    <div className="flex mt-7 md:mt-10">
+                    <div className="flex mt-5">
                       <img
                         src={image.src}
                         alt=""

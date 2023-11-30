@@ -165,11 +165,10 @@ const BlogPost = ({ blog }: any) => {
             <div className="bg-[#EEEEF7] px-5 py-10 md:p-12 md:flex justify-between md:mt-14 md:mb-36 mb-9 mt-9 rounded-[20px]">
               <div className="max-w-[385px]">
                 <p className="text-[#002A47] md:text-[28px] text-[22px] leading-[28px] md:leading-[35px] mb-4 font-bold">
-                  Hey! we’ve made it easy to get stronger erection
+                Why manage diabetes when it can be reversed
                 </p>
                 <p className="text-[#4F9EEA] md:text-xl md:leading-[28px] mb-6 md:mb-0 md:text-[18px] leading-6">
-                  Get personalized treatment for erectile dysfunction without
-                  leaving home
+                Get personalized treatment for reversing type 2 diabetes without leaving home
                 </p>
               </div>
               <div className="self-center">
