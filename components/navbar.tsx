@@ -41,10 +41,10 @@ const Navbar = () => {
         <NavbarMenu handleToggle={handleToggleFunc} />
       </div>
       <div className="bg-[#324967] ">
-        <Link href="https://getsustain.app/risk-test">
+        <Link href="https://chat.whatsapp.com/FRbf5Bs3IgE77YDfbZUV1U">
           <p className="text-center text-sm md:text-base text-white py-4 px-7 cursor-pointer">
-            ✨ Take this 30-second assessment to know if you are at risk of type
-            2 diabetes
+            ✨ Learn practical steps you can take to reverse diabetes. Join our
+            community for Free
             <ArrowIcon />
           </p>
         </Link>
