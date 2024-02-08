@@ -20,13 +20,13 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>
-          Custodia Health - Say goodbye to type 2 diabetes and medications
+          Custodia Health - Type 2 Diabetes, Prediabetes, and Obesity Reversal
         </title>
         <meta name="generator" content="SEOmatic" />
         <link href={favicon.src} rel="shortcut icon" type="image/png" />
         <meta
           name="keywords"
-          content="diabetes, custodia health, prediabetes, diabetes reversal, reverse diabetes, high cholesterol, lifebox labs, hypertension"
+          content="diabetes, custodia health, prediabetes, diabetes reversal, obesity, reverse diabetes, high cholesterol, lifebox labs, hypertension"
         />
         <meta
           name="description"
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         <meta content="website" property="og:type" />
         <meta content="https://custodiahealth.com/" property="og:url" />
         <meta
-          content="Custodia Health - Say goodbye to type 2 diabetes and medications"
+          content="Custodia Health - Type 2 Diabetes, Prediabetes, and Obesity Reversal"
           property="og:title"
         />
         <meta
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
         <meta name="twitter:creator" content="@custodiahealth" />
         <meta
           name="twitter:title"
-          content="Custodia Health - Say goodbye to type 2 diabetes and medications"
+          content="Custodia Health - Type 2 Diabetes, Prediabetes, and Obesity Reversal"
         />
         <meta
           name="twitter:description"
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://custodiahealth.com/_next/static/media/home-metacard.8b4f9939.jpg"
+          content="https://custodiahealth.com/_next/static/media/home-metacard.5f12a1b8.jpg"
         />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />

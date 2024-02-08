@@ -277,17 +277,17 @@ const Blog = ({ initialBlogs }: any) => {
                         className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                       />
 
-                      <p className=" text-sm text-[#4F9EEA] mt-[25px]">
+                      <p className=" text-sm text-[#4F9EEA] mt-[24px]">
                         {attributes.category.data.attributes.name}
                       </p>
-                      <p className="text-[#002A47] font-bold text-[26px] leading-[32px] md:text-1xl md:leading-8 mt-2.5 md:mt-[13px] cursor-pointer">
+                      <p className="text-[#002A47] font-bold text-[22px] leading-[28px] mt-[12px] cursor-pointer">
                         {attributes.title}
                       </p>
                       {/* <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
                         {attributes.description}
                       </p> */}
                     </div>
-                    <div className="flex mt-5">
+                    <div className="flex mt-4">
                       <img
                         src={image.src}
                         alt=""

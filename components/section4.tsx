@@ -24,34 +24,35 @@ const SustainButton = styled(Button)({
 
 const Section4 = () => {
   const [faqs, setFaqs] = useState([
-    {
-      question: "A lifestyle medicine doctor",
+   {
+      question: "Personal health coach",
       answer:
-        "You’ll get paired with a doctor who will monitor your biomarkers and manages your medications, including safely reducing or eliminating any medications you no longer need",
+        "You will get paired with a highly trained and compassionate health coach to keep you on track on your best days and your worst.",
       open: true,
     },
     {
-      question: "A personal health coach",
+      question: "Continuous medical supervision",
       answer:
-        "You’ll get paired with a highly trained and compassionate health coach to keep you on track on your best days and your worst.",
+        "You will get paired with a doctor who will monitor your biomarkers and safely de-prescribe any medications you no longer need",
       open: false,
     },
+   
     {
-      question: "A personalized treatment plan",
+      question: "Private member community",
       answer:
-        "You’ll get a treatment plan personalized to your food preferences and metabolic condition which will continuously adjusted to meet your needs",
+        "You will get added to a peer group that allows you to share your experiences, challenegs and keep you encouraged",
       open: false,
     },
     {
       question: "Exclusive resources",
       answer:
-        "You’ll get engaging lessons on better eating, fitness, sleep, and stress management to educate you and inspire you to make better choices.",
+        "You will get engaging lessons on better eating, fitness, sleep, and stress management to educate you and inspire you to make better choices.",
       open: false,
     },
     {
       question: "Starter kit and supplies",
       answer:
-        "You’ll get all the health devices and testing supplies you need shipped directly to you",
+        "You will get all the health devices and testing supplies you need shipped directly to you",
       open: false,
     },
   ]);

@@ -24,7 +24,7 @@ const Faq = () => {
     {
       question: "What is Custodia?",
       answer:
-        "Custodia is a digital care program that empowers people to reverse chronic metabolic diseases through sustainable lifestyle change.",
+        "Custodia is a virtual care program that empowers people to reverse chronic metabolic diseases like type 2 diabetes through sustainable lifestyle change.",
       open: true,
     },
     {

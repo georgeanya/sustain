@@ -68,7 +68,7 @@ const Section7 = () => {
             className="md:mt-[30px] mt-6 w-7 md:w-[30px]"
           />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium md:mt-[13px] mt-[12px]">
-            Begin nutrition changes
+          Start treatment plan
           </p>
           <p className="text-base leading-6 md:text-lg md:leading-[26px] text-[#002A47] mt-2">
             Through the Custodia Health app, your care team will provide support

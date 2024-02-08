@@ -136,7 +136,7 @@ const Pricing = (props: any) => {
       <div className="px-5 lg:px-66 md:pt-24 pt-16 pb-24 lg:pb-36 bg-[#F0F7FF]">
         <div className="flex justify-center">
           <h2 className="text-4lg text-center lg:text-5xl font-bold text-[#002A47] mb-12 md:mb-17 max-w-2xl">
-            Choose a membership plan that’s right for you
+            We have a membership plan made for you
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
@@ -148,7 +148,7 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 180,000
+                    NGN 30,000<span className="md:text-lg text-base">/monthly</span>
                   </p>
                 </div>
               ) : (
@@ -157,7 +157,7 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 280,000
+                    NGN 90,000<span className="md:text-lg text-base">/quarterly</span>
                   </p>
                 </div>
               )}
@@ -171,7 +171,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTime1True}
                   >
-                    <p className="text-sm leading-4 text-[#002A47]">6-Months</p>
+                    <p className="text-sm leading-4 text-[#002A47]">Monthly</p>
                   </div>
                   <div
                     className={
@@ -181,7 +181,9 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTime1False}
                   >
-                    <p className="text-sm leading-4 text-[#002A47]">Annual</p>
+                    <p className="text-sm leading-4 text-[#002A47]">
+                      Quarterly
+                    </p>
                   </div>
                 </div>
               </div>
@@ -193,7 +195,17 @@ const Pricing = (props: any) => {
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Doctor and health coach supervision
+                    Personal health coaching
+                  </span>
+                </div>
+                <div className="flex mt-5">
+                  <img
+                    src={icon.src}
+                    className="self-center w-2.5 md:w-3"
+                    alt=""
+                  />
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
+                    Doctor supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -204,16 +216,6 @@ const Pricing = (props: any) => {
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited consultations
-                  </span>
-                </div>
-                <div className="flex mt-5">
-                  <img
-                    src={icon.src}
-                    className="self-center w-2.5 md:w-3"
-                    alt=""
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personalized treatment plan
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -233,7 +235,7 @@ const Pricing = (props: any) => {
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Access to our mobile app
+                    Personalized care plan
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -266,7 +268,6 @@ const Pricing = (props: any) => {
                   </SustainButton>
                 </Link>
               </div>
-  
             </div>
           </div>
           <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 lg:py-15">
@@ -277,7 +278,7 @@ const Pricing = (props: any) => {
                     BASIC
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 45,000
+                    NGN 15,000<span className="md:text-lg text-base">/monthly</span>
                   </p>
                 </div>
               ) : (
@@ -286,7 +287,7 @@ const Pricing = (props: any) => {
                     BASIC
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 85,000
+                    NGN 45,000<span className="md:text-lg text-base">/quarterly</span>
                   </p>
                 </div>
               )}
@@ -300,7 +301,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTimeTrue}
                   >
-                    <p className="text-sm leading-4 text-[#002A47]">3-Months</p>
+                    <p className="text-sm leading-4 text-[#002A47]">Monthly</p>
                   </div>
                   <div
                     className={
@@ -310,7 +311,9 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTimeFalse}
                   >
-                    <p className="text-sm leading-4 text-[#002A47]">6-Months</p>
+                    <p className="text-sm leading-4 text-[#002A47]">
+                      Quarterly
+                    </p>
                   </div>
                 </div>
               </div>
@@ -322,7 +325,17 @@ const Pricing = (props: any) => {
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Doctor and health coach supervision
+                    Personal health coaching
+                  </span>
+                </div>
+                <div className="flex mt-5">
+                  <img
+                    src={icon.src}
+                    className="self-center w-2.5 md:w-3"
+                    alt=""
+                  />
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
+                    Doctor supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -333,16 +346,6 @@ const Pricing = (props: any) => {
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited consultations
-                  </span>
-                </div>
-                <div className="flex mt-5">
-                  <img
-                    src={icon.src}
-                    className="self-center w-2.5 md:w-3"
-                    alt=""
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personalized treatment plan
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -362,7 +365,7 @@ const Pricing = (props: any) => {
                     alt=""
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Access to our mobile app
+                    Personalized care plan
                   </span>
                 </div>
               </div>
@@ -375,7 +378,6 @@ const Pricing = (props: any) => {
                   </SustainButton>
                 </Link>
               </div>
-              
             </div>
           </div>
         </div>

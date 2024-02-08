@@ -25,33 +25,33 @@ const SustainButton = styled(Button)({
 const Section4 = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "A lifestyle medicine doctor",
+      question: "Personal health coach",
       answer:
-        "They’ll get paired with a doctor who will consult with them, monitor their biomarkers, and manage their medications, including safely reducing or eliminating any medications they no longer need.",
+        "They will get paired with a highly trained and compassionate health coach to keep them on track on their best days and their worst.",
       open: true,
     },
     {
-      question: "A personal health coach",
+      question: "Continuous medical supervision",
       answer:
-        "They’ll get paired with a highly trained and compassionate health coach to keep them on track on their best days and their worst.",
+        "They will get paired with a doctor who will monitor their biomarkers and safely de-prescribe any medications they no longer need.",
       open: false,
     },
     {
-      question: "A personalized treatment plan",
+      question: "Private member community",
       answer:
-        "They’ll get a treatment plan personalized to their food preferences and metabolic condition which will continuously adjusted to meet their needs",
+        "They will get added to a peer group that allows them to share their experiences, challenegs and keep them encouraged",
       open: false,
     },
     {
       question: "Exclusive resources",
       answer:
-        "They’ll get engaging lessons on better eating, fitness, sleep, and stress management to educate them and inspire them to make better choices.",
+        "They will get engaging lessons on better eating, fitness, sleep, and stress management to educate them and inspire them to make better choices.",
       open: false,
     },
     {
       question: "Starter kit and supplies",
       answer:
-        "They’ll get all the health devices and testing supplies they need shipped directly to them",
+        "They will get all the health devices and testing supplies they need shipped directly to them",
       open: false,
     },
   ]);
