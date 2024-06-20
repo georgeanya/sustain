@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Spinner from "../components/spinner";
+import WhatsAppButton from "../components/whatsappbutton";
+import '../lib/fontawesome'; 
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -65,6 +67,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           }}
         />
         <Component {...pageProps} />
+        <WhatsAppButton/>
       </body>
     </>
   );

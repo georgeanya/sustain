@@ -25,9 +25,9 @@ const Section1 = () => {
   return (
     <div className="px-5 sm:px-8 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24  flex justify-between flex-col md:flex-row">
       <div className="md:max-w-[535px]">
-        <p className=" text-[28px] leading-[35px] md:text-start md:text-4xl font-bold text-[#002A47]">
+        <h1 className=" text-[28px] leading-[35px] md:text-start md:text-4xl font-bold text-[#002A47]">
           We treat multiple chronic metabolic diseases
-        </p>
+        </h1>
         <p className="mt-5 md:mt-6 text-base leading-6 md:text-start md:text-1lg text-[#002A47] md:max-w-3xl">
           Whatever your condition is, we have a personalized program for you
         </p>
@@ -54,7 +54,7 @@ const Section1 = () => {
         <div className="flex md:w-[275px] bg-[#005A61] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
           <img src={dysli.src} alt="" className="md:w-[50px] w-11" />
           <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">
-          Fatty liver
+          Gestational diabetes
           </p>
         </div>
       </div>

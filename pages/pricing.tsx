@@ -140,6 +140,120 @@ const Pricing = (props: any) => {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+          <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 lg:py-15">
+            <div>
+              {time ? (
+                <div>
+                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
+                    BASIC
+                  </p>
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
+                    NGN 40,000
+                    <span className="md:text-lg text-base">/quarterly</span>
+                  </p>
+                </div>
+              ) : (
+                <div>
+                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
+                    BASIC
+                  </p>
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
+                    NGN 70,000
+                    <span className="md:text-lg text-base">/semiannually</span>
+                  </p>
+                </div>
+              )}
+              <div className="flex justify-center">
+                <div className="flex w-56 rounded-3xl p-1 bg-[#DFEDFB] justify-self-center">
+                  <div
+                    className={
+                      time
+                        ? "bg-white rounded-3xl w-1/2 py-2 cursor-pointer flex justify-center"
+                        : "w-1/2 py-2 flex cursor-pointer justify-center"
+                    }
+                    onClick={toggleTimeTrue}
+                  >
+                    <p className="text-sm leading-4 text-[#002A47]">
+                      Quarterly
+                    </p>
+                  </div>
+                  <div
+                    className={
+                      time
+                        ? "w-1/2 py-2 flex cursor-pointer justify-center"
+                        : "bg-white rounded-3xl w-1/2 py-2 flex cursor-pointer justify-center"
+                    }
+                    onClick={toggleTimeFalse}
+                  >
+                    <p className="text-sm leading-4 text-[#002A47]">
+                      Semiannually
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:px-12 px-5 pt-11 lg:pt-14">
+                <div className="flex">
+                  <img
+                    src={icon.src}
+                    className="self-center w-2.5 md:w-3"
+                    alt=""
+                  />
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
+                    Personal health coaching
+                  </span>
+                </div>
+                <div className="flex mt-5">
+                  <img
+                    src={icon.src}
+                    className="self-center w-2.5 md:w-3"
+                    alt=""
+                  />
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
+                    Doctor supervision
+                  </span>
+                </div>
+                <div className="flex mt-5">
+                  <img
+                    src={icon.src}
+                    className="self-center w-2.5 md:w-3"
+                    alt=""
+                  />
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
+                    Unlimited consultations
+                  </span>
+                </div>
+                <div className="flex mt-5">
+                  <img
+                    src={icon.src}
+                    className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
+                    alt=""
+                  />
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
+                    Resources, meal plan, and food guides
+                  </span>
+                </div>
+                <div className="flex mt-5">
+                  <img
+                    src={icon.src}
+                    className="self-center w-2.5 md:w-3"
+                    alt=""
+                  />
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
+                    Personalized care plan
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* <div>
+              <div className="mt-10 lg:mt-12 flex justify-center">
+                <Link href="/start">
+                  <SustainButton className="text-sm  lg:text-base font-medium">
+                    Get started
+                  </SustainButton>
+                </Link>
+              </div>
+            </div> */}
+          </div>
           <div className="flex justify-between flex-col md:max-w-md rounded-2xl bg-white py-10 lg:py-15">
             <div>
               {time1 ? (
@@ -148,7 +262,8 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 30,000<span className="md:text-lg text-base">/monthly</span>
+                    NGN 90,000
+                    <span className="md:text-lg text-base">/quarterly</span>
                   </p>
                 </div>
               ) : (
@@ -157,7 +272,8 @@ const Pricing = (props: any) => {
                     COMPREHENSIVE
                   </p>
                   <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 90,000<span className="md:text-lg text-base">/quarterly</span>
+                    NGN 180,000
+                    <span className="md:text-lg text-base">/semiannually</span>
                   </p>
                 </div>
               )}
@@ -171,7 +287,7 @@ const Pricing = (props: any) => {
                     }
                     onClick={toggleTime1True}
                   >
-                    <p className="text-sm leading-4 text-[#002A47]">Monthly</p>
+                    <p className="text-sm leading-4 text-[#002A47]">Quaterly</p>
                   </div>
                   <div
                     className={
@@ -182,7 +298,7 @@ const Pricing = (props: any) => {
                     onClick={toggleTime1False}
                   >
                     <p className="text-sm leading-4 text-[#002A47]">
-                      Quarterly
+                      Semiannually
                     </p>
                   </div>
                 </div>
@@ -260,7 +376,7 @@ const Pricing = (props: any) => {
                 </div>
               </div>
             </div>
-            <div className="justify-end">
+            {/* <div className="justify-end">
               <div className="mt-10 lg:mt-12 flex justify-center">
                 <Link href="/start">
                   <SustainButton className="text-sm  lg:text-base font-medium">
@@ -268,117 +384,7 @@ const Pricing = (props: any) => {
                   </SustainButton>
                 </Link>
               </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 lg:py-15">
-            <div>
-              {time ? (
-                <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
-                    BASIC
-                  </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 15,000<span className="md:text-lg text-base">/monthly</span>
-                  </p>
-                </div>
-              ) : (
-                <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
-                    BASIC
-                  </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 45,000<span className="md:text-lg text-base">/quarterly</span>
-                  </p>
-                </div>
-              )}
-              <div className="flex justify-center">
-                <div className="flex w-56 rounded-3xl p-1 bg-[#DFEDFB] justify-self-center">
-                  <div
-                    className={
-                      time
-                        ? "bg-white rounded-3xl w-1/2 py-2 cursor-pointer flex justify-center"
-                        : "w-1/2 py-2 flex cursor-pointer justify-center"
-                    }
-                    onClick={toggleTimeTrue}
-                  >
-                    <p className="text-sm leading-4 text-[#002A47]">Monthly</p>
-                  </div>
-                  <div
-                    className={
-                      time
-                        ? "w-1/2 py-2 flex cursor-pointer justify-center"
-                        : "bg-white rounded-3xl w-1/2 py-2 flex cursor-pointer justify-center"
-                    }
-                    onClick={toggleTimeFalse}
-                  >
-                    <p className="text-sm leading-4 text-[#002A47]">
-                      Quarterly
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:px-12 px-5 pt-11 lg:pt-14">
-                <div className="flex">
-                  <img
-                    src={icon.src}
-                    className="self-center w-2.5 md:w-3"
-                    alt=""
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personal health coaching
-                  </span>
-                </div>
-                <div className="flex mt-5">
-                  <img
-                    src={icon.src}
-                    className="self-center w-2.5 md:w-3"
-                    alt=""
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Doctor supervision
-                  </span>
-                </div>
-                <div className="flex mt-5">
-                  <img
-                    src={icon.src}
-                    className="self-center w-2.5 md:w-3"
-                    alt=""
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Unlimited consultations
-                  </span>
-                </div>
-                <div className="flex mt-5">
-                  <img
-                    src={icon.src}
-                    className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
-                    alt=""
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Resources, meal plan, and food guides
-                  </span>
-                </div>
-                <div className="flex mt-5">
-                  <img
-                    src={icon.src}
-                    className="self-center w-2.5 md:w-3"
-                    alt=""
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personalized care plan
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="mt-10 lg:mt-12 flex justify-center">
-                <Link href="/start">
-                  <SustainButton className="text-sm  lg:text-base font-medium">
-                    Get started
-                  </SustainButton>
-                </Link>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

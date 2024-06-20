@@ -100,9 +100,9 @@ const ErrorPage = () => {
       </Head>
       <Navbar1 />
       <div className="px-5 md:px-32 md:max-w-3xl pt-12 md:pt-32 pb-24 md:pb-36">
-        <p className="text-4lg md:text-start md:text-5xl font-bold text-[#002A47]">
+        <h1 className="text-4lg md:text-start md:text-5xl font-bold text-[#002A47]">
           Whoops... This page is not available
-        </p>
+        </h1>
         <p className="mt-5 md:mt-6 text-base md:text-start md:text-2lg text-[#476D85]">
           Unfortunaltely, we couldn&apos;t find the page you are looking for. We
           suggest you go back to our homepage

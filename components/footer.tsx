@@ -22,6 +22,9 @@ const SustainButton = styled(Button)({
 });
 
 const Footer = () => {
+  const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
   return (
     <div className="bg-[#0C1227] md:px-32 px-5 md:pt-36 pt-24 text-center md:text-start text-white">
       <p className="mb-6 md:mb-5 text-base leading-5 md:text-xl md:leading-6">
@@ -142,7 +145,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="md:mt-26 mt-16 text-sm pb-14 ">
-        Custodia Health © 2023 All Rights Reserved
+        Custodia Health ©{currentYear} All Rights Reserved
       </p>
     </div>
   );

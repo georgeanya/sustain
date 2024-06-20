@@ -26,9 +26,9 @@ const SustainButton = styled(Button)({
 const Section7 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-28 pb-20 bg-[#F0F7FF]">
-      <p className="text-2xl leading-9 md:text-start md:text-4xl font-bold text-[#002A47] md:mb-[50px] mb-10">
+      <h1 className="text-2xl leading-9 md:text-start md:text-4xl font-bold text-[#002A47] md:mb-[50px] mb-10">
         Getting started is easy
-      </p>
+      </h1>
       <div className="md:flex justify-between">
         <div className="max-w-[344px] ">
           <img src={phone.src} alt="" className="" />

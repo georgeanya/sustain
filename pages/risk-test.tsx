@@ -120,9 +120,9 @@ const RiskTest = () => {
         <div>
           {testStart ? (
             <div className=" px-5 mt-[65px] md:mt-[70px] text-center flex flex-col items-center">
-              <p className="md:text-[44px] text-3xl leading-[38px] md:leading-[55px] font-bold text-[#002A47] max-w-[490px] px-5">
+              <h1 className="md:text-[44px] text-3xl leading-[38px] md:leading-[55px] font-bold text-[#002A47] max-w-[490px] px-5">
                 Know your risk for type 2 diabetes
-              </p>
+              </h1>
               <p className="md:text-xl text-base mt-6 md:px-5 md:mb-9 mb-7 text-[#476D85] max-w-[457px]">
                 More than 60% of people with type 2 diabetes don’t know they
                 have it. Take the risk test now to see where you stand.

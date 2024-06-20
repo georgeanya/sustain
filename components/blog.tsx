@@ -145,9 +145,9 @@ const Blog = ({ initialBlogs }: any) => {
               {blog.attributes.category.data.attributes.name}
             </p>
             <Link href={`/blog/${blog.attributes.slug}`}>
-              <p className="cursor-pointer text-[#002A47] font-bold text-[26px] leading-[32px] md:text-4lg mt-2.5 md:mt-3">
+              <h1 className="cursor-pointer text-[#002A47] font-bold text-[26px] leading-[32px] md:text-4lg mt-2.5 md:mt-3">
                 {blog.attributes.title}
-              </p>
+              </h1>
             </Link>
             <p className="text-[#476D85] mt-4 md:mt-5 text-base md:text-lg">
               {blog.attributes.description}

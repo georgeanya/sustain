@@ -115,9 +115,9 @@ const Form = () => {
         <div className="flex justify-center">
           <img src={icon.src} alt="" className="w-[60px] md:w-[70px]"/>
         </div>
-        <p className="mt-[15px] leading-7  md:text-2xl md:leading-9 text-1lg text-center font-bold text-[#002A47]">
+        <h1 className="mt-[15px] leading-7  md:text-2xl md:leading-9 text-1lg text-center font-bold text-[#002A47]">
           Join Custodia Health
-        </p>
+        </h1>
         <p className="mt-2.5 md:px-6 text-base md:text-lg leading-6 font-normal text-center text-[#476D85]">
           We just need a bit of information to get you started.
         </p>

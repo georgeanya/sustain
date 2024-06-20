@@ -24,9 +24,9 @@ interface props {
 const StartError = ({ toggle, toggleFav }: props) => {
   return (
     <div>
-      <p className=" leading-tight  md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
+      <h1 className=" leading-tight  md:text-3xl text-1xl md:text-start font-bold text-[#002A47] ">
         An error occurred
-      </p>
+      </h1>
       <p className="mt-4 text-base leading-[23px] md:leading-[27px] md:text-lg font-normal md:text-start text-[#476D85] mb-[30px]">
         Please make sure we’ve got your details right and try again.
       </p>

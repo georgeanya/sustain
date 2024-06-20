@@ -203,9 +203,9 @@ const TestForm = ({ start }: any) => {
       <Navbar3 />
       <div className="max-w-m mx-5 sm:mx-auto mt-17">
         <div className={isSuccess || isError ? "hidden" : "block"}>
-          <p className=" leading-tight  md:text-3xl text-2xl md:text-start font-bold text-[#002A47] ">
+          <h1 className=" leading-tight  md:text-3xl text-2xl md:text-start font-bold text-[#002A47] ">
             Download our FREE ebook
-          </p>
+          </h1>
           <p className="mt-4 text-base md:text-lg md:leading-6 font-normal md:text-start text-[#476D85] mb-9">
             Download our free ebook to help you get started on your diabetes
             reversal journey

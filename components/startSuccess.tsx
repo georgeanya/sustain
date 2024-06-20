@@ -26,9 +26,9 @@ const StartSuccess = () => {
       <div className="flex justify-center">
         <img src={icon.src} alt="" className="w-[60px] md:w-[70px]" />
       </div>
-      <p className="mt-5 leading-tight  md:text-3xl text-1xl text-center font-bold text-[#002A47] ">
+      <h1 className="mt-5 leading-tight  md:text-3xl text-1xl text-center font-bold text-[#002A47] ">
         You have submitted your details successfully
-      </p>
+      </h1>
       <p className="mt-[15px] text-base leading-[23px] md:leading-[27px] md:text-lg font-normal text-center text-[#476D85] mb-[30px]">
         A WhatsApp message will be sent to you to complete your enrollment into
         Custodia Health.

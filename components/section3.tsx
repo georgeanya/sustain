@@ -9,9 +9,9 @@ import pill from "../public/assets/pill.svg";
 const Section3 = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 " id="benefits">
-      <p className="text-2xl leading-9 lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] md:pr-6">
+      <h1 className="text-2xl leading-9 lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] md:pr-6">
         Here’s what our treatment can do for you
-      </p>
+      </h1>
       <div className="lg:mt-5 md:mt-6 flex flex-wrap justify-between">
         <div className="mt-17 sm:max-w-s">
           <img src={pill.src} alt="" />

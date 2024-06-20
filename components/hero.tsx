@@ -42,9 +42,9 @@ const Hero = () => {
   return (
     <div className="px-5 lg:px-32 lg:pt-18 pb-20 lg:pb-36 flex flex-col lg:flex-row lg:justify-between bg-[#F0F7FF]">
       <div className="md:max-w-md lg:max-w-lg pt-15 pb-17 lg:pb-0 lg:pt-18">
-        <p className="  text-4lg lg:text-start lg:text-5xl font-bold text-[#002A47] ">
+        <h1 className="  text-4lg lg:text-start lg:text-5xl font-bold text-[#002A47] ">
           Reverse prediabetes, type 2 diabetes, and obesity 
-        </p>
+        </h1>
         <p className="mt-5 md:mt-6 text-base font-normal lg:pr-8 lg:text-start lg:text-2lg text-[#476D85]">
           Custodia's virtual care program helps people safely and sustainably
           reverse chronic metabolic using simple lifestyle changes
