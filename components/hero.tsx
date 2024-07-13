@@ -46,7 +46,7 @@ const Hero = () => {
           Reverse prediabetes, type 2 diabetes, and obesity 
         </h1>
         <p className="mt-5 md:mt-6 text-base font-normal lg:pr-8 lg:text-start lg:text-2lg text-[#476D85]">
-          Custodia's virtual care program helps people safely and sustainably
+          Custodia&apos;s virtual care program helps people safely and sustainably
           reverse chronic metabolic using simple lifestyle changes
         </p>
         <div className="mt-8 ">
