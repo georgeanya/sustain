@@ -346,7 +346,7 @@ const Blog = ({ initialBlogs }: any) => {
             <p className="md:text-[38px] md:leading-[48px] text-[24px] leading-[30px] text-[#4F9EEA] font-bold max-w-[476px]">
               Stay updated by joining our newsletter
             </p>
-            <p className=" text-base leading-[22px] md:text-xl text-[#002A47] max-w-[574px] mt-4 md:mt-[22px] mb-6 md:mb-8">
+            <p className="text-base leading-[22px] md:text-xl text-[#002A47] max-w-[574px] mt-4 md:mt-[22px] mb-6 md:mb-8">
               Subscribe to recieve updates about our blog posts and
               announcements directly in your mailbox
             </p>
