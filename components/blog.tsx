@@ -340,13 +340,13 @@ const Blog = ({ initialBlogs }: any) => {
             })}
           </div>
           <div
-            className=" md:py-[70px] px-20 py-20  bg-[#EFF2FA] rounded-[20px]"
+            className=" md:py-[70px] px-5 py-10  bg-[#EFF2FA] rounded-[20px]"
             id="newsletter"
           >
-            <p className="md:text-[38px] leading-[48px] text-2xl text-[#4F9EEA] font-bold max-w-[476px]">
+            <p className="md:text-[38px] md:leading-[48px] text-[24px] leading-[30px] text-[#4F9EEA] font-bold max-w-[476px]">
               Stay updated by joining our newsletter
             </p>
-            <p className=" text-base md:text-xl text-[#002A47] max-w-[574px] mt-5 md:mt-[22px] mb-10 md:mb-8">
+            <p className=" text-base leading-[22px] md:text-xl text-[#002A47] max-w-[574px] mt-4 md:mt-[22px] mb-6 md:mb-8">
               Subscribe to recieve updates about our blog posts and
               announcements directly in your mailbox
             </p>
