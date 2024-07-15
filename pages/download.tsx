@@ -112,7 +112,15 @@ const Download = () => {
             tracking, resources, messaging, and more
           </p>
           <div className="flex md:justify-center lg:justify-start mt-7 md:mt-10">
-            <Link href="https://play.google.com/store/apps/details?id=ng.lifebox.custodia"><img src={play.src} className="mr-3 lg:mr-4 w-38 md:w-40" alt="" /></Link>
+            <Link href="https://play.google.com/store/apps/details?id=ng.lifebox.custodia">
+              <a>
+                <img
+                  src={play.src}
+                  className="mr-3 lg:mr-4 w-38 md:w-40"
+                  alt=""
+                />
+              </a>
+            </Link>
             <img src={apple.src} alt="" className=" w-34 md:w-40" />
           </div>
         </div>

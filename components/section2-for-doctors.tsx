@@ -38,14 +38,16 @@ const Section2 = () => {
         <hr className="my-6 md:my-8 mb-6 md:mb-8" />
         <p className="text-basex md:text-1lg md:leading-8 text-white font-normal md:pr-10">
           We understand the importance of collaboration and communication. We
-          keep you informed of any changes to your patient's medication
+          keep you informed of any changes to your patient&apos;s medication
           regimens, ensuring seamless coordination of care.
         </p>
         <div className="mt-10 md:mt-15 ">
           <Link href="/research">
-            <SustainButton className="text-xs md:text-base font-medium">
-              Research behind our treatment
-            </SustainButton>
+            <a>
+              <SustainButton className="text-xs md:text-base font-medium">
+                Research behind our treatment
+              </SustainButton>
+            </a>
           </Link>
         </div>
       </div>

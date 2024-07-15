@@ -3,8 +3,6 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 
-
-
 const Navbar3 = () => {
   return (
     <div>
@@ -12,11 +10,13 @@ const Navbar3 = () => {
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">
-              <img
-                src={custodia.src}
-                className="mr-3 cursor-pointer self-center"
-                alt="Custodia Logo"
-              />
+              <a>
+                <img
+                  src={custodia.src}
+                  className="mr-3 cursor-pointer self-center"
+                  alt="Custodia Logo"
+                />
+              </a>
             </Link>
           </div>
         </nav>

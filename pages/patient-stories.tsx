@@ -79,38 +79,41 @@ const PatientStories = ({ blogs }: { blogs: { data: Blog[] } }) => {
           const { id, attributes } = blogpost;
           const imgUrl = attributes.image.data.attributes.url; // Move ImgUrl inside the map function
           return (
-            <Link href={`/blog/${attributes.slug}`} key={id}>
-              <div className="max-w-[357px] md:h-[540px] flex flex-col justify-between">
-                <div>
-                  <img
-                    src={imgUrl}
-                    alt=""
-                    className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
-                  />
-
-                  <p className=" text-sm text-[#4F9EEA] mt-7">
-                    {attributes.category.data.attributes.name}
-                  </p>
-                  <p className="text-[#002A47] font-bold text-[26px] leading-[32px] md:text-1xl md:leading-8 mt-2.5 md:mt-3 cursor-pointer">
+            <div className="max-w-[357px] md:h-[540px] flex flex-col justify-between">
+              <div>
+                <Link href={`/blog/${attributes.slug}`} key={id}>
+                  <a>
+                    <img
+                      src={imgUrl}
+                      alt=""
+                      className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
+                    />
+                  </a>
+                </Link>
+                <p className=" text-sm text-[#4F9EEA] mt-7">
+                  {attributes.category.data.attributes.name}
+                </p>
+                <Link href={`/blog/${attributes.slug}`} key={id}>
+                  <a className="text-[#002A47] font-bold text-[26px] leading-[32px] md:text-1xl md:leading-8 mt-2.5 md:mt-3 cursor-pointer">
                     {attributes.title}
+                  </a>
+                </Link>
+                <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
+                  {attributes.description}
+                </p>
+              </div>
+              <div className="flex mt-7 md:mt-10">
+                <img src={image.src} alt="" className="w-12 rounded-[25px]" />
+                <div className="ml-4 self-center">
+                  <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
+                    {attributes.author.data.attributes.name}
                   </p>
-                  <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
-                    {attributes.description}
+                  <p className="text-[#476D85] text-xs">
+                    {attributes.author.data.attributes.team}
                   </p>
-                </div>
-                <div className="flex mt-7 md:mt-10">
-                  <img src={image.src} alt="" className="w-12 rounded-[25px]" />
-                  <div className="ml-4 self-center">
-                    <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
-                      {attributes.author.data.attributes.name}
-                    </p>
-                    <p className="text-[#476D85] text-xs">
-                      {attributes.author.data.attributes.team}
-                    </p>
-                  </div>
                 </div>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>

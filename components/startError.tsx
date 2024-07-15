@@ -37,16 +37,18 @@ const StartError = ({ toggle, toggleFav }: props) => {
         Please make sure we’ve got your details right and try again.
       </p>
       <Link href="/start">
-        <SustainButton
-          className="self-center text-sm md:text-base font-medium"
-          type="submit"
-          onClick={() => {
-            toggle();
-            toggleFav();
-          }}
-        >
-          Try again
-        </SustainButton>
+        <a>
+          <SustainButton
+            className="self-center text-sm md:text-base font-medium"
+            type="submit"
+            onClick={() => {
+              toggle();
+              toggleFav();
+            }}
+          >
+            Try again
+          </SustainButton>
+        </a>
       </Link>
     </div>
   );

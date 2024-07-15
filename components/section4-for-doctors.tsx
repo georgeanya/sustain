@@ -87,9 +87,11 @@ const Section4 = () => {
             ))}
             <div className="mt-10 md:mt-15 ">
               <Link href="https://forms.gle/RZ3DwhQ4wpSX3GAw5">
-                <SustainButton className="text-xs lg:text-base font-medium">
-                  Refer patients here
-                </SustainButton>
+                <a>
+                  <SustainButton className="text-xs lg:text-base font-medium">
+                    Refer patients here
+                  </SustainButton>
+                </a>
               </Link>
             </div>
           </div>

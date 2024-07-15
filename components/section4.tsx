@@ -24,7 +24,7 @@ const SustainButton = styled(Button)({
 
 const Section4 = () => {
   const [faqs, setFaqs] = useState([
-   {
+    {
       question: "Personal health coach",
       answer:
         "You will get paired with a highly trained and compassionate health coach to keep you on track on your best days and your worst.",
@@ -36,7 +36,7 @@ const Section4 = () => {
         "You will get paired with a doctor who will monitor your biomarkers and safely de-prescribe any medications you no longer need",
       open: false,
     },
-   
+
     {
       question: "Private member community",
       answer:
@@ -88,9 +88,11 @@ const Section4 = () => {
             ))}
             <div className="mt-10 md:mt-15 ">
               <Link href="/start">
-                <SustainButton className="text-xs md:text-base font-medium">
-                  Get started now
-                </SustainButton>
+                <a>
+                  <SustainButton className="text-xs md:text-base font-medium">
+                    Get started now
+                  </SustainButton>
+                </a>
               </Link>
             </div>
           </div>
