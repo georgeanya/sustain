@@ -23,7 +23,7 @@ const SustainButton = styled(Button)({
 
 const Footer = () => {
   const currentDate = new Date();
-  const currentYear = currentDate.getFullYear();
+const currentYear = currentDate.getFullYear();
 
   return (
     <div className="bg-[#0C1227] md:px-32 px-5 md:pt-36 pt-24 text-center md:text-start text-white">
@@ -35,11 +35,9 @@ const Footer = () => {
           Are you ready to start that journey? Join Custodia today!
         </p>
         <Link href="/start">
-          <a>
-            <SustainButton className="self-start text-xs md:text-base font-medium">
-              Get started now
-            </SustainButton>
-          </a>
+          <a href=""><SustainButton className="self-start text-xs md:text-base font-medium">
+            Get started now
+          </SustainButton></a>
         </Link>
       </div>
       <hr className="md:mt-36 mt-28 md:mb-24 mb-20" />
@@ -50,74 +48,76 @@ const Footer = () => {
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               PRODUCT
             </h3>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/pricing">Pricing</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/healthcare-providers">For healthcare providers</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/research">Research</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/faq">FAQs</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/download">Download our app</Link>
-            </a>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/pricing"><a>Pricing</a></Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/healthcare-providers">
+                <a>For healthcare providers</a>
+              </Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/research"><a>Research</a></Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/faq"><a>FAQs</a></Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/download"><a>Download our app</a></Link>
+            </p>
           </div>
           <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               RESOURCES
             </h3>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/404">Help center</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/404"><a>Help center</a></Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/Privacy-policy-9c564d4280694f34805e974ee3084c35">
-                Privacy policy
+                <a>Privacy policy</a>
               </Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/lifebox-labs/Terms-of-use-1dc563d01e574d108fdc23f4c51d2ee1">
-                Terms of use
+                <a>Terms of use</a>
               </Link>
-            </a>
-            {/* <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            </p>
+            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/cookie">Cookie policy</Link>
-            </a> */}
+            </p> */}
           </div>
           <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               COMPANY
             </h3>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="https://lifebox.ng/">About</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="/blog">Blog</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="https://lifebox.ng/"><a>About</a></Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="/blog"><a>Blog</a></Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/Join-Lifebox-Labs-caed82beacb448cf9be9b380907caa19">
-                Careers
+                <a>Careers</a>
               </Link>
-            </a>
-            {/* <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            </p>
+            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="/404">Press</Link>
-            </a> */}
+            </p> */}
           </div>
           <div className="w-40 md:w-56">
             <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
               CONTACT
             </h3>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
-              <Link href="tel:+2347040559724">+2347040559724</Link>
-            </a>
-            <a className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+              <Link href="tel:+2347040559724"><a>+2347040559724</a></Link>
+            </p>
+            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
               <Link href="mailto:hi@custodiahealth.com">
-                hi@custodiahealth.com
+                <a href="">hi@custodiahealth.com</a>
               </Link>
-            </a>
+            </p>
             <div className="flex">
               <Link href="https://facebook.com/custodiahealth">
                 <a>

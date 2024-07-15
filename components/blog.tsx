@@ -21,6 +21,20 @@ const SustainOutlineButton = styled(Button)({
   },
 });
 
+const SustainButton = styled(Button)({
+  background: "#4F9EEA !important",
+  fontFamily: "Circular Std",
+  color: "#f8f8f8",
+  cursor: "pointer",
+  padding: "20px 38px",
+  margin: "0px 0px",
+  borderRadius: "32px",
+  textTransform: "none",
+  ["@media (max-width:780px)"]: {
+    padding: "16px 32px",
+  },
+});
+
 interface Blog {
   id: number;
   attributes: {
@@ -281,51 +295,47 @@ const Blog = ({ initialBlogs }: any) => {
               console.log(attributes.category);
 
               return (
-                
-                  
-                    <div className="max-w-[357px] flex flex-col justify-between">
-                      <div>
-                        <Link href={`/blog/${attributes.slug}`} key={id}>
-                          <a>
-                            <img
-                              src={attributes.image.data.attributes.url}
-                              alt=""
-                              className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
-                            />
-                          </a>
-                        </Link>
-                        <p className=" text-sm leading-[17px] text-[#4F9EEA] mt-[24px]">
-                          {attributes.category.data.attributes.name}
+                <div className="max-w-[357px] flex flex-col justify-between">
+                  <div>
+                    <Link href={`/blog/${attributes.slug}`} key={id}>
+                      <a>
+                        <img
+                          src={attributes.image.data.attributes.url}
+                          alt=""
+                          className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
+                        />
+                      </a>
+                    </Link>
+                    <p className=" text-sm leading-[17px] text-[#4F9EEA] mt-[24px]">
+                      {attributes.category.data.attributes.name}
+                    </p>
+                    <Link href={`/blog/${attributes.slug}`} key={id}>
+                      <a>
+                        <p className="text-[#002A47] font-bold text-[22px] leading-[28px] md:leading-[29px] mt-[12px] cursor-pointer">
+                          {attributes.title}
                         </p>
-                        <Link href={`/blog/${attributes.slug}`} key={id}>
-                          <a>
-                            <p className="text-[#002A47] font-bold text-[22px] leading-[27px] mt-[12px] cursor-pointer">
-                              {attributes.title}
-                            </p>
-                          </a>
-                        </Link>
-                        {/* <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
+                      </a>
+                    </Link>
+                    {/* <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
                         {attributes.description}
                       </p> */}
-                      </div>
-                      <div className="flex mt-3 md:mt-4">
-                        <img
-                          src={image.src}
-                          alt=""
-                          className="w-12 rounded-[25px]"
-                        />
-                        <div className="ml-4 self-center">
-                          <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
-                            {blog.attributes.author.data.attributes.name}
-                          </p>
-                          <p className="text-[#476D85] text-xs">
-                            {blog.attributes.author.data.attributes.team}
-                          </p>
-                        </div>
-                      </div>
+                  </div>
+                  <div className="flex mt-3 md:mt-4">
+                    <img
+                      src={image.src}
+                      alt=""
+                      className="w-12 rounded-[25px]"
+                    />
+                    <div className="ml-4 self-center">
+                      <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
+                        {blog.attributes.author.data.attributes.name}
+                      </p>
+                      <p className="text-[#476D85] text-xs">
+                        {blog.attributes.author.data.attributes.team}
+                      </p>
                     </div>
-                 
-                
+                  </div>
+                </div>
               );
             })}
           </div>
@@ -346,9 +356,9 @@ const Blog = ({ initialBlogs }: any) => {
                 placeholder="Enter your email"
                 className="border mb-4 md:mb-0 h-[48px] md:h-[60px] md:max-w-[462px] border-gray-300 text-gray-900 text-sm rounded-2xl  block w-full p-2.5 md:mr-5"
               />
-              <SustainOutlineButton className="md:text-base md:leading-5">
+              <SustainButton className="md:text-base md:leading-5">
                 Subscribe
-              </SustainOutlineButton>
+              </SustainButton>
             </form>
           </div>
           <div className="mt-10 md:mt-20 grid md:grid-cols-3 md:grid-rows-1 gap-15 md:mb-20 mb-15">
@@ -374,7 +384,7 @@ const Blog = ({ initialBlogs }: any) => {
                     </p>
                     <Link href={`/blog/${attributes.slug}`} key={id}>
                       <a>
-                        <p className="text-[#002A47] font-bold text-[22px] leading-[27px] mt-[12px] cursor-pointer">
+                        <p className="text-[#002A47] font-bold text-[22px] leading-[28px] md:leading-[29px] mt-[12px] cursor-pointer">
                           {attributes.title}
                         </p>
                       </a>

@@ -55,38 +55,38 @@ const NavbarMenu = ({ handleToggle }: any) => {
         </button>
       </div>
       <ul className="pt-11">
-        {/* <a className="mb-7">
+        {/* <li className="mb-7">
           <Link href="/404" className="block text-sm font-medium">
-            <p className="text-[#002A47]">For health plans</p>
+            <a className="text-[#002A47]">For health plans</a>
           </Link>
-        </a>
+        </li>
          */}
-        <a className="mb-7">
+        <li className="mb-7">
           <Link
             href="/healthcare-providers"
             className="block text-sm font-medium"
           >
-            <p className="text-[#002A47]">For healthcare providers</p>
+            <a className="text-[#002A47]">For healthcare providers</a>
           </Link>
-        </a>
-        <a className="mb-7">
+        </li>
+        <li className="mb-7">
           <Link href="/pricing" className="block text-sm font-medium">
-            <p className="text-[#002A47]">Pricing</p>
+            <a className="text-[#002A47]">Pricing</a>
           </Link>
-        </a>
-        <a className="mb-7">
+        </li>
+        <li className="mb-7">
           <Link href="/blog" className="block text-sm font-medium">
-            <p className="text-[#002A47]">Blog</p>
+            <a className="text-[#002A47]">Blog</a>
           </Link>
-        </a>
-        <a className="mb-9">
+        </li>
+        <li className="mb-9">
           <Link href="/research" className="block text-sm font-medium">
-            <p className="text-[#002A47]">Research</p>
+            <a className="text-[#002A47]">Research</a>
           </Link>
-        </a>
+        </li>
         <li>
           <Link href="/start">
-            <a>
+            <a href="">
               <SustainButton className="text-sm">Get started</SustainButton>
             </a>
           </Link>

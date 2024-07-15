@@ -92,7 +92,7 @@ const Navbar1 = () => {
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
-                    <p className="text-[#002A47]">For health plans</p>
+                    <a className="text-[#002A47]">For health plans</a>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 ">
@@ -100,7 +100,7 @@ const Navbar1 = () => {
                     href="/404"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-[#002A47]">For doctors</p>
+                    <a className="text-[#002A47]">For doctors</a>
                   </Link>
                 </li> */}
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -108,7 +108,7 @@ const Navbar1 = () => {
                     href="/healthcare-providers"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-[#002A47]">For healthcare providers</p>
+                    <a className="text-[#002A47]">For healthcare providers</a>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -116,7 +116,7 @@ const Navbar1 = () => {
                     href="/pricing"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-[#002A47]">Pricing</p>
+                    <a className="text-[#002A47]">Pricing</a>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -124,7 +124,7 @@ const Navbar1 = () => {
                     href="/blog"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
-                    <p className="text-[#002A47]">Blog</p>
+                    <a className="text-[#002A47]">Blog</a>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -132,7 +132,7 @@ const Navbar1 = () => {
                     href="/research"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <p className="text-[#002A47]">Research</p>
+                    <a className="text-[#002A47]">Research</a>
                   </Link>
                 </li>
                 <li className="ml-5">
