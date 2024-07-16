@@ -194,7 +194,7 @@ const Blog = ({ initialBlogs }: any) => {
         </div>
       </div>
       <div>
-        <div className="px-5 md:px-32 mb-24">
+        <div className="px-5 md:px-32 md:mb-[130px] mb-[90px]">
           <div className="hidden md:block">
             <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
               <li className="mr-2 cursor-pointer">

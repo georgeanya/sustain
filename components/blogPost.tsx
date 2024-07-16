@@ -123,7 +123,7 @@ const BlogPost = ({ blog }: any) => {
 
   return (
     <div>
-      <div className="md:px-[245px] md:pt-[50px] pt-[60px] px-5">
+      <div className="md:px-[245px] md:pt-[50px] pt-[60px] px-5 md:mb-[130px] mb-[90px]">
         <div className="flex text-[#4F9EEA] md:text-[14px] md:leading-[19px] text-[14px] leading-[16.5px]">
           <p>{fetchedBlog?.attributes?.category.data.attributes?.name}</p>
           <p className="px-1">•</p>
@@ -162,7 +162,7 @@ const BlogPost = ({ blog }: any) => {
               {fetchedBlog?.attributes.content || ""}
             </ReactMarkdown>
 
-            <div className="bg-[#F0F7FF] px-5 py-10 md:p-12 md:flex justify-between md:mt-14 md:mb-36 mb-9 mt-9 rounded-[20px]">
+            <div className="bg-[#F0F7FF] px-5 py-10 md:p-12 md:flex justify-between md:mt-14  mt-9 rounded-[20px]">
               <div className="max-w-[385px]">
                 <p className="text-[#002A47] md:text-[28px] text-[22px] leading-[28px] md:leading-[35px] mb-4 font-bold">
                 Why manage diabetes when it can be reversed
