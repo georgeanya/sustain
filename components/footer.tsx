@@ -26,12 +26,12 @@ const Footer = () => {
 const currentYear = currentDate.getFullYear();
 
   return (
-    <div className="bg-[#0C1227] md:px-32 px-5 md:pt-36 pt-24 text-center md:text-start text-white">
-      <p className="mb-6 md:mb-5 text-base leading-5 md:text-xl md:leading-6">
+    <div className="bg-[#0C1227] md:px-[125px] px-5 md:pt-36 pt-20 text-white">
+      <p className="mb-6 md:mb-5 text-base leading-5 md:text-xl md:leading-6 text-center md:text-start">
         Start your enrollment now
       </p>
-      <div className="md:flex md:justify-between">
-        <p className="md:text-5lg text-3xl font-bold mb-11 md:max-w-2xl">
+      <div className="md:flex md:justify-between text-center md:text-start">
+        <p className="md:text-5lg text-3xl font-bold mb-11 md:mb-0 md:max-w-2xl">
           Are you ready to start that journey? Join Custodia today!
         </p>
         <Link href="/start">
@@ -40,80 +40,80 @@ const currentYear = currentDate.getFullYear();
           </SustainButton></a>
         </Link>
       </div>
-      <hr className="md:mt-36 mt-28 md:mb-24 mb-20" />
-      <div className="md:flex md:justify-between">
-        <img src={sustain.src} className="self-start" alt="sustain logo" />
+      <hr className="h-[0.5px] border-t-[0.5px] md:mt-[150px] mt-[109px] md:mb-[90px] mb-[70px] text-[#C7CBD1]" />
+      <div className="md:flex md:justify-between text-start">
+        <img src={sustain.src} className="self-start md:w-[131px]" alt="sustain logo" />
         <div className="flex flex-wrap text-start justify-between">
-          <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
+          <div className="w-40 md:w-[245px]">
+            <h3 className="md:mb-8 mb-[27px] mt-[60px] md:mt-0 text-[15px] leading-[18px] md:text-base font-medium">
               PRODUCT
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/pricing"><a>Pricing</a></Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/healthcare-providers">
                 <a>For healthcare providers</a>
               </Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/research"><a>Research</a></Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/faq"><a>FAQs</a></Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/download"><a>Download our app</a></Link>
             </p>
           </div>
-          <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
+          <div className="w-40 md:w-[245px]">
+            <h3 className="md:mb-8 mb-[27px] mt-[60px] md:mt-0 text-[15px] leading-[18px] md:text-base font-medium">
               RESOURCES
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/404"><a>Help center</a></Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/Privacy-policy-9c564d4280694f34805e974ee3084c35">
                 <a>Privacy policy</a>
               </Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/lifebox-labs/Terms-of-use-1dc563d01e574d108fdc23f4c51d2ee1">
                 <a>Terms of use</a>
               </Link>
             </p>
-            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            {/* <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/cookie">Cookie policy</Link>
             </p> */}
           </div>
-          <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
+          <div className="w-40 md:w-[245px]">
+            <h3 className="md:mb-8 mb-[27px] mt-[52px] md:mt-0 text-[15px] leading-[18px] md:text-base font-medium">
               COMPANY
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="https://lifebox.ng/"><a>About</a></Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/blog"><a>Blog</a></Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/Join-Lifebox-Labs-caed82beacb448cf9be9b380907caa19">
                 <a>Careers</a>
               </Link>
             </p>
-            {/* <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            {/* <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/404">Press</Link>
             </p> */}
           </div>
-          <div className="w-40 md:w-56">
-            <h3 className="md:mb-8 mb-6 mt-14 md:mt-0 text-sm md:text-base md:leading-5 font-medium">
+          <div className="w-40 md:w-[205px]">
+            <h3 className="md:mb-8 mb-[27px] mt-[52px] md:mt-0 text-[15px] leading-[18px] md:text-base font-medium">
               CONTACT
             </h3>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="tel:+2347040559724"><a>+2347040559724</a></Link>
             </p>
-            <p className="md:mb-6 md:text-sm text-sm leading-4 mb-6 text-[#C4CED4]">
+            <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="mailto:hi@custodiahealth.com">
                 <a href="">hi@custodiahealth.com</a>
               </Link>
@@ -150,7 +150,8 @@ const currentYear = currentDate.getFullYear();
           </div>
         </div>
       </div>
-      <p className="md:mt-26 mt-16 text-sm pb-14 ">
+      <hr className="h-[0.5px] border-t-[0.5px] md:mt-[90px] mt-[70px] text-[#C7CBD1]" />
+      <p className="md:mt-[45px] mt-[35px] text-sm md:text-[15px] leading-[17px] md:leading-[18px] pb-[51px] md:pb-[65px] text-center md:text-start">
         Custodia Health ©{currentYear} All Rights Reserved
       </p>
     </div>

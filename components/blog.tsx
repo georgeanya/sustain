@@ -340,7 +340,7 @@ const Blog = ({ initialBlogs }: any) => {
             })}
           </div>
           <div
-            className=" md:py-[70px] px-5 py-10  bg-[#EFF2FA] rounded-[20px]"
+            className=" md:py-[70px] px-5 md:px-20 py-10  bg-[#EFF2FA] rounded-[20px]"
             id="newsletter"
           >
             <p className="md:text-[38px] md:leading-[48px] text-[24px] leading-[30px] text-[#4F9EEA] font-bold max-w-[476px]">
