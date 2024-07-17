@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState, useMemo, useEffect } from "react";
 import image from "../public/assets/user.svg";
 import { styled } from "@mui/material/styles";
