@@ -302,7 +302,7 @@ const Blog = ({ initialBlogs }: any) => {
                       <a>
                         <img
                           src={attributes.image.data.attributes.formats.medium.url}
-                          alt=""
+                          alt={attributes.image.data.attributes.name}
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
                       </a>
@@ -374,7 +374,7 @@ const Blog = ({ initialBlogs }: any) => {
                       <a>
                         <img
                           src={attributes.image.data.attributes.formats.medium.url}
-                          alt=""
+                          alt={attributes.image.data.attributes.name}
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
                       </a>
