@@ -153,8 +153,8 @@ const Home: NextPage = () => {
             "@type": "Organization",
             "@id": "https://custodiahealth.com/#organization",
             "name": "Custodia Health",
-            "image": "https://lifebox.ng/images/lifebox-labs.png",
-            "logo": "https://lifebox.ng/images/lifebox-labs.png",
+            "image": "https://custodiahealth.com/custodia-logo.png",
+            "logo": "https://custodiahealth.com/custodia-logo.png",
             "url": "https://custodiahealth.com",
             "sameAs": [
                 "https://facebook.com/custodiahealth",
