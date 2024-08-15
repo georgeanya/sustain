@@ -117,15 +117,15 @@ const Download = () => {
                 <img
                   src={play.src}
                   className="mr-3 md:mr-4 w-38 md:w-40"
-                  alt=""
+                  alt="Play Store Icon"
                 />
               </a>
             </Link>
-            <img src={apple.src} alt="" className=" w-34 md:w-40" />
+            <img src={apple.src} alt="Apple store Icon" className=" w-34 md:w-40" />
           </div>
         </div>
         <div className="my-20 md:w-1/2 md:mt-20 md:mb-36 flex justify-center">
-          <img src={app.src} alt="" />
+          <img src={app.src} alt="App Store Icon" />
         </div>
       </div>
       <Footer />

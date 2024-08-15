@@ -17,7 +17,7 @@ const WhatsAppButton: React.FC = () => {
     >
       <img
         src={whatsapp.src}
-        alt=""
+        alt="Whatapp Logo"
         className="w-[55px] md:w-[65px]"
       />
     </button>

@@ -50,6 +50,7 @@ interface Blog {
       data: {
         attributes: {
           url: string; // Update image type to include 'url'
+          name: string
         };
       };
     };
@@ -85,7 +86,7 @@ const PatientStories = ({ blogs }: { blogs: { data: Blog[] } }) => {
                   <a>
                     <img
                       src={imgUrl}
-                      alt=""
+                      alt={attributes.image.data.attributes.name}
                       className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                     />
                   </a>
@@ -103,7 +104,11 @@ const PatientStories = ({ blogs }: { blogs: { data: Blog[] } }) => {
                 </p>
               </div>
               <div className="flex mt-7 md:mt-10">
-                <img src={image.src} alt="" className="w-12 rounded-[25px]" />
+                <img
+                  src={image.src}
+                  alt="Avatar"
+                  className="w-12 rounded-[25px]"
+                />
                 <div className="ml-4 self-center">
                   <p className="text-[#002A47] text-sm md:text-base leading-5 font-medium">
                     {attributes.author.data.attributes.name}

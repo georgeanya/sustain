@@ -14,7 +14,7 @@ const Section3 = () => {
       </h2>
       <div className="md:mt-6 flex flex-wrap justify-between">
         <div className="mt-17 sm:max-w-s">
-          <img src={pill.src} alt="" />
+          <img src={pill.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Medication reduction
           </p>
@@ -24,7 +24,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={blood.src} alt="" />
+          <img src={blood.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Diabetes reversal
           </p>
@@ -34,7 +34,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={hypert.src} alt="" />
+          <img src={hypert.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Blood pressure reduction
           </p>
@@ -44,7 +44,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={weight.src} alt="" />
+          <img src={weight.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Weight loss
           </p>
@@ -54,7 +54,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={hda1d.src} alt="" />
+          <img src={hda1d.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             HbA1c reduction
           </p>
@@ -64,7 +64,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={lipids.src} alt="" />
+          <img src={lipids.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Improved lipid profile
           </p>

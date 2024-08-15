@@ -161,7 +161,7 @@ const Blog = ({ initialBlogs }: any) => {
             <a>
               <img
                 src={ImgUrl}
-                alt=""
+                alt={blog.attributes.image.data.attributes.name}
                 className="cursor-pointer w-full md:w-[660px] md:h-[380px] rounded-[20px]"
               />
             </a>
@@ -181,7 +181,11 @@ const Blog = ({ initialBlogs }: any) => {
               {blog.attributes.description}
             </p>
             <div className="flex mt-5 md:mt-6 mb-[60px] md:mb-0">
-              <img src={image.src} alt="" className="w-12 rounded-[25px]" />
+              <img
+                src={image.src}
+                alt="Avatar"
+                className="w-12 rounded-[25px]"
+              />
               <div className="ml-4 self-center">
                 <p className="text-[#002A47] text-sm md:text-base leading-[17px] font-medium">
                   {blog.attributes.author.data.attributes.name}
@@ -301,7 +305,9 @@ const Blog = ({ initialBlogs }: any) => {
                     <Link href={`/blog/${attributes.slug}`} key={id}>
                       <a>
                         <img
-                          src={attributes.image.data.attributes.formats.medium.url}
+                          src={
+                            attributes.image.data.attributes.formats.medium.url
+                          }
                           alt={attributes.image.data.attributes.name}
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
@@ -324,7 +330,7 @@ const Blog = ({ initialBlogs }: any) => {
                   <div className="flex mt-3 md:mt-4">
                     <img
                       src={image.src}
-                      alt=""
+                      alt="Avatar"
                       className="w-12 rounded-[25px]"
                     />
                     <div className="ml-4 self-center">
@@ -373,7 +379,9 @@ const Blog = ({ initialBlogs }: any) => {
                     <Link href={`/blog/${attributes.slug}`} key={id}>
                       <a>
                         <img
-                          src={attributes.image.data.attributes.formats.medium.url}
+                          src={
+                            attributes.image.data.attributes.formats.medium.url
+                          }
                           alt={attributes.image.data.attributes.name}
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
@@ -397,7 +405,7 @@ const Blog = ({ initialBlogs }: any) => {
                   <div className="flex mt-3 md:mt-4">
                     <img
                       src={image.src}
-                      alt=""
+                      alt="Avatar"
                       className="w-12 rounded-[25px]"
                     />
                     <div className="ml-4 self-center">

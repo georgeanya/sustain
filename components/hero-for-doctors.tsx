@@ -22,7 +22,7 @@ const SustainButton = styled(Button)({
 const Hero = () => {
   return (
     <div className="px-5 md:px-32 md:pt-18 pb-20 md:pb-36 flex flex-col md:flex-row md:justify-between bg-[#F0F7FF]">
-      <div className="md:max-w-md pt-15 pb-17 md:pb-0 md:pt-18">
+      <div className="md:max-w-lg pt-15 pb-17 md:pb-0 md:pt-18">
         <h1 className="md:pr-14  text-4lg md:text-start md:text-5xl font-bold text-[#002A47]">
           Effective{" "}
           <span className="text-[#4F9EEA]">metabolic disease care</span> for
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
       <div className=" md:w-2/4 flex md:p-10 justify-center">
-        <img src={hero.src} alt="hero" />
+        <img src={hero.src} alt="Custodia Hero Image" />
       </div>
     </div>
   );

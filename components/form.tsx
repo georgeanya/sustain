@@ -113,7 +113,7 @@ const Form = () => {
     <div className="max-w-m mx-5 md:mx-auto mt-10 md:mt-[75px]">
       <div className={isSuccess || isError ? "hidden" : "block"}>
         <div className="flex justify-center">
-          <img src={icon.src} alt="" className="w-[60px] md:w-[70px]"/>
+          <img src={icon.src} alt="Icon" className="w-[60px] md:w-[70px]" />
         </div>
         <h1 className="mt-[15px] leading-7  md:text-2xl md:leading-9 text-1lg text-center font-bold text-[#002A47]">
           Join Custodia Health
@@ -177,7 +177,7 @@ const Form = () => {
             </div>
           </div>
           <div className="flex mb-7">
-            <img src={lock.src} alt="" />
+            <img src={lock.src} alt="Icon" />
             <p className="md:text-[13px] leading-4 text-xs text-[#476D85] ml-1">
               Your information will never be shared with anyone
             </p>

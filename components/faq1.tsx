@@ -15,13 +15,13 @@ const FAQ = ({ faq, index, toggleFAQ }: any) => {
             <img
               className="mr-6 flex self-center w-4 md:w-5 md:mr-10 mt-3.5"
               src={minus.src}
-              alt=""
+              alt="Icon"
             />
           ) : (
             <img
               className="mr-6 self-center w-4 md:w-5 md:mr-10 mt-1"
               src={plus.src}
-              alt=""
+              alt="Icon"
             />
           )}
         </div>

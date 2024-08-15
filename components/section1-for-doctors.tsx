@@ -34,25 +34,25 @@ const Section1 = () => {
       </div>
       <div className="grid md:grid-cols-2 md:grid-rows-2 md:gap-y-6 gap-x-5 grid-rows-4 grid-cols-1 gap-y-[15px] mt-[42px] md:mt-0">
         <div className="flex md:w-[275px] bg-[#4A4875] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
-          <img src={type2.src} alt="" className="md:w-[50px] w-11" />
+          <img src={type2.src} alt="Icon" className="md:w-[50px] w-11" />
           <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">
             Type 2 diabetes
           </p>
         </div>
         <div className="flex md:w-[275px] bg-[#236DAD] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
-          <img src={pret2.src} alt="" className="md:w-[50px] w-11" />
+          <img src={pret2.src} alt="Icon" className="md:w-[50px] w-11" />
           <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">
             Prediabetes
           </p>
         </div>
         <div className="flex md:w-[275px] bg-[#112D50] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
-          <img src={hyper.src} alt="" className="md:w-[50px] w-11" />
+          <img src={hyper.src} alt="Icon" className="md:w-[50px] w-11" />
           <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">
             Obesity
           </p>
         </div>
         <div className="flex md:w-[275px] bg-[#005A61] py-[18px] md:py-5 px-5 md:px-[30px] rounded-[20px]">
-          <img src={dysli.src} alt="" className="md:w-[50px] w-11" />
+          <img src={dysli.src} alt="Icon" className="md:w-[50px] w-11" />
           <p className="ml-5 text-base md:text-xl leading-8 font-medium text-white flex justify-center self-center">
           Gestational diabetes
           </p>

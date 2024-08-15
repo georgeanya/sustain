@@ -14,7 +14,7 @@ const Section3 = () => {
       </h2>
       <div className="md:mt-6 flex flex-wrap justify-between">
         <div className="mt-17 sm:max-w-s">
-          <img src={workload.src} alt="" />
+          <img src={workload.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Reduce your workload
           </p>
@@ -24,7 +24,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={change.src} alt="" />
+          <img src={change.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Lifestyle change specialists
           </p>
@@ -34,7 +34,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={monitor.src} alt="" />
+          <img src={monitor.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Patient monitoring
           </p>
@@ -44,7 +44,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={referral.src} alt="" />
+          <img src={referral.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Easy Referrals
           </p>
@@ -54,7 +54,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={conflits.src} alt="" />
+          <img src={conflits.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             No conflicts
           </p>
@@ -65,7 +65,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className="mt-17 sm:max-w-s">
-          <img src={communicate.src} alt="" />
+          <img src={communicate.src} alt="Icon" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
             Constant communication
           </p>

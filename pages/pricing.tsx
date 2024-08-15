@@ -196,7 +196,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Personal health coaching
@@ -206,7 +206,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Doctor supervision
@@ -216,7 +216,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited consultations
@@ -226,7 +226,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Resources, meal plan, and food guides
@@ -236,7 +236,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Personalized care plan
@@ -308,7 +308,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Personal health coaching
@@ -318,7 +318,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Doctor supervision
@@ -328,7 +328,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited consultations
@@ -338,7 +338,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Resources, meal plan, and food guides
@@ -348,7 +348,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Personalized care plan
@@ -358,7 +358,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Routine lab tests
@@ -368,7 +368,7 @@ const Pricing = (props: any) => {
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
-                    alt=""
+                    alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
                     Unlimited health supplies

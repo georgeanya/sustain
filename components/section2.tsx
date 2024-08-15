@@ -54,7 +54,7 @@ const Section2 = () => {
       <div className="md:max-w-lg  ">
         <img
           src={nuts.src}
-          alt=""
+          alt="Food Image"
           className="flex align-center md:pt-[146px] pt-[70px]"
         />
       </div>

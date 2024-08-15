@@ -26,7 +26,12 @@ const Section5 = () => {
             better choices about my health so I can be there for my family.”
           </p>
           <div className="pt-10 flex ">
-            <img src={image.src} alt="" width="60px" className="w-12 md:w-15" />
+            <img
+              src={image.src}
+              alt="Avatar"
+              width="60px"
+              className="w-12 md:w-15"
+            />
             <div className="self-center pl-3">
               <p className="font-medium text-base leading-5 md:leading-6 md:text-lg text-[#002A47]">
                 Ezeogo Mang
@@ -48,7 +53,7 @@ const Section5 = () => {
             <div className="pt-10 flex ">
               <img
                 src={image1.src}
-                alt=""
+                alt="Avatar"
                 width="60px"
                 className="w-12 md:w-15"
               />
@@ -84,7 +89,7 @@ const Section5 = () => {
         </div>
         <div className="md:w-60 w-40">
           <p className="font-medium text-2xl leading-9 md:text-5lg text-[#4F9EEA]">
-          ₦200,000
+            ₦200,000
           </p>
           <p className="md:text-base md:leading-6 text-sm font-normal text-[#002A47] md:mt-3 mt-1">
             Average yearly cost savings on medications

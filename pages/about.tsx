@@ -64,7 +64,7 @@ const About = () => {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-7 gap-y-12 md:gap-26 mt-11 md:mt-14">
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Dr. Olusina Ajidahun
               </p>
@@ -73,7 +73,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Joseph Anya
               </p>
@@ -82,7 +82,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Promise Anya
               </p>
@@ -91,7 +91,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Adeola D-Great
               </p>
@@ -106,7 +106,7 @@ const About = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-7 gap-y-12 md:gap-26 mt-9 md:mt-14">
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Opeyemi Awoyemi
               </p>
@@ -115,7 +115,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Omolara Awoyemi
               </p>
@@ -124,7 +124,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 David Unwin, MD
               </p>
@@ -133,7 +133,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img src={teamImage.src} alt="" className="" />
+              <img src={teamImage.src} alt="Avatar" className="" />
               <p className="font-medium text-sm leading-4 md:text-xl md:leading-relaxed text-[#002A47] mt-5">
                 Opeyemi Awoyemi
               </p>

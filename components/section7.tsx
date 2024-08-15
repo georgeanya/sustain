@@ -31,10 +31,10 @@ const Section7 = () => {
       </h2>
       <div className="md:flex justify-between">
         <div className="max-w-[344px] ">
-          <img src={phone.src} alt="" className="" />
+          <img src={phone.src} alt="Phone Image" className="" />
           <img
             src={one.src}
-            alt=""
+            alt="Icon"
             className="md:mt-[30px] mt-6 w-7 md:w-[30px]"
           />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium md:mt-[13px] mt-[12px]">
@@ -46,10 +46,10 @@ const Section7 = () => {
           </p>
         </div>
         <div className="max-w-[344px] mt-[50px] md:mt-0">
-          <img src={laptop.src} alt="" className="" />
+          <img src={laptop.src} alt="Laptop" className="" />
           <img
             src={two.src}
-            alt=""
+            alt="Icon"
             className="md:mt-[30px] mt-6 w-7 md:w-[30px]"
           />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium md:mt-[13px] mt-[12px]">
@@ -61,10 +61,10 @@ const Section7 = () => {
           </p>
         </div>
         <div className="max-w-[344px] mt-[50px] md:mt-0">
-          <img src={meal.src} alt="" className="" />
+          <img src={meal.src} alt="Menu Image" className="" />
           <img
             src={three.src}
-            alt=""
+            alt="Icon"
             className="md:mt-[30px] mt-6 w-7 md:w-[30px]"
           />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium md:mt-[13px] mt-[12px]">

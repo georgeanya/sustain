@@ -138,7 +138,7 @@ const BlogPost = ({ blog }: any) => {
           {fetchedBlog?.attributes?.title}
         </h1>
         <div className="flex mt-6">
-          <img src={image.src} alt="" className="w-12 rounded-[25px]" />
+          <img src={image.src} alt="Avatar" className="w-12 rounded-[25px]" />
           <div className="ml-4 self-center">
             <p className="text-[#002A47] text-sm md:text-base font-medium">
               {fetchedBlog?.attributes?.author.data.attributes?.name}
@@ -165,15 +165,18 @@ const BlogPost = ({ blog }: any) => {
             <div className="bg-[#F0F7FF] px-5 py-10 md:p-12 md:flex justify-between md:mt-14 mb-9  mt-9 rounded-[20px]">
               <div className="max-w-[385px]">
                 <p className="text-[#002A47] md:text-[28px] text-[22px] leading-[28px] md:leading-[35px] mb-4 font-bold">
-                Why manage diabetes when it can be reversed
+                  Why manage diabetes when it can be reversed
                 </p>
                 <p className="text-[#4F9EEA] md:text-xl md:leading-[28px] mb-6 md:mb-0 md:text-[18px] leading-6">
-                Get personalized treatment for reversing type 2 diabetes without leaving home
+                  Get personalized treatment for reversing type 2 diabetes
+                  without leaving home
                 </p>
               </div>
               <div className="self-center">
                 <Link href="/">
-                  <a ><SustainButton>Get started now</SustainButton></a>
+                  <a>
+                    <SustainButton>Get started now</SustainButton>
+                  </a>
                 </Link>
               </div>
             </div>
@@ -181,11 +184,11 @@ const BlogPost = ({ blog }: any) => {
           <div className="flex md:flex-col md:ml-12 md:min-w-[40px] mb-20">
             <FacebookShareButton url={url}>
               {" "}
-              <img src={facebook.src} alt="" />
+              <img src={facebook.src} alt="Icon" />
             </FacebookShareButton>
             <TwitterShareButton url={url}>
               {" "}
-              <img src={twitter.src} className="md:mt-5 ml-5 md:ml-0" alt="" />
+              <img src={twitter.src} alt="Icon" className="md:mt-5 ml-5 md:ml-0" />
             </TwitterShareButton>
           </div>
         </div>

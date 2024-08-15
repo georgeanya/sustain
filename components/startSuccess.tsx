@@ -24,7 +24,7 @@ const StartSuccess = () => {
   return (
     <div className="mt-[130px] md:mt-[165px]">
       <div className="flex justify-center">
-        <img src={icon.src} alt="" className="w-[60px] md:w-[70px]" />
+        <img src={icon.src} alt="Icon" className="w-[60px] md:w-[70px]" />
       </div>
       <h1 className="mt-5 leading-tight  md:text-3xl text-1xl text-center font-bold text-[#002A47] ">
         You have submitted your details successfully
