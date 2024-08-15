@@ -129,22 +129,7 @@ const Home: NextPage = () => {
       <Section7 />
       <Faq />
       <Footer />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaHR0cHM6Ly9jdXN0b2RpYWhlYWx0aC5jb20iLCJpZCI6IjY1MWVkNmE1NmU3MmJmZTRiNzdiNWEwYiIsImFjY0lkIjoiNjM0YThmNzk5NmVmMjgwNzJlODNkNDE3IiwiaWF0IjoxNjk2NTE5ODQ1fQ.JhCHpC4687iCN3rqEX4TNv7JjQPLnQiqEWPJKv7fGTY";
-          (function(w, d, s, u, t) {
-            w.Chatty = function(c) { w.Chatty._.push(c) };
-            w.Chatty._ = [];
-            w.Chatty.url = u;
-            w.Chatty.hash = t;
-            var h = d.getElementsByTagName(s)[0],
-              j = d.createElement(s);
-            j.async = true;
-            j.src = 'https://widget.gallabox.com/chatty-widget.min.js?_=' + Math.random();
-            h.parentNode.insertBefore(j, h);
-          })(window, document, 'script', 'https://widget.gallabox.com', token);`,
-        }}
-      ></script>
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
