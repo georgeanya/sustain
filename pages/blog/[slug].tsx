@@ -144,6 +144,37 @@ const BlogPage = ({ blog }: any) => {
       <Navbar1 />
       <BlogPost blog={blog} />
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://custodiahealth.com/blog/${blog.attributes.slug}"
+            },
+            "headline": "${blog.attributes.title}",
+            "description": "${blog.attributes.description}",
+            "image": "${ImgUrl}",
+            "author": {
+                "@type": "Person",
+                "name": "${blog.attributes.author.data.attributes.name}",
+                "url": "https://custodiahealth.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Custodia Health",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://custodiahealth.com/custodia-logo.png"
+                }
+            },
+            "datePublished": "${blog.attributes.publishedAt}",
+            "dateModified": "${blog.attributes.modifiedAt}"
+          }`,
+        }}
+      ></script>
     </div>
   );
 };
