@@ -144,6 +144,65 @@ const Home: NextPage = () => {
     h.parentNode.insertBefore(j, h);
   })(window, document, 'script', 'https://widget.gallabox.com', token);`}
       </script>
+      <script type="application/ld+json">{`
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://custodiahealth.com/#organization",
+    "name": "Custodia Health",
+    "image": "https://lifebox.ng/images/lifebox-labs.png",
+    "logo": "https://lifebox.ng/images/lifebox-labs.png",
+    "url": "https://custodiahealth.com",
+    "sameAs": [
+        "https://facebook.com/custodiahealth",
+        "https://x.com/custodiahealth",
+        "https://instagram.com/custodiahealth",
+        "https://youtube.com/channel/UCiGJtOjJyegn_5naUTUFMuQ",
+        "https://linkedin.com/company/custodia-health",
+        "https://tiktok.com/@custodiahealth",
+        "https://custodiahealth.com"
+    ],
+    "description": "Custodia is an online nutrition clinic that safely reverses type 2 diabetes, obesity, and prediabetes without the use of medication",
+    "email": "hi@custodiahealth.com",
+    "telephone": "+234-704-055-9724",
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "telephone": "+234-704-055-9724",
+            "areaServed": "NG",
+            "email": "hi@custodiahealth.com",
+            "availableLanguage": "en-US"
+        }
+    ],
+    "founder": {
+        "@type": "Person",
+        "name": "Joseph Anya",
+        "sameAs": [
+            "https://x.com/josephanyaa",
+            "https://instagram.com/josephanyaa",
+            "https://linkedin.com/in/joseph-anya",
+            "https://f6s.com/josephanya",
+            "https://crunchbase.com/person/joseph-anya"
+        ],
+        "image": "Paris",
+        "birthPlace": "Lagos, Nigeria",
+        "birthDate": "1998-05-09T00:00:00+01:00",
+        "gender": "Male",
+        "nationality": "Nigeria",
+        "jobTitle": "Founder and CEO",
+        "alumniOf": "University of Lagos",
+        "brand": [
+            "Lifebox Labs, Custodia Health, Priv Heath"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Lifebox Labs"
+        }
+    },
+    "foundingDate": "2022-08-01T00:00:00+01:00",
+    "foundingLocation": "Lagos, Nigeria",
+    "parentOrganization": "Lifebox Labs"`
+}</script>
     </div>
   );
 };
