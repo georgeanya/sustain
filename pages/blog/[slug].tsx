@@ -156,7 +156,7 @@ const BlogPage = ({ blog }: any) => {
             },
             "headline": "${blog.attributes.title}",
             "description": "${blog.attributes.description}",
-            "image": "${ImgUrl}",
+            "image": "${ blog.attributes.image.data.attributes.formats.medium.url}",
             "author": {
                 "@type": "Person",
                 "name": "${blog.attributes.author.data.attributes.name}",
@@ -171,7 +171,7 @@ const BlogPage = ({ blog }: any) => {
                 }
             },
             "datePublished": "${blog.attributes.publishedAt}",
-            "dateModified": "${blog.attributes.modifiedAt}"
+            "dateModified": "${blog.attributes.updatedAt}"
           }`,
         }}
       ></script>
