@@ -301,7 +301,7 @@ const Blog = ({ initialBlogs }: any) => {
                     <Link href={`/blog/${attributes.slug}`} key={id}>
                       <a>
                         <img
-                          src={attributes.image.data.attributes.url}
+                          src={attributes.image.data.attributes.formats.medium.url}
                           alt=""
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
@@ -373,7 +373,7 @@ const Blog = ({ initialBlogs }: any) => {
                     <Link href={`/blog/${attributes.slug}`} key={id}>
                       <a>
                         <img
-                          src={attributes.image.data.attributes.url}
+                          src={attributes.image.data.attributes.formats.medium.url}
                           alt=""
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
