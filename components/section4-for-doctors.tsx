@@ -73,9 +73,9 @@ const Section4 = () => {
   return (
     <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-28 pb-20 bg-[#EFF2FA] grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 md:gap-16 gap-4">
       <div className="max-w-xl">
-        <h1 className="text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47]">
+        <h2 className="text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47]">
           Your patients get all the support they need
-        </h1>
+        </h2>
         <p className="mt-5 md:mt-6 mb-16 md:mb-24 text-base leading-6  md:text-start md:text-2lg md:max-w-xl text-[#002A47]">
           We give your patients the tools and support they need to reverse their
           condition and take control of their health.
@@ -88,7 +88,7 @@ const Section4 = () => {
             <div className="mt-10 md:mt-15 ">
               <Link href="https://forms.gle/RZ3DwhQ4wpSX3GAw5">
                 <a>
-                  <SustainButton className="text-xs lg:text-base font-medium">
+                  <SustainButton className="text-xs md:text-base font-medium">
                     Refer patients here
                   </SustainButton>
                 </a>

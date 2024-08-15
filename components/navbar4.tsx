@@ -33,10 +33,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className={isToggled ? "hidden" : "block lg:hidden"}>
+      <div className={isToggled ? "hidden" : "block md:hidden"}>
         <NavbarMenu handleToggle={handleToggleFunc} />
       </div>
-      <div className="px-5 lg:px-32 pt-5 lg:pt-5 bg-[#F0F7FF]">
+      <div className="px-5 md:px-32 pt-5 md:pt-5 bg-[#F0F7FF]">
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">

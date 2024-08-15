@@ -102,21 +102,21 @@ const Download = () => {
         />
       </Head>
       <Navbar1 />
-      <div className="px-5 lg:px-32 lg:flex lg:justify-between">
-        <div className="lg:max-w-lg mt-16 lg:mt-32">
-          <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
+      <div className="px-5 md:px-32 md:flex md:justify-between">
+        <div className="md:max-w-lg mt-16 md:mt-32">
+          <h1 className="text-4lg md:text-center  md:text-5xl font-bold text-[#002A47]">
             Download Custodia Health on iOS and Android
-          </h2>
-          <p className="mt-6 text-base md:text-center lg:text-start lg:text-2lg text-[#476D85]">
+          </h1>
+          <p className="mt-6 text-base md:text-center  md:text-2lg text-[#476D85]">
             The Custodia Health app gives you easy, on-the-go access to
             tracking, resources, messaging, and more
           </p>
-          <div className="flex md:justify-center lg:justify-start mt-7 md:mt-10">
+          <div className="flex md:justify-center mt-7 md:mt-10">
             <Link href="https://play.google.com/store/apps/details?id=ng.lifebox.custodia">
               <a>
                 <img
                   src={play.src}
-                  className="mr-3 lg:mr-4 w-38 md:w-40"
+                  className="mr-3 md:mr-4 w-38 md:w-40"
                   alt=""
                 />
               </a>
@@ -124,7 +124,7 @@ const Download = () => {
             <img src={apple.src} alt="" className=" w-34 md:w-40" />
           </div>
         </div>
-        <div className="my-20 lg:w-1/2 lg:mt-20 lg:mb-36 flex justify-center">
+        <div className="my-20 md:w-1/2 md:mt-20 md:mb-36 flex justify-center">
           <img src={app.src} alt="" />
         </div>
       </div>

@@ -25,10 +25,10 @@ const SustainButton = styled(Button)({
 
 const Section7 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-28 pb-20 bg-[#F0F7FF]">
-      <h1 className="text-2xl leading-9 md:text-start md:text-4xl font-bold text-[#002A47] md:mb-[50px] mb-10">
+    <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-28 pb-20 bg-[#F0F7FF]">
+      <h2 className="text-2xl leading-9 md:text-start md:text-4xl font-bold text-[#002A47] md:mb-[50px] mb-10">
         Getting started is easy
-      </h1>
+      </h2>
       <div className="md:flex justify-between">
         <div className="max-w-[344px] ">
           <img src={phone.src} alt="" className="" />
@@ -76,11 +76,11 @@ const Section7 = () => {
           </p>
         </div>
       </div>
-      <div className="mt-10 lg:mt-[60px] ">
+      <div className="mt-10 md:mt-[60px] ">
         <Link href="/start">
           <a>
             {" "}
-            <SustainButton className="text-xs lg:text-base font-medium">
+            <SustainButton className="text-xs md:text-base font-medium">
               Get started now
             </SustainButton>
           </a>

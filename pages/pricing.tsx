@@ -133,21 +133,21 @@ const Pricing = (props: any) => {
         />
       </Head>
       <Navbar />
-      <div className="px-5 lg:px-66 md:pt-24 pt-16 pb-24 lg:pb-36 bg-[#F0F7FF]">
+      <div className="px-5 md:px-66 md:pt-24 pt-16 pb-24 md:pb-36 bg-[#F0F7FF]">
         <div className="flex justify-center">
-          <h2 className="text-4lg text-center lg:text-5xl font-bold text-[#002A47] mb-12 md:mb-17 max-w-2xl">
+          <h1 className="text-4lg text-center md:text-5xl font-bold text-[#002A47] mb-12 md:mb-17 max-w-2xl">
             We have a membership plan made for you
-          </h2>
+          </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
-          <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 lg:py-15">
+          <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 md:py-15">
             <div>
               {time ? (
                 <div>
                   <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     BASIC
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
                     NGN 40,000
                     <span className="md:text-lg text-base">/quarterly</span>
                   </p>
@@ -157,7 +157,7 @@ const Pricing = (props: any) => {
                   <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     BASIC
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
                     NGN 70,000
                     <span className="md:text-lg text-base">/semiannually</span>
                   </p>
@@ -191,7 +191,7 @@ const Pricing = (props: any) => {
                   </div>
                 </div>
               </div>
-              <div className="lg:px-12 px-5 pt-11 lg:pt-14">
+              <div className="md:px-12 px-5 pt-11 md:pt-14">
                 <div className="flex">
                   <img
                     src={icon.src}
@@ -245,23 +245,23 @@ const Pricing = (props: any) => {
               </div>
             </div>
             {/* <div>
-              <div className="mt-10 lg:mt-12 flex justify-center">
+              <div className="mt-10 md:mt-12 flex justify-center">
                 <Link href="/start">
-                  <SustainButton className="text-sm  lg:text-base font-medium">
+                  <SustainButton className="text-sm  md:text-base font-medium">
                     Get started
                   </SustainButton>
                 </Link>
               </div>
             </div> */}
           </div>
-          <div className="flex justify-between flex-col md:max-w-md rounded-2xl bg-white py-10 lg:py-15">
+          <div className="flex justify-between flex-col md:max-w-md rounded-2xl bg-white py-10 md:py-15">
             <div>
               {time1 ? (
                 <div>
                   <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     COMPREHENSIVE
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
                     NGN 90,000
                     <span className="md:text-lg text-base">/quarterly</span>
                   </p>
@@ -271,7 +271,7 @@ const Pricing = (props: any) => {
                   <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
                     COMPREHENSIVE
                   </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl lg:text-4lg font-medium text-center text-[#002A47]">
+                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
                     NGN 180,000
                     <span className="md:text-lg text-base">/semiannually</span>
                   </p>
@@ -303,7 +303,7 @@ const Pricing = (props: any) => {
                   </div>
                 </div>
               </div>
-              <div className="pt-11 lg:pt-14 px-5 lg:px-12">
+              <div className="pt-11 md:pt-14 px-5 md:px-12">
                 <div className="flex">
                   <img
                     src={icon.src}
@@ -377,9 +377,9 @@ const Pricing = (props: any) => {
               </div>
             </div>
             {/* <div className="justify-end">
-              <div className="mt-10 lg:mt-12 flex justify-center">
+              <div className="mt-10 md:mt-12 flex justify-center">
                 <Link href="/start">
-                  <SustainButton className="text-sm  lg:text-base font-medium">
+                  <SustainButton className="text-sm  md:text-base font-medium">
                     Get started
                   </SustainButton>
                 </Link>

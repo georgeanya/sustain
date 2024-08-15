@@ -192,7 +192,7 @@ const TestForm = ({ tScore, start }: any) => {
             </p>
           </div>
 
-          <div className="mb-15 lg:mb-28">
+          <div className="mb-15 md:mb-28">
             {isLoading ? (
               <SustainButton
                 className="self-center text-sm md:text-base font-medium"

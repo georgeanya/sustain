@@ -40,26 +40,26 @@ const Hero = () => {
   }, [shuffle]);
 
   return (
-    <div className="px-5 lg:px-32 lg:pt-18 pb-20 lg:pb-36 flex flex-col lg:flex-row lg:justify-between bg-[#F0F7FF]">
-      <div className="md:max-w-md lg:max-w-lg pt-15 pb-17 lg:pb-0 lg:pt-18">
-        <h1 className="  text-4lg lg:text-start lg:text-5xl font-bold text-[#002A47] ">
+    <div className="px-5 md:px-32 md:pt-18 pb-20 md:pb-36 flex flex-col md:flex-row md:justify-between bg-[#F0F7FF]">
+      <div className="md:max-w-md pt-15 pb-17 md:pb-0 md:pt-18">
+        <h1 className="  text-4lg md:text-start md:text-5xl font-bold text-[#002A47] ">
           Reverse prediabetes, type 2 diabetes, and obesity 
         </h1>
-        <p className="mt-5 md:mt-6 text-base font-normal lg:pr-8 lg:text-start lg:text-2lg text-[#476D85]">
+        <p className="mt-5 md:mt-6 text-base font-normal md:pr-8 md:text-start md:text-2lg text-[#476D85]">
           Custodia&apos;s virtual care program helps people safely and
           sustainably reverse chronic metabolic using simple lifestyle changes
         </p>
         <div className="mt-8 ">
           <Link href="/start">
             <a>
-              <SustainButton className="text-xs lg:text-base font-medium">
+              <SustainButton className="text-xs md:text-base font-medium">
                 Get started now
               </SustainButton>
             </a>
           </Link>
         </div>
       </div>
-      <div className=" lg:w-2/4 flex lg:p-10 justify-center">
+      <div className=" md:w-2/4 flex md:p-10 justify-center">
         <img src={hero.src} alt="hero" />
       </div>
     </div>

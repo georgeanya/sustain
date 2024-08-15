@@ -66,10 +66,10 @@ const PatientStories = ({ blogs }: { blogs: { data: Blog[] } }) => {
     <>
       <Navbar1 />
       <div className="px-5 md:px-32 md:mt-24 mt-16">
-        <h2 className="text-4lg md:text-center lg:text-start lg:text-5xl font-bold text-[#002A47]">
+        <h1 className="text-4lg md:text-center  md:text-5xl font-bold text-[#002A47]">
           Patient stories
-        </h2>
-        <p className="mt-5 md:mt-5 text-base leading-7 md:text-center lg:text-start md:text-2lg text-[#476D85] max-w-[500px]">
+        </h1>
+        <p className="mt-5 md:mt-5 text-base leading-7 md:text-center  md:text-2lg text-[#476D85] max-w-[500px]">
           Hear the inspiring stories of real Custodia patients who have changed
           the trajectory of their health.
         </p>

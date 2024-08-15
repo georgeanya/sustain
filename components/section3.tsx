@@ -8,15 +8,15 @@ import pill from "../public/assets/pill.svg";
 
 const Section3 = () => {
   return (
-    <div className="px-5 lg:px-32 lg:pt-28 pt-20 lg:pb-36 pb-24 " id="benefits">
-      <h1 className="text-2xl leading-9 lg:text-start lg:text-4xl md:max-w-xl font-bold text-[#002A47] md:pr-6">
+    <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24 " id="benefits">
+      <h2 className="text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47] md:pr-6">
         Here’s what our treatment can do for you
-      </h1>
-      <div className="lg:mt-5 md:mt-6 flex flex-wrap justify-between">
+      </h2>
+      <div className="md:mt-6 flex flex-wrap justify-between">
         <div className="mt-17 sm:max-w-s">
           <img src={pill.src} alt="" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
-          Medication reduction
+            Medication reduction
           </p>
           <p className="text-base leading-6 md:text-lg md:leading-relaxed text-[#476D85] mt-2">
             Address the root cause of condition and stop your dependency on
@@ -26,7 +26,7 @@ const Section3 = () => {
         <div className="mt-17 sm:max-w-s">
           <img src={blood.src} alt="" />
           <p className="text-xl md:text-1xxl text-[#002A47] font-medium mt-5">
-          Diabetes reversal
+            Diabetes reversal
           </p>
           <p className="text-base leading-6 md:text-lg md:leading-relaxed text-[#476D85] mt-2">
             Reduce your blood sugar to normal levels and prevents associated

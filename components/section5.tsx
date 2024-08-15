@@ -12,9 +12,9 @@ const Section5 = () => {
       className="px-5 md:px-32 md:pt-28 pt-20 md:pb-36 pb-24"
       id="patient_stories"
     >
-      <h1 className="pr-8 text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47]">
+      <h2 className="pr-8 text-2xl leading-9 md:text-start md:text-4xl md:max-w-xl font-bold text-[#002A47]">
         Don’t just take our word for it
-      </h1>
+      </h2>
       <p className="mt-5 md:mt-6 text-base md:text-start mb-7 md:mb-14 md:text-xl leading-6 md:max-w-xl text-[#002A47]">
         See what some of our patients say about us.
       </p>
