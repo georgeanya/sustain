@@ -24,41 +24,31 @@ const Faq = () => {
     {
       question: "What is Custodia?",
       answer:
-        "Custodia is a virtual care program that empowers people to reverse chronic metabolic diseases like type 2 diabetes through sustainable lifestyle change.",
+        "Custodia is a digital health program designed to help people reverse chronic metabolic diseases, such as type 2 diabetes, through sustainable lifestyle changes. It offers virtual care, personalized coaching, and medical supervision to address the root causes of these conditions.",
       open: true,
     },
     {
-      question: "Who is Custodia for?",
+      question: "How does Custodia work?",
       answer:
-        "Custodia is for people who want to reverse metabolic diseases like type 2 diabetes, prediabetes, and hypertension.",
+        "Custodia works by providing personalized health plans that include dietary changes, continuous monitoring, and support from health coaches and doctors. The program focuses on reducing reliance on medications and promoting sustainable lifestyle changes to reverse chronic conditions.",
       open: false,
-    },
+    },    
     {
-      question: "Are medications included in the treatment?",
-      answer: "No, there are no medications included in the treatment.",
-      open: false,
-    },
-    {
-      question: "Is exercise required?",
+      question: "Do you offer discounts or promotions?",
       answer:
-        "Exercise is not required for success. We encourage you to choose whatever level of physical activity you desire.",
+        "There is no specific information available about discounts or promotions for Custodia. It might be helpful to check directly with the company or monitor their website for any updates.",
       open: false,
     },
     {
-      question: "Is Custodia free?",
-      answer: "No, Visit our pricing page to see the costs.",
-      open: false,
-    },
-    {
-      question: "Can type 2 diabetes be reversed without medication?",
+      question: "Are there any additional costs for lab tests or medical devices?",
       answer:
-        "A lot of scientific studies have confirmed that through diet changes and weight loss, the process underlying type 2 diabetes can be put into remission without the help of medication.",
+        "For those on the Comprehensive plan, routine lab tests and health supplies are included. However, the Basic plan does not cover these, so there may be additional costs depending on your needs.",
       open: false,
     },
     {
-      question: "How is diabetes reversal measured?",
+      question: "What happens if I need to cancel my enrollment?",
       answer:
-        "Type 2 diabetes reversal is officially in remission when HbA1c levels drop to below 6.5% (48mmol/mol) and stay there for 3 months without the help of medication.",
+        "We really think you'll like our program, however if you would like to cancel your enrollment for any reason, simply send us an email at hi@custodiahealth.com",
       open: false,
     },
   ]);

@@ -150,7 +150,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <Link href="/start">
+                  <Link href="/pricing">
                     <a>
                       <SustainButton className="text-sm">
                         Get started

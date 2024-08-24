@@ -173,7 +173,7 @@ const BlogPost = ({ blog }: any) => {
                 </p>
               </div>
               <div className="self-center">
-                <Link href="/">
+                <Link href="/pricing">
                   <a>
                     <SustainButton>Get started now</SustainButton>
                   </a>

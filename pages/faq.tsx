@@ -28,41 +28,72 @@ const Faq = () => {
     {
       question: "What is Custodia?",
       answer:
-        "Custodia is a digital care program that empowers people to reverse chronic metabolic diseases through sustainable lifestyle change.",
+        "Custodia is a digital health program designed to help people reverse chronic metabolic diseases, such as type 2 diabetes, through sustainable lifestyle changes. It offers virtual care, personalized coaching, and medical supervision to address the root causes of these conditions.",
       open: true,
     },
     {
-      question: "Who is Custodia for?",
+      question: "How does Custodia work?",
       answer:
-        "Custodia is for people who want to reverse metabolic diseases like type 2 diabetes, prediabetes, and hypertension.",
+        "Custodia works by providing personalized health plans that include dietary changes, continuous monitoring, and support from health coaches and doctors. The program focuses on reducing reliance on medications and promoting sustainable lifestyle changes to reverse chronic conditions.",
       open: false,
     },
     {
-      question: "Are medications included in the treatment?",
-      answer: "No, there are no medications included in the treatment.",
-      open: false,
-    },
-    {
-      question: "Is exercise required?",
+      question: "How much does Custodia cost?",
       answer:
-        "Exercise is not required for success. We encourage you to choose whatever level of physical activity you desire.",
+        "Custodia offers two membership plans: a Comprehensive plan at ₦180,000 biannually and a Basic plan at ₦40,000 per quarter. Both plans include health coaching, doctor supervision, meal plans, and other resources, but the Comprehensive plan also covers routine lab tests and unlimited health supplies.",
       open: false,
     },
     {
-      question: "Is Custodia free?",
-      answer: "No, Visit our pricing page to see the costs.",
-      open: false,
-    },
-    {
-      question: "Can type 2 diabetes be reversed without medication?",
+      question: "What do I get when I join Custodia?",
       answer:
-        "A lot of scientific studies have confirmed that through diet changes and weight loss, the process underlying type 2 diabetes can be put into remission without the help of medication.",
+        "Upon joining Custodia, you receive access to a personal health coach, medical supervision, unlimited consultations, meal plans, resources, and, depending on your plan, routine lab tests and health supplies.",
       open: false,
     },
     {
-      question: "How is diabetes reversal measured?",
+      question: "How long does the Custodia program last?",
       answer:
-        "Type 2 diabetes reversal is officially in remission when HbA1c levels drop to below 6.5% (48mmol/mol) and stay there for 3 months without the help of medication.",
+        "The duration of the Custodia program can vary based on individual needs and goals, but it is generally designed for ongoing, long-term support until the desired health outcomes are achieved.",
+      open: false,
+    },
+    {
+      question: "How do I join Custodia?",
+      answer: "To join Custodia, you need to fill out an enrollment form, share your medical history, and make the payment. The program is managed through the Custodia Health app, where you will interact with your care team and track your progress.",
+      open: false,
+    },
+    {
+      question: "I don’t have a smartphone, Can I still join Custodia?",
+      answer:
+        "The program primarily operates through a mobile app, so a smartphone is essential for participating in the Custodia program effectively.",
+      open: false,
+    },
+    {
+      question: "Do I have to visit a physical facility for the program?",
+      answer:
+        "No, Custodia is a fully virtual program. All consultations, coaching, and monitoring are done remotely through the app.",
+      open: false,
+    },
+    {
+      question: "Can I join Custodia from outside Nigeria?",
+      answer:
+        "Yes, you can. As long as you have a smartphone with internet access you can be a part of the program. If you are having difficulties joining the program, please send us an email at hi@custodiahealth.com",
+      open: false,
+    },
+    {
+      question: "Do you offer discounts or promotions?",
+      answer:
+        "There is no specific information available about discounts or promotions for Custodia. It might be helpful to check directly with the company or monitor their website for any updates.",
+      open: false,
+    },
+    {
+      question: "Are there any additional costs for lab tests or medical devices?",
+      answer:
+        "For those on the Comprehensive plan, routine lab tests and health supplies are included. However, the Basic plan does not cover these, so there may be additional costs depending on your needs.",
+      open: false,
+    },
+    {
+      question: "What happens if I need to cancel my enrollment?",
+      answer:
+        "We really think you'll like our program, however if you would like to cancel your enrollment for any reason, simply send us an email at hi@custodiahealth.com",
       open: false,
     },
   ]);
@@ -168,12 +199,12 @@ const Faq = () => {
       </Head>
       <Navbar1 />
       <div className="px-5 md:pl-72 md:pr-96 md:mt-24 mt-16 md:pb-36 pb-24">
-        <h1 className="text-4lg md:text-center  md:text-5xl font-bold text-[#002A47]">
-          FAQs
+        <h1 className="text-4lg  md:text-5xl font-bold text-[#002A47]">
+        Frequently Asked Questions
         </h1>
-        <p className="mt-5 md:mt-6 text-base md:text-start mb-7 md:mb-14 md:text-2lg leading-6 text-[#476D85]">
+        <p className="mt-5 md:mt-6 text-base md:text-start mb-7 md:mb-14 md:text-2lg leading-[22px] text-[#476D85]">
           Find answers to commonly asked questions about our treatment,
-          enrollment process, cost, and privacy
+          enrollment process, and pricing
         </p>
         <div className="max-w-3xl mt-17 md:mt-18">
           {faqs.map((faq, index) => (

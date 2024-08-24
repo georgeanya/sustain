@@ -16,34 +16,18 @@ const SustainButton = styled(Button)({
   fontFamily: "Circular Std",
   color: "#f8f8f8",
   cursor: "pointer",
-  padding: "20px 30px",
+  padding: "14px 41px",
   margin: "0px 0px",
-  width: "calc(100% - 100px)",
+  // width: "calc(100% - 100px)",
   borderRadius: "32px",
   textTransform: "none",
   ["@media (max-width:780px)"]: {
     padding: "16px 30px",
-    width: "calc(100% - 40px)",
+    // width: "calc(100% - 40px)",
   },
 });
 
 const Pricing = (props: any) => {
-  const [time, setTime] = useState(true);
-
-  function toggleTimeTrue() {
-    setTime((time) => (time = true));
-  }
-  function toggleTimeFalse() {
-    setTime((time) => (time = false));
-  }
-  const [time1, setTime1] = useState(true);
-
-  function toggleTime1True() {
-    setTime1((time1) => (time1 = true));
-  }
-  function toggleTime1False() {
-    setTime1((time1) => (time1 = false));
-  }
   return (
     <div>
       <Head>
@@ -135,71 +119,42 @@ const Pricing = (props: any) => {
       <Navbar />
       <div className="px-5 md:px-66 md:pt-24 pt-16 pb-24 md:pb-36 bg-[#F0F7FF]">
         <div className="flex justify-center">
-          <h1 className="text-4lg text-center md:text-5xl font-bold text-[#002A47] mb-12 md:mb-17 max-w-2xl">
-            We have a membership plan made for you
+          <h1 className="text-4lg text-center md:text-5xl font-bold text-[#002A47] mb-12 max-w-1xl">
+          Choose the perfect plan for you 
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
-          <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 md:py-15">
+          <div className="flex flex-col justify-between md:max-w-md rounded-2xl bg-white py-10 md:py-[45px]">
             <div>
-              {time ? (
-                <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
-                    BASIC
-                  </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 40,000
-                    <span className="md:text-lg text-base">/quarterly</span>
-                  </p>
-                </div>
-              ) : (
-                <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
-                    BASIC
-                  </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 70,000
-                    <span className="md:text-lg text-base">/semiannually</span>
-                  </p>
-                </div>
-              )}
-              <div className="flex justify-center">
-                <div className="flex w-56 rounded-3xl p-1 bg-[#DFEDFB] justify-self-center">
-                  <div
-                    className={
-                      time
-                        ? "bg-white rounded-3xl w-1/2 py-2 cursor-pointer flex justify-center"
-                        : "w-1/2 py-2 flex cursor-pointer justify-center"
-                    }
-                    onClick={toggleTimeTrue}
-                  >
-                    <p className="text-sm leading-4 text-[#002A47]">
-                      Quarterly
-                    </p>
-                  </div>
-                  <div
-                    className={
-                      time
-                        ? "w-1/2 py-2 flex cursor-pointer justify-center"
-                        : "bg-white rounded-3xl w-1/2 py-2 flex cursor-pointer justify-center"
-                    }
-                    onClick={toggleTimeFalse}
-                  >
-                    <p className="text-sm leading-4 text-[#002A47]">
-                      Semiannually
-                    </p>
-                  </div>
-                </div>
+              <div className="px-5 md:px-[30px] ">
+                <p className="text-xs font-medium md:text-sm leading-4 text-[#4F9EEA]">
+                  BASIC
+                </p>
+                <p className="mt-2 text-1xxl md:text-4lg font-medium text-[#002A47] ">
+                  ₦40,000
+                  <span className="md:text-lg md:leading-[22px] text-base">
+                    /quarterly
+                  </span>
+                </p>
+                <p className="mt-3  mb-5 md:text-[18px] text-[16px] leading-[22px] text-[#002A47]">
+                  Get the tools and support you need to reverse your condition
+                </p>
+                <Link href="/start">
+                  <a>
+                    <SustainButton>Choose this plan</SustainButton>
+                  </a>
+                </Link>
               </div>
-              <div className="md:px-12 px-5 pt-11 md:pt-14">
+              <hr className="mt-[24px] mb-[42px] mx-5 md:mx-[30px]" />
+              <div className="md:px-[30px] px-5">
                 <div className="flex">
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personal health coaching
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Personal lifestyle and diet coaching
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -208,8 +163,8 @@ const Pricing = (props: any) => {
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Doctor supervision
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Medical supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -218,8 +173,8 @@ const Pricing = (props: any) => {
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Unlimited consultations
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Meal plans, lessons, and resources
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -228,8 +183,8 @@ const Pricing = (props: any) => {
                     className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Resources, meal plan, and food guides
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Personalized care plan
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -238,8 +193,8 @@ const Pricing = (props: any) => {
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personalized care plan
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Discounts on lab tests
                   </span>
                 </div>
               </div>
@@ -254,64 +209,39 @@ const Pricing = (props: any) => {
               </div>
             </div> */}
           </div>
-          <div className="flex justify-between flex-col md:max-w-md rounded-2xl bg-white py-10 md:py-15">
+          <div className="flex justify-between flex-col md:max-w-md rounded-2xl bg-white py-10 md:py-[45px]">
             <div>
-              {time1 ? (
-                <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
-                    COMPREHENSIVE
-                  </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 90,000
-                    <span className="md:text-lg text-base">/quarterly</span>
-                  </p>
-                </div>
-              ) : (
-                <div>
-                  <p className="text-xs font-medium text-center md:text-sm leading-4 text-[#002A47]">
-                    COMPREHENSIVE
-                  </p>
-                  <p className="mt-2 md:mt-1.5 mb-6 text-1xxl md:text-4lg font-medium text-center text-[#002A47]">
-                    NGN 180,000
-                    <span className="md:text-lg text-base">/semiannually</span>
-                  </p>
-                </div>
-              )}
-              <div className="flex justify-center">
-                <div className="flex w-56 rounded-3xl p-1 bg-[#DFEDFB]  justify-self-center">
-                  <div
-                    className={
-                      time1
-                        ? "bg-white rounded-3xl w-1/2 py-2 cursor-pointer flex justify-center"
-                        : "w-1/2 py-2 flex cursor-pointer justify-center"
-                    }
-                    onClick={toggleTime1True}
-                  >
-                    <p className="text-sm leading-4 text-[#002A47]">Quaterly</p>
-                  </div>
-                  <div
-                    className={
-                      time1
-                        ? "w-1/2 py-2 flex cursor-pointer justify-center"
-                        : "bg-white rounded-3xl w-1/2 py-2 flex cursor-pointer justify-center"
-                    }
-                    onClick={toggleTime1False}
-                  >
-                    <p className="text-sm leading-4 text-[#002A47]">
-                      Semiannually
-                    </p>
-                  </div>
-                </div>
+              <div className="px-5 md:px-[30px] ">
+                <p className="text-xs font-medium md:text-sm leading-4 text-[#4F9EEA]">
+                  COMPREHENSIVE
+                </p>
+                <p className="mt-2 text-1xxl md:text-4lg font-medium text-[#002A47] ">
+                  ₦180,000
+                  <span className="md:text-lg md:leading-[22px] text-base">
+                    /6 months
+                  </span>
+                </p>
+                <p className="mt-3  mb-5 md:text-[18px] text-[16px] leading-[22px] text-[#002A47]">
+                  Get the tools and support you need to reverse your condition
+                </p>
+                
+                <Link href="/start">
+                  <a>
+                    <SustainButton>Choose this plan</SustainButton>
+                  </a>
+                </Link>
               </div>
-              <div className="pt-11 md:pt-14 px-5 md:px-12">
-                <div className="flex">
+              <hr className="mt-[24px] mb-[42px] mx-5 md:mx-[30px]" />
+
+              <div className="px-5 md:px-[30px]">
+              <div className="flex">
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personal health coaching
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Personal lifestyle and diet coaching
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -320,8 +250,8 @@ const Pricing = (props: any) => {
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Doctor supervision
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Medical supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -330,8 +260,8 @@ const Pricing = (props: any) => {
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Unlimited consultations
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Meal plans, lessons, and resources
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -340,8 +270,8 @@ const Pricing = (props: any) => {
                     className="md:self-center self-start w-2.5 md:w-3 mt-1 md:mt-0"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Resources, meal plan, and food guides
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Personalized care plan
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -350,8 +280,8 @@ const Pricing = (props: any) => {
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Personalized care plan
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Routine lab tests
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -360,18 +290,8 @@ const Pricing = (props: any) => {
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Routine lab tests
-                  </span>
-                </div>
-                <div className="flex mt-5">
-                  <img
-                    src={icon.src}
-                    className="self-center w-2.5 md:w-3"
-                    alt="Icon"
-                  />
-                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-6 text-[#002A47]">
-                    Unlimited health supplies
+                  <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
+                  Glucometer and strips
                   </span>
                 </div>
               </div>

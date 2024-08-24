@@ -77,7 +77,7 @@ const Section7 = () => {
         </div>
       </div>
       <div className="mt-10 md:mt-[60px] ">
-        <Link href="/start">
+        <Link href="/pricing">
           <a>
             {" "}
             <SustainButton className="text-xs md:text-base font-medium">

@@ -34,7 +34,7 @@ const currentYear = currentDate.getFullYear();
         <p className="md:text-5lg text-3xl font-bold mb-11 md:mb-0 md:max-w-2xl">
           Are you ready to start that journey? Join Custodia today!
         </p>
-        <Link href="/start">
+        <Link href="/pricing">
           <a href=""><SustainButton className="self-start text-xs md:text-base font-medium">
             Get started now
           </SustainButton></a>
