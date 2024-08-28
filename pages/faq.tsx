@@ -50,7 +50,7 @@ const Faq = () => {
       open: false,
     },
     {
-      question: "Can type 2 diabetes be reversed",
+      question: "Can type 2 diabetes be reversed?",
       answer:
         "Yes, a lot of scientific studies have confirmed that through diet changes and weight loss, the process underlying type 2 diabetes can be put into remission without the help of medication.",
       open: false,
