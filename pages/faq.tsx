@@ -97,12 +97,6 @@ const Faq = () => {
       open: false,
     },
     {
-      question: "Do you offer discounts or promotions?",
-      answer:
-        "There is no specific information available about discounts or promotions for Custodia. It might be helpful to check directly with the company or monitor their website for any updates.",
-      open: false,
-    },
-    {
       question:
         "Are there any additional costs for lab tests or medical devices?",
       answer:
