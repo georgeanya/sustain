@@ -41,10 +41,9 @@ const Navbar = () => {
         <NavbarMenu handleToggle={handleToggleFunc} />
       </div>
       <div className="bg-[#324967] ">
-        <Link href="https://chat.whatsapp.com/FRbf5Bs3IgE77YDfbZUV1U">
+        <Link href="https://wa.link/0xw639">
           <p className="text-center text-sm md:text-base text-white py-4 px-7 cursor-pointer">
-            ✨ Learn practical steps you can take to reverse diabetes. Join our
-            community for Free
+            ✨ Do you have questions? Chat with us on WhatsApp now
             <ArrowIcon />
           </p>
         </Link>

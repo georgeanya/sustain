@@ -50,6 +50,23 @@ const Faq = () => {
       open: false,
     },
     {
+      question: "Can type 2 diabetes be reversed",
+      answer:
+        "Yes, a lot of scientific studies have confirmed that through diet changes and weight loss, the process underlying type 2 diabetes can be put into remission without the help of medication.",
+      open: false,
+    },
+    {
+      question: "Are medications included in the program?",
+      answer:
+        "No, there are no medications included in the treatment. The goal of the program is to reduce or eliminate your reliance on medication.",
+      open: false,
+    },
+    {
+      question: "How is diabetes reversal measured?",
+      answer:
+        "Type 2 diabetes reversal is officially in remission when HbA1c levels drop to below 6.5% (48mmol/mol) and stay there for 3 months without the help of medication.",
+      open: false,
+    }, {
       question: "How long does the Custodia program last?",
       answer:
         "The duration of the Custodia program can vary based on individual needs and goals, but it is generally designed for ongoing, long-term support until the desired health outcomes are achieved.",
@@ -57,7 +74,8 @@ const Faq = () => {
     },
     {
       question: "How do I join Custodia?",
-      answer: "To join Custodia, you need to fill out an enrollment form, share your medical history, and make the payment. The program is managed through the Custodia Health app, where you will interact with your care team and track your progress.",
+      answer:
+        "To join Custodia, you need to fill out an enrollment form, share your medical history, and make the payment. The program is managed through the Custodia Health app, where you will interact with your care team and track your progress.",
       open: false,
     },
     {
@@ -85,7 +103,8 @@ const Faq = () => {
       open: false,
     },
     {
-      question: "Are there any additional costs for lab tests or medical devices?",
+      question:
+        "Are there any additional costs for lab tests or medical devices?",
       answer:
         "For those on the Comprehensive plan, routine lab tests and health supplies are included. However, the Basic plan does not cover these, so there may be additional costs depending on your needs.",
       open: false,
@@ -200,7 +219,7 @@ const Faq = () => {
       <Navbar1 />
       <div className="px-5 md:pl-72 md:pr-96 md:mt-24 mt-16 md:pb-36 pb-24">
         <h1 className="text-4lg  md:text-5xl font-bold text-[#002A47]">
-        Frequently Asked Questions
+          Frequently Asked Questions
         </h1>
         <p className="mt-5 md:mt-6 text-base md:text-start mb-7 md:mb-14 md:text-2lg leading-[22px] text-[#476D85]">
           Find answers to commonly asked questions about our treatment,

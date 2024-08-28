@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { useState } from "react";
-import FAQ3 from "../components/faq3";
+import FAQ3 from "./faq3";
 import Link from "next/link";
 
 const SustainButton = styled(Button)({
@@ -34,21 +34,21 @@ const Faq = () => {
       open: false,
     },    
     {
-      question: "Are medications included in the program?",
+      question: "How much does Custodia cost?",
       answer:
-        "No, there are no medications included in the treatment. The goal of the program is to reduce or eliminate your reliance on medication.",
+        "Custodia offers two membership plans: a Comprehensive plan at ₦180,000 biannually and a Basic plan at ₦40,000 per quarter. Both plans include health coaching, doctor supervision, meal plans, and other resources, but the Comprehensive plan also covers routine lab tests and unlimited health supplies.",
       open: false,
     },
     {
-      question: "Are there any additional costs for lab tests or medical devices?",
+      question: "What do I get when I join Custodia?",
       answer:
-        "For those on the Comprehensive plan, routine lab tests and health supplies are included. However, the Basic plan does not cover these, so there may be additional costs depending on your needs.",
+        "Upon joining Custodia, you receive access to a personal health coach, medical supervision, unlimited consultations, meal plans, resources, and, depending on your plan, routine lab tests and health supplies.",
       open: false,
     },
     {
-      question: "What happens if I need to cancel my enrollment?",
+      question: "Can type 2 diabetes be reversed",
       answer:
-        "We really think you'll like our program, however if you would like to cancel your enrollment for any reason, simply send us an email at hi@custodiahealth.com",
+        "Yes, a lot of scientific studies have confirmed that through diet changes and weight loss, the process underlying type 2 diabetes can be put into remission without the help of medication.",
       open: false,
     },
   ]);

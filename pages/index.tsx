@@ -8,7 +8,7 @@ import Section2 from "../components/section2";
 import Section3 from "../components/section3";
 import Section4 from "../components/section4";
 import Section5 from "../components/section5";
-import Faq from "../components/faq";
+import Faq from "../components/faq4";
 import Section7 from "../components/section7";
 import Navbar from "../components/navbar";
 import favicon from "../public/assets/favicon.png";
