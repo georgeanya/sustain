@@ -5,7 +5,7 @@ import twitter from "../public/assets/twitter.svg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import axios from "axios";
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -37,37 +37,71 @@ interface Blog {
   id: number;
   attributes: {
     title: string;
-    publishedAt: string;
     description: string;
     content: string;
     slug: string;
-    category: {
-      data: {
-        attributes: {
+    publishedAt?: string; // Optional, based on usage
+    updatedAt?: string; // Optional, based on usage
+    category?: {
+      data?: {
+        attributes?: {
           name: string;
         };
       };
     };
-    author: {
-      data: {
-        attributes: {
+    author?: {
+      data?: {
+        attributes?: {
           name: string;
-          team: string;
+          team?: string; // Optional, based on usage
         };
       };
     };
-    seo: {
-      metaTitle: string;
+    seo?: {
+      metaTitle?: string;
+      metaDescription?: string; // Optional, based on usage
+      keywords?: string; // Optional, added to match usage
+      shareImage?: {
+        data?: {
+          attributes?: {
+            formats?: {
+              small?: {
+                url: string;
+              };
+            };
+          };
+        };
+      };
+      metaTwitterImage?: {
+        data?: {
+          attributes?: {
+            formats?: {
+              medium?: {
+                url: string;
+              };
+            };
+          };
+        };
+      };
     };
     image?: {
       data?: {
-        attributes: {
-          url: string;
+        attributes?: {
+          formats?: {
+            medium?: {
+              url: string;
+            };
+            small?: {
+              url: string;
+            };
+          };
         };
       };
     };
   };
 }
+
+
 
 interface ArticlesResponse {
   data: Blog[];
@@ -75,29 +109,25 @@ interface ArticlesResponse {
 
 const BlogPost = ({ blog }: { blog: Blog }) => {
   const [fetchedBlog, setFetchedBlog] = useState<Blog | null>(null);
-  const [loading, setLoading] = useState(true); // Initialize loading state
-  const ImgUrl = fetchedBlog?.attributes?.image?.data?.attributes?.url;
+  const [loading, setLoading] = useState(true);
+  // const ImgUrl = blog?.attributes?.image?.data?.attributes?.url || "";
   const url = `https://custodiahealth.com/blog/${blog?.attributes?.slug}`;
 
   useEffect(() => {
-    
     const fetchData = async () => {
-      setLoading(true); 
+      setLoading(true);
       try {
-  
-        setTimeout(() => {
-          setFetchedBlog(blog);
-          setLoading(false); 
-        }, 1000);
+        setFetchedBlog(blog);
       } catch (error) {
         console.error("Error fetching blog:", error);
-        setLoading(false); 
+        setFetchedBlog(null); // Handle error by setting fetchedBlog to null
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
   }, [blog]);
-  
 
   if (loading) {
     return (
@@ -125,45 +155,60 @@ const BlogPost = ({ blog }: { blog: Blog }) => {
     );
   }
 
+  if (!fetchedBlog) {
+    return (
+      <div className="flex justify-center py-[180px] md:py-[220px]">
+        <p>Blog post not found or failed to load.</p>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="md:px-[245px] md:pt-[50px] pt-[60px] px-5 md:mb-[130px] mb-[90px]">
         <div className="flex text-[#4F9EEA] md:text-[14px] md:leading-[19px] text-[14px] leading-[16.5px]">
-          <p>{fetchedBlog?.attributes?.category.data.attributes?.name}</p>
+          <p>
+            {fetchedBlog.attributes.category?.data?.attributes?.name ||
+              "No Category"}
+          </p>
           <p className="px-1">•</p>
           <p>
             <Moment
               format="MMM DD YYYY"
-              date={fetchedBlog?.attributes?.publishedAt}
+              date={fetchedBlog.attributes.publishedAt}
             />
           </p>
         </div>
         <h1 className="mt-3 md:mt-4 md:text-[48px] md:leading-[61px] leading-[40px] text-[30px] text-[#002A47] font-bold">
-          {fetchedBlog?.attributes?.title}
+          {fetchedBlog.attributes.title}
         </h1>
         <div className="flex mt-6">
           <img src={image.src} alt="Avatar" className="w-12 rounded-[25px]" />
           <div className="ml-4 self-center">
             <p className="text-[#002A47] text-sm md:text-base font-medium">
-              {fetchedBlog?.attributes?.author.data.attributes?.name}
+              {fetchedBlog.attributes.author?.data?.attributes?.name ||
+                "Anonymous"}
             </p>
             <p className="text-[#476D85] text-xs">
-              {fetchedBlog?.attributes?.author.data.attributes?.team}
+              {fetchedBlog.attributes.author?.data?.attributes?.team || ""}
             </p>
           </div>
         </div>
-        {/* <img
-          src={ImgUrl}
-          alt=""
-          className="cursor-pointer w-full rounded-[20px] md:mt-[50px] mt-[35px]"
-        /> */}
+        {/* Uncomment to display the image if available */}
+        {/* {ImgUrl && (
+          <img
+            src={ImgUrl}
+            alt=""
+            className="cursor-pointer w-full rounded-[20px] md:mt-[50px] mt-[35px]"
+          />
+        )} */}
         <div className="md:mt-[40px] mt-[32px] md:flex flex-row justify-between">
           <div>
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               className={style.reactMarkDown}
             >
-              {fetchedBlog?.attributes.content || ""}
+              {fetchedBlog.attributes.content || ""}
             </ReactMarkdown>
 
             <div className="bg-[#F0F7FF] px-5 py-10 md:p-12 md:flex justify-between md:mt-14 mb-9  mt-9 rounded-[20px]">
@@ -187,16 +232,19 @@ const BlogPost = ({ blog }: { blog: Blog }) => {
           </div>
           <div className="flex md:flex-col md:ml-12 md:min-w-[40px] mb-20">
             <FacebookShareButton url={url}>
-              {" "}
-              <img src={facebook.src} alt="Icon" />
+              <img src={facebook.src} alt="Facebook Share" />
             </FacebookShareButton>
             <TwitterShareButton url={url}>
-              {" "}
-              <img src={twitter.src} alt="Icon" className="md:mt-5 ml-5 md:ml-0" />
+              <img
+                src={twitter.src}
+                alt="Twitter Share"
+                className="md:mt-5 ml-5 md:ml-0"
+              />
             </TwitterShareButton>
           </div>
         </div>
       </div>
+      {/* Optionally include the newsletter form */}
       {/* <div className="px-5 md:px-32 md:pt-28 pt-20 md:pb-28 pb-20 bg-[#EFF2FA]">
         <p className="md:text-4xl text-2xl text-[#002A47] font-bold max-w-[476px]">
           Stay updated by joining our newsletter
@@ -220,18 +268,33 @@ const BlogPost = ({ blog }: { blog: Blog }) => {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { slug } = context.params as Params;
+  console.log(slug);
 
-  const response = await axios.get<ArticlesResponse>(
-    `https://custodia-health-blog.herokuapp.com/api/articles?filters[slug][$eq]=${slug}&populate[0]=category&populate[1]=author&populate[2]=image`
-  );
+  try {
+    const response = await axios.get<ArticlesResponse>(
+      `https://custodia-health-blog.herokuapp.com/api/articles?filters[slug][$eq]=${slug}&populate[0]=category&populate[1]=author&populate[2]=image`
+    );
 
-  const blog = response.data.data[0];
+    const blog = response.data.data[0];
+    console.log(blog);
 
-  return {
-    props: {
-      blog,
-    },
-  };
+    if (!blog) {
+      return {
+        notFound: true,
+      };
+    }
+
+    return {
+      props: {
+        blog,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching blog data:", error);
+    return {
+      notFound: true,
+    };
+  }
 };
 
 export default BlogPost;

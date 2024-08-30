@@ -102,7 +102,7 @@ const Blog = ({ initialBlogs }: any) => {
   }, [blogs, toggleState]);
 
   const blogsToDisplay2 = useMemo(() => {
-    console.log(blogs);
+
 
     if (toggleState === "All") {
       return blogs?.data.slice(7);
@@ -297,7 +297,7 @@ const Blog = ({ initialBlogs }: any) => {
             {blogsToDisplay.map((blogpost: any) => {
               const blog = blogpost;
               const { id, attributes } = blog;
-              console.log(attributes.category);
+              
 
               return (
                 <div className="max-w-[357px] flex flex-col justify-between">

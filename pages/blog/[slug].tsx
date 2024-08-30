@@ -19,49 +19,107 @@ interface Blog {
     description: string;
     content: string;
     slug: string;
-    category: {
-      data: {
-        attributes: {
+    publishedAt?: string; // Optional, based on usage
+    updatedAt?: string; // Optional, based on usage
+    category?: {
+      data?: {
+        attributes?: {
           name: string;
         };
       };
     };
-    author: {
-      data: {
-        attributes: {
+    author?: {
+      data?: {
+        attributes?: {
           name: string;
+          team?: string; // Optional, based on usage
         };
       };
     };
-    seo: {
-      metaTitle: string;
+    seo?: {
+      metaTitle?: string;
+      metaDescription?: string; // Optional, based on usage
+      keywords?: string; // Optional, added to match usage
+      shareImage?: {
+        data?: {
+          attributes?: {
+            formats?: {
+              small?: {
+                url: string;
+              };
+            };
+          };
+        };
+      };
+      metaTwitterImage?: {
+        data?: {
+          attributes?: {
+            formats?: {
+              medium?: {
+                url: string;
+              };
+            };
+          };
+        };
+      };
+    };
+    image?: {
+      data?: {
+        attributes?: {
+          formats?: {
+            medium?: {
+              url: string;
+            };
+            small?: {
+              url: string;
+            };
+          };
+        };
+      };
     };
   };
 }
+
+
 
 interface ArticlesResponse {
   data: Blog[];
 }
 
-const BlogPage = ({ blog }: any) => {
-  const ImgUrl = blog.attributes.image.data.attributes.url;
+const BlogPage = ({ blog }: { blog: Blog | null }) => {
+  if (!blog) {
+    return (
+      <div>
+        <p>Blog post not found.</p>
+      </div>
+    );
+  }
+
   const url = `https://custodiahealth.com/blog/${blog.attributes.slug}`;
+  const seoMetaTitle = blog.attributes.seo?.metaTitle || blog.attributes.title; // Fallback to title if metaTitle is not present
+  const seoMetaDescription =
+    blog.attributes.seo?.metaDescription || blog.attributes.description; // Fallback to description if metaDescription is not present
+  const seoKeywords = blog.attributes.seo?.keywords || ""; // Using optional chaining to access keywords
+  const shareImageUrl =
+    blog.attributes.seo?.shareImage?.data?.attributes?.formats?.small?.url ||
+    "";
+  const twitterImageUrl =
+    blog.attributes.seo?.metaTwitterImage?.data?.attributes?.formats?.medium
+      ?.url || "";
+
   return (
     <div>
       <Head>
         <meta charSet="UTF-8" />
-        <title>{`${blog.attributes.seo.metaTitle} - Custodia Health`}</title>
+        <title>{`${seoMetaTitle} - Custodia Health`}</title>
         <meta name="generator" content="SEOmatic" />
         <link href={favicon.src} rel="shortcut icon" type="image/png" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
         />
-        <meta name="keywords" content={blog.attributes.seo.keywords} />
-        <meta
-          name="description"
-          content={blog.attributes.seo.metaDescription}
-        />
+        <meta name="keywords" content={seoKeywords} />
+        <meta name="description" content={seoMetaDescription} />
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <meta name="robots" content="all" />
         <meta content="598084287257839" property="fb:profile_id" />
@@ -69,19 +127,11 @@ const BlogPage = ({ blog }: any) => {
         <meta content="article" property="og:type" />
         <meta content={url} property="og:url" />
         <meta
-          content={`${blog.attributes.seo.metaTitle} - Custodia Health`}
+          content={`${seoMetaTitle} - Custodia Health`}
           property="og:title"
         />
-        <meta
-          content={blog.attributes.seo.metaDescription}
-          property="og:description"
-        />
-        <meta
-          content={
-            blog.attributes.seo.shareImage.data.attributes.formats.small.url
-          }
-          property="og:image"
-        />
+        <meta content={seoMetaDescription} property="og:description" />
+        <meta content={shareImageUrl} property="og:image" />
         <meta content="1024" property="og:image:width" />
         <meta content="512" property="og:image:height" />
         <meta
@@ -109,19 +159,10 @@ const BlogPage = ({ blog }: any) => {
         <meta name="twitter:creator" content="@custodiahealth" />
         <meta
           name="twitter:title"
-          content={`${blog.attributes.seo.metaTitle} - Custodia Health`}
+          content={`${seoMetaTitle} - Custodia Health`}
         />
-        <meta
-          name="twitter:description"
-          content={blog.attributes.seo.metaDescription}
-        />
-        <meta
-          name="twitter:image"
-          content={
-            blog.attributes.seo.metaTwitterImage.data.attributes.formats.medium
-              .url
-          }
-        />
+        <meta name="twitter:description" content={seoMetaDescription} />
+        <meta name="twitter:image" content={twitterImageUrl} />
         <meta name="twitter:image:width" content="1024" />
         <meta name="twitter:image:height" content="512" />
         <meta
@@ -129,10 +170,7 @@ const BlogPage = ({ blog }: any) => {
           content="An image of the Custodia Health logo"
         />
         <link rel="me" href="https://twitter.com/custodiahealth" />
-        <link
-          href={`https://custodiahealth.com/blog/${blog.attributes.slug}`}
-          rel="canonical"
-        />
+        <link href={url} rel="canonical" />
         <link href="https://custodiahealth.com/" rel="home" />
         <link href="/humans.txt" rel="author" type="text/plain" />
         <link
@@ -152,14 +190,19 @@ const BlogPage = ({ blog }: any) => {
             "@type": "BlogPosting",
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://custodiahealth.com/blog/${blog.attributes.slug}"
+                "@id": "${url}"
             },
             "headline": "${blog.attributes.title}",
             "description": "${blog.attributes.description}",
-            "image": "${ blog.attributes.image.data.attributes.formats.medium.url}",
+            "image": "${
+              blog.attributes.image?.data?.attributes?.formats?.medium?.url ||
+              ""
+            }",
             "author": {
                 "@type": "Person",
-                "name": "${blog.attributes.author.data.attributes.name}",
+                "name": "${
+                  blog.attributes.author?.data?.attributes?.name || "Anonymous"
+                }",
                 "url": "https://custodiahealth.com"
             },
             "publisher": {
@@ -180,19 +223,33 @@ const BlogPage = ({ blog }: any) => {
 };
 
 export const getServerSideProps: GetServerSideProps<
-  { blog: Blog },
+  { blog: Blog | null },
   Params
 > = async ({ params }) => {
   const { slug } = params as Params;
-  const { data } = await axios.get<ArticlesResponse>(
-    `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&populate[3]=seo.metaTwitterImage&populate[4]=seo.shareImage&${slug}`
-  );
-  const blog = data.data.find((blog) => blog.attributes.slug === slug);
-  return {
-    props: {
-      blog: blog || ({} as Blog),
-    },
-  };
+  try {
+    const { data } = await axios.get<ArticlesResponse>(
+      `https://custodia-health-blog.herokuapp.com/api/articles?filters[slug][$eq]=${slug}&populate[0]=category&populate[1]=author&populate[2]=image&populate[3]=seo.metaTwitterImage&populate[4]=seo.shareImage`
+    );
+    const blog = data.data.length > 0 ? data.data[0] : null; // Assuming the API returns an array
+
+    if (!blog) {
+      return {
+        notFound: true,
+      };
+    }
+
+    return {
+      props: {
+        blog,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching blog data:", error);
+    return {
+      notFound: true,
+    };
+  }
 };
 
 export default BlogPage;
