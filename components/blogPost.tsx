@@ -59,6 +59,13 @@ interface Blog {
     seo: {
       metaTitle: string;
     };
+    image?: {
+      data?: {
+        attributes: {
+          url: string;
+        };
+      };
+    };
   };
 }
 
@@ -66,34 +73,31 @@ interface ArticlesResponse {
   data: Blog[];
 }
 
-const BlogPost = ({ blog }: any) => {
+const BlogPost = ({ blog }: { blog: Blog }) => {
   const [fetchedBlog, setFetchedBlog] = useState<Blog | null>(null);
-  const [loading, setLoading] = useState(true);
-  const ImgUrl = blog?.attributes?.image.data.attributes?.url;
+  const [loading, setLoading] = useState(true); // Initialize loading state
+  const ImgUrl = fetchedBlog?.attributes?.image?.data?.attributes?.url;
   const url = `https://custodiahealth.com/blog/${blog?.attributes?.slug}`;
 
   useEffect(() => {
-    if (blog?.attributes?.slug) {
-      axios
-        .get<ArticlesResponse>(
-          `https://custodia-health-blog.herokuapp.com/api/articles?filters[slug][$eq]=${blog.attributes.slug}&populate[0]=category&populate[1]=author&populate[2]=image`
-        )
-        .then(({ data }) => {
-          const fetchedBlogData = data.data.find(
-            (fetchedBlog) =>
-              fetchedBlog.attributes.slug === blog.attributes.slug
-          );
+    // Simulate a delay in loading to demonstrate the loading state
+    const fetchData = async () => {
+      setLoading(true); // Start loading
+      try {
+        // Simulating fetch delay
+        setTimeout(() => {
+          setFetchedBlog(blog);
+          setLoading(false); // Data is loaded
+        }, 1000); // Adjust the delay as needed
+      } catch (error) {
+        console.error("Error fetching blog:", error);
+        setLoading(false); // In case of error, stop loading
+      }
+    };
 
-          setFetchedBlog(fetchedBlogData || null);
-        })
-        .catch((error) => {
-          console.error("Error fetching blog data:", error);
-        })
-        .finally(() => {
-          setLoading(false);
-        });
-    }
-  }, [blog?.attributes?.slug]);
+    fetchData();
+  }, [blog]);
+  
 
   if (loading) {
     return (
