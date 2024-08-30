@@ -120,7 +120,7 @@ const Pricing = (props: any) => {
       <div className="px-5 md:px-66 md:pt-24 pt-16 pb-24 md:pb-36 bg-[#F0F7FF]">
         <div className="flex justify-center">
           <h1 className="text-4lg text-center md:text-5xl font-bold text-[#002A47] mb-12 max-w-1xl">
-          Choose the perfect plan for you 
+            Choose the perfect plan for you
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
@@ -138,6 +138,13 @@ const Pricing = (props: any) => {
                 </p>
                 <p className="mt-3  mb-5 md:text-[18px] text-[16px] leading-[22px] text-[#002A47]">
                   Get the tools and support you need to reverse your condition
+                  with a{" "}
+                  <a
+                    href="https://lifebox-labs.notion.site/Custodia-6-month-money-back-guarantee-9109266d94834c57b47a869a6bed308d"
+                    className="text-[#4F9EEA] font-bold"
+                  >
+                    6-month money-back guarantee
+                  </a>
                 </p>
                 <Link href="/start">
                   <a>
@@ -154,7 +161,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Personal lifestyle and diet coaching
+                    Personal lifestyle and diet coaching
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -164,7 +171,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Medical supervision
+                    Medical supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -174,7 +181,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Meal plans, lessons, and resources
+                    Meal plans, lessons, and resources
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -184,7 +191,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Personalized care plan
+                    Personalized care plan
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -194,7 +201,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Discounts on lab tests
+                    Discounts on lab tests
                   </span>
                 </div>
               </div>
@@ -223,8 +230,15 @@ const Pricing = (props: any) => {
                 </p>
                 <p className="mt-3  mb-5 md:text-[18px] text-[16px] leading-[22px] text-[#002A47]">
                   Get the tools and support you need to reverse your condition
+                  with a{" "}
+                  <a
+                    href="https://lifebox-labs.notion.site/Custodia-6-month-money-back-guarantee-9109266d94834c57b47a869a6bed308d"
+                    className="text-[#4F9EEA] font-bold"
+                  >
+                    6-month money-back guarantee
+                  </a>
                 </p>
-                
+
                 <Link href="/start">
                   <a>
                     <SustainButton>Choose this plan</SustainButton>
@@ -234,14 +248,14 @@ const Pricing = (props: any) => {
               <hr className="mt-[24px] mb-[42px] mx-5 md:mx-[30px]" />
 
               <div className="px-5 md:px-[30px]">
-              <div className="flex">
+                <div className="flex">
                   <img
                     src={icon.src}
                     className="self-center w-2.5 md:w-3"
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Personal lifestyle and diet coaching
+                    Personal lifestyle and diet coaching
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -251,7 +265,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Medical supervision
+                    Medical supervision
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -261,7 +275,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Meal plans, lessons, and resources
+                    Meal plans, lessons, and resources
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -271,7 +285,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Personalized care plan
+                    Personalized care plan
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -281,7 +295,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Routine lab tests
+                    Routine lab tests
                   </span>
                 </div>
                 <div className="flex mt-5">
@@ -291,7 +305,7 @@ const Pricing = (props: any) => {
                     alt="Icon"
                   />
                   <span className="ml-3 md:ml-4 flex self-center text-base leading-5 md:text-lg md:leading-[22px] text-[#002A47]">
-                  Glucometer and strips
+                    Glucometer and strips
                   </span>
                 </div>
               </div>

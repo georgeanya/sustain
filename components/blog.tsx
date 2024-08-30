@@ -63,7 +63,7 @@ interface Blog {
 type BlogCategory =
   | "All"
   | "Patient stories"
-  | "Engineering"
+  | "Health"
   | "Company"
   | "Research"
   | "Nutrition";
@@ -229,13 +229,13 @@ const Blog = ({ initialBlogs }: any) => {
               <li className="mr-2 cursor-pointer">
                 <p
                   className={
-                    toggleState === "Engineering"
+                    toggleState === "Health"
                       ? "inline-block px-5 py-[14px] text-white bg-[#4F9EEA] rounded-3xl active"
                       : "inline-block px-6 py-[14px] text-[#476D85]"
                   }
-                  onClick={() => toggleTab("Engineering")}
+                  onClick={() => toggleTab("Health")}
                 >
-                  Engineering
+                  Health
                 </p>
               </li>
               <li className="mr-2 cursor-pointer">
