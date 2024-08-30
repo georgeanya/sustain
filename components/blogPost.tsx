@@ -80,18 +80,18 @@ const BlogPost = ({ blog }: { blog: Blog }) => {
   const url = `https://custodiahealth.com/blog/${blog?.attributes?.slug}`;
 
   useEffect(() => {
-    // Simulate a delay in loading to demonstrate the loading state
+    
     const fetchData = async () => {
-      setLoading(true); // Start loading
+      setLoading(true); 
       try {
-        // Simulating fetch delay
+  
         setTimeout(() => {
           setFetchedBlog(blog);
-          setLoading(false); // Data is loaded
-        }, 1000); // Adjust the delay as needed
+          setLoading(false); 
+        }, 1000);
       } catch (error) {
         console.error("Error fetching blog:", error);
-        setLoading(false); // In case of error, stop loading
+        setLoading(false); 
       }
     };
 
