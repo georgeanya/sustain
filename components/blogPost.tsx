@@ -76,7 +76,7 @@ const BlogPost = ({ blog }: any) => {
     if (blog?.attributes?.slug) {
       axios
         .get<ArticlesResponse>(
-          `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&populate[3]=seo.metaTwitterImage&populate[4]=seo.shareImage&${blog.attributes.slug}`
+          `https://custodia-health-blog.herokuapp.com/api/articles?filters[slug][$eq]=${blog.attributes.slug}&populate[0]=category&populate[1]=author&populate[2]=image`
         )
         .then(({ data }) => {
           const fetchedBlogData = data.data.find(
@@ -214,32 +214,20 @@ const BlogPost = ({ blog }: any) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps<
-  { blog: Blog },
-  Params
-> = async ({ params }) => {
-  try {
-    const { slug } = params as Params;
-    const { data } = await axios.get<ArticlesResponse>(
-      `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&populate[3]=seo.metaTwitterImage&populate[4]=seo.shareImage&${slug}`
-    );
-    const blog = data.data.find((blog) => blog.attributes?.slug === slug);
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { slug } = context.params as Params;
 
-    if (!blog) {
-      throw new Error("Blog not found");
-    }
+  const response = await axios.get<ArticlesResponse>(
+    `https://custodia-health-blog.herokuapp.com/api/articles?filters[slug][$eq]=${slug}&populate[0]=category&populate[1]=author&populate[2]=image`
+  );
 
-    return {
-      props: {
-        blog,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching blog data:", error);
-    return {
-      notFound: true,
-    };
-  }
+  const blog = response.data.data[0];
+
+  return {
+    props: {
+      blog,
+    },
+  };
 };
 
 export default BlogPost;
