@@ -287,7 +287,7 @@ const Blog = ({ initialBlogs }: any) => {
               </option>
               <option value="All">All</option>
               <option value="Patient stories">Patient stories</option>
-              <option value="Engineering">Engineering</option>
+              <option value="Health">Health</option>
               <option value="Company">Company</option>
               <option value="Research">Research</option>
               <option value="Nutrition">Nutrition</option>
