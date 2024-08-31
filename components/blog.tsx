@@ -1,23 +1,22 @@
-/* eslint-disable react/jsx-key */
 import React, { useState, useMemo, useEffect } from "react";
-import image from "../public/assets/user.svg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import axios from "axios";
 import Link from "next/link";
-import { GetServerSideProps } from "next";
+import image from "../public/assets/user.svg"; // Ensure this path is correct
 
+// Styled Components
 const SustainOutlineButton = styled(Button)({
   background: "white!important",
   fontFamily: "Circular Std",
   color: "#4F9EEA",
   cursor: "pointer",
   padding: "20px 38px",
-  margin: "0px 0px",
+  margin: "0",
   border: "1px solid #4F9EEA",
   borderRadius: "32px",
   textTransform: "none",
-  ["@media (max-width:780px)"]: {
+  "@media (max-width:780px)": {
     padding: "16px 32px",
   },
 });
@@ -28,36 +27,52 @@ const SustainButton = styled(Button)({
   color: "#f8f8f8",
   cursor: "pointer",
   padding: "20px 38px",
-  margin: "0px 0px",
+  margin: "0",
   borderRadius: "32px",
   textTransform: "none",
-  ["@media (max-width:780px)"]: {
+  "@media (max-width:780px)": {
     padding: "16px 32px",
   },
 });
 
-interface Blog {
-  id: number;
-  attributes: {
-    title: string;
-    description: string;
-    content: string;
-    slug: string;
-    category: {
-      data: {
-        attributes: {
-          name: string;
-        };
-      };
-    };
-    author: {
-      data: {
-        attributes: {
-          name: string;
-        };
+// Interfaces
+interface BlogAttributes {
+  title: string;
+  description: string;
+  content: string;
+  slug: string;
+  category: {
+    data: {
+      attributes: {
+        name: string;
       };
     };
   };
+  author: {
+    data: {
+      attributes: {
+        team: string;
+        name: string;
+      };
+    };
+  };
+  image: {
+    data: {
+      attributes: {
+        url: string;
+        name: string;
+      };
+    };
+  };
+}
+
+interface Blog {
+  id: number;
+  attributes: BlogAttributes;
+}
+
+interface BlogResponse {
+  data: Blog[];
 }
 
 type BlogCategory =
@@ -68,48 +83,53 @@ type BlogCategory =
   | "Research"
   | "Nutrition";
 
-const Blog = ({ initialBlogs }: any) => {
-  const [blogs, setBlogs] = useState(initialBlogs || null);
+// Main Component
+const Blog: React.FC = () => {
+  const [blogs, setBlogs] = useState<BlogResponse | null>(null);
   const [toggleState, setToggleState] = useState<BlogCategory>("All");
 
   useEffect(() => {
-    if (!initialBlogs) {
-      fetchData();
-    }
-  }, [initialBlogs]);
+    const fetchData = async () => {
+  try {
+    const timestamp = new Date().getTime();
+    const response = await axios.get<BlogResponse>(
+      `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&sort=createdAt:desc&_=${timestamp}`
+    );
+    setBlogs(response.data);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+};
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(
-        "https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&sort=createdAt:desc"
-      );
-      setBlogs(response.data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+    fetchData();
+  }, [blogs, toggleState]);
 
   const blogsToDisplay = useMemo(() => {
-    if (toggleState === "All") {
-      return blogs?.data.slice(1, 7);
-    }
-    return blogs.data
-      ?.slice(1)
-      .filter((blog: any) => {
-        return blog.attributes.category.data.attributes.name === toggleState;
-      })
-      .slice(0, 6);
+    if (!blogs || !blogs.data) return [];
+
+    const filteredBlogs =
+      toggleState === "All"
+        ? blogs.data
+        : blogs.data.filter(
+            (blog) =>
+              blog.attributes.category.data.attributes.name === toggleState
+          );
+
+    return filteredBlogs.slice(0, 6); // Show the first 6 blogs for the selected category or all
   }, [blogs, toggleState]);
 
   const blogsToDisplay2 = useMemo(() => {
+    if (!blogs || !blogs.data) return [];
 
+    const filteredBlogs =
+      toggleState === "All"
+        ? blogs.data
+        : blogs.data.filter(
+            (blog) =>
+              blog.attributes.category.data.attributes.name === toggleState
+          );
 
-    if (toggleState === "All") {
-      return blogs?.data.slice(7);
-    }
-    return blogs.data?.slice(7).filter((blog: any) => {
-      return blog.attributes.category.data.attributes.name === toggleState;
-    });
+    return filteredBlogs.slice(6); // Show the remaining blogs for the selected category or all
   }, [blogs, toggleState]);
 
   if (!blogs) {
@@ -141,13 +161,13 @@ const Blog = ({ initialBlogs }: any) => {
   const toggleTab = (index: BlogCategory) => {
     setToggleState(index);
   };
-  const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>): any => {
+
+  const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setToggleState(event.target.value as BlogCategory);
   };
 
-  const blog = blogs?.data?.slice(0, 1)[0] || [];
-
-  const ImgUrl = blog.attributes?.image.data.attributes.url;
+  const blog = blogs.data[0] || ({} as Blog);
+  const ImgUrl = blog.attributes?.image?.data?.attributes?.url || "";
 
   return (
     <div>
@@ -187,10 +207,10 @@ const Blog = ({ initialBlogs }: any) => {
                 className="w-12 rounded-[25px]"
               />
               <div className="ml-4 self-center">
-                <p className="text-[#002A47] text-sm md:text-base leading-[17px] font-medium">
+                <p className="text-[#002A47] text-sm md:text-base leading-[17px]">
                   {blog.attributes.author.data.attributes.name}
                 </p>
-                <p className="text-[#476D85] text-xs">
+                <p className="text-[#476D85] text-xs md:text-sm leading-[15px]">
                   {blog.attributes.author.data.attributes.team}
                 </p>
               </div>
@@ -198,6 +218,7 @@ const Blog = ({ initialBlogs }: any) => {
           </div>
         </div>
       </div>
+
       <div>
         <div className="px-5 md:px-32 md:mb-[130px] mb-[90px]">
           <div className="hidden md:block">
@@ -297,7 +318,6 @@ const Blog = ({ initialBlogs }: any) => {
             {blogsToDisplay.map((blogpost: any) => {
               const blog = blogpost;
               const { id, attributes } = blog;
-              
 
               return (
                 <div className="max-w-[357px] flex flex-col justify-between">
@@ -426,27 +446,6 @@ const Blog = ({ initialBlogs }: any) => {
       </div>
     </div>
   );
-};
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  try {
-    const { data } = await axios.get(
-      "https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&sort=createdAt:desc"
-    );
-
-    return {
-      props: {
-        initialBlogs: data,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    return {
-      props: {
-        initialBlogs: null,
-      },
-    };
-  }
 };
 
 export default Blog;
