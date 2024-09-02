@@ -3,9 +3,8 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import axios from "axios";
 import Link from "next/link";
-import image from "../public/assets/user.svg"; // Ensure this path is correct
+import image from "../public/assets/user.svg";
 
-// Styled Components
 const SustainOutlineButton = styled(Button)({
   background: "white!important",
   fontFamily: "Circular Std",
@@ -83,26 +82,40 @@ type BlogCategory =
   | "Research"
   | "Nutrition";
 
-// Main Component
 const Blog: React.FC = () => {
   const [blogs, setBlogs] = useState<BlogResponse | null>(null);
   const [toggleState, setToggleState] = useState<BlogCategory>("All");
+  const [page, setPage] = useState(1);
+
+  const loadMorePosts = () => {
+    setPage((page) => page + 1);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
-  try {
-    const timestamp = new Date().getTime();
-    const response = await axios.get<BlogResponse>(
-      `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&sort=createdAt:desc&_=${timestamp}`
-    );
-    setBlogs(response.data);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-};
+      try {
+        const timestamp = new Date().getTime();
+        const response = await axios.get<BlogResponse>(
+          `https://custodia-health-blog.herokuapp.com/api/articles?populate[0]=category&populate[1]=author&populate[2]=image&sort=createdAt:desc&_=${timestamp}&pagination[page]=${page}&pagination[pageSize]=15`
+        );
+
+        setBlogs((prevBlogs) => {
+          if (!prevBlogs) {
+            return response.data;
+          } else {
+            return {
+              ...prevBlogs,
+              data: [...prevBlogs.data, ...response.data.data],
+            };
+          }
+        });
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
     fetchData();
-  }, [blogs, toggleState]);
+  }, [page]);
 
   const blogsToDisplay = useMemo(() => {
     if (!blogs || !blogs.data) return [];
@@ -115,7 +128,7 @@ const Blog: React.FC = () => {
               blog.attributes.category.data.attributes.name === toggleState
           );
 
-    return filteredBlogs.slice(1, 7); 
+    return filteredBlogs.slice(1, 7);
   }, [blogs, toggleState]);
 
   const blogsToDisplay2 = useMemo(() => {
@@ -129,7 +142,7 @@ const Blog: React.FC = () => {
               blog.attributes.category.data.attributes.name === toggleState
           );
 
-    return filteredBlogs.slice(7); 
+    return filteredBlogs.slice(7);
   }, [blogs, toggleState]);
 
   if (!blogs) {
@@ -441,7 +454,9 @@ const Blog: React.FC = () => {
               );
             })}
           </div>
-          <SustainOutlineButton>Show more posts</SustainOutlineButton>
+          <SustainOutlineButton onClick={loadMorePosts}>
+            Show more posts
+          </SustainOutlineButton>
         </div>
       </div>
     </div>
