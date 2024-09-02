@@ -248,66 +248,51 @@ const Blog: React.FC = () => {
                   All
                 </p>
               </li>
-              <li className="mr-2 cursor-pointer">
-                <p
-                  className={
-                    toggleState === "Patient stories"
-                      ? "inline-block px-5 py-[14px] text-white bg-[#4F9EEA] rounded-3xl active"
-                      : "inline-block px-6 py-[14px] text-[#476D85]"
-                  }
-                  onClick={() => toggleTab("Patient stories")}
-                >
-                  Patient stories
-                </p>
-              </li>
-              <li className="mr-2 cursor-pointer">
-                <p
-                  className={
-                    toggleState === "Health"
-                      ? "inline-block px-5 py-[14px] text-white bg-[#4F9EEA] rounded-3xl active"
-                      : "inline-block px-6 py-[14px] text-[#476D85]"
-                  }
-                  onClick={() => toggleTab("Health")}
-                >
-                  Health
-                </p>
-              </li>
-              <li className="mr-2 cursor-pointer">
-                <p
-                  className={
-                    toggleState === "Company"
-                      ? "inline-block px-5 py-[14px] text-white bg-[#4F9EEA] rounded-3xl active"
-                      : "inline-block px-6 py-[14px] text-[#476D85]"
-                  }
-                  onClick={() => toggleTab("Company")}
-                >
-                  Company
-                </p>
-              </li>
-              <li className="mr-2 cursor-pointer">
-                <p
-                  className={
-                    toggleState === "Research"
-                      ? "inline-block px-5 py-[14px] text-white bg-[#4F9EEA] rounded-3xl active"
-                      : "inline-block px-6 py-[14px] text-[#476D85]"
-                  }
-                  onClick={() => toggleTab("Research")}
-                >
-                  Research
-                </p>
-              </li>
-              <li className="cursor-pointer">
-                <p
-                  className={
-                    toggleState === "Nutrition"
-                      ? "inline-block px-5 py-[14px] text-white bg-[#4F9EEA] rounded-3xl active"
-                      : "inline-block px-6 py-[14px] text-[#476D85]"
-                  }
-                  onClick={() => toggleTab("Nutrition")}
-                >
-                  Nutrition
-                </p>
-              </li>
+              <Link href='/blog/category/patient-stories'>
+                <li className="mr-2 cursor-pointer">
+                  <p
+                    className="inline-block px-6 py-[14px] text-[#476D85]"
+                  >
+                    Patient stories
+                  </p>
+                </li>
+              </Link>
+              <Link href='/blog/category/health'>
+                <li className="mr-2 cursor-pointer">
+                  <p
+                    className="inline-block px-6 py-[14px] text-[#476D85]"
+                  >
+                    Health
+                  </p>
+                </li>
+              </Link>
+              <Link href='/blog/category/company'>
+                <li className="mr-2 cursor-pointer">
+                  <p
+                    className="inline-block px-6 py-[14px] text-[#476D85]"
+                  >
+                    Company
+                  </p>
+                </li>
+              </Link>
+              <Link href='/blog/category/research'>
+                <li className="mr-2 cursor-pointer">
+                  <p
+                   className="inline-block px-6 py-[14px] text-[#476D85]"
+                  >
+                    Research
+                  </p>
+                </li>
+              </Link>
+              <Link href='/blog/category/nutrition'>
+                <li className="cursor-pointer">
+                  <p
+                    className="inline-block px-6 py-[14px] text-[#476D85]"
+                  >
+                    Nutrition
+                  </p>
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="block md:hidden">
@@ -333,9 +318,12 @@ const Blog: React.FC = () => {
               const { id, attributes } = blog;
 
               return (
-                <div className="max-w-[357px] flex flex-col justify-between">
+                <div
+                  className="max-w-[357px] flex flex-col justify-between"
+                  key={id}
+                >
                   <div>
-                    <Link href={`/blog/${attributes.slug}`} key={id}>
+                    <Link href={`/blog/${attributes.slug}`}>
                       <a>
                         <img
                           src={
@@ -356,9 +344,6 @@ const Blog: React.FC = () => {
                         </p>
                       </a>
                     </Link>
-                    {/* <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
-                        {attributes.description}
-                      </p> */}
                   </div>
                   <div className="flex mt-3 md:mt-4">
                     <img
