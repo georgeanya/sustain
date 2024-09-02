@@ -115,7 +115,7 @@ const Blog: React.FC = () => {
               blog.attributes.category.data.attributes.name === toggleState
           );
 
-    return filteredBlogs.slice(0, 6); // Show the first 6 blogs for the selected category or all
+    return filteredBlogs.slice(1, 7); 
   }, [blogs, toggleState]);
 
   const blogsToDisplay2 = useMemo(() => {
@@ -129,7 +129,7 @@ const Blog: React.FC = () => {
               blog.attributes.category.data.attributes.name === toggleState
           );
 
-    return filteredBlogs.slice(6); // Show the remaining blogs for the selected category or all
+    return filteredBlogs.slice(7); 
   }, [blogs, toggleState]);
 
   if (!blogs) {
