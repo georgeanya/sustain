@@ -91,9 +91,7 @@ const PatientStories = () => {
           setCategoryName(
             blogsData[0].attributes.category.data.attributes.name
           );
-        } else if (page === 1) {
-          setError("No blogs found for this category.");
-        }
+        } 
       } catch (error) {
         console.error("Error fetching blog data:", error);
         setError("Failed to load blog data.");
