@@ -220,7 +220,7 @@ const Blog: React.FC = () => {
                 className="w-12 rounded-[25px]"
               />
               <div className="ml-4 self-center">
-                <p className="text-[#002A47] text-sm md:text-base leading-[17px]">
+                <p className="text-[#002A47] text-sm md:text-base font-medium leading-[17px]">
                   {blog.attributes.author.data.attributes.name}
                 </p>
                 <p className="text-[#476D85] text-xs md:text-sm leading-[15px]">
@@ -234,9 +234,9 @@ const Blog: React.FC = () => {
 
       <div>
         <div className="px-5 md:px-32 md:mb-[130px] mb-[90px]">
-          <div className="hidden md:block">
-            <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
-              <li className="mr-2 cursor-pointer">
+          <div className="overflow-x-auto hide-scrollbar">
+            <ul className="flex flex-nowrap text-sm leading-[17px] font-medium text-center text-gray-500 dark:text-gray-400">
+              <li className="md:mr-2 cursor-pointer">
                 <p
                   className={
                     toggleState === "All"
@@ -248,54 +248,44 @@ const Blog: React.FC = () => {
                   All
                 </p>
               </li>
-              <Link href='/blog/category/patient-stories'>
-                <li className="mr-2 cursor-pointer">
-                  <p
-                    className="inline-block px-6 py-[14px] text-[#476D85]"
-                  >
+              <Link href="/blog/category/patient-stories">
+                <li className="md:mr-2 cursor-pointer">
+                  <p className="block px-6 py-[14px] whitespace-nowrap text-[#476D85]">
                     Patient stories
                   </p>
                 </li>
               </Link>
-              <Link href='/blog/category/health'>
-                <li className="mr-2 cursor-pointer">
-                  <p
-                    className="inline-block px-6 py-[14px] text-[#476D85]"
-                  >
+              <Link href="/blog/category/health">
+                <li className="md:mr-2 cursor-pointer">
+                  <p className="inline-block px-6 py-[14px] text-[#476D85]">
                     Health
                   </p>
                 </li>
               </Link>
-              <Link href='/blog/category/company'>
-                <li className="mr-2 cursor-pointer">
-                  <p
-                    className="inline-block px-6 py-[14px] text-[#476D85]"
-                  >
+              <Link href="/blog/category/company">
+                <li className="md:mr-2 cursor-pointer">
+                  <p className="inline-block px-6 py-[14px] text-[#476D85]">
                     Company
                   </p>
                 </li>
               </Link>
-              <Link href='/blog/category/research'>
-                <li className="mr-2 cursor-pointer">
-                  <p
-                   className="inline-block px-6 py-[14px] text-[#476D85]"
-                  >
+              <Link href="/blog/category/research">
+                <li className="md:mr-2 cursor-pointer">
+                  <p className="inline-block px-6 py-[14px] text-[#476D85]">
                     Research
                   </p>
                 </li>
               </Link>
-              <Link href='/blog/category/nutrition'>
+              <Link href="/blog/category/nutrition">
                 <li className="cursor-pointer">
-                  <p
-                    className="inline-block px-6 py-[14px] text-[#476D85]"
-                  >
+                  <p className="inline-block px-6 py-[14px] text-[#476D85]">
                     Nutrition
                   </p>
                 </li>
               </Link>
             </ul>
           </div>
-          <div className="block md:hidden">
+          {/* <div className="block md:hidden">
             <select
               name="category"
               onChange={handleSelect}
@@ -311,7 +301,7 @@ const Blog: React.FC = () => {
               <option value="Research">Research</option>
               <option value="Nutrition">Nutrition</option>
             </select>
-          </div>
+          </div> */}
           <div className="mt-10 grid md:grid-cols-3 md:grid-rows-1 gap-15 md:mb-20 mb-15">
             {blogsToDisplay.map((blogpost: any) => {
               const blog = blogpost;
