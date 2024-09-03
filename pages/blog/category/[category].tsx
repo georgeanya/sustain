@@ -215,7 +215,7 @@ const PatientStories = () => {
         />
       </Head>
       <Navbar1 />
-      <div className="px-5 md:px-32 md:mt-[50px]">
+      <div className="px-5 md:px-32 mt-[50px]">
         <Link href="/blog">
           <div className="flex items-center cursor-pointer">
             <img src={left.src} alt="Back" className="w-5 md:w-[22px]" />
