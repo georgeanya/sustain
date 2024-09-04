@@ -223,7 +223,7 @@ const Blog: React.FC = () => {
                 <p className="text-[#002A47] text-sm md:text-base font-medium leading-[17px]">
                   {blog.attributes.author.data.attributes.name}
                 </p>
-                <p className="text-[#476D85] text-xs md:text-sm leading-[15px]">
+                <p className="text-[#476D85] mt-[3px] md:mt-[5px] text-xs md:text-sm leading-[15px]">
                   {blog.attributes.author.data.attributes.team}
                 </p>
               </div>
