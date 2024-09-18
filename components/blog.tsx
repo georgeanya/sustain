@@ -285,23 +285,6 @@ const Blog: React.FC = () => {
               </Link>
             </ul>
           </div>
-          {/* <div className="block md:hidden">
-            <select
-              name="category"
-              onChange={handleSelect}
-              className="border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 bg-white h-11 md:h-12"
-            >
-              <option hidden defaultValue={"Browse by category"}>
-                Browse by category
-              </option>
-              <option value="All">All</option>
-              <option value="Patient stories">Patient stories</option>
-              <option value="Health">Health</option>
-              <option value="Company">Company</option>
-              <option value="Research">Research</option>
-              <option value="Nutrition">Nutrition</option>
-            </select>
-          </div> */}
           <div className="mt-10 grid md:grid-cols-3 md:grid-rows-1 gap-15 md:mb-20 mb-15">
             {blogsToDisplay.map((blogpost: any) => {
               const blog = blogpost;

@@ -100,9 +100,9 @@ const Policy = () => {
           Privacy policy
         </h1>
         <p className="mt-5 md:mt-6 text-base md:text-center md:text-start md:text-xlg text-[#476D85]">
-          Your privacy is important to us. It is Sustain&apos;s policy to
+          Your privacy is important to us. It is Custodia&apos;s policy to
           respect your privacy regarding any information we may collect from you
-          across our website, https://getsustain.app, and other sites we own and
+          across our website, https://custodiahealth.org, and other sites we own and
           operate.
         </p>
 
