@@ -297,7 +297,7 @@ const Blog: React.FC = () => {
                 >
                   <div>
                     <Link href={`/blog/${attributes.slug}`}>
-                      <a> <img
+                      <img
                           src={
                             attributes.image.data.attributes.formats.medium.url
                           }
