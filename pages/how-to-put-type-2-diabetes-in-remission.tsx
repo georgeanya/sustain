@@ -205,7 +205,7 @@ const Webinar = () => {
       <Navbar1 />
       <div className="px-5 lg:px-32 lg:pt-18 pt-[50px] pb-20 lg:pb-36 flex flex-col lg:flex-row lg:justify-between bg-[#F0F7FF]">
         <div className="max-w-[511px] md:mt-5 mb-15 md:mb-0">
-          <p className="text-[#002A47] text-[16px] leading-[24px] md:text-[20px] md:leading-[30px] font-medium">
+          <p className="text-[#002A47] text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] font-medium">
             FREE WEBINAR
           </p>
           <p className="text-[#002A47] text-[34px] leading-[43px] md:text-[48px] md:leading-[60px] font-bold mt-2 md:mt-3 mb-[24px]">
