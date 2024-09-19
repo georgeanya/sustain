@@ -113,13 +113,13 @@ const Download = () => {
           </p>
           <div className="flex md:justify-center mt-7 md:mt-10">
             <Link href="https://play.google.com/store/apps/details?id=ng.lifebox.custodia">
-              <a>
+              
                 <img
                   src={play.src}
                   className="mr-3 md:mr-4 w-38 md:w-40"
                   alt="Play Store Icon"
                 />
-              </a>
+             
             </Link>
             <img src={apple.src} alt="Apple store Icon" className=" w-34 md:w-40" />
           </div>

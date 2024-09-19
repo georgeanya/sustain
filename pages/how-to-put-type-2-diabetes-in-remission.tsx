@@ -7,6 +7,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 import Link from "next/link";
 import axios from "axios";
 
@@ -117,7 +118,7 @@ const Webinar = () => {
     <div>
       <Head>
         <meta charSet="UTF-8" />
-        <title>Privacy Policy - Custodia Health</title>
+        <title>How to Put Type 2 Diabetes in Remission - Custodia Health</title>
         <meta name="generator" content="SEOmatic" />
         <link href={favicon.src} rel="shortcut icon" type="image/png" />
         <meta
@@ -128,7 +129,7 @@ const Webinar = () => {
           name="keywords"
           content="diabetes, custodia health, prediabetes, diabetes reversal, reverse diabetes, high cholesterol, lifebox labs, hypertension"
         />
-        <meta name="description" content="Custodia Health's privacy policy" />
+        <meta name="description" content=" Join our webinar, 'How to Put Type 2 Diabetes in Remission', to learn effective strategies for reversing type 2 diabetes through lifestyle changes. Discover actionable tips and expert insights!" />
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <meta name="robots" content="all" />
         <meta content="598084287257839" property="fb:profile_id" />
@@ -138,9 +139,9 @@ const Webinar = () => {
           content="https://custodiahealth.com/privacy-policy"
           property="og:url"
         />
-        <meta content="Privacy policy - Custodia Health" property="og:title" />
+        <meta content="How to Put Type 2 Diabetes in Remission - Custodia Health" property="og:title" />
         <meta
-          content="Custodia Health's privacy policy"
+          content=" Join our webinar, 'How to Put Type 2 Diabetes in Remission', to learn effective strategies for reversing type 2 diabetes through lifestyle changes. Discover actionable tips and expert insights!"
           property="og:description"
         />
         <meta content={metaCard.src} property="og:image" />
@@ -169,10 +170,10 @@ const Webinar = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@custodiahealth" />
         <meta name="twitter:creator" content="@custodiahealth" />
-        <meta name="twitter:title" content="Privacy policy - Custodia Health" />
+        <meta name="twitter:title" content="How to Put Type 2 Diabetes in Remission - Custodia Health" />
         <meta
           name="twitter:description"
-          content="Custodia Health's privacy policy"
+          content=" Join our webinar, 'How to Put Type 2 Diabetes in Remission,' to learn effective strategies for reversing type 2 diabetes through lifestyle changes. Discover actionable tips and expert insights!"
         />
         <meta
           name="twitter:image"
@@ -210,7 +211,7 @@ const Webinar = () => {
           <p className="text-[#002A47] text-[34px] leading-[43px] md:text-[48px] md:leading-[60px] font-bold mt-2 md:mt-3 mb-[24px]">
             How to put type 2 diabetes in remission
           </p>
-          
+
           <div className="text-[#476D85] text-[16px] leading-[24px] md:text-[20px] md:leading-[30px]">
             <p className="my-[24px]">
               Learn how using food as medicine can help you reduce medication
@@ -236,28 +237,33 @@ const Webinar = () => {
             <form onSubmit={handleSubmit}>
               <div className="md:grid grid-cols-2 gap-5 mt-7">
                 <div className="mb-5 md:mb-3">
-                  <input
+                  <TextField
+                    id="outlined-search"
                     type="text"
                     name="first_name"
                     value={state.user.first_name}
                     onChange={handleChange}
-                    className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
-                    placeholder="First name"
+                    className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full"
+                    fullWidth
+                    label="First name"
                     required
                   />
                 </div>
                 <div className="mb-3">
-                  <input
+                  <TextField
+                    id="outlined-search"
                     type="text"
                     name="last_name"
                     value={state.user.last_name}
                     onChange={handleChange}
-                    className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
-                    placeholder="Last name"
+                    className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full"
+                    fullWidth
+                    label="Last name"
                     required
                   />
                 </div>
               </div>
+
               <div className="flex mb-5">
                 <img src={lock.src} alt="Icon" />
                 <p className="md:text-[13px] leading-4 text-xs text-[#476D85] ml-1">
@@ -265,24 +271,28 @@ const Webinar = () => {
                 </p>
               </div>
               <div className="mb-5">
-                <input
+                <TextField
+                  id="outlined-search"
                   type="email"
                   name="email"
                   value={state.user.email}
                   onChange={handleChange}
-                  className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
-                  placeholder="Email address"
+                  className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full"
+                  fullWidth
+                  label="Email address"
                   required
                 />
               </div>
               <div className="mb-10">
-                <input
+                <TextField
+                  id="outlined-search"
                   type="tel"
                   name="phone_number"
                   value={state.user.phone_number}
                   onChange={handleChange}
-                  className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
-                  placeholder="Phone number"
+                  className="border h-[60px] border-gray-300 text-gray-900 text-sm rounded-lg  block w-full "
+                  fullWidth
+                  label="Phone number"
                   required
                 />
                 <p className="text-[#476D85] text-[12px] md:text-[13px] leading-4 mt-[12px]">
@@ -338,14 +348,12 @@ const Webinar = () => {
               reminder before the webinar
             </p>
             <Link href="https://chat.whatsapp.com/FRbf5Bs3IgE77YDfbZUV1U">
-              <a>
-                <SustainButton
-                  className="self-center text-sm md:text-base font-medium"
-                  type="submit"
-                >
-                  Join our WhatsApp community
-                </SustainButton>
-              </a>
+              <SustainButton
+                className="self-center text-sm md:text-base font-medium"
+                type="submit"
+              >
+                Join our WhatsApp community
+              </SustainButton>
             </Link>
           </div>
         </div>
@@ -369,7 +377,7 @@ const Webinar = () => {
                 setIsLoadingFunc();
               }}
             >
-              <p>Try Again</p>
+              Try Again
             </SustainButton>
           </div>
         </div>

@@ -153,11 +153,11 @@ const About = () => {
           </p>
           <div className="mt-8 md:mt-12">
             <Link href="/404">
-              <a>
+              
                 <SustainButton className="text-sm md:text-base font-medium">
                   See current openings
                 </SustainButton>
-              </a>
+              
             </Link>
           </div>
         </div>

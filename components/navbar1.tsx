@@ -31,14 +31,13 @@ const Navbar1 = () => {
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">
-              <a>
-                {" "}
+             
                 <img
                   src={custodia.src}
                   className="mr-3 cursor-pointer self-center"
                   alt="Custodia Logo"
                 />
-              </a>
+              
             </Link>
 
             <button
@@ -86,29 +85,13 @@ const Navbar1 = () => {
               id="navbar-solid-bg"
             >
               <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                {/* <li className="mt-3.5 mx-5 ">
-                  <Link
-                    href="/404"
-                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
-                    // aria-current="page"
-                  >
-                    <a className="text-[#002A47]">For health plans</a>
-                  </Link>
-                </li>
-                <li className="mt-3.5 mx-5 ">
-                  <Link
-                    href="/404"
-                    className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
-                  >
-                    <a className="text-[#002A47]">For doctors</a>
-                  </Link>
-                </li> */}
+                
                 <li className="mt-3.5 mx-5 cursor-pointer">
                   <Link
                     href="/healthcare-providers"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <a className="text-[#002A47]">For healthcare providers</a>
+                    For healthcare providers
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -116,7 +99,7 @@ const Navbar1 = () => {
                     href="/pricing"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <a className="text-[#002A47]">Pricing</a>
+                    Pricing
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -124,7 +107,7 @@ const Navbar1 = () => {
                     href="/blog"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
-                    <a className="text-[#002A47]">Blog</a>
+                    Blog
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -132,16 +115,16 @@ const Navbar1 = () => {
                     href="/research"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <a className="text-[#002A47]">Research</a>
+                    Research
                   </Link>
                 </li>
                 <li className="ml-5">
                   <Link href="/pricing">
-                    <a>
+                    
                       <SustainButton className="text-sm">
                         Get started
                       </SustainButton>
-                    </a>
+                    
                   </Link>
                 </li>
               </ul>

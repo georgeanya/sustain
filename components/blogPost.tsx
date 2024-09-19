@@ -223,9 +223,9 @@ const BlogPost = ({ blog }: { blog: Blog }) => {
               </div>
               <div className="self-center">
                 <Link href="/pricing">
-                  <a>
+                 
                     <SustainButton>Get started now</SustainButton>
-                  </a>
+                 
                 </Link>
               </div>
             </div>

@@ -88,11 +88,11 @@ const Section4 = () => {
             ))}
             <div className="mt-10 md:mt-15 ">
               <Link href="/pricing">
-                <a>
+                
                   <SustainButton className="text-xs md:text-base font-medium">
                     Get started now
                   </SustainButton>
-                </a>
+            
               </Link>
             </div>
           </div>

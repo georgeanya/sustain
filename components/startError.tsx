@@ -37,7 +37,7 @@ const StartError = ({ toggle, toggleFav }: props) => {
         Please make sure we’ve got your details right and try again.
       </p>
       <Link href="/start">
-        <a>
+        
           <SustainButton
             className="self-center text-sm md:text-base font-medium"
             type="submit"
@@ -48,7 +48,7 @@ const StartError = ({ toggle, toggleFav }: props) => {
           >
             Try again
           </SustainButton>
-        </a>
+        
       </Link>
     </div>
   );

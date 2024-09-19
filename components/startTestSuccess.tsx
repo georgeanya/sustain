@@ -29,14 +29,14 @@ const StartTestSuccess = () => {
         WhatsApp
       </p>
       <Link href="">
-        <a>
+       
           <SustainButton
             className="self-center text-sm md:text-base font-medium"
             type="submit"
           >
             Take the test again
           </SustainButton>
-        </a>
+        
       </Link>
     </div>
   );

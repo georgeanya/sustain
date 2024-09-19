@@ -147,9 +147,9 @@ const Pricing = (props: any) => {
                   </a>
                 </p>
                 <Link href="/start">
-                  <a>
+                 
                     <SustainButton>Choose this plan</SustainButton>
-                  </a>
+                  
                 </Link>
               </div>
               <hr className="mt-[24px] mb-[42px] mx-5 md:mx-[30px]" />
@@ -240,9 +240,9 @@ const Pricing = (props: any) => {
                 </p>
 
                 <Link href="/start">
-                  <a>
+               
                     <SustainButton>Choose this plan</SustainButton>
-                  </a>
+                 
                 </Link>
               </div>
               <hr className="mt-[24px] mb-[42px] mx-5 md:mx-[30px]" />

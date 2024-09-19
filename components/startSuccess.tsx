@@ -34,14 +34,14 @@ const StartSuccess = () => {
         Custodia Health.
       </p>
       <Link href="https://chat.whatsapp.com/FRbf5Bs3IgE77YDfbZUV1U">
-        <a>
+        
           <SustainButton
             className="self-center text-sm md:text-base font-medium"
             type="submit"
           >
             Join our WhatsApp community
           </SustainButton>
-        </a>
+       
       </Link>
     </div>
   );

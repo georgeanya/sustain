@@ -51,11 +51,11 @@ const Hero = () => {
         </p>
         <div className="mt-8 ">
           <Link href="/pricing">
-            <a>
+            
               <SustainButton className="text-xs lg:text-base font-medium">
                 Get started now
               </SustainButton>
-            </a>
+            
           </Link>
         </div>
       </div>

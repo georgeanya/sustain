@@ -35,9 +35,9 @@ const currentYear = currentDate.getFullYear();
           Are you ready to start that journey? Join Custodia today!
         </p>
         <Link href="/pricing">
-          <a href=""><SustainButton className="self-start text-xs md:text-base font-medium">
+          <SustainButton className="self-start text-xs md:text-base font-medium">
             Get started now
-          </SustainButton></a>
+          </SustainButton>
         </Link>
       </div>
       <hr className="h-[0.5px] border-t-[0.5px] md:mt-[150px] mt-[109px] md:mb-[90px] mb-[70px] text-[#C7CBD1]" />
@@ -49,21 +49,21 @@ const currentYear = currentDate.getFullYear();
               PRODUCT
             </h3>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="/pricing"><a>Pricing</a></Link>
+              <Link href="/pricing">Pricing</Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="/healthcare-providers">
-                <a>For healthcare providers</a>
+               For healthcare providers
               </Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="/research"><a>Research</a></Link>
+              <Link href="/research">Research</Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="/faq"><a>FAQs</a></Link>
+              <Link href="/faq">FAQs</Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="/download"><a>Download our app</a></Link>
+              <Link href="/download">Download our app</Link>
             </p>
           </div>
           <div className="w-40 md:w-[245px]">
@@ -71,16 +71,16 @@ const currentYear = currentDate.getFullYear();
               RESOURCES
             </h3>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="/404"><a>Help center</a></Link>
+              <Link href="/404">Help center</Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/Privacy-policy-9c564d4280694f34805e974ee3084c35">
-                <a>Privacy policy</a>
+                Privacy policy
               </Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/lifebox-labs/Terms-of-use-1dc563d01e574d108fdc23f4c51d2ee1">
-                <a>Terms of use</a>
+                Terms of use
               </Link>
             </p>
             {/* <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
@@ -92,14 +92,14 @@ const currentYear = currentDate.getFullYear();
               COMPANY
             </h3>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="https://lifebox.ng/"><a>About</a></Link>
+              <Link href="https://lifebox.ng/">About</Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="/blog"><a>Blog</a></Link>
+              <Link href="/blog">Blog</Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="https://lifebox-labs.notion.site/Join-Lifebox-Labs-caed82beacb448cf9be9b380907caa19">
-                <a>Careers</a>
+                Careers
               </Link>
             </p>
             {/* <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
@@ -111,40 +111,40 @@ const currentYear = currentDate.getFullYear();
               CONTACT
             </h3>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
-              <Link href="tel:+2347040559724"><a>+2347040559724</a></Link>
+              <Link href="tel:+2347040559724">+2347040559724</Link>
             </p>
             <p className="md:mb-[26px] md:text-[15px] text-sm leading-4 mb-[22px] text-[#C4CED4]">
               <Link href="mailto:hi@custodiahealth.com">
-                <a href="">hi@custodiahealth.com</a>
+                hi@custodiahealth.com
               </Link>
             </p>
             <div className="flex">
               <Link href="https://facebook.com/custodiahealth">
-                <a>
+              
                   <img
                     src={fbook.src}
                     className="mr-5 cursor-pointer"
                     alt="facebook logo"
                   />
-                </a>
+                
               </Link>
               <Link href="https://instagram.com/custodiahealth">
-                <a>
+                
                   <img
                     src={insta.src}
                     className="mr-5 cursor-pointer"
                     alt="instagram logo"
                   />
-                </a>
+                
               </Link>
               <Link href="https://twitter.com/custodiahealth">
-                <a>
+               
                   <img
                     src={twitter.src}
                     className="mr-5 cursor-pointer"
                     alt="twitter logo"
                   />
-                </a>
+                
               </Link>
             </div>
           </div>

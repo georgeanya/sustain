@@ -43,11 +43,11 @@ const Section2 = () => {
         </p>
         <div className="mt-10 md:mt-15 ">
           <Link href="/research">
-            <a>
+            
               <SustainButton className="text-xs md:text-base font-medium">
                 Research behind our treatment
               </SustainButton>
-            </a>
+            
           </Link>
         </div>
       </div>

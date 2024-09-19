@@ -80,9 +80,9 @@ const Faq = () => {
       <div className="mt-10 md:mt-15">
         <div>
           <Link href="/faq">
-            <a>
+            
               <SustainButton>See all FAQs</SustainButton>
-            </a>
+           
           </Link>
         </div>
       </div>

@@ -10,13 +10,13 @@ const Navbar3 = () => {
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">
-              <a>
+             
                 <img
                   src={custodia.src}
                   className="mr-3 cursor-pointer self-center"
                   alt="Custodia Logo"
                 />
-              </a>
+            
             </Link>
           </div>
         </nav>

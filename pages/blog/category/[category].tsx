@@ -247,9 +247,9 @@ const PatientStories = () => {
                   {attributes.category.data.attributes.name}
                 </p>
                 <Link href={`/blog/${attributes.slug}`}>
-                  <a className="text-[#002A47] font-bold text-[22px] leading-[28px] md:leading-[29px]  cursor-pointer">
+                  <p className="text-[#002A47] font-bold text-[22px] leading-[28px] md:leading-[29px]  cursor-pointer">
                     {attributes.title}
-                  </a>
+                  </p>
                 </Link>
               </div>
               <div className="flex mt-3 md:mt-4">

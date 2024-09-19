@@ -191,24 +191,24 @@ const Blog: React.FC = () => {
         </p>
         <div className="md:flex justify-between mt-9 md:mt-10">
           <Link href={`/blog/${blog.attributes.slug}`}>
-            <a>
+            
               <img
                 src={ImgUrl}
                 alt={blog.attributes.image.data.attributes.name}
                 className="cursor-pointer w-full md:w-[660px] md:h-[380px] rounded-[20px]"
               />
-            </a>
+            
           </Link>
           <div className=" md:ml-17 mt-6 md:mt-0 self-center md:w-[460px]">
             <p className=" text-sm text-[#4F9EEA] leading-[17px]">
               {blog.attributes.category.data.attributes.name}
             </p>
             <Link href={`/blog/${blog.attributes.slug}`}>
-              <a>
+           
                 <h1 className="cursor-pointer text-[#002A47] font-bold text-[22px] leading-[28px] md:text-[34px] md:leading-[43px] mt-3">
                   {blog.attributes.title}
                 </h1>
-              </a>
+           
             </Link>
             <p className="text-[#476D85] mt-2 md:mt-5 text-[15px] leading-[22px] md:text-lg md:leading-[26px]">
               {blog.attributes.description}
@@ -297,25 +297,23 @@ const Blog: React.FC = () => {
                 >
                   <div>
                     <Link href={`/blog/${attributes.slug}`}>
-                      <a>
-                        <img
+                      <a> <img
                           src={
                             attributes.image.data.attributes.formats.medium.url
                           }
                           alt={attributes.image.data.attributes.name}
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
-                      </a>
                     </Link>
                     <p className=" text-sm leading-[17px] text-[#4F9EEA] mt-[24px]">
                       {attributes.category.data.attributes.name}
                     </p>
                     <Link href={`/blog/${attributes.slug}`} key={id}>
-                      <a>
+                   
                         <p className="text-[#002A47] font-bold text-[22px] leading-[28px] md:leading-[29px] mt-[12px] cursor-pointer">
                           {attributes.title}
                         </p>
-                      </a>
+                 
                     </Link>
                   </div>
                   <div className="flex mt-3 md:mt-4">
@@ -368,7 +366,7 @@ const Blog: React.FC = () => {
                 <div className="max-w-[357px] flex flex-col justify-between">
                   <div>
                     <Link href={`/blog/${attributes.slug}`} key={id}>
-                      <a>
+                      
                         <img
                           src={
                             attributes.image.data.attributes.formats.medium.url
@@ -376,18 +374,18 @@ const Blog: React.FC = () => {
                           alt={attributes.image.data.attributes.name}
                           className="cursor-pointer w-full md:w-[357px] md:h-[205.55px] rounded-[20px]"
                         />
-                      </a>
+                     
                     </Link>
 
                     <p className=" text-sm leading-[17px] text-[#4F9EEA] mt-[24px]">
                       {attributes.category.data.attributes.name}
                     </p>
                     <Link href={`/blog/${attributes.slug}`} key={id}>
-                      <a>
+                     
                         <p className="text-[#002A47] font-bold text-[22px] leading-[28px] md:leading-[29px] mt-[12px] cursor-pointer">
                           {attributes.title}
                         </p>
-                      </a>
+                      
                     </Link>
                     {/* <p className="text-[#476D85] mt-4 md:mt-5 text-base leading-6 md:leading-7 md:text-lg">
                         {attributes.description}

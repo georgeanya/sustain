@@ -52,13 +52,13 @@ const Navbar = () => {
         <nav>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">
-              <a>
+             
                 <img
                   src={custodia.src}
                   className="mr-3 cursor-pointer self-center"
                   alt="Custodia Logo"
                 />
-              </a>
+             
             </Link>
 
             <button
@@ -112,7 +112,7 @@ const Navbar = () => {
                     className="text-base pt-5 mt-5 rounded  hover:text-blue-700 "
                     // aria-current="page"
                   >
-                    <a className="text-[#002A47]">For health plans</a>
+                    <p className="text-[#002A47]">For health plans</p>
                   </Link>
                 </li>
                  */}
@@ -121,7 +121,7 @@ const Navbar = () => {
                     href="/healthcare-providers"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <a className="text-[#002A47]">For healthcare providers</a>
+                    <p className="text-[#002A47]">For healthcare providers</p>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -129,7 +129,7 @@ const Navbar = () => {
                     href="/pricing"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <a className="text-[#002A47]">Pricing</a>
+                    <p className="text-[#002A47]">Pricing</p>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -137,7 +137,7 @@ const Navbar = () => {
                     href="/blog"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded hover:text-blue-700 md:p-0 "
                   >
-                    <a className="text-[#002A47]">Blog</a>
+                    <p className="text-[#002A47]">Blog</p>
                   </Link>
                 </li>
                 <li className="mt-3.5 mx-5 cursor-pointer">
@@ -145,16 +145,16 @@ const Navbar = () => {
                     href="/research"
                     className="text-base pt-5 mt-5 text-[#002A47] rounded  hover:text-blue-700 "
                   >
-                    <a className="text-[#002A47]">Research</a>
+                    <p className="text-[#002A47]">Research</p>
                   </Link>
                 </li>
                 <li className="ml-5">
                   <Link href="/pricing">
-                    <a>
+                    
                       <SustainButton className="text-sm">
                         Get started
                       </SustainButton>
-                    </a>
+                    
                   </Link>
                 </li>
               </ul>

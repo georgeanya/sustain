@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import Head from "next/head";
-
 import Hero from "../components/hero";
 import Section1 from "../components/section1";
 import Section2 from "../components/section2";
