@@ -59,7 +59,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className=" lg:w-2/4 flex lg:p-10 justify-center">
+      <div className="lg:w-2/4 flex lg:p-10 justify-center">
         <img src={hero.src} alt="Custodia Hero Image" />
       </div>
     </div>
