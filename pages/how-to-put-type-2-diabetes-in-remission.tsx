@@ -13,6 +13,7 @@ import axios from "axios";
 import { Input } from "@nextui-org/react";
 import lock from "../public/assets/lock.svg";
 import icon from "../public/assets/custodia-icon.svg";
+import Section5 from "../components/section5";
 
 const SustainButton = styled(Button)({
   background: "#4F9EEA !important",
@@ -39,7 +40,6 @@ interface IState {
   };
 }
 
-
 const url = "https://getsustainapp.herokuapp.com/v1/consult";
 
 const Webinar = () => {
@@ -65,7 +65,7 @@ const Webinar = () => {
     script.type = "text/javascript";
     script.async = true;
     document.body.appendChild(script);
-  
+
     return () => {
       // Clean up the script when the component unmounts
       document.body.removeChild(script);
@@ -253,15 +253,16 @@ const Webinar = () => {
           </div>
         </div>
         <div className="md:w-[460px]">
-        <iframe
-        src="https://link.growthanalyst.com.ng/widget/booking/UOsmB5Rxt3TTunNyDeZa"
-        style={{ width: '100%', border: 'none', overflow: 'hidden' }}
-        scrolling="no"
-        id="UOsmB5Rxt3TTunNyDeZa_1728897539001"
-        title="Booking Widget"
-      ></iframe>
+          <iframe
+            src="https://link.growthanalyst.com.ng/widget/booking/UOsmB5Rxt3TTunNyDeZa"
+            style={{ width: "100%", border: "none", overflow: "hidden" }}
+            scrolling="no"
+            id="UOsmB5Rxt3TTunNyDeZa_1728897539001"
+            title="Booking Widget"
+          ></iframe>
         </div>
       </div>
+      <Section5 />
       <Footer />
     </div>
   );
